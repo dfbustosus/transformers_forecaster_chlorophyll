@@ -1,0 +1,46 @@
+station_id,station_name,variable,statistic,observed_row_count,unique_date_count,date_min,date_max,unit
+la_poza,La Poza,chlorophyll_a,max,641,492,2022-08-22,2025-05-09,ug/L
+la_poza,La Poza,chlorophyll_a,mean,623,480,2022-08-22,2025-05-09,ug/L
+la_poza,La Poza,chlorophyll_a,min,617,475,2022-08-22,2025-05-09,ug/L
+la_poza,La Poza,dissolved_organic_matter,max,585,464,2022-08-22,2025-05-09,QSU
+la_poza,La Poza,dissolved_organic_matter,mean,552,444,2022-10-17,2025-05-09,QSU
+la_poza,La Poza,dissolved_organic_matter,min,521,428,2023-05-06,2025-05-09,QSU
+la_poza,La Poza,dissolved_oxygen,max,165,128,2022-08-22,2025-05-09,ppm
+la_poza,La Poza,dissolved_oxygen,mean,163,126,2022-08-22,2025-05-09,ppm
+la_poza,La Poza,dissolved_oxygen,min,164,126,2022-08-22,2025-05-09,ppm
+la_poza,La Poza,dissolved_oxygen_saturation,max,91,91,2024-12-19,2025-03-19,%
+la_poza,La Poza,dissolved_oxygen_saturation,mean,91,91,2024-12-19,2025-03-19,%
+la_poza,La Poza,dissolved_oxygen_saturation,min,91,91,2024-12-19,2025-03-19,%
+la_poza,La Poza,pH,max,181,142,2024-12-19,2025-05-09,pH
+la_poza,La Poza,pH,mean,179,140,2024-12-19,2025-05-09,pH
+la_poza,La Poza,pH,min,178,139,2024-12-19,2025-05-09,pH
+la_poza,La Poza,phycocyanin,max,617,467,2022-08-22,2025-05-09,ug/L
+la_poza,La Poza,phycocyanin,mean,527,408,2022-08-22,2025-05-09,ug/L
+la_poza,La Poza,phycocyanin,min,518,403,2022-08-22,2025-05-09,ug/L
+la_poza,La Poza,turbidity,max,405,323,2022-08-22,2024-05-06,NTU
+la_poza,La Poza,turbidity,mean,387,313,2022-08-22,2024-05-06,NTU
+la_poza,La Poza,turbidity,min,383,311,2022-08-22,2024-05-06,NTU
+la_poza,La Poza,water_temperature,max,641,492,2022-08-22,2025-05-09,degC
+la_poza,La Poza,water_temperature,mean,632,486,2022-08-22,2025-05-09,degC
+la_poza,La Poza,water_temperature,min,621,478,2022-08-22,2025-05-09,degC
+pucon,Pucón,chlorophyll_a,max,852,813,2021-01-08,2025-05-09,ug/L
+pucon,Pucón,chlorophyll_a,mean,827,788,2021-01-08,2025-05-09,ug/L
+pucon,Pucón,chlorophyll_a,min,819,780,2021-01-08,2025-05-09,ug/L
+pucon,Pucón,dissolved_organic_matter,max,823,784,2021-01-08,2025-05-09,QSU
+pucon,Pucón,dissolved_organic_matter,mean,789,750,2021-01-08,2025-05-09,QSU
+pucon,Pucón,dissolved_organic_matter,min,763,724,2021-01-08,2025-05-09,QSU
+pucon,Pucón,dissolved_oxygen,max,443,404,2021-01-08,2025-05-09,ppm
+pucon,Pucón,dissolved_oxygen,mean,441,402,2021-01-08,2025-05-09,ppm
+pucon,Pucón,dissolved_oxygen,min,441,402,2021-01-08,2025-05-09,ppm
+pucon,Pucón,pH,max,181,142,2024-12-19,2025-05-09,pH
+pucon,Pucón,pH,mean,179,140,2024-12-19,2025-05-09,pH
+pucon,Pucón,pH,min,178,139,2024-12-19,2025-05-09,pH
+pucon,Pucón,phycocyanin,max,827,788,2021-01-08,2025-05-09,ug/L
+pucon,Pucón,phycocyanin,mean,728,711,2021-01-08,2025-05-09,ug/L
+pucon,Pucón,phycocyanin,min,658,644,2021-01-08,2025-05-09,ug/L
+pucon,Pucón,turbidity,max,653,653,2021-01-08,2024-12-04,NTU
+pucon,Pucón,turbidity,mean,629,629,2021-01-08,2024-12-04,NTU
+pucon,Pucón,turbidity,min,618,618,2021-01-08,2024-12-04,NTU
+pucon,Pucón,water_temperature,max,851,812,2021-01-08,2025-05-09,degC
+pucon,Pucón,water_temperature,mean,835,796,2021-01-08,2025-05-09,degC
+pucon,Pucón,water_temperature,min,805,766,2021-01-08,2025-05-09,degC

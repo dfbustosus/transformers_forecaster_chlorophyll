@@ -1,0 +1,72 @@
+[paths]
+raw_data = "raw_data"
+processed_data = "data/processed"
+tables = "outputs/tables"
+figures = "figures"
+reports = "reports"
+
+[stations.pucon]
+station_id = "pucon"
+station_name = "Pucón"
+path_tokens = ["pucon", "pucón", "litoral"]
+
+[stations.la_poza]
+station_id = "la_poza"
+station_name = "La Poza"
+path_tokens = ["la_poza", "la poza", "poza"]
+
+[preprocessing]
+chlorophyll_variable = "chlorophyll_a"
+statistic = "mean"
+interpolation_limit_days = 14
+iqr_multiplier = 1.5
+remove_iqr_outliers = false
+savgol_window_days = 11
+savgol_polyorder = 2
+use_smoothed_for_forecast = false
+
+[forecast]
+horizons = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
+prediction_length_days = 30
+context_length_days = 1024
+test_fraction = 0.20
+minimum_training_days = 30
+preferred_trajectory_models = ["TimesFM", "Chronos Large"]
+fallback_trajectory_model_count = 2
+random_seed = 20260530
+allow_local_baseline_fallback = false
+foundation_prediction_cache = "data/processed/foundation_model_predictions.csv"
+require_foundation_predictions_for_manuscript_figures = true
+foundation_batch_size = 8
+
+[foundation_models.timesfm_2_0_500m]
+enabled = true
+label = "TimesFM"
+family = "timesfm"
+model_identifier = "google/timesfm-2.0-500m-pytorch"
+backend = "cpu"
+frequency = 0
+quantiles = [0.1, 0.5, 0.9]
+batch_size = 8
+
+[foundation_models.chronos_t5_large]
+enabled = true
+label = "Chronos Large"
+family = "chronos"
+model_identifier = "amazon/chronos-t5-large"
+device = "cpu"
+num_samples = 64
+quantiles = [0.1, 0.5, 0.9]
+batch_size = 4
+
+[thresholds]
+chlorophyll_warning_ug_l = 10.0
+cyanobacteria_drinking_surveillance_cells_ml = 2000.0
+cyanobacteria_recreation_low_risk_cells_ml = 20000.0
+cyanobacteria_moderate_risk_cells_ml = 100000.0
+
+[figures]
+dpi = 400
+style = "clean_manuscript"
+station_order = ["pucon", "la_poza"]
+station_colors = { pucon = "#1f77b4", la_poza = "#2ca02c" }

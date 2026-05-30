@@ -1,0 +1,43 @@
+.actor {
+  fill: #e8f1f2 !important;
+  stroke: #2f4858 !important;
+  stroke-width: 2px !important;
+}
+
+.actor-line {
+  stroke: #6b7280 !important;
+  stroke-width: 1.4px !important;
+}
+
+.messageLine0,
+.messageLine1 {
+  stroke: #33658a !important;
+  stroke-width: 2px !important;
+}
+
+.messageText,
+.loopText,
+.labelText,
+.actor-box {
+  fill: #1f2933 !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.activation0,
+.activation1,
+.activation2 {
+  fill: #d7eaf3 !important;
+  stroke: #33658a !important;
+  stroke-width: 1.6px !important;
+}
+
+.note {
+  fill: #fff3bf !important;
+  stroke: #e0a800 !important;
+  stroke-width: 1.5px !important;
+}
+
+.noteText {
+  fill: #4b3b00 !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+}

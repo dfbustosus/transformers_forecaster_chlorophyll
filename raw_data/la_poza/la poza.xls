@@ -1,0 +1,115 @@
+<table border="1" cellpadding="2" cellspacing="2" id="datos">
+            <thead>
+              <tr bgcolor="#CCCCCC">
+                <th bgcolor="#CCCCCC" class="txt_form" scope="col">Nro.</th>
+                <th nowrap="" bgcolor="#CCCCCC" class="txt_form" scope="col">Fecha-Hora de Medicion</th>
+				
+                <th class="txt_form" nowrap="">LAGO VILLARR<br>Turbiedad                
+(NTU)Min</th>
+                
+                <th class="txt_form" nowrap="">LAGO VILLARR<br>Turbiedad                
+(NTU)Max</th>
+                
+                <th class="txt_form" nowrap="">LAGO VILLARR<br>Turbiedad                
+(NTU)Media</th>
+                
+                <th class="txt_form" nowrap="">LAGO VILLARR<br>Temp. Sonda              
+(ºC)Min</th>
+                
+                <th class="txt_form" nowrap="">LAGO VILLARR<br>Temp. Sonda              
+(ºC)Max</th>
+                
+                <th class="txt_form" nowrap="">LAGO VILLARR<br>Temp. Sonda              
+(ºC)Media</th>
+                
+                <th class="txt_form" nowrap="">LAGO VILLARR<br>Oxígeno Disuelto 2       
+(ppm)Min</th>
+                
+                <th class="txt_form" nowrap="">LAGO VILLARR<br>Oxígeno Disuelto 2       
+(ppm)Max</th>
+                
+                <th class="txt_form" nowrap="">LAGO VILLARR<br>Oxígeno Disuelto 2       
+(ppm)Media</th>
+                
+                <th class="txt_form" nowrap="">LAGO VILLARR<br>Clorofila                
+(ug/L)Min</th>
+                
+                <th class="txt_form" nowrap="">LAGO VILLARR<br>Clorofila                
+(ug/L)Max</th>
+                
+                <th class="txt_form" nowrap="">LAGO VILLARR<br>Clorofila                
+(ug/L)Media</th>
+                
+                <th class="txt_form" nowrap="">LAGO VILLARR<br>Materia organica disuelta
+(QSU)Min</th>
+                
+                <th class="txt_form" nowrap="">LAGO VILLARR<br>Materia organica disuelta
+(QSU)Max</th>
+                
+                <th class="txt_form" nowrap="">LAGO VILLARR<br>Materia organica disuelta
+(QSU)Media</th>
+                
+                <th class="txt_form" nowrap="">LAGO VILLARR<br>Ficocianina              
+(ug/lt)Min</th>
+                
+                <th class="txt_form" nowrap="">LAGO VILLARR<br>Ficocianina              
+(ug/lt)Max</th>
+                
+                <th class="txt_form" nowrap="">LAGO VILLARR<br>Ficocianina              
+(ug/lt)Media</th>
+                
+             </tr></thead>
+            <tbody>
+            
+				            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">1</td>
+				  <td class="txt">22/08/2022</td>
+				  <td class="txt" align="right">28.530</td>
+				  <td class="txt" align="right">30.140</td>
+				  <td class="txt" align="right">29.288</td>
+  				  <td class="txt" align="right">11.990</td>				  
+				  <td class="txt" align="right">15.630</td>
+				  <td class="txt" align="right">13.742</td>
+				  <td class="txt" align="right">8.770</td>
+  				  <td class="txt" align="right">9.480</td>				  
+				  <td class="txt" align="right">9.130</td>
+				  <td class="txt" align="right">3.920</td>
+				  <td class="txt" align="right">4.180</td>
+  				  <td class="txt" align="right">4.019</td>				  
+				  <td class="txt" align="right">-0.120</td>
+				  <td class="txt" align="right">0.060</td>
+				  <td class="txt" align="right">-0.022</td>
+  				  <td class="txt" align="right">1.510</td>				  
+  				  <td class="txt" align="right">1.670</td>				  
+  				  <td class="txt" align="right">1.577</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">2</td>
+				  <td class="txt">04/10/2022</td>
+				  <td class="txt" align="right">29.130</td>
+				  <td class="txt" align="right">30.510</td>
+				  <td class="txt" align="right">29.906</td>
+  				  <td class="txt" align="right">10.520</td>				  
+				  <td class="txt" align="right">14.110</td>
+				  <td class="txt" align="right">12.022</td>
+				  <td class="txt" align="right">9.290</td>
+  				  <td class="txt" align="right">10.040</td>				  
+				  <td class="txt" align="right">9.726</td>
+				  <td class="txt" align="right">4.100</td>
+				  <td class="txt" align="right">4.550</td>
+  				  <td class="txt" align="right">4.400</td>				  
+				  <td class="txt" align="right">-0.070</td>
+				  <td class="txt" align="right">0.100</td>
+				  <td class="txt" align="right">-0.004</td>
+  				  <td class="txt" align="right">1.590</td>				  
+  				  <td class="txt" align="right">1.790</td>				  
+  				  <td class="txt" align="right">1.704</td>		  
+			  </tr>
+
+                			  
+			  
+            </tbody>
+          </table>

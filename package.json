@@ -1,0 +1,15 @@
+{
+  "name": "villarrica-forecaster-figures",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Node-based Mermaid rendering for reproducible Villarrica manuscript workflow figures.",
+  "scripts": {
+    "render:figure02:svg": "mmdc --input figures/figure_02_preprocessing_workflow.mmd --output figures/figure_02_preprocessing_workflow.svg --backgroundColor white --width 1600 --cssFile configs/figure_02_mermaid.css",
+    "render:figure02:png": "mmdc --input figures/figure_02_preprocessing_workflow.mmd --output figures/figure_02_preprocessing_workflow.png --backgroundColor white --width 1600 --scale 2 --cssFile configs/figure_02_mermaid.css",
+    "render:figure02": "npm run render:figure02:svg && npm run render:figure02:png"
+  },
+  "devDependencies": {
+    "@mermaid-js/mermaid-cli": "11.15.0",
+    "puppeteer": "24.31.0"
+  }
+}

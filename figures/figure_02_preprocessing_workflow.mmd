@@ -1,0 +1,51 @@
+%%{init: {"theme": "base", "themeVariables": {"fontFamily": "Arial", "fontSize": "18px", "primaryColor": "#F7FBFF", "primaryBorderColor": "#2F4858", "primaryTextColor": "#1F2933", "lineColor": "#33658A", "actorBorder": "#2F4858", "actorBkg": "#E8F1F2", "actorTextColor": "#1F2933", "activationBkgColor": "#D7EAF3", "activationBorderColor": "#33658A", "noteBkgColor": "#FFF3BF", "noteBorderColor": "#E0A800"}, "sequence": {"diagramMarginX": 18, "diagramMarginY": 18, "actorMargin": 38, "messageMargin": 40, "mirrorActors": true, "bottomMarginAdj": 12, "useMaxWidth": true, "rightAngles": false}}}%%
+sequenceDiagram
+    autonumber
+    box rgba(232, 241, 242, 0.75) Data acquisition and provenance
+    participant RD as Raw Data
+    participant PP as Preprocessor
+    end
+    box rgba(255, 243, 191, 0.65) Gap handling and signal processing
+    participant IM as Imputation Module
+    participant SF as Signal Filter
+    end
+    box rgba(214, 234, 248, 0.70) Feature/model input construction
+    participant FE as Feature Engineer
+    participant TR as Transformer
+    participant MI as Model Input
+    end
+
+    rect rgba(232, 241, 242, 0.35)
+    RD->>PP: Tabular time series with station/date/value fields
+    activate PP
+    PP->>PP: Parse dates, normalize units, and validate flags
+    PP->>PP: Resample to daily frequency
+    PP->>PP: Identify missing days and invalid sentinel values
+    end
+    rect rgba(255, 243, 191, 0.35)
+    PP->>IM: Request gap filling for missing daily values
+    activate IM
+    IM->>IM: Compute day-of-year or monthly baseline from available history
+    IM-->>PP: Return filled series with imputation_method flags
+    deactivate IM
+    PP->>PP: Preserve observed-value and source-count masks
+    PP->>SF: Send filled series for optional smoothing
+    deactivate PP
+    activate SF
+    SF->>SF: Apply Savitzky-Golay filter when configured
+    SF-->>FE: Return processed series plus smoothing flags
+    deactivate SF
+    end
+    rect rgba(214, 234, 248, 0.35)
+    activate FE
+    FE->>FE: Add calendar, day-of-year, and cyclical encodings
+    FE->>TR: Request model-ready normalization
+    deactivate FE
+    activate TR
+    TR->>TR: Check variance and optional log transform
+    TR->>MI: Build context window and forecast horizon tensors
+    deactivate TR
+    activate MI
+    MI->>MI: Store model input with provenance and preprocessing masks
+    deactivate MI
+    end

@@ -1,0 +1,14 @@
+{
+  "output": "data/processed/daily_chl_a.csv",
+  "rules": {
+    "chlorophyll_variable": "chlorophyll_a",
+    "interpolation_limit_days": 14,
+    "iqr_multiplier": 1.5,
+    "remove_iqr_outliers": false,
+    "savgol_polyorder": 2,
+    "savgol_window_days": 11,
+    "statistic": "mean",
+    "use_smoothed_for_forecast": false
+  },
+  "source": "data/processed/canonical_observations.csv"
+}

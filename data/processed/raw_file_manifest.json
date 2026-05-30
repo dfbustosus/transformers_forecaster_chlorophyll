@@ -1,0 +1,25 @@
+{
+  "outputs": {
+    "canonical_observations": "data/processed/canonical_observations.csv",
+    "data_dictionary": "outputs/tables/data_dictionary.csv",
+    "data_inventory": "outputs/tables/data_inventory.csv",
+    "quality_flag_summary": "outputs/tables/quality_flag_summary.csv",
+    "station_date_coverage": "outputs/tables/station_date_coverage.csv"
+  },
+  "raw_file_count": 13,
+  "raw_files": [
+    "raw_data/la_poza/Boya La Poza dic 2024-marzo 2025.xls",
+    "raw_data/la_poza/la poza (3).xls",
+    "raw_data/la_poza/la poza (4).xls",
+    "raw_data/la_poza/la poza (5).xls",
+    "raw_data/la_poza/la poza 1.xls",
+    "raw_data/la_poza/La poza feb-mayo 2025.xls",
+    "raw_data/la_poza/la poza(2).xls",
+    "raw_data/la_poza/la poza(6).xls",
+    "raw_data/la_poza/la poza(7).xls",
+    "raw_data/la_poza/la poza.xls",
+    "raw_data/pucon/Boya Litoral Pucon dic 2024-marzo 2025.xls",
+    "raw_data/pucon/Fico VR litoral Pucón.xlsx",
+    "raw_data/pucon/Litoral Pucon feb 2025- mayo 2025.xls"
+  ]
+}

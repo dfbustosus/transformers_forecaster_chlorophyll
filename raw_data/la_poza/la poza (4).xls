@@ -1,0 +1,2299 @@
+<table border="1" cellpadding="2" cellspacing="2" id="datos">
+            <thead>
+              <tr bgcolor="#CCCCCC">
+                <th bgcolor="#CCCCCC" class="txt_form" scope="col">Nro.</th>
+                <th nowrap="" bgcolor="#CCCCCC" class="txt_form" scope="col">Fecha-Hora de Medicion</th>
+				
+                <th class="txt_form" nowrap="">LAGO VILLARR<br>Turbiedad                
+(NTU)Min</th>
+                
+                <th class="txt_form" nowrap="">LAGO VILLARR<br>Turbiedad                
+(NTU)Max</th>
+                
+                <th class="txt_form" nowrap="">LAGO VILLARR<br>Turbiedad                
+(NTU)Media</th>
+                
+                <th class="txt_form" nowrap="">LAGO VILLARR<br>Temp. Sonda              
+(ºC)Min</th>
+                
+                <th class="txt_form" nowrap="">LAGO VILLARR<br>Temp. Sonda              
+(ºC)Max</th>
+                
+                <th class="txt_form" nowrap="">LAGO VILLARR<br>Temp. Sonda              
+(ºC)Media</th>
+                
+                <th class="txt_form" nowrap="">LAGO VILLARR<br>Oxígeno Disuelto 2       
+(ppm)Min</th>
+                
+                <th class="txt_form" nowrap="">LAGO VILLARR<br>Oxígeno Disuelto 2       
+(ppm)Max</th>
+                
+                <th class="txt_form" nowrap="">LAGO VILLARR<br>Oxígeno Disuelto 2       
+(ppm)Media</th>
+                
+                <th class="txt_form" nowrap="">LAGO VILLARR<br>Clorofila                
+(ug/L)Min</th>
+                
+                <th class="txt_form" nowrap="">LAGO VILLARR<br>Clorofila                
+(ug/L)Max</th>
+                
+                <th class="txt_form" nowrap="">LAGO VILLARR<br>Clorofila                
+(ug/L)Media</th>
+                
+                <th class="txt_form" nowrap="">LAGO VILLARR<br>Materia organica disuelta
+(QSU)Min</th>
+                
+                <th class="txt_form" nowrap="">LAGO VILLARR<br>Materia organica disuelta
+(QSU)Max</th>
+                
+                <th class="txt_form" nowrap="">LAGO VILLARR<br>Materia organica disuelta
+(QSU)Media</th>
+                
+                <th class="txt_form" nowrap="">LAGO VILLARR<br>Ficocianina              
+(ug/lt)Min</th>
+                
+                <th class="txt_form" nowrap="">LAGO VILLARR<br>Ficocianina              
+(ug/lt)Max</th>
+                
+                <th class="txt_form" nowrap="">LAGO VILLARR<br>Ficocianina              
+(ug/lt)Media</th>
+                
+             </tr></thead>
+            <tbody>
+            
+				            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">1</td>
+				  <td class="txt">06/07/2023</td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">0.800</td>
+				  <td class="txt" align="right">0.625</td>
+  				  <td class="txt" align="right">10.600</td>				  
+				  <td class="txt" align="right">10.600</td>
+				  <td class="txt" align="right">10.600</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">88.100</td>
+  				  <td class="txt" align="right">3.362</td>				  
+				  <td class="txt" align="right">3.500</td>
+				  <td class="txt" align="right">4.600</td>
+				  <td class="txt" align="right">4.046</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.200</td>				  
+  				  <td class="txt" align="right">0.054</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">2</td>
+				  <td class="txt">07/07/2023</td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">0.800</td>
+				  <td class="txt" align="right">0.623</td>
+  				  <td class="txt" align="right">10.500</td>				  
+				  <td class="txt" align="right">10.600</td>
+				  <td class="txt" align="right">10.510</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.900</td>
+				  <td class="txt" align="right">3.100</td>
+  				  <td class="txt" align="right">1.802</td>				  
+				  <td class="txt" align="right">3.200</td>
+				  <td class="txt" align="right">4.700</td>
+				  <td class="txt" align="right">4.054</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.063</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">3</td>
+				  <td class="txt">08/07/2023</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">0.700</td>
+				  <td class="txt" align="right">0.608</td>
+  				  <td class="txt" align="right">10.400</td>				  
+				  <td class="txt" align="right">10.500</td>
+				  <td class="txt" align="right">10.467</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.300</td>
+				  <td class="txt" align="right">2.700</td>
+  				  <td class="txt" align="right">1.296</td>				  
+				  <td class="txt" align="right">3.600</td>
+				  <td class="txt" align="right">4.900</td>
+				  <td class="txt" align="right">4.292</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.035</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">4</td>
+				  <td class="txt">09/07/2023</td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">0.800</td>
+				  <td class="txt" align="right">0.619</td>
+  				  <td class="txt" align="right">10.400</td>				  
+				  <td class="txt" align="right">10.500</td>
+				  <td class="txt" align="right">10.460</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.200</td>
+				  <td class="txt" align="right">2.700</td>
+  				  <td class="txt" align="right">1.269</td>				  
+				  <td class="txt" align="right">3.700</td>
+				  <td class="txt" align="right">4.900</td>
+				  <td class="txt" align="right">4.196</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.019</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">5</td>
+				  <td class="txt">10/07/2023</td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">0.800</td>
+				  <td class="txt" align="right">0.623</td>
+  				  <td class="txt" align="right">10.300</td>				  
+				  <td class="txt" align="right">10.500</td>
+				  <td class="txt" align="right">10.381</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">3.600</td>
+  				  <td class="txt" align="right">1.344</td>				  
+				  <td class="txt" align="right">3.700</td>
+				  <td class="txt" align="right">4.700</td>
+				  <td class="txt" align="right">4.148</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.050</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">6</td>
+				  <td class="txt">11/07/2023</td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">0.800</td>
+				  <td class="txt" align="right">0.625</td>
+  				  <td class="txt" align="right">10.200</td>				  
+				  <td class="txt" align="right">10.300</td>
+				  <td class="txt" align="right">10.221</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.200</td>
+				  <td class="txt" align="right">2.700</td>
+  				  <td class="txt" align="right">1.273</td>				  
+				  <td class="txt" align="right">3.800</td>
+				  <td class="txt" align="right">5.400</td>
+				  <td class="txt" align="right">4.590</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.200</td>				  
+  				  <td class="txt" align="right">0.031</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">7</td>
+				  <td class="txt">12/07/2023</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">0.800</td>
+				  <td class="txt" align="right">0.608</td>
+  				  <td class="txt" align="right">10.200</td>				  
+				  <td class="txt" align="right">10.300</td>
+				  <td class="txt" align="right">10.244</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.300</td>
+				  <td class="txt" align="right">3.900</td>
+  				  <td class="txt" align="right">1.225</td>				  
+				  <td class="txt" align="right">3.800</td>
+				  <td class="txt" align="right">5.000</td>
+				  <td class="txt" align="right">4.454</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.200</td>				  
+  				  <td class="txt" align="right">0.048</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">8</td>
+				  <td class="txt">13/07/2023</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">0.800</td>
+				  <td class="txt" align="right">0.592</td>
+  				  <td class="txt" align="right">10.100</td>				  
+				  <td class="txt" align="right">10.300</td>
+				  <td class="txt" align="right">10.219</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.300</td>
+				  <td class="txt" align="right">3.600</td>
+  				  <td class="txt" align="right">1.100</td>				  
+				  <td class="txt" align="right">3.900</td>
+				  <td class="txt" align="right">4.800</td>
+				  <td class="txt" align="right">4.235</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.029</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">9</td>
+				  <td class="txt">14/07/2023</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">0.900</td>
+				  <td class="txt" align="right">0.565</td>
+  				  <td class="txt" align="right">10.100</td>				  
+				  <td class="txt" align="right">10.500</td>
+				  <td class="txt" align="right">10.325</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.300</td>
+				  <td class="txt" align="right">19.000</td>
+  				  <td class="txt" align="right">1.802</td>				  
+				  <td class="txt" align="right">3.500</td>
+				  <td class="txt" align="right">4.400</td>
+				  <td class="txt" align="right">3.960</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.200</td>				  
+  				  <td class="txt" align="right">0.038</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">10</td>
+				  <td class="txt">15/07/2023</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">0.700</td>
+				  <td class="txt" align="right">0.540</td>
+  				  <td class="txt" align="right">10.300</td>				  
+				  <td class="txt" align="right">10.500</td>
+				  <td class="txt" align="right">10.387</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.300</td>
+				  <td class="txt" align="right">3.800</td>
+  				  <td class="txt" align="right">1.658</td>				  
+				  <td class="txt" align="right">3.400</td>
+				  <td class="txt" align="right">4.300</td>
+				  <td class="txt" align="right">3.817</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.050</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">11</td>
+				  <td class="txt">16/07/2023</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">0.567</td>
+  				  <td class="txt" align="right">10.100</td>				  
+				  <td class="txt" align="right">10.300</td>
+				  <td class="txt" align="right">10.235</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.300</td>
+				  <td class="txt" align="right">25.000</td>
+  				  <td class="txt" align="right">1.875</td>				  
+				  <td class="txt" align="right">3.600</td>
+				  <td class="txt" align="right">4.600</td>
+				  <td class="txt" align="right">3.940</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.300</td>				  
+  				  <td class="txt" align="right">0.058</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">12</td>
+				  <td class="txt">17/07/2023</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">0.560</td>
+  				  <td class="txt" align="right">10.000</td>				  
+				  <td class="txt" align="right">10.100</td>
+				  <td class="txt" align="right">10.013</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.200</td>
+				  <td class="txt" align="right">7.000</td>
+  				  <td class="txt" align="right">1.277</td>				  
+				  <td class="txt" align="right">4.100</td>
+				  <td class="txt" align="right">4.900</td>
+				  <td class="txt" align="right">4.431</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.015</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">13</td>
+				  <td class="txt">18/07/2023</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">0.700</td>
+				  <td class="txt" align="right">0.567</td>
+  				  <td class="txt" align="right">9.900</td>				  
+				  <td class="txt" align="right">10.000</td>
+				  <td class="txt" align="right">9.925</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">3.100</td>
+  				  <td class="txt" align="right">1.517</td>				  
+				  <td class="txt" align="right">3.900</td>
+				  <td class="txt" align="right">4.800</td>
+				  <td class="txt" align="right">4.402</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.033</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">14</td>
+				  <td class="txt">19/07/2023</td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">0.523</td>
+  				  <td class="txt" align="right">9.900</td>				  
+				  <td class="txt" align="right">10.200</td>
+				  <td class="txt" align="right">10.083</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.700</td>
+				  <td class="txt" align="right">3.600</td>
+  				  <td class="txt" align="right">1.573</td>				  
+				  <td class="txt" align="right">3.700</td>
+				  <td class="txt" align="right">4.800</td>
+				  <td class="txt" align="right">4.202</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.300</td>				  
+  				  <td class="txt" align="right">0.048</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">15</td>
+				  <td class="txt">20/07/2023</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">0.700</td>
+				  <td class="txt" align="right">0.540</td>
+  				  <td class="txt" align="right">10.100</td>				  
+				  <td class="txt" align="right">10.200</td>
+				  <td class="txt" align="right">10.115</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.900</td>
+				  <td class="txt" align="right">5.100</td>
+  				  <td class="txt" align="right">1.735</td>				  
+				  <td class="txt" align="right">3.700</td>
+				  <td class="txt" align="right">4.700</td>
+				  <td class="txt" align="right">4.217</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.040</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">16</td>
+				  <td class="txt">21/07/2023</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">0.800</td>
+				  <td class="txt" align="right">0.569</td>
+  				  <td class="txt" align="right">10.100</td>				  
+				  <td class="txt" align="right">10.100</td>
+				  <td class="txt" align="right">10.100</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.700</td>
+				  <td class="txt" align="right">2.000</td>
+  				  <td class="txt" align="right">1.348</td>				  
+				  <td class="txt" align="right">4.100</td>
+				  <td class="txt" align="right">4.800</td>
+				  <td class="txt" align="right">4.346</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.031</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">17</td>
+				  <td class="txt">22/07/2023</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">1.000</td>
+				  <td class="txt" align="right">0.563</td>
+  				  <td class="txt" align="right">10.000</td>				  
+				  <td class="txt" align="right">10.200</td>
+				  <td class="txt" align="right">10.090</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.100</td>
+				  <td class="txt" align="right">3.100</td>
+  				  <td class="txt" align="right">1.467</td>				  
+				  <td class="txt" align="right">3.600</td>
+				  <td class="txt" align="right">4.700</td>
+				  <td class="txt" align="right">4.248</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.033</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">18</td>
+				  <td class="txt">23/07/2023</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">0.700</td>
+				  <td class="txt" align="right">0.581</td>
+  				  <td class="txt" align="right">9.800</td>				  
+				  <td class="txt" align="right">10.000</td>
+				  <td class="txt" align="right">9.969</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">3.900</td>
+  				  <td class="txt" align="right">1.352</td>				  
+				  <td class="txt" align="right">3.900</td>
+				  <td class="txt" align="right">5.300</td>
+				  <td class="txt" align="right">4.348</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.200</td>				  
+  				  <td class="txt" align="right">0.040</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">19</td>
+				  <td class="txt">24/07/2023</td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">0.900</td>
+				  <td class="txt" align="right">0.700</td>
+  				  <td class="txt" align="right">9.700</td>				  
+				  <td class="txt" align="right">9.800</td>
+				  <td class="txt" align="right">9.798</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">-0.100</td>
+				  <td class="txt" align="right">2.600</td>
+  				  <td class="txt" align="right">0.769</td>				  
+				  <td class="txt" align="right">4.700</td>
+				  <td class="txt" align="right">5.500</td>
+				  <td class="txt" align="right">5.150</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.010</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">20</td>
+				  <td class="txt">25/07/2023</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">0.700</td>
+				  <td class="txt" align="right">0.554</td>
+  				  <td class="txt" align="right">9.800</td>				  
+				  <td class="txt" align="right">10.000</td>
+				  <td class="txt" align="right">9.929</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.300</td>
+				  <td class="txt" align="right">2.900</td>
+  				  <td class="txt" align="right">1.127</td>				  
+				  <td class="txt" align="right">3.700</td>
+				  <td class="txt" align="right">5.200</td>
+				  <td class="txt" align="right">4.546</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.017</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">21</td>
+				  <td class="txt">26/07/2023</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">0.800</td>
+				  <td class="txt" align="right">0.560</td>
+  				  <td class="txt" align="right">9.900</td>				  
+				  <td class="txt" align="right">10.000</td>
+				  <td class="txt" align="right">9.908</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.100</td>
+				  <td class="txt" align="right">4.200</td>
+  				  <td class="txt" align="right">1.248</td>				  
+				  <td class="txt" align="right">3.900</td>
+				  <td class="txt" align="right">4.900</td>
+				  <td class="txt" align="right">4.315</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.200</td>				  
+  				  <td class="txt" align="right">0.031</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">22</td>
+				  <td class="txt">27/07/2023</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">0.700</td>
+				  <td class="txt" align="right">0.556</td>
+  				  <td class="txt" align="right">9.900</td>				  
+				  <td class="txt" align="right">10.000</td>
+				  <td class="txt" align="right">9.912</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.300</td>
+				  <td class="txt" align="right">14.500</td>
+  				  <td class="txt" align="right">1.519</td>				  
+				  <td class="txt" align="right">3.600</td>
+				  <td class="txt" align="right">4.800</td>
+				  <td class="txt" align="right">4.338</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.042</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">23</td>
+				  <td class="txt">28/07/2023</td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">0.700</td>
+				  <td class="txt" align="right">0.550</td>
+  				  <td class="txt" align="right">9.800</td>				  
+				  <td class="txt" align="right">10.200</td>
+				  <td class="txt" align="right">9.983</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.100</td>
+				  <td class="txt" align="right">2.900</td>
+  				  <td class="txt" align="right">1.000</td>				  
+				  <td class="txt" align="right">3.400</td>
+				  <td class="txt" align="right">4.800</td>
+				  <td class="txt" align="right">4.173</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.025</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">24</td>
+				  <td class="txt">29/07/2023</td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">0.504</td>
+  				  <td class="txt" align="right">10.000</td>				  
+				  <td class="txt" align="right">10.000</td>
+				  <td class="txt" align="right">10.000</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">3.600</td>
+  				  <td class="txt" align="right">1.367</td>				  
+				  <td class="txt" align="right">3.700</td>
+				  <td class="txt" align="right">4.700</td>
+				  <td class="txt" align="right">4.267</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.021</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">25</td>
+				  <td class="txt">30/07/2023</td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">0.800</td>
+				  <td class="txt" align="right">0.479</td>
+  				  <td class="txt" align="right">10.000</td>				  
+				  <td class="txt" align="right">10.800</td>
+				  <td class="txt" align="right">10.215</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.100</td>
+				  <td class="txt" align="right">3.200</td>
+  				  <td class="txt" align="right">1.017</td>				  
+				  <td class="txt" align="right">3.300</td>
+				  <td class="txt" align="right">4.600</td>
+				  <td class="txt" align="right">4.138</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.200</td>				  
+  				  <td class="txt" align="right">0.034</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">26</td>
+				  <td class="txt">31/07/2023</td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">0.700</td>
+				  <td class="txt" align="right">0.523</td>
+  				  <td class="txt" align="right">10.000</td>				  
+				  <td class="txt" align="right">10.100</td>
+				  <td class="txt" align="right">10.052</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.300</td>
+				  <td class="txt" align="right">3.300</td>
+  				  <td class="txt" align="right">1.477</td>				  
+				  <td class="txt" align="right">3.800</td>
+				  <td class="txt" align="right">4.800</td>
+				  <td class="txt" align="right">4.267</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.046</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">27</td>
+				  <td class="txt">01/08/2023</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">0.533</td>
+  				  <td class="txt" align="right">10.000</td>				  
+				  <td class="txt" align="right">10.100</td>
+				  <td class="txt" align="right">10.094</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">1.200</td>
+				  <td class="txt" align="right">3.900</td>
+  				  <td class="txt" align="right">1.929</td>				  
+				  <td class="txt" align="right">3.700</td>
+				  <td class="txt" align="right">4.500</td>
+				  <td class="txt" align="right">4.160</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.050</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">28</td>
+				  <td class="txt">02/08/2023</td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">0.517</td>
+  				  <td class="txt" align="right">10.000</td>				  
+				  <td class="txt" align="right">10.200</td>
+				  <td class="txt" align="right">10.075</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.300</td>
+				  <td class="txt" align="right">3.300</td>
+  				  <td class="txt" align="right">1.538</td>				  
+				  <td class="txt" align="right">3.500</td>
+				  <td class="txt" align="right">4.400</td>
+				  <td class="txt" align="right">4.010</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.054</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">29</td>
+				  <td class="txt">03/08/2023</td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">0.700</td>
+				  <td class="txt" align="right">0.513</td>
+  				  <td class="txt" align="right">10.000</td>				  
+				  <td class="txt" align="right">10.400</td>
+				  <td class="txt" align="right">10.110</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.100</td>
+				  <td class="txt" align="right">3.500</td>
+  				  <td class="txt" align="right">1.169</td>				  
+				  <td class="txt" align="right">3.300</td>
+				  <td class="txt" align="right">4.400</td>
+				  <td class="txt" align="right">3.806</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.027</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">30</td>
+				  <td class="txt">04/08/2023</td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">0.494</td>
+  				  <td class="txt" align="right">10.000</td>				  
+				  <td class="txt" align="right">10.400</td>
+				  <td class="txt" align="right">10.129</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.000</td>
+				  <td class="txt" align="right">3.800</td>
+  				  <td class="txt" align="right">1.017</td>				  
+				  <td class="txt" align="right">3.100</td>
+				  <td class="txt" align="right">4.100</td>
+				  <td class="txt" align="right">3.710</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.025</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">31</td>
+				  <td class="txt">05/08/2023</td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">0.477</td>
+  				  <td class="txt" align="right">9.900</td>				  
+				  <td class="txt" align="right">10.500</td>
+				  <td class="txt" align="right">10.129</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.000</td>
+				  <td class="txt" align="right">3.200</td>
+  				  <td class="txt" align="right">1.073</td>				  
+				  <td class="txt" align="right">3.000</td>
+				  <td class="txt" align="right">4.300</td>
+				  <td class="txt" align="right">3.750</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.300</td>				  
+  				  <td class="txt" align="right">0.033</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">32</td>
+				  <td class="txt">06/08/2023</td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">1.000</td>
+				  <td class="txt" align="right">0.481</td>
+  				  <td class="txt" align="right">10.000</td>				  
+				  <td class="txt" align="right">10.700</td>
+				  <td class="txt" align="right">10.240</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.100</td>
+				  <td class="txt" align="right">2.700</td>
+  				  <td class="txt" align="right">0.988</td>				  
+				  <td class="txt" align="right">2.900</td>
+				  <td class="txt" align="right">4.200</td>
+				  <td class="txt" align="right">3.631</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.015</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">33</td>
+				  <td class="txt">07/08/2023</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">1.100</td>
+				  <td class="txt" align="right">0.544</td>
+  				  <td class="txt" align="right">9.800</td>				  
+				  <td class="txt" align="right">10.100</td>
+				  <td class="txt" align="right">9.908</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.100</td>
+				  <td class="txt" align="right">4.100</td>
+  				  <td class="txt" align="right">1.210</td>				  
+				  <td class="txt" align="right">3.700</td>
+				  <td class="txt" align="right">4.800</td>
+				  <td class="txt" align="right">4.246</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.031</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">34</td>
+				  <td class="txt">08/08/2023</td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">0.900</td>
+				  <td class="txt" align="right">0.510</td>
+  				  <td class="txt" align="right">9.800</td>				  
+				  <td class="txt" align="right">10.100</td>
+				  <td class="txt" align="right">9.942</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.300</td>
+				  <td class="txt" align="right">23.000</td>
+  				  <td class="txt" align="right">1.529</td>				  
+				  <td class="txt" align="right">3.500</td>
+				  <td class="txt" align="right">4.700</td>
+				  <td class="txt" align="right">4.194</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.017</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">35</td>
+				  <td class="txt">09/08/2023</td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">0.504</td>
+  				  <td class="txt" align="right">9.900</td>				  
+				  <td class="txt" align="right">10.000</td>
+				  <td class="txt" align="right">9.927</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">2.500</td>
+  				  <td class="txt" align="right">1.310</td>				  
+				  <td class="txt" align="right">3.600</td>
+				  <td class="txt" align="right">4.600</td>
+				  <td class="txt" align="right">4.173</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.029</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">36</td>
+				  <td class="txt">10/08/2023</td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">0.496</td>
+  				  <td class="txt" align="right">9.900</td>				  
+				  <td class="txt" align="right">9.900</td>
+				  <td class="txt" align="right">9.900</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.800</td>
+				  <td class="txt" align="right">2.400</td>
+  				  <td class="txt" align="right">1.619</td>				  
+				  <td class="txt" align="right">3.800</td>
+				  <td class="txt" align="right">4.700</td>
+				  <td class="txt" align="right">4.256</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.042</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">37</td>
+				  <td class="txt">11/08/2023</td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">0.500</td>
+  				  <td class="txt" align="right">9.800</td>				  
+				  <td class="txt" align="right">9.900</td>
+				  <td class="txt" align="right">9.865</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.200</td>
+				  <td class="txt" align="right">2.900</td>
+  				  <td class="txt" align="right">1.467</td>				  
+				  <td class="txt" align="right">3.900</td>
+				  <td class="txt" align="right">4.800</td>
+				  <td class="txt" align="right">4.323</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.038</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">38</td>
+				  <td class="txt">12/08/2023</td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">0.700</td>
+				  <td class="txt" align="right">0.515</td>
+  				  <td class="txt" align="right">9.800</td>				  
+				  <td class="txt" align="right">9.900</td>
+				  <td class="txt" align="right">9.842</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.000</td>
+				  <td class="txt" align="right">14.000</td>
+  				  <td class="txt" align="right">1.885</td>				  
+				  <td class="txt" align="right">3.800</td>
+				  <td class="txt" align="right">4.600</td>
+				  <td class="txt" align="right">4.133</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.200</td>				  
+  				  <td class="txt" align="right">0.054</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">39</td>
+				  <td class="txt">13/08/2023</td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">1.000</td>
+				  <td class="txt" align="right">0.506</td>
+  				  <td class="txt" align="right">9.700</td>				  
+				  <td class="txt" align="right">10.100</td>
+				  <td class="txt" align="right">9.910</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.100</td>
+				  <td class="txt" align="right">4.300</td>
+  				  <td class="txt" align="right">1.038</td>				  
+				  <td class="txt" align="right">3.500</td>
+				  <td class="txt" align="right">4.600</td>
+				  <td class="txt" align="right">4.013</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.033</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">40</td>
+				  <td class="txt">14/08/2023</td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">0.452</td>
+  				  <td class="txt" align="right">9.900</td>				  
+				  <td class="txt" align="right">10.200</td>
+				  <td class="txt" align="right">10.050</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.200</td>
+				  <td class="txt" align="right">2.600</td>
+  				  <td class="txt" align="right">0.696</td>				  
+				  <td class="txt" align="right">3.300</td>
+				  <td class="txt" align="right">4.000</td>
+				  <td class="txt" align="right">3.731</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.006</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">41</td>
+				  <td class="txt">15/08/2023</td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">0.450</td>
+  				  <td class="txt" align="right">9.900</td>				  
+				  <td class="txt" align="right">10.200</td>
+				  <td class="txt" align="right">10.083</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">2.200</td>
+  				  <td class="txt" align="right">1.092</td>				  
+				  <td class="txt" align="right">3.500</td>
+				  <td class="txt" align="right">4.300</td>
+				  <td class="txt" align="right">3.840</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.008</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">42</td>
+				  <td class="txt">16/08/2023</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">0.800</td>
+				  <td class="txt" align="right">0.573</td>
+  				  <td class="txt" align="right">9.800</td>				  
+				  <td class="txt" align="right">9.900</td>
+				  <td class="txt" align="right">9.815</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">3.300</td>
+  				  <td class="txt" align="right">1.610</td>				  
+				  <td class="txt" align="right">3.900</td>
+				  <td class="txt" align="right">4.900</td>
+				  <td class="txt" align="right">4.352</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.046</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">43</td>
+				  <td class="txt">17/08/2023</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">0.800</td>
+				  <td class="txt" align="right">0.591</td>
+  				  <td class="txt" align="right">9.700</td>				  
+				  <td class="txt" align="right">9.800</td>
+				  <td class="txt" align="right">9.761</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">2.700</td>
+  				  <td class="txt" align="right">1.254</td>				  
+				  <td class="txt" align="right">4.100</td>
+				  <td class="txt" align="right">4.800</td>
+				  <td class="txt" align="right">4.417</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.028</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">44</td>
+				  <td class="txt">18/08/2023</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">0.800</td>
+				  <td class="txt" align="right">0.569</td>
+  				  <td class="txt" align="right">9.700</td>				  
+				  <td class="txt" align="right">10.000</td>
+				  <td class="txt" align="right">9.798</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.100</td>
+				  <td class="txt" align="right">2.600</td>
+  				  <td class="txt" align="right">1.173</td>				  
+				  <td class="txt" align="right">3.600</td>
+				  <td class="txt" align="right">4.700</td>
+				  <td class="txt" align="right">4.140</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.200</td>				  
+  				  <td class="txt" align="right">0.042</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">45</td>
+				  <td class="txt">19/08/2023</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">0.800</td>
+				  <td class="txt" align="right">0.602</td>
+  				  <td class="txt" align="right">9.700</td>				  
+				  <td class="txt" align="right">9.800</td>
+				  <td class="txt" align="right">9.702</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.100</td>
+				  <td class="txt" align="right">3.100</td>
+  				  <td class="txt" align="right">1.508</td>				  
+				  <td class="txt" align="right">4.000</td>
+				  <td class="txt" align="right">4.800</td>
+				  <td class="txt" align="right">4.373</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.029</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">46</td>
+				  <td class="txt">20/08/2023</td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">0.500</td>
+  				  <td class="txt" align="right">9.700</td>				  
+				  <td class="txt" align="right">9.800</td>
+				  <td class="txt" align="right">9.756</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">2.400</td>
+  				  <td class="txt" align="right">1.327</td>				  
+				  <td class="txt" align="right">4.100</td>
+				  <td class="txt" align="right">4.900</td>
+				  <td class="txt" align="right">4.515</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.023</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">47</td>
+				  <td class="txt">21/08/2023</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">0.700</td>
+				  <td class="txt" align="right">0.548</td>
+  				  <td class="txt" align="right">9.700</td>				  
+				  <td class="txt" align="right">9.800</td>
+				  <td class="txt" align="right">9.798</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">1.900</td>
+  				  <td class="txt" align="right">1.354</td>				  
+				  <td class="txt" align="right">4.200</td>
+				  <td class="txt" align="right">4.900</td>
+				  <td class="txt" align="right">4.500</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.023</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">48</td>
+				  <td class="txt">22/08/2023</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">0.700</td>
+				  <td class="txt" align="right">0.588</td>
+  				  <td class="txt" align="right">9.700</td>				  
+				  <td class="txt" align="right">9.700</td>
+				  <td class="txt" align="right">9.700</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.800</td>
+				  <td class="txt" align="right">2.600</td>
+  				  <td class="txt" align="right">1.481</td>				  
+				  <td class="txt" align="right">4.300</td>
+				  <td class="txt" align="right">5.100</td>
+				  <td class="txt" align="right">4.523</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.027</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">49</td>
+				  <td class="txt">23/08/2023</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">0.533</td>
+  				  <td class="txt" align="right">9.700</td>				  
+				  <td class="txt" align="right">9.800</td>
+				  <td class="txt" align="right">9.719</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.300</td>
+				  <td class="txt" align="right">2.200</td>
+  				  <td class="txt" align="right">1.254</td>				  
+				  <td class="txt" align="right">3.800</td>
+				  <td class="txt" align="right">4.800</td>
+				  <td class="txt" align="right">4.460</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.013</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">50</td>
+				  <td class="txt">24/08/2023</td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">0.502</td>
+  				  <td class="txt" align="right">9.700</td>				  
+				  <td class="txt" align="right">10.200</td>
+				  <td class="txt" align="right">9.829</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">-0.100</td>
+				  <td class="txt" align="right">8.700</td>
+  				  <td class="txt" align="right">1.131</td>				  
+				  <td class="txt" align="right">3.500</td>
+				  <td class="txt" align="right">4.700</td>
+				  <td class="txt" align="right">4.173</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.010</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">51</td>
+				  <td class="txt">25/08/2023</td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">1.000</td>
+				  <td class="txt" align="right">0.502</td>
+  				  <td class="txt" align="right">9.700</td>				  
+				  <td class="txt" align="right">10.300</td>
+				  <td class="txt" align="right">9.956</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.000</td>
+				  <td class="txt" align="right">2.900</td>
+  				  <td class="txt" align="right">0.848</td>				  
+				  <td class="txt" align="right">3.300</td>
+				  <td class="txt" align="right">4.500</td>
+				  <td class="txt" align="right">3.831</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.017</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">52</td>
+				  <td class="txt">26/08/2023</td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">0.800</td>
+				  <td class="txt" align="right">0.506</td>
+  				  <td class="txt" align="right">9.700</td>				  
+				  <td class="txt" align="right">10.400</td>
+				  <td class="txt" align="right">9.915</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.000</td>
+				  <td class="txt" align="right">2.000</td>
+  				  <td class="txt" align="right">0.765</td>				  
+				  <td class="txt" align="right">3.300</td>
+				  <td class="txt" align="right">4.600</td>
+				  <td class="txt" align="right">3.967</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.010</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">53</td>
+				  <td class="txt">27/08/2023</td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">0.900</td>
+				  <td class="txt" align="right">0.527</td>
+  				  <td class="txt" align="right">9.600</td>				  
+				  <td class="txt" align="right">10.300</td>
+				  <td class="txt" align="right">9.927</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.100</td>
+				  <td class="txt" align="right">2.700</td>
+  				  <td class="txt" align="right">1.004</td>				  
+				  <td class="txt" align="right">3.300</td>
+				  <td class="txt" align="right">4.700</td>
+				  <td class="txt" align="right">3.971</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.015</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">54</td>
+				  <td class="txt">28/08/2023</td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">0.700</td>
+				  <td class="txt" align="right">0.517</td>
+  				  <td class="txt" align="right">9.800</td>				  
+				  <td class="txt" align="right">10.200</td>
+				  <td class="txt" align="right">9.867</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">3.100</td>
+  				  <td class="txt" align="right">1.735</td>				  
+				  <td class="txt" align="right">3.600</td>
+				  <td class="txt" align="right">4.500</td>
+				  <td class="txt" align="right">4.148</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.054</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">55</td>
+				  <td class="txt">29/08/2023</td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">0.513</td>
+  				  <td class="txt" align="right">9.700</td>				  
+				  <td class="txt" align="right">9.900</td>
+				  <td class="txt" align="right">9.842</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">12.300</td>
+  				  <td class="txt" align="right">2.283</td>				  
+				  <td class="txt" align="right">3.400</td>
+				  <td class="txt" align="right">4.500</td>
+				  <td class="txt" align="right">4.054</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.200</td>				  
+  				  <td class="txt" align="right">0.073</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">56</td>
+				  <td class="txt">30/08/2023</td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">0.519</td>
+  				  <td class="txt" align="right">9.700</td>				  
+				  <td class="txt" align="right">9.800</td>
+				  <td class="txt" align="right">9.756</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">3.300</td>
+  				  <td class="txt" align="right">2.017</td>				  
+				  <td class="txt" align="right">3.700</td>
+				  <td class="txt" align="right">4.400</td>
+				  <td class="txt" align="right">4.148</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.069</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">57</td>
+				  <td class="txt">31/08/2023</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">0.700</td>
+				  <td class="txt" align="right">0.577</td>
+  				  <td class="txt" align="right">9.600</td>				  
+				  <td class="txt" align="right">9.700</td>
+				  <td class="txt" align="right">9.667</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">1.300</td>
+				  <td class="txt" align="right">11.500</td>
+  				  <td class="txt" align="right">2.798</td>				  
+				  <td class="txt" align="right">3.400</td>
+				  <td class="txt" align="right">4.600</td>
+				  <td class="txt" align="right">4.187</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.200</td>				  
+  				  <td class="txt" align="right">0.092</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">58</td>
+				  <td class="txt">01/09/2023</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">0.700</td>
+				  <td class="txt" align="right">0.534</td>
+  				  <td class="txt" align="right">9.600</td>				  
+				  <td class="txt" align="right">9.700</td>
+				  <td class="txt" align="right">9.626</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">3.400</td>
+  				  <td class="txt" align="right">1.962</td>				  
+				  <td class="txt" align="right">4.000</td>
+				  <td class="txt" align="right">4.800</td>
+				  <td class="txt" align="right">4.387</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.053</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">59</td>
+				  <td class="txt">02/09/2023</td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">0.800</td>
+				  <td class="txt" align="right">0.546</td>
+  				  <td class="txt" align="right">9.600</td>				  
+				  <td class="txt" align="right">10.300</td>
+				  <td class="txt" align="right">9.817</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.100</td>
+				  <td class="txt" align="right">4.500</td>
+  				  <td class="txt" align="right">1.427</td>				  
+				  <td class="txt" align="right">3.300</td>
+				  <td class="txt" align="right">4.600</td>
+				  <td class="txt" align="right">4.046</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.200</td>				  
+  				  <td class="txt" align="right">0.044</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">60</td>
+				  <td class="txt">03/09/2023</td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">0.498</td>
+  				  <td class="txt" align="right">9.800</td>				  
+				  <td class="txt" align="right">10.100</td>
+				  <td class="txt" align="right">9.952</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.200</td>
+				  <td class="txt" align="right">2.200</td>
+  				  <td class="txt" align="right">1.294</td>				  
+				  <td class="txt" align="right">3.500</td>
+				  <td class="txt" align="right">4.500</td>
+				  <td class="txt" align="right">3.902</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.033</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">61</td>
+				  <td class="txt">04/09/2023</td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">0.507</td>
+  				  <td class="txt" align="right">9.800</td>				  
+				  <td class="txt" align="right">10.100</td>
+				  <td class="txt" align="right">9.957</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.200</td>
+				  <td class="txt" align="right">3.900</td>
+  				  <td class="txt" align="right">1.613</td>				  
+				  <td class="txt" align="right">3.200</td>
+				  <td class="txt" align="right">4.300</td>
+				  <td class="txt" align="right">3.822</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.057</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">62</td>
+				  <td class="txt">05/09/2023</td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">0.700</td>
+				  <td class="txt" align="right">0.542</td>
+  				  <td class="txt" align="right">9.600</td>				  
+				  <td class="txt" align="right">10.000</td>
+				  <td class="txt" align="right">9.760</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">1.100</td>
+				  <td class="txt" align="right">27.700</td>
+  				  <td class="txt" align="right">3.433</td>				  
+				  <td class="txt" align="right">3.500</td>
+				  <td class="txt" align="right">4.700</td>
+				  <td class="txt" align="right">4.140</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.090</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">63</td>
+				  <td class="txt">06/09/2023</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">0.560</td>
+  				  <td class="txt" align="right">9.600</td>				  
+				  <td class="txt" align="right">9.800</td>
+				  <td class="txt" align="right">9.660</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.700</td>
+				  <td class="txt" align="right">6.800</td>
+  				  <td class="txt" align="right">2.696</td>				  
+				  <td class="txt" align="right">3.800</td>
+				  <td class="txt" align="right">4.600</td>
+				  <td class="txt" align="right">4.227</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.088</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">64</td>
+				  <td class="txt">07/09/2023</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">0.554</td>
+  				  <td class="txt" align="right">9.600</td>				  
+				  <td class="txt" align="right">9.700</td>
+				  <td class="txt" align="right">9.648</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">1.200</td>
+				  <td class="txt" align="right">6.100</td>
+  				  <td class="txt" align="right">2.612</td>				  
+				  <td class="txt" align="right">3.900</td>
+				  <td class="txt" align="right">4.700</td>
+				  <td class="txt" align="right">4.315</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.090</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">65</td>
+				  <td class="txt">08/09/2023</td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">0.700</td>
+				  <td class="txt" align="right">0.535</td>
+  				  <td class="txt" align="right">9.600</td>				  
+				  <td class="txt" align="right">10.300</td>
+				  <td class="txt" align="right">9.810</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.100</td>
+				  <td class="txt" align="right">5.000</td>
+  				  <td class="txt" align="right">1.781</td>				  
+				  <td class="txt" align="right">3.200</td>
+				  <td class="txt" align="right">4.500</td>
+				  <td class="txt" align="right">4.004</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.063</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">66</td>
+				  <td class="txt">09/09/2023</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">0.700</td>
+				  <td class="txt" align="right">0.565</td>
+  				  <td class="txt" align="right">9.600</td>				  
+				  <td class="txt" align="right">10.000</td>
+				  <td class="txt" align="right">9.710</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.300</td>
+				  <td class="txt" align="right">3.900</td>
+  				  <td class="txt" align="right">2.127</td>				  
+				  <td class="txt" align="right">3.400</td>
+				  <td class="txt" align="right">4.700</td>
+				  <td class="txt" align="right">4.183</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.200</td>				  
+  				  <td class="txt" align="right">0.083</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">67</td>
+				  <td class="txt">10/09/2023</td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">1.400</td>
+				  <td class="txt" align="right">0.558</td>
+  				  <td class="txt" align="right">9.700</td>				  
+				  <td class="txt" align="right">9.700</td>
+				  <td class="txt" align="right">9.700</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">3.900</td>
+  				  <td class="txt" align="right">2.283</td>				  
+				  <td class="txt" align="right">3.800</td>
+				  <td class="txt" align="right">4.700</td>
+				  <td class="txt" align="right">4.333</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.067</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">68</td>
+				  <td class="txt">11/09/2023</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">0.700</td>
+				  <td class="txt" align="right">0.581</td>
+  				  <td class="txt" align="right">9.600</td>				  
+				  <td class="txt" align="right">9.800</td>
+				  <td class="txt" align="right">9.719</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">3.600</td>
+  				  <td class="txt" align="right">1.956</td>				  
+				  <td class="txt" align="right">3.900</td>
+				  <td class="txt" align="right">4.900</td>
+				  <td class="txt" align="right">4.273</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.056</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">69</td>
+				  <td class="txt">12/09/2023</td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">0.800</td>
+				  <td class="txt" align="right">0.526</td>
+  				  <td class="txt" align="right">9.700</td>				  
+				  <td class="txt" align="right">10.300</td>
+				  <td class="txt" align="right">9.970</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.000</td>
+				  <td class="txt" align="right">3.600</td>
+  				  <td class="txt" align="right">1.355</td>				  
+				  <td class="txt" align="right">3.300</td>
+				  <td class="txt" align="right">4.500</td>
+				  <td class="txt" align="right">3.843</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.200</td>				  
+  				  <td class="txt" align="right">0.047</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">70</td>
+				  <td class="txt">13/09/2023</td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">0.498</td>
+  				  <td class="txt" align="right">9.900</td>				  
+				  <td class="txt" align="right">10.200</td>
+				  <td class="txt" align="right">10.010</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.300</td>
+				  <td class="txt" align="right">2.300</td>
+  				  <td class="txt" align="right">1.227</td>				  
+				  <td class="txt" align="right">3.300</td>
+				  <td class="txt" align="right">4.100</td>
+				  <td class="txt" align="right">3.756</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.019</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">71</td>
+				  <td class="txt">14/09/2023</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">0.700</td>
+				  <td class="txt" align="right">0.538</td>
+  				  <td class="txt" align="right">9.800</td>				  
+				  <td class="txt" align="right">10.000</td>
+				  <td class="txt" align="right">9.877</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">1.400</td>
+				  <td class="txt" align="right">3.100</td>
+  				  <td class="txt" align="right">2.365</td>				  
+				  <td class="txt" align="right">3.500</td>
+				  <td class="txt" align="right">4.300</td>
+				  <td class="txt" align="right">4.073</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.088</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">72</td>
+				  <td class="txt">15/09/2023</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">0.800</td>
+				  <td class="txt" align="right">0.581</td>
+  				  <td class="txt" align="right">9.700</td>				  
+				  <td class="txt" align="right">9.900</td>
+				  <td class="txt" align="right">9.762</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">1.800</td>
+				  <td class="txt" align="right">3.200</td>
+  				  <td class="txt" align="right">2.423</td>				  
+				  <td class="txt" align="right">3.900</td>
+				  <td class="txt" align="right">4.700</td>
+				  <td class="txt" align="right">4.354</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.067</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">73</td>
+				  <td class="txt">16/09/2023</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">1.000</td>
+				  <td class="txt" align="right">0.696</td>
+  				  <td class="txt" align="right">9.700</td>				  
+				  <td class="txt" align="right">9.700</td>
+				  <td class="txt" align="right">9.700</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">2.900</td>
+  				  <td class="txt" align="right">2.081</td>				  
+				  <td class="txt" align="right">3.900</td>
+				  <td class="txt" align="right">4.600</td>
+				  <td class="txt" align="right">4.298</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.070</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">74</td>
+				  <td class="txt">17/09/2023</td>
+				  <td class="txt" align="right">0.700</td>
+				  <td class="txt" align="right">1.000</td>
+				  <td class="txt" align="right">0.871</td>
+  				  <td class="txt" align="right">9.600</td>				  
+				  <td class="txt" align="right">10.200</td>
+				  <td class="txt" align="right">9.850</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.100</td>
+				  <td class="txt" align="right">2.800</td>
+  				  <td class="txt" align="right">1.415</td>				  
+				  <td class="txt" align="right">3.500</td>
+				  <td class="txt" align="right">4.700</td>
+				  <td class="txt" align="right">4.154</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.040</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">75</td>
+				  <td class="txt">18/09/2023</td>
+				  <td class="txt" align="right">0.700</td>
+				  <td class="txt" align="right">1.000</td>
+				  <td class="txt" align="right">0.817</td>
+  				  <td class="txt" align="right">9.700</td>				  
+				  <td class="txt" align="right">10.300</td>
+				  <td class="txt" align="right">10.027</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.100</td>
+				  <td class="txt" align="right">3.400</td>
+  				  <td class="txt" align="right">0.979</td>				  
+				  <td class="txt" align="right">3.300</td>
+				  <td class="txt" align="right">4.600</td>
+				  <td class="txt" align="right">3.977</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.025</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">76</td>
+				  <td class="txt">19/09/2023</td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">1.100</td>
+				  <td class="txt" align="right">0.760</td>
+  				  <td class="txt" align="right">9.900</td>				  
+				  <td class="txt" align="right">10.900</td>
+				  <td class="txt" align="right">10.235</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.000</td>
+				  <td class="txt" align="right">2.700</td>
+  				  <td class="txt" align="right">0.660</td>				  
+				  <td class="txt" align="right">3.200</td>
+				  <td class="txt" align="right">4.500</td>
+				  <td class="txt" align="right">3.965</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.015</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">77</td>
+				  <td class="txt">20/09/2023</td>
+				  <td class="txt" align="right">0.800</td>
+				  <td class="txt" align="right">1.200</td>
+				  <td class="txt" align="right">0.990</td>
+  				  <td class="txt" align="right">9.600</td>				  
+				  <td class="txt" align="right">10.100</td>
+				  <td class="txt" align="right">9.798</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.200</td>
+				  <td class="txt" align="right">2.400</td>
+  				  <td class="txt" align="right">1.279</td>				  
+				  <td class="txt" align="right">4.100</td>
+				  <td class="txt" align="right">5.400</td>
+				  <td class="txt" align="right">4.710</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.029</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">78</td>
+				  <td class="txt">21/09/2023</td>
+				  <td class="txt" align="right">0.700</td>
+				  <td class="txt" align="right">1.100</td>
+				  <td class="txt" align="right">0.873</td>
+  				  <td class="txt" align="right">9.900</td>				  
+				  <td class="txt" align="right">10.300</td>
+				  <td class="txt" align="right">10.027</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.300</td>
+				  <td class="txt" align="right">4.100</td>
+  				  <td class="txt" align="right">1.250</td>				  
+				  <td class="txt" align="right">4.000</td>
+				  <td class="txt" align="right">4.800</td>
+				  <td class="txt" align="right">4.398</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.021</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">79</td>
+				  <td class="txt">22/09/2023</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">0.900</td>
+				  <td class="txt" align="right">0.746</td>
+  				  <td class="txt" align="right">9.700</td>				  
+				  <td class="txt" align="right">9.900</td>
+				  <td class="txt" align="right">9.775</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">3.000</td>
+  				  <td class="txt" align="right">1.785</td>				  
+				  <td class="txt" align="right">4.100</td>
+				  <td class="txt" align="right">4.800</td>
+				  <td class="txt" align="right">4.508</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.060</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">80</td>
+				  <td class="txt">23/09/2023</td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">0.542</td>
+  				  <td class="txt" align="right">9.700</td>				  
+				  <td class="txt" align="right">11.400</td>
+				  <td class="txt" align="right">10.200</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.000</td>
+				  <td class="txt" align="right">3.700</td>
+  				  <td class="txt" align="right">1.083</td>				  
+				  <td class="txt" align="right">3.300</td>
+				  <td class="txt" align="right">4.800</td>
+				  <td class="txt" align="right">4.162</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.035</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">81</td>
+				  <td class="txt">24/09/2023</td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">0.465</td>
+  				  <td class="txt" align="right">10.500</td>				  
+				  <td class="txt" align="right">11.800</td>
+				  <td class="txt" align="right">10.888</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">-0.100</td>
+				  <td class="txt" align="right">2.000</td>
+  				  <td class="txt" align="right">0.583</td>				  
+				  <td class="txt" align="right">2.500</td>
+				  <td class="txt" align="right">4.400</td>
+				  <td class="txt" align="right">3.602</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.010</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">82</td>
+				  <td class="txt">25/09/2023</td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">0.700</td>
+				  <td class="txt" align="right">0.556</td>
+  				  <td class="txt" align="right">10.200</td>				  
+				  <td class="txt" align="right">11.700</td>
+				  <td class="txt" align="right">10.715</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.100</td>
+				  <td class="txt" align="right">2.000</td>
+  				  <td class="txt" align="right">0.931</td>				  
+				  <td class="txt" align="right">3.000</td>
+				  <td class="txt" align="right">4.300</td>
+				  <td class="txt" align="right">3.835</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.023</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">83</td>
+				  <td class="txt">26/09/2023</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">0.521</td>
+  				  <td class="txt" align="right">10.500</td>				  
+				  <td class="txt" align="right">11.300</td>
+				  <td class="txt" align="right">10.854</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.100</td>
+				  <td class="txt" align="right">2.500</td>
+  				  <td class="txt" align="right">1.133</td>				  
+				  <td class="txt" align="right">2.900</td>
+				  <td class="txt" align="right">4.200</td>
+				  <td class="txt" align="right">3.677</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.044</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">84</td>
+				  <td class="txt">27/09/2023</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">0.529</td>
+  				  <td class="txt" align="right">10.800</td>				  
+				  <td class="txt" align="right">11.200</td>
+				  <td class="txt" align="right">11.031</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.300</td>
+				  <td class="txt" align="right">3.100</td>
+  				  <td class="txt" align="right">1.650</td>				  
+				  <td class="txt" align="right">3.000</td>
+				  <td class="txt" align="right">4.100</td>
+				  <td class="txt" align="right">3.758</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.035</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">85</td>
+				  <td class="txt">28/09/2023</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">0.558</td>
+  				  <td class="txt" align="right">10.700</td>				  
+				  <td class="txt" align="right">12.000</td>
+				  <td class="txt" align="right">11.250</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.200</td>
+				  <td class="txt" align="right">3.400</td>
+  				  <td class="txt" align="right">1.915</td>				  
+				  <td class="txt" align="right">2.600</td>
+				  <td class="txt" align="right">4.100</td>
+				  <td class="txt" align="right">3.421</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.063</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">86</td>
+				  <td class="txt">29/09/2023</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">0.700</td>
+				  <td class="txt" align="right">0.621</td>
+  				  <td class="txt" align="right">10.100</td>				  
+				  <td class="txt" align="right">11.800</td>
+				  <td class="txt" align="right">10.556</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.300</td>
+				  <td class="txt" align="right">3.800</td>
+  				  <td class="txt" align="right">2.006</td>				  
+				  <td class="txt" align="right">2.600</td>
+				  <td class="txt" align="right">4.400</td>
+				  <td class="txt" align="right">3.859</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.200</td>				  
+  				  <td class="txt" align="right">0.078</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">87</td>
+				  <td class="txt">30/09/2023</td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">0.700</td>
+				  <td class="txt" align="right">0.590</td>
+  				  <td class="txt" align="right">9.900</td>				  
+				  <td class="txt" align="right">11.300</td>
+				  <td class="txt" align="right">10.244</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.000</td>
+				  <td class="txt" align="right">2.700</td>
+  				  <td class="txt" align="right">1.296</td>				  
+				  <td class="txt" align="right">3.200</td>
+				  <td class="txt" align="right">4.800</td>
+				  <td class="txt" align="right">4.196</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.200</td>				  
+  				  <td class="txt" align="right">0.046</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">88</td>
+				  <td class="txt">01/10/2023</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">0.700</td>
+				  <td class="txt" align="right">0.573</td>
+  				  <td class="txt" align="right">9.900</td>				  
+				  <td class="txt" align="right">10.400</td>
+				  <td class="txt" align="right">10.206</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">3.300</td>
+  				  <td class="txt" align="right">1.698</td>				  
+				  <td class="txt" align="right">3.500</td>
+				  <td class="txt" align="right">4.700</td>
+				  <td class="txt" align="right">3.983</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.058</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">89</td>
+				  <td class="txt">02/10/2023</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">0.510</td>
+  				  <td class="txt" align="right">10.200</td>				  
+				  <td class="txt" align="right">10.900</td>
+				  <td class="txt" align="right">10.415</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.300</td>
+				  <td class="txt" align="right">2.600</td>
+  				  <td class="txt" align="right">1.469</td>				  
+				  <td class="txt" align="right">3.500</td>
+				  <td class="txt" align="right">4.500</td>
+				  <td class="txt" align="right">4.002</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.054</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">90</td>
+				  <td class="txt">03/10/2023</td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">0.490</td>
+  				  <td class="txt" align="right">10.200</td>				  
+				  <td class="txt" align="right">11.400</td>
+				  <td class="txt" align="right">10.521</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.100</td>
+				  <td class="txt" align="right">2.900</td>
+  				  <td class="txt" align="right">0.869</td>				  
+				  <td class="txt" align="right">3.100</td>
+				  <td class="txt" align="right">4.200</td>
+				  <td class="txt" align="right">3.713</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.035</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">91</td>
+				  <td class="txt">04/10/2023</td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">0.458</td>
+  				  <td class="txt" align="right">10.500</td>				  
+				  <td class="txt" align="right">12.500</td>
+				  <td class="txt" align="right">11.002</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.000</td>
+				  <td class="txt" align="right">2.600</td>
+  				  <td class="txt" align="right">0.898</td>				  
+				  <td class="txt" align="right">2.700</td>
+				  <td class="txt" align="right">4.100</td>
+				  <td class="txt" align="right">3.515</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.023</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#F3F2F2">
+				  <td class="txt">92</td>
+				  <td class="txt">05/10/2023</td>
+				  <td class="txt" align="right">0.400</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">0.475</td>
+  				  <td class="txt" align="right">10.900</td>				  
+				  <td class="txt" align="right">11.500</td>
+				  <td class="txt" align="right">11.113</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.200</td>
+				  <td class="txt" align="right">2.600</td>
+  				  <td class="txt" align="right">1.267</td>				  
+				  <td class="txt" align="right">2.500</td>
+				  <td class="txt" align="right">3.900</td>
+				  <td class="txt" align="right">3.508</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.100</td>				  
+  				  <td class="txt" align="right">0.067</td>		  
+			  </tr>
+
+                            
+              	<tr bgcolor="#E4E2E1">
+				  <td class="txt">93</td>
+				  <td class="txt">06/10/2023</td>
+				  <td class="txt" align="right">0.500</td>
+				  <td class="txt" align="right">0.600</td>
+				  <td class="txt" align="right">0.554</td>
+  				  <td class="txt" align="right">10.900</td>				  
+				  <td class="txt" align="right">11.500</td>
+				  <td class="txt" align="right">11.135</td>
+				  <td class="txt" align="right"></td>
+  				  <td class="txt" align="right"></td>				  
+				  <td class="txt" align="right"></td>
+				  <td class="txt" align="right">0.800</td>
+				  <td class="txt" align="right">4.700</td>
+  				  <td class="txt" align="right">2.548</td>				  
+				  <td class="txt" align="right">2.700</td>
+				  <td class="txt" align="right">4.000</td>
+				  <td class="txt" align="right">3.592</td>
+  				  <td class="txt" align="right">0.000</td>				  
+  				  <td class="txt" align="right">0.200</td>				  
+  				  <td class="txt" align="right">0.094</td>		  
+			  </tr>
+
+                			  
+			  
+            </tbody>
+          </table>

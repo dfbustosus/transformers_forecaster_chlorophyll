@@ -1,0 +1,2 @@
+blocker,detail,required_action
+missing_foundation_model_predictions,No cache found at /Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/data/processed/foundation_model_predictions.csv and local baseline fallback is disabled.,"Run TimesFM/Chronos rolling-origin inference with `poetry run villarrica-run-foundation --config configs/project.toml`, or provide a validated cache at data/processed/foundation_model_predictions.csv."

@@ -1,0 +1,9 @@
+variable,unit,statistics,source_types,row_count
+chlorophyll_a,ug/L,max; mean; min,in_situ_buoy,4515
+dissolved_organic_matter,QSU,max; mean; min,in_situ_buoy,4515
+dissolved_oxygen,ppm,max; mean; min,in_situ_buoy,1833
+dissolved_oxygen_saturation,%,max; mean; min,in_situ_buoy,273
+pH,pH,max; mean; min,in_situ_buoy,1086
+phycocyanin,ug/L,max; mean; min,in_situ_buoy,4515
+turbidity,NTU,max; mean; min,in_situ_buoy,3462
+water_temperature,degC,max; mean; min,in_situ_buoy,4518

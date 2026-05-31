@@ -8,13 +8,13 @@ import pandas as pd
 
 from villarrica_forecaster.config import path_from_config
 from villarrica_forecaster.forecasting.evaluation import metric_summary
+from villarrica_forecaster.forecasting.foundation import load_foundation_daily_target
 from villarrica_forecaster.io import write_csv
 
 
 def build_cross_site_outputs(config: dict[str, Any]) -> dict[str, Path]:
-    processed_dir = path_from_config(config, "processed_data")
     tables_dir = path_from_config(config, "tables")
-    daily = pd.read_csv(processed_dir / "daily_chl_a.csv", parse_dates=["date"])
+    daily = load_foundation_daily_target(config)
     results = cross_site_dayofyear_transfer(
         daily, test_fraction=float(config["forecast"]["test_fraction"])
     )

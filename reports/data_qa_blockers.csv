@@ -1,8 +1,8 @@
 blocker_id,severity,scope,affected_rows,evidence,action,forecast_allowed
 station_assignment_hash_collision,P0,raw_to_canonical,3240,outputs/tables/raw_file_hash_collisions.csv,Quarantine identical raw files assigned to multiple stations until author confirms station provenance.,False
-imputation_dominates_daily_target,P0,la_poza,941,outputs/tables/preprocessing_footprint.csv,Do not present daily forecasts as observed-series forecasts; reduce target to observed/short-gap windows or explicitly label reconstruction-dominated sections.,False
+imputation_dominates_daily_target,P0,la_poza,527,outputs/tables/preprocessing_footprint.csv,Do not present daily forecasts as observed-series forecasts; reduce target to observed/short-gap windows or explicitly label reconstruction-dominated sections.,False
 cross_station_duplicate_model_dates,P0,la_poza,432,outputs/tables/cross_station_identical_values.csv,Exclude or author-confirm long cross-station identical runs before training/evaluating station-specific models.,False
-qc_replaced_direct_observations,P1,la_poza,432,outputs/tables/chlorophyll_spike_review.csv,"Review each excluded direct observation and classify as confirmed artifact, confirmed bloom, or unresolved.",False
-imputation_dominates_daily_target,P0,pucon,1099,outputs/tables/preprocessing_footprint.csv,Do not present daily forecasts as observed-series forecasts; reduce target to observed/short-gap windows or explicitly label reconstruction-dominated sections.,False
+qc_replaced_direct_observations,P1,la_poza,18,outputs/tables/chlorophyll_spike_review.csv,"Review each excluded direct observation and classify as confirmed artifact, confirmed bloom, or unresolved.",False
+imputation_dominates_daily_target,P0,pucon,685,outputs/tables/preprocessing_footprint.csv,Do not present daily forecasts as observed-series forecasts; reduce target to observed/short-gap windows or explicitly label reconstruction-dominated sections.,False
 cross_station_duplicate_model_dates,P0,pucon,432,outputs/tables/cross_station_identical_values.csv,Exclude or author-confirm long cross-station identical runs before training/evaluating station-specific models.,False
-qc_replaced_direct_observations,P1,pucon,508,outputs/tables/chlorophyll_spike_review.csv,"Review each excluded direct observation and classify as confirmed artifact, confirmed bloom, or unresolved.",False
+qc_replaced_direct_observations,P1,pucon,94,outputs/tables/chlorophyll_spike_review.csv,"Review each excluded direct observation and classify as confirmed artifact, confirmed bloom, or unresolved.",False

@@ -17,8 +17,9 @@ def build_workflow_figures(config: dict[str, Any]) -> dict[str, Path]:
     outputs: dict[str, Path] = {}
     for key, value in figure_02_preprocessing_workflow(config).items():
         outputs[f"figure_02_{key}"] = value
-    for key, value in figure_methodology_end_to_end(config).items():
-        outputs[f"figure_methodology_{key}"] = value
+    if bool(config.get("figures", {}).get("render_methodology_end_to_end", False)):
+        for key, value in figure_methodology_end_to_end(config).items():
+            outputs[f"figure_methodology_{key}"] = value
     return outputs
 
 
@@ -43,7 +44,7 @@ def figure_02_preprocessing_workflow(config: dict[str, Any]) -> dict[str, Path]:
             "source_data": str(mermaid_path),
             "style_css": str(css_path),
             "renderer": render_results,
-            "purpose": "Mermaid sequence-diagram recreation of manuscript Figure 2 for reviewer response R3.9, updated with code-backed provenance, QA gates, observed-preserving imputation, and forecast-blocking evidence.",
+            "purpose": "Publication-facing Mermaid sequence diagram for manuscript Figure 2, showing the reproducible Lake Villarrica Chl-a preprocessing, reconstruction, forecast-input, and evidence workflow.",
             "reviewer_comments_addressed": ["R1.3", "R1.4", "R3.5", "R3.9"],
         },
         metadata_path,
@@ -54,78 +55,72 @@ def figure_02_preprocessing_workflow(config: dict[str, Any]) -> dict[str, Path]:
 def figure_02_mermaid_source() -> str:
     """Return Mermaid source for the manuscript preprocessing sequence diagram."""
 
-    return """%%{init: {"theme": "base", "htmlLabels": true, "securityLevel": "loose", "themeVariables": {"fontFamily": "Inter, Arial, Helvetica, sans-serif", "fontSize": "16px", "primaryTextColor": "#0F172A", "lineColor": "#334155", "actorBkg": "#F8FAFC", "actorBorder": "#334155", "actorTextColor": "#0F172A", "activationBkgColor": "#E0F2FE", "activationBorderColor": "#0284C7", "noteBkgColor": "#FFF7ED", "noteBorderColor": "#F97316", "noteTextColor": "#431407"}, "sequence": {"diagramMarginX": 18, "diagramMarginY": 20, "actorMargin": 30, "messageMargin": 28, "mirrorActors": true, "bottomMarginAdj": 10, "useMaxWidth": true, "rightAngles": false}}}%%
+    return """%%{init: {"theme": "base", "htmlLabels": true, "securityLevel": "loose", "themeVariables": {"fontFamily": "Inter, Arial, Helvetica, sans-serif", "fontSize": "16px", "primaryTextColor": "#0F172A", "lineColor": "#334155", "actorBkg": "#F8FAFC", "actorBorder": "#334155", "actorTextColor": "#0F172A", "activationBkgColor": "#E0F2FE", "activationBorderColor": "#0284C7", "noteBkgColor": "#F8FAFC", "noteBorderColor": "#94A3B8", "noteTextColor": "#334155"}, "sequence": {"diagramMarginX": 18, "diagramMarginY": 18, "actorMargin": 32, "messageMargin": 28, "mirrorActors": true, "bottomMarginAdj": 10, "useMaxWidth": true, "rightAngles": false}}}%%
 sequenceDiagram
-    title Figure 2. Reproducible Chl-a preprocessing sequence and QA gate
+    title Figure 2. Reproducible preprocessing and forecast-input workflow for Lake Villarrica Chl-a
 
-    box rgba(255, 247, 237, 0.58) Raw data and provenance
-    participant RD as Raw data
-    participant IP as Ingestion<br/>provenance
+    box rgba(255, 247, 237, 0.58) Data acquisition and provenance
+    participant RD as Raw station<br/>workbooks
+    participant PV as Provenance<br/>registry
     end
 
     box rgba(239, 246, 255, 0.58) Canonical target construction
-    participant DT as Daily target<br/>builder
+    participant CN as Canonical<br/>observations
+    participant TG as Daily Chl-a<br/>target
     end
 
-    box rgba(245, 243, 255, 0.58) QA control and imputation
-    participant QG as Data-QA<br/>gate
-    participant IM as Imputation<br/>module
+    box rgba(245, 243, 255, 0.58) Gap-aware target reconstruction
+    participant RC as Reconstruction<br/>module
     end
 
-    box rgba(236, 253, 245, 0.58) Model readiness
-    participant FE as Feature builder
-    participant MI as Model input
+    box rgba(236, 253, 245, 0.58) Model input and reviewer evidence
+    participant FE as Feature and<br/>context builder
+    participant FM as TimesFM /<br/>Chronos
+    participant EV as Reproducible<br/>outputs
     end
 
-    RD->>IP: Submit immutable HTML-XLS/XLSX station workbooks
-    activate IP
-    IP->>IP: Discover HTML-XLS/XLSX files and infer station from path
-    IP->>IP: Compute SHA-256 hashes and retain file, sheet, row provenance
-    alt Pucón mixed Excel serial dates detected and chronological repair is valid
-        IP->>IP: Repair serial dates to Spanish DMY and preserve raw_date_value
-    else Dates parse cleanly
-        IP->>IP: Preserve parsed date and validation status
-    end
-    Note over IP: Evidence: data_inventory.csv<br/>raw_file_manifest.json<br/>mixed_date_encoding_audit.csv
-    IP->>DT: Emit canonical station-date-variable observations
-    deactivate IP
+    RD->>PV: Register immutable HTML-XLS/XLSX files from Pucón and La Poza
+    activate PV
+    PV->>PV: Assign station, sheet, row, and SHA-256 source provenance
+    PV->>PV: Harmonize date encodings and retain raw_date_value and date_parse_method
+    PV->>CN: Emit station-date-variable records with units and source lineage
+    deactivate PV
 
-    activate DT
-    DT->>DT: Normalize variables, statistics, units, and quality flags
-    DT->>DT: Apply is_model_eligible and model_exclusion_reason filters
-    DT->>DT: Aggregate station-day Chl-a means with source_count and source rows
-    DT->>DT: Mark observed, missing, duplicate, spike, and outlier states
-    Note over DT: Evidence: daily_chl_a.csv<br/>preprocessing_footprint.csv<br/>duplicate/spike review tables
-    DT->>QG: Submit daily target plus QA evidence
-    deactivate DT
+    activate CN
+    CN->>CN: Normalize Chl-a statistics, units, and quality flags
+    CN->>CN: Retain model-eligibility and exclusion metadata for every row
+    CN->>TG: Pass eligible Chl-a observations with provenance columns
+    deactivate CN
 
-    activate QG
-    alt P0 blockers remain unresolved
-        QG-->>MI: Block forecast reruns and manuscript model figures
-        Note over QG: Current status: forecasts stay blocked until QA is accepted.
-    else QA accepted for model construction
-        QG->>IM: Authorize observed-preserving 2024 reference construction
-    end
-    deactivate QG
+    activate TG
+    TG->>TG: Aggregate station-day means and source_count
+    TG->>TG: Preserve observed, missing, duplicate, spike, and outlier masks
+    TG->>RC: Send daily target plus preprocessing footprint
+    deactivate TG
 
-    activate IM
-    IM->>IM: Preserve direct 2024 observations exactly with no smoothing or overwriting
-    IM->>IM: Fill short bracketed gaps with PCHIP when both neighbors exist and gap ≤ 10 days
-    IM->>IM: Fill long gaps with prior-year circular DOY climatology, harmonic Huber fit, and analog residuals
-    IM->>IM: Apply boundary blending, cap imputed values only, and keep Savitzky-Golay out of final target
-    Note over IM: Evidence: realistic_imputed_chl_a_2024.csv<br/>realistic_imputation_diagnostics.csv<br/>realistic_imputation_validation.png/.svg
-    IM->>FE: Provide accepted target with imputation flags
-    deactivate IM
+    activate RC
+    RC->>RC: Preserve direct 2024 observations exactly
+    RC->>RC: Fill short bracketed gaps with PCHIP when neighboring observations exist
+    RC->>RC: Reconstruct long gaps from prior-year DOY climatology, harmonic Huber fit, and analog residuals
+    RC->>RC: Blend gap boundaries and cap imputed values only, with no smoothing in the final target
+    RC->>FE: Deliver accepted target with observed/imputed flags and uncertainty proxy
+    deactivate RC
 
     activate FE
-    FE->>FE: Add calendar and cyclical covariates without changing target values
-    FE->>MI: Build context windows, forecast horizons, and quantile contract
+    FE->>FE: Add calendar and cyclical covariates without changing Chl-a target values
+    FE->>FE: Build context windows, horizon grid, quantile contract, and cache schema
+    FE->>FM: Run rolling-origin foundation-model forecasts
     deactivate FE
 
-    activate MI
-    MI->>MI: Validate strict cache schema before TimesFM/Chronos forecast figures are regenerated
-    Note over MI: Model cache is regenerated only after QA acceptance.<br/>Reviewer matrix links each artifact to manuscript sections.
-    deactivate MI
+    activate FM
+    FM->>FM: Generate point and q10/q50/q90 forecasts for horizons 1–30 days
+    FM->>EV: Return predictions, interval estimates, and runtime metadata
+    deactivate FM
+
+    activate EV
+    EV->>EV: Export source tables, figures, diagnostics, and reviewer-response matrix
+    Note over EV: Outputs include data inventory, preprocessing footprint,<br/>realistic-imputation validation, forecast metrics, lag diagnostics,<br/>threshold metrics, uncertainty coverage, and figure source tables.
+    deactivate EV
 """
 
 
@@ -146,7 +141,7 @@ def _render_mermaid(
             "--cssFile",
             str(css_path),
             "--width",
-            "1500",
+            "1700",
         ],
         [
             *cli,
@@ -157,7 +152,7 @@ def _render_mermaid(
             "--backgroundColor",
             "white",
             "--width",
-            "1500",
+            "1700",
             "--scale",
             "2",
             "--cssFile",

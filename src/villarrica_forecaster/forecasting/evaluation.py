@@ -10,6 +10,7 @@ from villarrica_forecaster.config import path_from_config
 from villarrica_forecaster.forecasting.foundation import (
     empty_prediction_frame,
     foundation_cache_path,
+    load_foundation_daily_target,
     validate_foundation_prediction_table,
     write_forecast_origin_plan,
 )
@@ -53,7 +54,7 @@ def build_forecast_outputs(config: dict[str, Any]) -> dict[str, Path]:
     processed_dir = path_from_config(config, "processed_data")
     tables_dir = path_from_config(config, "tables")
     reports_dir = path_from_config(config, "reports")
-    daily = pd.read_csv(processed_dir / "daily_chl_a.csv", parse_dates=["date"])
+    daily = load_foundation_daily_target(config)
     origin_plan_paths = write_forecast_origin_plan(config)
     cached_path = foundation_cache_path(config)
     allow_baseline_fallback = bool(config["forecast"].get("allow_local_baseline_fallback", False))
@@ -128,6 +129,9 @@ def build_forecast_outputs(config: dict[str, Any]) -> dict[str, Path]:
             "horizons": config["forecast"]["horizons"],
             "prediction_length_days": config["forecast"].get("prediction_length_days", 30),
             "context_length_days": config["forecast"].get("context_length_days", 1024),
+            "use_realistic_imputation_reference": bool(
+                config["forecast"].get("use_realistic_imputation_reference", False)
+            ),
             "test_fraction": config["forecast"]["test_fraction"],
             "additional_reviewer_metrics": [
                 "outputs/tables/observed_only_forecast_metrics.csv",

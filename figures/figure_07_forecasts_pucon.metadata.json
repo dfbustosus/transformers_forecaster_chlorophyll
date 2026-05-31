@@ -1,0 +1,16 @@
+{
+  "created_utc": "2026-05-31T18:43:04+00:00",
+  "models_plotted": [
+    "TimesFM",
+    "Chronos Large"
+  ],
+  "origin_stride_days": 14,
+  "scientific_note": "Generated from validated rolling-origin foundation-model predictions only; styled to match the original manuscript trajectory panels.",
+  "script": "src/villarrica_forecaster/figures/forecast_figures.py",
+  "source_data": "/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/outputs/tables/figure_07_source.csv",
+  "station_id": "pucon",
+  "target_window": [
+    "2024-01-01",
+    "2024-12-31"
+  ]
+}

@@ -5,11 +5,7 @@ import subprocess
 from pathlib import Path
 from typing import Any
 
-import matplotlib.pyplot as plt
-from matplotlib.patches import FancyArrowPatch, FancyBboxPatch
-
 from villarrica_forecaster.config import path_from_config
-from villarrica_forecaster.figures.common import apply_manuscript_style, save_figure
 from villarrica_forecaster.io import utc_now_iso, write_json
 
 
@@ -17,9 +13,6 @@ def build_workflow_figures(config: dict[str, Any]) -> dict[str, Path]:
     outputs: dict[str, Path] = {}
     for key, value in figure_02_preprocessing_workflow(config).items():
         outputs[f"figure_02_{key}"] = value
-    if bool(config.get("figures", {}).get("render_methodology_end_to_end", False)):
-        for key, value in figure_methodology_end_to_end(config).items():
-            outputs[f"figure_methodology_{key}"] = value
     return outputs
 
 
@@ -188,80 +181,3 @@ def _mermaid_cli_command(repo_root: Path) -> list[str]:
         "Mermaid rendering requires node/npm. Install Node.js and run "
         "`npm install`, or provide a global `mmdc` executable."
     )
-
-
-def figure_methodology_end_to_end(config: dict[str, Any]) -> dict[str, Path]:
-    apply_manuscript_style()
-    fig, ax = plt.subplots(figsize=(12, 6.4))
-    ax.axis("off")
-    rows = [
-        [
-            "Raw acquisition\nstation spreadsheets",
-            "Data inventory\nhashes + date coverage",
-            "Canonical table\nstation/date/variable/value",
-            "Quality validation\nunits + plausibility flags",
-        ],
-        [
-            "Daily Chl-a series\nobserved/imputed masks",
-            "Preprocessing variants\noutlier/interp/climatology/SG",
-            "Forecast evaluation\nrolling origin horizons",
-            "Diagnostics\nlag, threshold, uncertainty",
-        ],
-        [
-            "Figures 4–7\nsource tables + vector exports",
-            "Reviewer matrix\nartifact-linked responses",
-            "Needs-author-input log\nmissing satellite/model inputs",
-            "Manuscript revisions\nclaim support or reduction",
-        ],
-    ]
-    for row_idx, row in enumerate(rows):
-        y = 0.78 - row_idx * 0.30
-        for col_idx, label in enumerate(row):
-            x = 0.05 + col_idx * 0.24
-            _box(ax, x, y, label, width=0.19, height=0.16)
-            if col_idx < len(row) - 1:
-                _arrow(ax, (x + 0.19, y + 0.08), (x + 0.24, y + 0.08))
-        if row_idx < len(rows) - 1:
-            _arrow(ax, (0.91, y), (0.05, y - 0.14), connectionstyle="arc3,rad=-0.35")
-    ax.set_title("End-to-end reproducible methodology for reviewer-resolution outputs")
-    return save_figure(
-        fig,
-        config,
-        "figure_methodology_end_to_end",
-        {
-            "script": "src/villarrica_forecaster/figures/workflows.py",
-            "purpose": "Methodology flowchart requested by Reviewer 3 comment 10.",
-        },
-    )
-
-
-def _box(ax: plt.Axes, x: float, y: float, text: str, width: float, height: float) -> None:
-    patch = FancyBboxPatch(
-        (x, y),
-        width,
-        height,
-        boxstyle="round,pad=0.018,rounding_size=0.018",
-        linewidth=1.1,
-        edgecolor="#2F4858",
-        facecolor="#E8F1F2",
-    )
-    ax.add_patch(patch)
-    ax.text(x + width / 2, y + height / 2, text, ha="center", va="center", linespacing=1.25)
-
-
-def _arrow(
-    ax: plt.Axes,
-    start: tuple[float, float],
-    end: tuple[float, float],
-    connectionstyle: str = "arc3,rad=0.0",
-) -> None:
-    arrow = FancyArrowPatch(
-        start,
-        end,
-        arrowstyle="-|>",
-        mutation_scale=12,
-        linewidth=1,
-        color="#33658A",
-        connectionstyle=connectionstyle,
-    )
-    ax.add_patch(arrow)

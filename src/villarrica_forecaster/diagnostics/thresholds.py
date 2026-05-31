@@ -7,14 +7,14 @@ import numpy as np
 import pandas as pd
 
 from villarrica_forecaster.config import path_from_config
+from villarrica_forecaster.forecasting.foundation import load_foundation_daily_target
 from villarrica_forecaster.io import write_csv
 
 
 def build_threshold_outputs(config: dict[str, Any]) -> dict[str, Path]:
     tables_dir = path_from_config(config, "tables")
-    processed_dir = path_from_config(config, "processed_data")
     predictions = pd.read_csv(tables_dir / "forecast_predictions_long.csv")
-    daily = pd.read_csv(processed_dir / "daily_chl_a.csv")
+    daily = load_foundation_daily_target(config)
     threshold = float(config["thresholds"]["chlorophyll_warning_ug_l"])
     direct_mask = predictions.get(
         "target_is_direct_observation", pd.Series(False, index=predictions.index)

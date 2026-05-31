@@ -108,13 +108,25 @@ def iter_forecast_origins(daily: pd.DataFrame, config: dict[str, Any]) -> list[F
     test_fraction = float(config["forecast"].get("test_fraction", 0.20))
     min_train = int(config["forecast"].get("minimum_training_days", 30))
     context_length = int(config["forecast"].get("context_length_days", 1024))
+    target_start = config["forecast"].get("evaluation_target_start")
+    target_end = config["forecast"].get("evaluation_target_end")
     origins: list[ForecastOrigin] = []
     for (station_id, station_name), station in daily.groupby(["station_id", "station_name"]):
         station = station.sort_values("date").reset_index(drop=True)
         if len(station) <= min_train + prediction_length:
             continue
-        test_start_pos = max(min_train, int(np.floor(len(station) * (1.0 - test_fraction))))
-        for origin_pos in range(test_start_pos - 1, len(station) - prediction_length):
+        if target_start and target_end:
+            origin_positions = _explicit_target_window_origin_positions(
+                station,
+                target_start=str(target_start),
+                target_end=str(target_end),
+                prediction_length=prediction_length,
+                min_train=min_train,
+            )
+        else:
+            test_start_pos = max(min_train, int(np.floor(len(station) * (1.0 - test_fraction))))
+            origin_positions = range(test_start_pos - 1, len(station) - prediction_length)
+        for origin_pos in origin_positions:
             context_start_pos = max(0, origin_pos - context_length + 1)
             origins.append(
                 ForecastOrigin(
@@ -131,6 +143,30 @@ def iter_forecast_origins(daily: pd.DataFrame, config: dict[str, Any]) -> list[F
                 )
             )
     return origins
+
+
+def _explicit_target_window_origin_positions(
+    station: pd.DataFrame,
+    *,
+    target_start: str,
+    target_end: str,
+    prediction_length: int,
+    min_train: int,
+) -> range:
+    dates = pd.to_datetime(station["date"])
+    target_start_ts = pd.Timestamp(target_start)
+    target_end_ts = pd.Timestamp(target_end)
+    origin_start_ts = target_start_ts - pd.Timedelta(days=prediction_length)
+    origin_end_ts = target_end_ts - pd.Timedelta(days=1)
+    start_candidates = station.index[dates.ge(origin_start_ts)]
+    end_candidates = station.index[dates.le(origin_end_ts)]
+    if start_candidates.empty or end_candidates.empty:
+        return range(0, 0)
+    start_pos = max(int(start_candidates.min()), min_train - 1)
+    end_pos = min(int(end_candidates.max()), len(station) - prediction_length - 1)
+    if end_pos < start_pos:
+        return range(0, 0)
+    return range(start_pos, end_pos + 1)
 
 
 def write_forecast_origin_plan(config: dict[str, Any]) -> dict[str, Path]:
@@ -308,14 +344,21 @@ def run_foundation_forecasts(
     run_id = f"foundation_{utc_now_iso().replace(':', '').replace('-', '').replace('+0000', 'Z')}"
     records: list[dict[str, Any]] = []
     for model in models:
+        print(
+            f"[{model['label']}] loading {model['family']} checkpoint {model['model_identifier']}",
+            flush=True,
+        )
         forecaster = _load_model(model, config)
+        print(f"[{model['label']}] model loaded", flush=True)
         records.extend(_predict_model_for_all_origins(forecaster, model, daily, config, run_id))
 
     predictions = pd.DataFrame.from_records(records, columns=PREDICTION_COLUMNS)
+    cache_path = foundation_cache_path(config)
     errors = validate_foundation_prediction_table(predictions, daily, run_config)
     if errors:
         raise RuntimeError("Invalid foundation prediction output: " + " | ".join(errors))
-    cache_path = foundation_cache_path(config)
+    if model_labels is not None and cache_path.exists():
+        predictions = _merge_with_existing_cache(predictions, cache_path)
     paths = {"foundation_model_predictions": write_csv(predictions, cache_path)}
     prediction_output_hash = _file_sha256(cache_path)
     paths["foundation_model_run_metadata"] = write_json(
@@ -348,14 +391,40 @@ def _predict_model_for_all_origins(
     prediction_length = int(config["forecast"].get("prediction_length_days", 30))
     context_length = int(config["forecast"].get("context_length_days", 1024))
     records: list[dict[str, Any]] = []
+    partial_path = _partial_prediction_path(config, model)
+    completed = _completed_partial_origins(partial_path, model, prediction_length)
+    if completed:
+        print(
+            f"[{model['label']}] resuming from {partial_path} with "
+            f"{len(completed)} completed origins",
+            flush=True,
+        )
     for (station_id, station_name), station in daily.groupby(["station_id", "station_name"]):
         station = station.sort_values("date").set_index("date")
         values = station["chl_a_model"].astype(float)
         origins = list(iter_forecast_origins(daily[daily["station_id"].eq(station_id)], config))
+        origins = [
+            origin
+            for origin in origins
+            if (station_id, str(model["label"]), origin.origin_date.date().isoformat())
+            not in completed
+        ]
         batch_size = int(
             model.get("batch_size", config["forecast"].get("foundation_batch_size", 8))
         )
-        for origin_batch in _chunks(origins, batch_size):
+        origin_batches = _chunks(origins, batch_size)
+        print(
+            f"[{model['label']}] {station_name}: {len(origins)} origins, "
+            f"{len(origin_batches)} batches, batch_size={batch_size}",
+            flush=True,
+        )
+        for batch_number, origin_batch in enumerate(origin_batches, start=1):
+            if batch_number == 1 or batch_number == len(origin_batches) or batch_number % 10 == 0:
+                print(
+                    f"[{model['label']}] {station_name}: running batch "
+                    f"{batch_number}/{len(origin_batches)}",
+                    flush=True,
+                )
             contexts = [
                 values.loc[: origin.origin_date].tail(context_length).to_numpy(dtype=float)
                 for origin in origin_batch
@@ -364,19 +433,24 @@ def _predict_model_for_all_origins(
                 contexts=contexts, prediction_length=prediction_length
             )
             for origin_index, origin in enumerate(origin_batch):
-                records.extend(
-                    _prediction_records_for_origin(
-                        batch_forecast=batch_forecast,
-                        origin_index=origin_index,
-                        origin=origin,
-                        station=station,
-                        station_id=station_id,
-                        station_name=station_name,
-                        model=model,
-                        run_id=run_id,
-                        prediction_length=prediction_length,
-                    )
+                records_for_origin = _prediction_records_for_origin(
+                    batch_forecast=batch_forecast,
+                    origin_index=origin_index,
+                    origin=origin,
+                    station=station,
+                    station_id=station_id,
+                    station_name=station_name,
+                    model=model,
+                    run_id=run_id,
+                    prediction_length=prediction_length,
                 )
+                records.extend(records_for_origin)
+                _append_partial_prediction_records(partial_path, records_for_origin)
+    if partial_path.exists():
+        partial = pd.read_csv(partial_path)
+        return partial[partial["model"].astype(str).eq(str(model["label"]))][
+            PREDICTION_COLUMNS
+        ].to_dict("records")
     return records
 
 
@@ -438,6 +512,51 @@ def _prediction_records_for_origin(
     return records
 
 
+def _merge_with_existing_cache(new_predictions: pd.DataFrame, cache_path: Path) -> pd.DataFrame:
+    existing = pd.read_csv(cache_path)
+    selected_models = set(new_predictions["model"].dropna().astype(str).unique())
+    existing = existing[~existing["model"].astype(str).isin(selected_models)].copy()
+    return pd.concat([existing, new_predictions], ignore_index=True)[PREDICTION_COLUMNS]
+
+
+def _partial_prediction_path(config: dict[str, Any], model: dict[str, Any]) -> Path:
+    label = str(model["label"]).lower().replace(" ", "_").replace("/", "_")
+    input_hash = _file_sha256(path_from_config(config, "processed_data") / "daily_chl_a.csv")[:12]
+    return (
+        path_from_config(config, "processed_data")
+        / f"foundation_model_predictions_{label}_{input_hash}_partial.csv"
+    )
+
+
+def _completed_partial_origins(
+    partial_path: Path, model: dict[str, Any], prediction_length: int
+) -> set[tuple[str, str, str]]:
+    if not partial_path.exists():
+        return set()
+    partial = pd.read_csv(partial_path)
+    if partial.empty:
+        return set()
+    partial = partial[partial["model"].astype(str).eq(str(model["label"]))].copy()
+    if partial.empty:
+        return set()
+    counts = partial.groupby(["station_id", "model", "origin_date"], dropna=False)[
+        "horizon"
+    ].nunique()
+    completed = counts[counts >= prediction_length]
+    return {
+        (str(station_id), str(model_label), str(origin_date))
+        for station_id, model_label, origin_date in completed.index
+    }
+
+
+def _append_partial_prediction_records(partial_path: Path, records: list[dict[str, Any]]) -> None:
+    if not records:
+        return
+    partial_path.parent.mkdir(parents=True, exist_ok=True)
+    frame = pd.DataFrame.from_records(records, columns=PREDICTION_COLUMNS)
+    frame.to_csv(partial_path, mode="a", header=not partial_path.exists(), index=False)
+
+
 class _TimesFmForecaster:
     def __init__(self, model: dict[str, Any], prediction_length: int, context_length: int) -> None:
         import timesfm
@@ -492,10 +611,13 @@ class _ChronosForecaster:
             "chronos-forecasting", "unknown"
         )
         self._num_samples = int(model.get("num_samples", 64))
+        dtype_name = str(model.get("precision", "float32"))
+        dtype = getattr(torch, dtype_name)
         self._pipeline = BaseChronosPipeline.from_pretrained(
             str(model["model_identifier"]),
             device_map=str(model.get("device", "cpu")),
-            torch_dtype=torch.float32,
+            torch_dtype=dtype,
+            low_cpu_mem_usage=True,
         )
 
     def predict_batch(

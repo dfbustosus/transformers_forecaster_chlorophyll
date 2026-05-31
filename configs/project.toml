@@ -18,12 +18,35 @@ path_tokens = ["la_poza", "la poza", "poza"]
 [preprocessing]
 chlorophyll_variable = "chlorophyll_a"
 statistic = "mean"
-interpolation_limit_days = 14
+interpolation_limit_days = 3
 iqr_multiplier = 1.5
 remove_iqr_outliers = false
 savgol_window_days = 11
 savgol_polyorder = 2
 use_smoothed_for_forecast = false
+compute_smoothed_variant = false
+climatology_window_days = 15
+climatology_min_observations = 3
+monthly_min_observations = 3
+climatology_temporality = "historical_only"
+spike_review_delta_ug_l = 15.0
+spike_review_ratio = 8.0
+high_chl_threshold_ug_l = 10.0
+bloom_range_threshold_ug_l = 30.0
+strict_outlier_quarantine = true
+quarantine_iqr_high_chl = true
+quarantine_bloom_range = true
+quarantine_cross_station_duplicates = true
+quarantine_abrupt_transitions = true
+realistic_imputation_start = "2024-01-01"
+realistic_imputation_end = "2024-12-31"
+realistic_imputation_doy_bandwidth_days = 24
+realistic_imputation_short_gap_days = 10
+realistic_imputation_harmonics = 4
+realistic_imputation_analog_residual_weight = 0.28
+realistic_imputation_cap_quantile = 0.97
+realistic_imputation_cap_multiplier = 1.12
+realistic_imputation_boundary_blend_days = 21
 
 [forecast]
 horizons = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
@@ -38,6 +61,11 @@ allow_local_baseline_fallback = false
 foundation_prediction_cache = "data/processed/foundation_model_predictions.csv"
 require_foundation_predictions_for_manuscript_figures = true
 foundation_batch_size = 8
+evaluation_target_start = "2024-01-01"
+evaluation_target_end = "2024-12-31"
+trajectory_figure_target_start = "2024-01-01"
+trajectory_figure_target_end = "2024-12-31"
+block_forecasts_on_data_qa = true
 
 [foundation_models.timesfm_2_0_500m]
 enabled = true
@@ -54,10 +82,11 @@ enabled = true
 label = "Chronos Large"
 family = "chronos"
 model_identifier = "amazon/chronos-t5-large"
-device = "cpu"
-num_samples = 64
+device = "mps"
+precision = "float32"
+num_samples = 16
 quantiles = [0.1, 0.5, 0.9]
-batch_size = 4
+batch_size = 1
 
 [thresholds]
 chlorophyll_warning_ug_l = 10.0

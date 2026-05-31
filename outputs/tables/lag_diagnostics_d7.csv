@@ -1,1 +1,5 @@
 station_id,station_name,model,horizon,best_lag_days,best_lag_correlation,lag0_correlation,best_correlation_occurs_at_lag0,peak_date_error_days,event_onset_error_days_at_threshold,threshold_ug_l
+la_poza,La Poza,Chronos Large,7,0,0.7837925769017849,0.7837925769017849,True,14.0,,10.0
+la_poza,La Poza,TimesFM,7,0,0.7737245559565771,0.7737245559565771,True,14.0,,10.0
+pucon,Pucón,Chronos Large,7,-14,0.7900059378699783,0.742921053246176,False,14.0,,10.0
+pucon,Pucón,TimesFM,7,0,0.8600108510971541,0.8600108510971541,True,14.0,,10.0

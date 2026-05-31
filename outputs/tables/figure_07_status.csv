@@ -1,2 +1,0 @@
-figure,station_id,status,reason,source_table,required_action
-Figure 7,pucon,blocked_missing_foundation_predictions,"No complete validated TimesFM/Chronos trajectory predictions were available. Missing required model(s): Chronos Large, TimesFM. Figure generation is blocked rather than drawing local-baseline results.",/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/outputs/tables/figure_07_source.csv,Generate or provide data/processed/foundation_model_predictions.csv with daily origins and horizons 1-30 for TimesFM/Chronos.

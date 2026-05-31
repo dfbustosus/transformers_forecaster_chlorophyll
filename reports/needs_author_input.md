@@ -10,7 +10,7 @@ The reproducible local repository is missing evidence required for several manus
 
 ## Foundation-model forecast recreation
 
-Figures 4–7 in the current manuscript name TimesFM and Chronos variants. The current repository does not contain cached TimesFM/Chronos prediction tables or the optional heavyweight model runtime. In strict manuscript mode the pipeline now blocks Figures 4–7 and writes forecast_model_blockers.csv instead of substituting local baseline forecasts. Cached predictions or executable model dependencies are required for TimesFM/Chronos claims.
+Figures 4–7 are now regenerated from cached TimesFM and Chronos Large rolling-origin predictions produced from the local processed Chl-a series. The cache is stored at data/processed/foundation_model_predictions.csv. Chronos Large was executed on MPS with 16 samples for tractable local inference; this setting should be disclosed for uncertainty-interval interpretation.
 
 ## Historical monitoring record
 

@@ -1,65 +1,72 @@
-%%{init: {"theme": "base", "htmlLabels": true, "securityLevel": "loose", "themeVariables": {"fontFamily": "Inter, Arial, Helvetica, sans-serif", "fontSize": "19px", "primaryTextColor": "#102033", "lineColor": "#47637A", "clusterBkg": "#F8FAFC", "clusterBorder": "#CBD5E1"}, "flowchart": {"diagramPadding": 22, "nodeSpacing": 38, "rankSpacing": 58, "curve": "basis", "useMaxWidth": true}}}%%
-flowchart TB
-    accTitle: Figure 2 preprocessing workflow
-    accDescr: Reproducible Villarrica chlorophyll preprocessing workflow with raw-data provenance, date repair, QA gates, observed-preserving imputation, and forecast blocking.
+%%{init: {"theme": "base", "htmlLabels": true, "securityLevel": "loose", "themeVariables": {"fontFamily": "Inter, Arial, Helvetica, sans-serif", "fontSize": "16px", "primaryTextColor": "#0F172A", "lineColor": "#334155", "actorBkg": "#F8FAFC", "actorBorder": "#334155", "actorTextColor": "#0F172A", "activationBkgColor": "#E0F2FE", "activationBorderColor": "#0284C7", "noteBkgColor": "#FFF7ED", "noteBorderColor": "#F97316", "noteTextColor": "#431407"}, "sequence": {"diagramMarginX": 18, "diagramMarginY": 20, "actorMargin": 30, "messageMargin": 28, "mirrorActors": true, "bottomMarginAdj": 10, "useMaxWidth": true, "rightAngles": false}}}%%
+sequenceDiagram
+    title Figure 2. Reproducible Chl-a preprocessing sequence and QA gate
 
-    classDef raw fill:#FFF7ED,stroke:#F97316,color:#102033,stroke-width:2px;
-    classDef canonical fill:#EFF6FF,stroke:#2563EB,color:#102033,stroke-width:2px;
-    classDef qa fill:#F0FDFA,stroke:#0F766E,color:#102033,stroke-width:2px;
-    classDef gate fill:#FEF3C7,stroke:#D97706,color:#102033,stroke-width:2.5px;
-    classDef blocker fill:#FFF1F2,stroke:#E11D48,color:#102033,stroke-width:2px;
-    classDef impute fill:#F5F3FF,stroke:#7C3AED,color:#102033,stroke-width:2px;
-    classDef output fill:#ECFDF5,stroke:#16A34A,color:#102033,stroke-width:2px;
-    classDef note fill:#F8FAFC,stroke:#64748B,color:#334155,stroke-width:1.5px,stroke-dasharray: 5 4;
-
-    subgraph A["01 · Raw data and provenance"]
-        direction LR
-        A1["<b>Immutable raw station files</b><br/>HTML-XLS/XLSX under <code>raw_data/</code><br/><span class='small'>Pucón and La Poza source workbooks</span>"]:::raw
-        A2["<b>Source inventory</b><br/>SHA-256 hash · sheet · row count<br/>station/date coverage"]:::raw
-        A3["<b>Date provenance repair</b><br/>Pucón Excel serials repaired to Spanish DMY<br/><span class='small'>row-level <code>raw_date_value</code> retained</span>"]:::raw
+    box rgba(255, 247, 237, 0.58) Raw data and provenance
+    participant RD as Raw data
+    participant IP as Ingestion<br/>provenance
     end
 
-    subgraph B["02 · Canonical observation layer"]
-        direction LR
-        B1["<b>Canonical long table</b><br/>station · date · variable · statistic · value · unit"]:::canonical
-        B2["<b>Unit and validity checks</b><br/>sentinel −99 · negative values · implausible ranges"]:::canonical
-        B3["<b>Model-eligibility flags</b><br/>hash collisions, unresolved dates, invalid values<br/>excluded from model inputs"]:::canonical
+    box rgba(239, 246, 255, 0.58) Canonical target construction
+    participant DT as Daily target<br/>builder
     end
 
-    subgraph C["03 · Daily Chl-a target and QA gate"]
-        direction LR
-        C1["<b>Daily Chl-a aggregation</b><br/>station/day means with source rows/files<br/><code>is_observed</code> and <code>source_count</code>"]:::qa
-        C2{{"<b>Data-QA gate</b><br/>forecast allowed only if blockers are cleared"}}:::gate
-        C3["<b>Blocking evidence</b><br/>mixed-date audit · duplicate station values<br/>imputation dominance · spike review"]:::blocker
+    box rgba(245, 243, 255, 0.58) QA control and imputation
+    participant QG as Data-QA<br/>gate
+    participant IM as Imputation<br/>module
     end
 
-    subgraph D["04 · Observed-preserving 2024 imputation"]
-        direction LR
-        D1["<b>Observed values preserved</b><br/>direct measurements are never smoothed<br/>or overwritten"]:::impute
-        D2["<b>Short gaps</b><br/>bracketed PCHIP only when both neighbours exist<br/>and gap length ≤ 10 days"]:::impute
-        D3["<b>Long gaps</b><br/>prior-year circular DOY climatology<br/>+ harmonic Huber fit + analog residuals"]:::impute
-        D4["<b>Controls</b><br/>21-day boundary blending · cap imputed values only<br/>no Savitzky–Golay in final target"]:::impute
+    box rgba(236, 253, 245, 0.58) Model readiness
+    participant FE as Feature builder
+    participant MI as Model input
     end
 
-    subgraph E["05 · Reviewer-ready outputs and model input"]
-        direction LR
-        E1["<b>Preprocessing evidence tables</b><br/><code>preprocessing_footprint.csv</code><br/><code>mixed_date_encoding_audit.csv</code>"]:::output
-        E2["<b>Imputation validation figure</b><br/><code>realistic_imputation_validation.png/.svg</code><br/>observed vs imputed series"]:::output
-        E3["<b>Model input contract</b><br/>context windows, horizons, quantiles<br/>forecasting remains blocked until QA acceptance"]:::output
+    RD->>IP: Submit immutable HTML-XLS/XLSX station workbooks
+    activate IP
+    IP->>IP: Discover HTML-XLS/XLSX files and infer station from path
+    IP->>IP: Compute SHA-256 hashes and retain file, sheet, row provenance
+    alt Pucón mixed Excel serial dates detected and chronological repair is valid
+        IP->>IP: Repair serial dates to Spanish DMY and preserve raw_date_value
+    else Dates parse cleanly
+        IP->>IP: Preserve parsed date and validation status
     end
+    Note over IP: Evidence: data_inventory.csv<br/>raw_file_manifest.json<br/>mixed_date_encoding_audit.csv
+    IP->>DT: Emit canonical station-date-variable observations
+    deactivate IP
 
-    A1 --> A2 --> A3
-    B1 --> B2 --> B3
-    C1 --> C2
-    D1 --> D2 --> D3 --> D4
-    E1 --> E2 --> E3
+    activate DT
+    DT->>DT: Normalize variables, statistics, units, and quality flags
+    DT->>DT: Apply is_model_eligible and model_exclusion_reason filters
+    DT->>DT: Aggregate station-day Chl-a means with source_count and source rows
+    DT->>DT: Mark observed, missing, duplicate, spike, and outlier states
+    Note over DT: Evidence: daily_chl_a.csv<br/>preprocessing_footprint.csv<br/>duplicate/spike review tables
+    DT->>QG: Submit daily target plus QA evidence
+    deactivate DT
 
-    A3 --> B1
-    B3 --> C1
-    C2 -- "pass / author accepted" --> D1
-    D4 --> E1
-    C2 -- "blocker found" --> C3 -. "do not rerun forecasts" .-> E3
+    activate QG
+    alt P0 blockers remain unresolved
+        QG-->>MI: Block forecast reruns and manuscript model figures
+        Note over QG: Current status: forecasts stay blocked until QA is accepted.
+    else QA accepted for model construction
+        QG->>IM: Authorize observed-preserving 2024 reference construction
+    end
+    deactivate QG
 
-    N1["<b>Reviewer risk addressed</b><br/>R1.3/R1.4/R3.5: provenance, observed/imputed proportions,<br/>imputation footprint, and leakage-aware forecast gating"]:::note
-    C3 -.-> N1
-    E2 -.-> N1
+    activate IM
+    IM->>IM: Preserve direct 2024 observations exactly with no smoothing or overwriting
+    IM->>IM: Fill short bracketed gaps with PCHIP when both neighbors exist and gap ≤ 10 days
+    IM->>IM: Fill long gaps with prior-year circular DOY climatology, harmonic Huber fit, and analog residuals
+    IM->>IM: Apply boundary blending, cap imputed values only, and keep Savitzky-Golay out of final target
+    Note over IM: Evidence: realistic_imputed_chl_a_2024.csv<br/>realistic_imputation_diagnostics.csv<br/>realistic_imputation_validation.png/.svg
+    IM->>FE: Provide accepted target with imputation flags
+    deactivate IM
+
+    activate FE
+    FE->>FE: Add calendar and cyclical covariates without changing target values
+    FE->>MI: Build context windows, forecast horizons, and quantile contract
+    deactivate FE
+
+    activate MI
+    MI->>MI: Validate strict cache schema before TimesFM/Chronos forecast figures are regenerated
+    Note over MI: Model cache is regenerated only after QA acceptance.<br/>Reviewer matrix links each artifact to manuscript sections.
+    deactivate MI

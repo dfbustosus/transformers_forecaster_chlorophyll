@@ -23,7 +23,7 @@ def build_workflow_figures(config: dict[str, Any]) -> dict[str, Path]:
 
 
 def figure_02_preprocessing_workflow(config: dict[str, Any]) -> dict[str, Path]:
-    """Write and render Figure 2 from Mermaid sequence-diagram source."""
+    """Write and render Figure 2 from a Mermaid sequence-diagram source."""
 
     figures_dir = path_from_config(config, "figures")
     figures_dir.mkdir(parents=True, exist_ok=True)
@@ -33,6 +33,7 @@ def figure_02_preprocessing_workflow(config: dict[str, Any]) -> dict[str, Path]:
     png_path = figures_dir / f"{stem}.png"
     metadata_path = figures_dir / f"{stem}.metadata.json"
     css_path = Path(config["_repo_root"]) / "configs" / "figure_02_mermaid.css"
+
     mermaid_path.write_text(figure_02_mermaid_source(), encoding="utf-8")
     render_results = _render_mermaid(mermaid_path, svg_path, png_path, css_path, config)
     write_json(
@@ -41,8 +42,9 @@ def figure_02_preprocessing_workflow(config: dict[str, Any]) -> dict[str, Path]:
             "script": "src/villarrica_forecaster/figures/workflows.py",
             "source_data": str(mermaid_path),
             "style_css": str(css_path),
-            "purpose": "Mermaid sequence-diagram recreation of manuscript Figure 2 for reviewer response R3.9.",
             "renderer": render_results,
+            "purpose": "Mermaid sequence-diagram recreation of manuscript Figure 2 for reviewer response R3.9, updated with code-backed provenance, QA gates, observed-preserving imputation, and forecast-blocking evidence.",
+            "reviewer_comments_addressed": ["R1.3", "R1.4", "R3.5", "R3.9"],
         },
         metadata_path,
     )
@@ -50,59 +52,85 @@ def figure_02_preprocessing_workflow(config: dict[str, Any]) -> dict[str, Path]:
 
 
 def figure_02_mermaid_source() -> str:
-    """Return Mermaid source for the manuscript-style preprocessing sequence diagram."""
+    """Return Mermaid source for the manuscript preprocessing sequence diagram."""
 
-    return """%%{init: {"theme": "base", "themeVariables": {"fontFamily": "Arial", "fontSize": "18px", "primaryColor": "#F7FBFF", "primaryBorderColor": "#2F4858", "primaryTextColor": "#1F2933", "lineColor": "#33658A", "actorBorder": "#2F4858", "actorBkg": "#E8F1F2", "actorTextColor": "#1F2933", "activationBkgColor": "#D7EAF3", "activationBorderColor": "#33658A", "noteBkgColor": "#FFF3BF", "noteBorderColor": "#E0A800"}, "sequence": {"diagramMarginX": 18, "diagramMarginY": 18, "actorMargin": 38, "messageMargin": 40, "mirrorActors": true, "bottomMarginAdj": 12, "useMaxWidth": true, "rightAngles": false}}}%%
+    return """%%{init: {"theme": "base", "htmlLabels": true, "securityLevel": "loose", "themeVariables": {"fontFamily": "Inter, Arial, Helvetica, sans-serif", "fontSize": "17px", "primaryTextColor": "#0F172A", "lineColor": "#334155", "actorBkg": "#F8FAFC", "actorBorder": "#334155", "actorTextColor": "#0F172A", "activationBkgColor": "#E0F2FE", "activationBorderColor": "#0284C7", "noteBkgColor": "#FFF7ED", "noteBorderColor": "#F97316", "noteTextColor": "#431407", "sequenceNumberColor": "#FFFFFF", "sequenceNumberBackground": "#334155"}, "sequence": {"diagramMarginX": 28, "diagramMarginY": 24, "actorMargin": 46, "messageMargin": 34, "mirrorActors": true, "bottomMarginAdj": 12, "useMaxWidth": true, "rightAngles": false}}}%%
 sequenceDiagram
+    title Figure 2. Reproducible Chl-a preprocessing workflow and QA gate
     autonumber
-    box rgba(232, 241, 242, 0.75) Data acquisition and provenance
-    participant RD as Raw Data
-    participant PP as Preprocessor
-    end
-    box rgba(255, 243, 191, 0.65) Gap handling and signal processing
-    participant IM as Imputation Module
-    participant SF as Signal Filter
-    end
-    box rgba(214, 234, 248, 0.70) Feature/model input construction
-    participant FE as Feature Engineer
-    participant TR as Transformer
-    participant MI as Model Input
+
+    box rgba(255, 247, 237, 0.82) 01 · Raw files and provenance
+    participant RD as Raw station files
+    participant IP as Ingestion and provenance
     end
 
-    rect rgba(232, 241, 242, 0.35)
-    RD->>PP: Tabular time series with station/date/value fields
-    activate PP
-    PP->>PP: Parse dates, normalize units, and validate flags
-    PP->>PP: Resample to daily frequency
-    PP->>PP: Identify missing days and invalid sentinel values
+    box rgba(239, 246, 255, 0.82) 02 · Canonical observation layer
+    participant CQ as Canonical QA
+    participant DT as Daily Chl-a target
     end
-    rect rgba(255, 243, 191, 0.35)
-    PP->>IM: Request gap filling for missing daily values
+
+    box rgba(245, 243, 255, 0.86) 03 · Observed-preserving imputation
+    participant IM as Imputation module
+    participant QG as Data-QA gate
+    end
+
+    box rgba(236, 253, 245, 0.82) 04 · Model readiness and reviewer evidence
+    participant MI as Model input contract
+    participant EV as Reviewer evidence
+    end
+
+    RD->>IP: Submit immutable station workbooks from raw_data/
+    activate IP
+    IP->>IP: Discover HTML-XLS/XLSX files; infer station from path
+    IP->>IP: Compute SHA-256 hashes; retain source_file, sheet, and source_row
+    alt Pucón mixed Excel serial dates detected and chronological repair is valid
+        IP->>IP: Repair serial dates to Spanish DMY; preserve raw_date_value and date_parse_method
+    else Source dates parse cleanly
+        IP->>IP: Preserve parsed date and validation status without repair
+    end
+    IP-->>EV: Write data_inventory.csv, raw_file_manifest.json, mixed_date_encoding_audit.csv
+    IP->>CQ: Emit canonical station-date-variable observations
+    deactivate IP
+
+    activate CQ
+    CQ->>CQ: Normalize variables, statistics, and units
+    CQ->>CQ: Flag sentinel -99, negative values, and implausible ranges
+    CQ->>CQ: Set is_model_eligible and model_exclusion_reason
+    CQ->>DT: Pass eligible chlorophyll-a mean observations only
+    deactivate CQ
+
+    activate DT
+    DT->>DT: Aggregate station-day Chl-a means with source_count and source rows
+    DT->>DT: Build daily calendar; mark observed, missing, duplicate, spike, and outlier states
+    DT-->>EV: Write preprocessing_footprint.csv, duplicate/spike review tables, and data_qa_blockers.csv
+    DT->>QG: Submit daily target plus QA evidence
+    deactivate DT
+
+    activate QG
+    alt P0 blockers remain unresolved
+        QG-->>MI: Block forecast reruns and manuscript model figures
+        Note over QG,MI: Current local status: forecasts remain blocked until station/date/imputation QA is accepted.
+    else QA accepted for model construction
+        QG->>IM: Authorize observed-preserving 2024 reference construction
+    end
+    deactivate QG
+
     activate IM
-    IM->>IM: Compute day-of-year or monthly baseline from available history
-    IM-->>PP: Return filled series with imputation_method flags
+    IM->>IM: Preserve direct 2024 observations exactly; no smoothing or overwriting
+    IM->>IM: Fill short bracketed gaps with PCHIP when both neighbors exist and gap ≤ 10 days
+    IM->>IM: Fill long gaps with prior-year circular DOY climatology, harmonic Huber fit, and analog residuals
+    IM->>IM: Apply boundary blending; cap imputed values only; keep Savitzky-Golay out of final target
+    IM-->>EV: Write realistic_imputed_chl_a_2024.csv, diagnostics, and validation figure/source table
+    IM->>MI: Provide target only after QA acceptance
     deactivate IM
-    PP->>PP: Preserve observed-value and source-count masks
-    PP->>SF: Send filled series for optional smoothing
-    deactivate PP
-    activate SF
-    SF->>SF: Apply Savitzky-Golay filter when configured
-    SF-->>FE: Return processed series plus smoothing flags
-    deactivate SF
-    end
-    rect rgba(214, 234, 248, 0.35)
-    activate FE
-    FE->>FE: Add calendar, day-of-year, and cyclical encodings
-    FE->>TR: Request model-ready normalization
-    deactivate FE
-    activate TR
-    TR->>TR: Check variance and optional log transform
-    TR->>MI: Build context window and forecast horizon tensors
-    deactivate TR
+
     activate MI
-    MI->>MI: Store model input with provenance and preprocessing masks
+    MI->>MI: Add calendar/cyclical covariates and define context windows, horizons, and quantiles
+    MI->>MI: Validate strict cache schema before TimesFM/Chronos forecast figures are regenerated
+    MI-->>EV: Link artifacts to reviewer_response_matrix.csv and manuscript sections
     deactivate MI
-    end
+
+    Note over RD,EV: Every value keeps provenance: raw file, sheet, row, date parse method, observed/imputed flag, imputation method, and model eligibility.
 """
 
 
@@ -123,7 +151,7 @@ def _render_mermaid(
             "--cssFile",
             str(css_path),
             "--width",
-            "1600",
+            "1900",
         ],
         [
             *cli,
@@ -134,7 +162,7 @@ def _render_mermaid(
             "--backgroundColor",
             "white",
             "--width",
-            "1600",
+            "1900",
             "--scale",
             "2",
             "--cssFile",

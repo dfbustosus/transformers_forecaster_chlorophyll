@@ -1,1 +1,121 @@
 station_id,station_name,model,horizon,threshold_ug_l,n,true_positive,false_positive,true_negative,false_negative,sensitivity_pod,specificity_tnr,precision_ppv,f1_score,false_alarm_ratio,missed_event_rate,overall_accuracy,observed_event_count,predicted_event_count,truth_scope
+la_poza,La Poza,Chronos Large,1,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,Chronos Large,2,10.0,6,0,0,6,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,Chronos Large,3,10.0,6,0,0,6,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,Chronos Large,4,10.0,6,0,0,6,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,Chronos Large,5,10.0,6,0,0,6,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,Chronos Large,6,10.0,6,0,0,6,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,Chronos Large,7,10.0,6,0,0,6,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,Chronos Large,8,10.0,6,0,0,6,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,Chronos Large,9,10.0,6,0,0,6,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,Chronos Large,10,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,Chronos Large,11,10.0,6,0,0,6,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,Chronos Large,12,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,Chronos Large,13,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,Chronos Large,14,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,Chronos Large,15,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,Chronos Large,16,10.0,6,0,0,6,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,Chronos Large,17,10.0,6,0,0,6,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,Chronos Large,18,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,Chronos Large,19,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,Chronos Large,20,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,Chronos Large,21,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,Chronos Large,22,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,Chronos Large,23,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,Chronos Large,24,10.0,8,0,0,8,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,Chronos Large,25,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,Chronos Large,26,10.0,8,0,0,8,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,Chronos Large,27,10.0,8,0,0,8,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,Chronos Large,28,10.0,8,0,0,8,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,Chronos Large,29,10.0,8,0,0,8,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,Chronos Large,30,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,TimesFM,1,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,TimesFM,2,10.0,6,0,0,6,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,TimesFM,3,10.0,6,0,0,6,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,TimesFM,4,10.0,6,0,0,6,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,TimesFM,5,10.0,6,0,0,6,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,TimesFM,6,10.0,6,0,0,6,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,TimesFM,7,10.0,6,0,0,6,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,TimesFM,8,10.0,6,0,0,6,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,TimesFM,9,10.0,6,0,0,6,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,TimesFM,10,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,TimesFM,11,10.0,6,0,0,6,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,TimesFM,12,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,TimesFM,13,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,TimesFM,14,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,TimesFM,15,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,TimesFM,16,10.0,6,0,0,6,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,TimesFM,17,10.0,6,0,0,6,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,TimesFM,18,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,TimesFM,19,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,TimesFM,20,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,TimesFM,21,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,TimesFM,22,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,TimesFM,23,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,TimesFM,24,10.0,8,0,0,8,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,TimesFM,25,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,TimesFM,26,10.0,8,0,0,8,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,TimesFM,27,10.0,8,0,0,8,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,TimesFM,28,10.0,8,0,0,8,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,TimesFM,29,10.0,8,0,0,8,0,,1.0,,,,,1.0,0,0,observed_targets_only
+la_poza,La Poza,TimesFM,30,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,Chronos Large,1,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,Chronos Large,2,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,Chronos Large,3,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,Chronos Large,4,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,Chronos Large,5,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,Chronos Large,6,10.0,6,0,0,6,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,Chronos Large,7,10.0,6,0,0,6,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,Chronos Large,8,10.0,6,0,0,6,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,Chronos Large,9,10.0,6,0,0,6,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,Chronos Large,10,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,Chronos Large,11,10.0,6,0,0,6,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,Chronos Large,12,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,Chronos Large,13,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,Chronos Large,14,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,Chronos Large,15,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,Chronos Large,16,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,Chronos Large,17,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,Chronos Large,18,10.0,8,0,0,8,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,Chronos Large,19,10.0,8,0,0,8,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,Chronos Large,20,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,Chronos Large,21,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,Chronos Large,22,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,Chronos Large,23,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,Chronos Large,24,10.0,8,0,0,8,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,Chronos Large,25,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,Chronos Large,26,10.0,8,0,0,8,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,Chronos Large,27,10.0,8,0,0,8,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,Chronos Large,28,10.0,8,0,0,8,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,Chronos Large,29,10.0,8,0,0,8,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,Chronos Large,30,10.0,8,0,0,8,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,TimesFM,1,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,TimesFM,2,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,TimesFM,3,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,TimesFM,4,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,TimesFM,5,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,TimesFM,6,10.0,6,0,0,6,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,TimesFM,7,10.0,6,0,0,6,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,TimesFM,8,10.0,6,0,0,6,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,TimesFM,9,10.0,6,0,0,6,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,TimesFM,10,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,TimesFM,11,10.0,6,0,0,6,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,TimesFM,12,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,TimesFM,13,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,TimesFM,14,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,TimesFM,15,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,TimesFM,16,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,TimesFM,17,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,TimesFM,18,10.0,8,0,0,8,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,TimesFM,19,10.0,8,0,0,8,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,TimesFM,20,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,TimesFM,21,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,TimesFM,22,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,TimesFM,23,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,TimesFM,24,10.0,8,0,0,8,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,TimesFM,25,10.0,7,0,0,7,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,TimesFM,26,10.0,8,0,0,8,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,TimesFM,27,10.0,8,0,0,8,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,TimesFM,28,10.0,8,0,0,8,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,TimesFM,29,10.0,8,0,0,8,0,,1.0,,,,,1.0,0,0,observed_targets_only
+pucon,Pucón,TimesFM,30,10.0,8,0,0,8,0,,1.0,,,,,1.0,0,0,observed_targets_only

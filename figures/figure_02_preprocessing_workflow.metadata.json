@@ -1,8 +1,40 @@
 {
-  "companion_mermaid_source": "/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/figures/figure_02_preprocessing_workflow.mmd",
-  "created_utc": "2026-05-31T15:37:36+00:00",
-  "purpose": "Professional workflow recreation of manuscript Figure 2 for reviewer response R3.9, updated with provenance, QA gates, observed-preserving imputation, and forecast-blocking evidence.",
-  "renderer": "matplotlib programmatic workflow drawing",
+  "created_utc": "2026-05-31T15:55:56+00:00",
+  "purpose": "Mermaid sequence-diagram recreation of manuscript Figure 2 for reviewer response R3.9, updated with code-backed provenance, QA gates, observed-preserving imputation, and forecast-blocking evidence.",
+  "renderer": {
+    "command": [
+      [
+        "/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/node_modules/.bin/mmdc",
+        "--input",
+        "/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/figures/figure_02_preprocessing_workflow.mmd",
+        "--output",
+        "/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/figures/figure_02_preprocessing_workflow.svg",
+        "--backgroundColor",
+        "white",
+        "--cssFile",
+        "/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/configs/figure_02_mermaid.css",
+        "--width",
+        "1500"
+      ],
+      [
+        "/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/node_modules/.bin/mmdc",
+        "--input",
+        "/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/figures/figure_02_preprocessing_workflow.mmd",
+        "--output",
+        "/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/figures/figure_02_preprocessing_workflow.png",
+        "--backgroundColor",
+        "white",
+        "--width",
+        "1500",
+        "--scale",
+        "2",
+        "--cssFile",
+        "/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/configs/figure_02_mermaid.css"
+      ]
+    ],
+    "css": "/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/configs/figure_02_mermaid.css",
+    "source": "/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/figures/figure_02_preprocessing_workflow.mmd"
+  },
   "reviewer_comments_addressed": [
     "R1.3",
     "R1.4",
@@ -10,5 +42,6 @@
     "R3.9"
   ],
   "script": "src/villarrica_forecaster/figures/workflows.py",
-  "source_data": "/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/outputs/tables/figure_02_preprocessing_workflow_source.csv"
+  "source_data": "/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/figures/figure_02_preprocessing_workflow.mmd",
+  "style_css": "/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/configs/figure_02_mermaid.css"
 }

@@ -54,83 +54,78 @@ def figure_02_preprocessing_workflow(config: dict[str, Any]) -> dict[str, Path]:
 def figure_02_mermaid_source() -> str:
     """Return Mermaid source for the manuscript preprocessing sequence diagram."""
 
-    return """%%{init: {"theme": "base", "htmlLabels": true, "securityLevel": "loose", "themeVariables": {"fontFamily": "Inter, Arial, Helvetica, sans-serif", "fontSize": "17px", "primaryTextColor": "#0F172A", "lineColor": "#334155", "actorBkg": "#F8FAFC", "actorBorder": "#334155", "actorTextColor": "#0F172A", "activationBkgColor": "#E0F2FE", "activationBorderColor": "#0284C7", "noteBkgColor": "#FFF7ED", "noteBorderColor": "#F97316", "noteTextColor": "#431407", "sequenceNumberColor": "#FFFFFF", "sequenceNumberBackground": "#334155"}, "sequence": {"diagramMarginX": 28, "diagramMarginY": 24, "actorMargin": 46, "messageMargin": 34, "mirrorActors": true, "bottomMarginAdj": 12, "useMaxWidth": true, "rightAngles": false}}}%%
+    return """%%{init: {"theme": "base", "htmlLabels": true, "securityLevel": "loose", "themeVariables": {"fontFamily": "Inter, Arial, Helvetica, sans-serif", "fontSize": "16px", "primaryTextColor": "#0F172A", "lineColor": "#334155", "actorBkg": "#F8FAFC", "actorBorder": "#334155", "actorTextColor": "#0F172A", "activationBkgColor": "#E0F2FE", "activationBorderColor": "#0284C7", "noteBkgColor": "#FFF7ED", "noteBorderColor": "#F97316", "noteTextColor": "#431407"}, "sequence": {"diagramMarginX": 18, "diagramMarginY": 20, "actorMargin": 30, "messageMargin": 28, "mirrorActors": true, "bottomMarginAdj": 10, "useMaxWidth": true, "rightAngles": false}}}%%
 sequenceDiagram
-    title Figure 2. Reproducible Chl-a preprocessing workflow and QA gate
-    autonumber
+    title Figure 2. Reproducible Chl-a preprocessing sequence and QA gate
 
-    box rgba(255, 247, 237, 0.82) 01 · Raw files and provenance
-    participant RD as Raw station files
-    participant IP as Ingestion and provenance
+    box rgba(255, 247, 237, 0.58) Raw data and provenance
+    participant RD as Raw data
+    participant IP as Ingestion<br/>provenance
     end
 
-    box rgba(239, 246, 255, 0.82) 02 · Canonical observation layer
-    participant CQ as Canonical QA
-    participant DT as Daily Chl-a target
+    box rgba(239, 246, 255, 0.58) Canonical target construction
+    participant DT as Daily target<br/>builder
     end
 
-    box rgba(245, 243, 255, 0.86) 03 · Observed-preserving imputation
-    participant IM as Imputation module
-    participant QG as Data-QA gate
+    box rgba(245, 243, 255, 0.58) QA control and imputation
+    participant QG as Data-QA<br/>gate
+    participant IM as Imputation<br/>module
     end
 
-    box rgba(236, 253, 245, 0.82) 04 · Model readiness and reviewer evidence
-    participant MI as Model input contract
-    participant EV as Reviewer evidence
+    box rgba(236, 253, 245, 0.58) Model readiness
+    participant FE as Feature builder
+    participant MI as Model input
     end
 
-    RD->>IP: Submit immutable station workbooks from raw_data/
+    RD->>IP: Submit immutable HTML-XLS/XLSX station workbooks
     activate IP
-    IP->>IP: Discover HTML-XLS/XLSX files; infer station from path
-    IP->>IP: Compute SHA-256 hashes; retain source_file, sheet, and source_row
+    IP->>IP: Discover HTML-XLS/XLSX files and infer station from path
+    IP->>IP: Compute SHA-256 hashes and retain file, sheet, row provenance
     alt Pucón mixed Excel serial dates detected and chronological repair is valid
-        IP->>IP: Repair serial dates to Spanish DMY; preserve raw_date_value and date_parse_method
-    else Source dates parse cleanly
-        IP->>IP: Preserve parsed date and validation status without repair
+        IP->>IP: Repair serial dates to Spanish DMY and preserve raw_date_value
+    else Dates parse cleanly
+        IP->>IP: Preserve parsed date and validation status
     end
-    IP-->>EV: Write data_inventory.csv, raw_file_manifest.json, mixed_date_encoding_audit.csv
-    IP->>CQ: Emit canonical station-date-variable observations
+    Note over IP: Evidence: data_inventory.csv<br/>raw_file_manifest.json<br/>mixed_date_encoding_audit.csv
+    IP->>DT: Emit canonical station-date-variable observations
     deactivate IP
 
-    activate CQ
-    CQ->>CQ: Normalize variables, statistics, and units
-    CQ->>CQ: Flag sentinel -99, negative values, and implausible ranges
-    CQ->>CQ: Set is_model_eligible and model_exclusion_reason
-    CQ->>DT: Pass eligible chlorophyll-a mean observations only
-    deactivate CQ
-
     activate DT
+    DT->>DT: Normalize variables, statistics, units, and quality flags
+    DT->>DT: Apply is_model_eligible and model_exclusion_reason filters
     DT->>DT: Aggregate station-day Chl-a means with source_count and source rows
-    DT->>DT: Build daily calendar; mark observed, missing, duplicate, spike, and outlier states
-    DT-->>EV: Write preprocessing_footprint.csv, duplicate/spike review tables, and data_qa_blockers.csv
+    DT->>DT: Mark observed, missing, duplicate, spike, and outlier states
+    Note over DT: Evidence: daily_chl_a.csv<br/>preprocessing_footprint.csv<br/>duplicate/spike review tables
     DT->>QG: Submit daily target plus QA evidence
     deactivate DT
 
     activate QG
     alt P0 blockers remain unresolved
         QG-->>MI: Block forecast reruns and manuscript model figures
-        Note over QG,MI: Current local status: forecasts remain blocked until station/date/imputation QA is accepted.
+        Note over QG: Current status: forecasts stay blocked until QA is accepted.
     else QA accepted for model construction
         QG->>IM: Authorize observed-preserving 2024 reference construction
     end
     deactivate QG
 
     activate IM
-    IM->>IM: Preserve direct 2024 observations exactly; no smoothing or overwriting
+    IM->>IM: Preserve direct 2024 observations exactly with no smoothing or overwriting
     IM->>IM: Fill short bracketed gaps with PCHIP when both neighbors exist and gap ≤ 10 days
     IM->>IM: Fill long gaps with prior-year circular DOY climatology, harmonic Huber fit, and analog residuals
-    IM->>IM: Apply boundary blending; cap imputed values only; keep Savitzky-Golay out of final target
-    IM-->>EV: Write realistic_imputed_chl_a_2024.csv, diagnostics, and validation figure/source table
-    IM->>MI: Provide target only after QA acceptance
+    IM->>IM: Apply boundary blending, cap imputed values only, and keep Savitzky-Golay out of final target
+    Note over IM: Evidence: realistic_imputed_chl_a_2024.csv<br/>realistic_imputation_diagnostics.csv<br/>realistic_imputation_validation.png/.svg
+    IM->>FE: Provide accepted target with imputation flags
     deactivate IM
 
-    activate MI
-    MI->>MI: Add calendar/cyclical covariates and define context windows, horizons, and quantiles
-    MI->>MI: Validate strict cache schema before TimesFM/Chronos forecast figures are regenerated
-    MI-->>EV: Link artifacts to reviewer_response_matrix.csv and manuscript sections
-    deactivate MI
+    activate FE
+    FE->>FE: Add calendar and cyclical covariates without changing target values
+    FE->>MI: Build context windows, forecast horizons, and quantile contract
+    deactivate FE
 
-    Note over RD,EV: Every value keeps provenance: raw file, sheet, row, date parse method, observed/imputed flag, imputation method, and model eligibility.
+    activate MI
+    MI->>MI: Validate strict cache schema before TimesFM/Chronos forecast figures are regenerated
+    Note over MI: Model cache is regenerated only after QA acceptance.<br/>Reviewer matrix links each artifact to manuscript sections.
+    deactivate MI
 """
 
 
@@ -151,7 +146,7 @@ def _render_mermaid(
             "--cssFile",
             str(css_path),
             "--width",
-            "1900",
+            "1500",
         ],
         [
             *cli,
@@ -162,7 +157,7 @@ def _render_mermaid(
             "--backgroundColor",
             "white",
             "--width",
-            "1900",
+            "1500",
             "--scale",
             "2",
             "--cssFile",

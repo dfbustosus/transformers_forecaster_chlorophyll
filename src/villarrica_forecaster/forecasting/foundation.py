@@ -70,6 +70,132 @@ def foundation_cache_path(config: dict[str, Any]) -> Path:
     return Path(config["_repo_root"]) / raw
 
 
+def load_foundation_daily_target(config: dict[str, Any]) -> pd.DataFrame:
+    """Load the daily target used by forecast generation and evaluation.
+
+    The full daily table provides historical context before 2024. When configured,
+    the accepted observed-preserving 2024 reference replaces the 2024 target segment
+    so model contexts, truths, and figure traces use the same data product that was
+    visually accepted before forecast reruns.
+    """
+
+    processed_dir = path_from_config(config, "processed_data")
+    daily = pd.read_csv(processed_dir / "daily_chl_a.csv", parse_dates=["date"])
+    if not bool(config.get("forecast", {}).get("use_realistic_imputation_reference", False)):
+        return daily
+    reference_path = processed_dir / "realistic_imputed_chl_a_2024.csv"
+    if not reference_path.exists():
+        return daily
+    reference = pd.read_csv(reference_path, parse_dates=["date"])
+    return apply_realistic_imputation_reference(daily, reference)
+
+
+def apply_realistic_imputation_reference(daily: pd.DataFrame, reference: pd.DataFrame) -> pd.DataFrame:
+    """Overlay the accepted 2024 realistic-imputation table onto daily_chl_a."""
+
+    if daily.empty or reference.empty:
+        return daily.copy()
+    frame = daily.copy()
+    frame["date"] = pd.to_datetime(frame["date"])
+    ref = reference.copy()
+    ref["date"] = pd.to_datetime(ref["date"])
+    ref_columns = [
+        "station_id",
+        "date",
+        "chl_a_observed",
+        "is_observed",
+        "source_observation_count",
+        "source_files",
+        "source_rows",
+        "chl_a_imputed",
+        "imputation_method",
+        "is_imputed",
+        "is_short_gap_imputed",
+        "is_long_gap_imputed",
+    ]
+    available_ref_columns = [column for column in ref_columns if column in ref.columns]
+    merged = frame.merge(
+        ref[available_ref_columns],
+        on=["station_id", "date"],
+        how="left",
+        suffixes=("", "_realistic"),
+    )
+    mask = merged["chl_a_imputed"].notna() if "chl_a_imputed" in merged.columns else pd.Series(False, index=merged.index)
+    if not bool(mask.any()):
+        return frame
+
+    observed_value_column = _merged_reference_column(merged, "chl_a_observed")
+    observed_flag_column = _merged_reference_column(merged, "is_observed")
+    imputed_flag_column = _merged_reference_column(merged, "is_imputed")
+    short_gap_column = _merged_reference_column(merged, "is_short_gap_imputed")
+    method_column = _merged_reference_column(merged, "imputation_method")
+    source_count_column = _merged_reference_column(merged, "source_observation_count")
+    frame.loc[mask, "chl_a_model"] = merged.loc[mask, "chl_a_imputed"].astype(float).to_numpy()
+    if "chl_a_filled" in frame.columns:
+        frame.loc[mask, "chl_a_filled"] = merged.loc[mask, "chl_a_imputed"].astype(float).to_numpy()
+    if observed_value_column in merged.columns:
+        observed_values = pd.to_numeric(
+            merged.loc[mask, observed_value_column], errors="coerce"
+        ).to_numpy(dtype=float)
+        if "chl_a_clean" in frame.columns:
+            frame.loc[mask, "chl_a_clean"] = observed_values
+        frame.loc[mask, "chl_a_observed"] = observed_values
+
+    observed = (
+        _as_bool_series(merged[observed_flag_column])
+        if observed_flag_column in merged
+        else pd.Series(False, index=merged.index)
+    )
+    imputed = (
+        _as_bool_series(merged[imputed_flag_column])
+        if imputed_flag_column in merged
+        else ~observed
+    )
+    short_gap = (
+        _as_bool_series(merged[short_gap_column])
+        if short_gap_column in merged
+        else pd.Series(False, index=merged.index)
+    )
+    frame.loc[mask, "is_direct_observation"] = observed.loc[mask].to_numpy()
+    frame.loc[mask, "is_imputed"] = imputed.loc[mask].to_numpy()
+    if "is_interpolated" in frame.columns:
+        frame.loc[mask, "is_interpolated"] = short_gap.loc[mask].to_numpy()
+    if "imputation_method" in frame.columns and method_column in merged.columns:
+        frame.loc[mask, "imputation_method"] = merged.loc[mask, method_column].to_numpy()
+    if source_count_column in merged.columns:
+        count_values = merged.loc[mask, source_count_column].fillna(0).astype(int).to_numpy()
+        if "source_observation_count" in frame.columns:
+            frame.loc[mask, "source_observation_count"] = count_values
+        if "source_count" in frame.columns:
+            frame.loc[mask, "source_count"] = count_values
+    for column in ("source_files", "source_rows"):
+        source_column = _merged_reference_column(merged, column)
+        if source_column in merged.columns and column in frame.columns:
+            frame.loc[mask, column] = merged.loc[mask, source_column].fillna("").to_numpy()
+    for column, value in {
+        "is_smoothed": False,
+        "has_smoothed_variant": False,
+        "is_outlier_removed": False,
+        "is_qc_excluded_from_model": False,
+    }.items():
+        if column in frame.columns:
+            frame.loc[mask, column] = value
+    if "smoothing_method" in frame.columns:
+        frame.loc[mask, "smoothing_method"] = "none"
+    frame.loc[mask, "foundation_target_source"] = "realistic_imputed_chl_a_2024"
+    frame.loc[~mask, "foundation_target_source"] = frame.loc[
+        ~mask, "foundation_target_source"
+    ].fillna("daily_chl_a_context")
+    return frame
+
+
+def _merged_reference_column(merged: pd.DataFrame, column: str) -> str:
+    suffixed = f"{column}_realistic"
+    if suffixed in merged.columns:
+        return suffixed
+    return column
+
+
 def empty_prediction_frame() -> pd.DataFrame:
     return pd.DataFrame(columns=PREDICTION_COLUMNS)
 
@@ -156,8 +282,8 @@ def _explicit_target_window_origin_positions(
     dates = pd.to_datetime(station["date"])
     target_start_ts = pd.Timestamp(target_start)
     target_end_ts = pd.Timestamp(target_end)
-    origin_start_ts = target_start_ts - pd.Timedelta(days=prediction_length)
-    origin_end_ts = target_end_ts - pd.Timedelta(days=1)
+    origin_start_ts = target_start_ts - pd.Timedelta(days=1)
+    origin_end_ts = target_end_ts - pd.Timedelta(days=prediction_length)
     start_candidates = station.index[dates.ge(origin_start_ts)]
     end_candidates = station.index[dates.le(origin_end_ts)]
     if start_candidates.empty or end_candidates.empty:
@@ -170,9 +296,7 @@ def _explicit_target_window_origin_positions(
 
 
 def write_forecast_origin_plan(config: dict[str, Any]) -> dict[str, Path]:
-    daily = pd.read_csv(
-        path_from_config(config, "processed_data") / "daily_chl_a.csv", parse_dates=["date"]
-    )
+    daily = load_foundation_daily_target(config)
     tables_dir = path_from_config(config, "tables")
     plan = build_forecast_origin_plan(daily, config)
     return {
@@ -325,9 +449,7 @@ def run_foundation_forecasts(
     models.
     """
 
-    daily = pd.read_csv(
-        path_from_config(config, "processed_data") / "daily_chl_a.csv", parse_dates=["date"]
-    )
+    daily = load_foundation_daily_target(config)
     random_seed = int(config["forecast"].get("random_seed", 0))
     _apply_random_seed(random_seed)
     models = enabled_foundation_models(config)
@@ -337,7 +459,7 @@ def run_foundation_forecasts(
         raise RuntimeError("No enabled foundation models selected in config.")
     run_config = _config_limited_to_models(config, models)
 
-    input_hash = _file_sha256(path_from_config(config, "processed_data") / "daily_chl_a.csv")
+    input_hash = _foundation_input_hash(config)
     config_hash = _stable_hash(
         run_config.get("forecast", {}), run_config.get("foundation_models", {})
     )
@@ -521,7 +643,7 @@ def _merge_with_existing_cache(new_predictions: pd.DataFrame, cache_path: Path) 
 
 def _partial_prediction_path(config: dict[str, Any], model: dict[str, Any]) -> Path:
     label = str(model["label"]).lower().replace(" ", "_").replace("/", "_")
-    input_hash = _file_sha256(path_from_config(config, "processed_data") / "daily_chl_a.csv")[:12]
+    input_hash = _foundation_input_hash(config)[:12]
     return (
         path_from_config(config, "processed_data")
         / f"foundation_model_predictions_{label}_{input_hash}_partial.csv"
@@ -793,7 +915,8 @@ def _apply_random_seed(seed: int) -> None:
 def _as_bool_series(values: pd.Series) -> pd.Series:
     if values.dtype == bool:
         return values.fillna(False).astype(bool)
-    return values.fillna(False).map(
+    clean = values.where(values.notna(), False)
+    return clean.map(
         lambda value: str(value).strip().lower() in {"1", "true", "t", "yes", "y"}
     )
 
@@ -818,6 +941,20 @@ def _file_sha256(path: Path) -> str:
         for chunk in iter(lambda: fh.read(1024 * 1024), b""):
             digest.update(chunk)
     return digest.hexdigest()
+
+
+def _foundation_input_hash(config: dict[str, Any]) -> str:
+    processed_dir = path_from_config(config, "processed_data")
+    payload: dict[str, Any] = {
+        "daily_chl_a": _file_sha256(processed_dir / "daily_chl_a.csv"),
+        "use_realistic_imputation_reference": bool(
+            config.get("forecast", {}).get("use_realistic_imputation_reference", False)
+        ),
+    }
+    reference_path = processed_dir / "realistic_imputed_chl_a_2024.csv"
+    if payload["use_realistic_imputation_reference"] and reference_path.exists():
+        payload["realistic_imputed_chl_a_2024"] = _file_sha256(reference_path)
+    return _stable_hash(payload)
 
 
 def _stable_hash(*objects: Any) -> str:

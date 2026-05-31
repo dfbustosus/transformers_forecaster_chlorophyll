@@ -1,3 +1,3 @@
 station_id,station_name,threshold_ug_l,modeled_daily_count,direct_observation_count,observed_exceedance_count,processed_model_exceedance_count,max_observed_chl_a,max_model_chl_a
-la_poza,La Poza,10.0,992,480,17,20,60.95,60.95
-pucon,Pucón,10.0,1583,788,92,199,60.95,60.95
+la_poza,La Poza,10.0,941,432,17,0,60.95,8.869
+pucon,Pucón,10.0,1532,740,92,0,60.95,9.762

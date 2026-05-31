@@ -259,7 +259,7 @@ def test_metric_figure_blocks_and_removes_stale_exports_for_baseline_metrics(
     ).to_csv(tables_dir / "forecast_metrics_by_horizon.csv", index=False)
     stem = "figure_04_forecast_metrics_pucon"
     for suffix in (".png", ".svg", ".metadata.json"):
-        (figures_dir / f"{stem}{suffix}").write_text("stale baseline artifact")
+        (figures_dir / f"{stem}{suffix}").write_text("obsolete figure artifact")
 
     outputs = metric_figure(config, station_id="pucon", figure_number="04")
     status = pd.read_csv(outputs["status"])
@@ -296,7 +296,7 @@ def test_trajectory_figure_blocks_and_removes_stale_exports_for_baseline_predict
     _foundation_daily_fixture().to_csv(processed_dir / "daily_chl_a.csv", index=False)
     stem = "figure_07_forecasts_pucon"
     for suffix in (".png", ".svg", ".metadata.json"):
-        (figures_dir / f"{stem}{suffix}").write_text("stale baseline artifact")
+        (figures_dir / f"{stem}{suffix}").write_text("obsolete figure artifact")
 
     outputs = trajectory_figure(config, station_id="pucon", figure_number="07")
     status = pd.read_csv(outputs["status"])

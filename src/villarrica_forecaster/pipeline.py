@@ -12,6 +12,9 @@ from villarrica_forecaster.figures.recreate_all import recreate_all_figures
 from villarrica_forecaster.forecasting.cross_site import build_cross_site_outputs
 from villarrica_forecaster.forecasting.evaluation import build_forecast_outputs
 from villarrica_forecaster.preprocessing.daily import build_daily_chlorophyll
+from villarrica_forecaster.preprocessing.realistic_imputation import (
+    build_realistic_imputation_outputs,
+)
 from villarrica_forecaster.remote_sensing.inversion import build_satellite_matchup_audit
 from villarrica_forecaster.reports.reviewer_matrix import build_reviewer_response_matrix
 
@@ -24,6 +27,7 @@ def run_pipeline(config_path: str | Path = "configs/project.toml") -> dict[str, 
     outputs: dict[str, Path] = {}
     outputs.update(build_ingestion_outputs(config))
     outputs.update(build_daily_chlorophyll(config))
+    outputs.update(build_realistic_imputation_outputs(config))
     outputs.update(build_forecast_outputs(config))
     outputs.update(build_lag_outputs(config))
     outputs.update(build_threshold_outputs(config))

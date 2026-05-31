@@ -101,5 +101,4 @@ dpi = 400
 style = "clean_manuscript"
 station_order = ["pucon", "la_poza"]
 station_colors = { pucon = "#1f77b4", la_poza = "#2ca02c" }
-render_methodology_end_to_end = false
 uncertainty_interval_horizon = 7

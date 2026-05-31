@@ -1,1 +1,121 @@
 station_id,station_name,model,horizon,interval_method,n,coverage_10_90,nominal_coverage,coverage_error
+la_poza,La Poza,Chronos Large,1,cached_foundation_model_quantiles,25,0.72,0.8,-0.08000000000000007
+la_poza,La Poza,Chronos Large,2,cached_foundation_model_quantiles,25,0.64,0.8,-0.16000000000000003
+la_poza,La Poza,Chronos Large,3,cached_foundation_model_quantiles,25,0.6,0.8,-0.20000000000000007
+la_poza,La Poza,Chronos Large,4,cached_foundation_model_quantiles,25,0.64,0.8,-0.16000000000000003
+la_poza,La Poza,Chronos Large,5,cached_foundation_model_quantiles,25,0.56,0.8,-0.24
+la_poza,La Poza,Chronos Large,6,cached_foundation_model_quantiles,25,0.56,0.8,-0.24
+la_poza,La Poza,Chronos Large,7,cached_foundation_model_quantiles,25,0.64,0.8,-0.16000000000000003
+la_poza,La Poza,Chronos Large,8,cached_foundation_model_quantiles,25,0.76,0.8,-0.040000000000000036
+la_poza,La Poza,Chronos Large,9,cached_foundation_model_quantiles,25,0.72,0.8,-0.08000000000000007
+la_poza,La Poza,Chronos Large,10,cached_foundation_model_quantiles,25,0.68,0.8,-0.12
+la_poza,La Poza,Chronos Large,11,cached_foundation_model_quantiles,25,0.56,0.8,-0.24
+la_poza,La Poza,Chronos Large,12,cached_foundation_model_quantiles,25,0.68,0.8,-0.12
+la_poza,La Poza,Chronos Large,13,cached_foundation_model_quantiles,25,0.64,0.8,-0.16000000000000003
+la_poza,La Poza,Chronos Large,14,cached_foundation_model_quantiles,25,0.68,0.8,-0.12
+la_poza,La Poza,Chronos Large,15,cached_foundation_model_quantiles,25,0.76,0.8,-0.040000000000000036
+la_poza,La Poza,Chronos Large,16,cached_foundation_model_quantiles,25,0.76,0.8,-0.040000000000000036
+la_poza,La Poza,Chronos Large,17,cached_foundation_model_quantiles,25,0.76,0.8,-0.040000000000000036
+la_poza,La Poza,Chronos Large,18,cached_foundation_model_quantiles,25,0.72,0.8,-0.08000000000000007
+la_poza,La Poza,Chronos Large,19,cached_foundation_model_quantiles,25,0.72,0.8,-0.08000000000000007
+la_poza,La Poza,Chronos Large,20,cached_foundation_model_quantiles,25,0.6,0.8,-0.20000000000000007
+la_poza,La Poza,Chronos Large,21,cached_foundation_model_quantiles,25,0.56,0.8,-0.24
+la_poza,La Poza,Chronos Large,22,cached_foundation_model_quantiles,25,0.6,0.8,-0.20000000000000007
+la_poza,La Poza,Chronos Large,23,cached_foundation_model_quantiles,25,0.6,0.8,-0.20000000000000007
+la_poza,La Poza,Chronos Large,24,cached_foundation_model_quantiles,25,0.56,0.8,-0.24
+la_poza,La Poza,Chronos Large,25,cached_foundation_model_quantiles,25,0.52,0.8,-0.28
+la_poza,La Poza,Chronos Large,26,cached_foundation_model_quantiles,25,0.6,0.8,-0.20000000000000007
+la_poza,La Poza,Chronos Large,27,cached_foundation_model_quantiles,25,0.64,0.8,-0.16000000000000003
+la_poza,La Poza,Chronos Large,28,cached_foundation_model_quantiles,25,0.56,0.8,-0.24
+la_poza,La Poza,Chronos Large,29,cached_foundation_model_quantiles,25,0.56,0.8,-0.24
+la_poza,La Poza,Chronos Large,30,cached_foundation_model_quantiles,25,0.6,0.8,-0.20000000000000007
+la_poza,La Poza,TimesFM,1,cached_foundation_model_quantiles,25,0.88,0.8,0.07999999999999996
+la_poza,La Poza,TimesFM,2,cached_foundation_model_quantiles,25,0.8,0.8,0.0
+la_poza,La Poza,TimesFM,3,cached_foundation_model_quantiles,25,0.72,0.8,-0.08000000000000007
+la_poza,La Poza,TimesFM,4,cached_foundation_model_quantiles,25,0.76,0.8,-0.040000000000000036
+la_poza,La Poza,TimesFM,5,cached_foundation_model_quantiles,25,0.72,0.8,-0.08000000000000007
+la_poza,La Poza,TimesFM,6,cached_foundation_model_quantiles,25,0.88,0.8,0.07999999999999996
+la_poza,La Poza,TimesFM,7,cached_foundation_model_quantiles,25,0.88,0.8,0.07999999999999996
+la_poza,La Poza,TimesFM,8,cached_foundation_model_quantiles,25,0.88,0.8,0.07999999999999996
+la_poza,La Poza,TimesFM,9,cached_foundation_model_quantiles,25,0.84,0.8,0.039999999999999925
+la_poza,La Poza,TimesFM,10,cached_foundation_model_quantiles,25,0.84,0.8,0.039999999999999925
+la_poza,La Poza,TimesFM,11,cached_foundation_model_quantiles,25,0.8,0.8,0.0
+la_poza,La Poza,TimesFM,12,cached_foundation_model_quantiles,25,0.8,0.8,0.0
+la_poza,La Poza,TimesFM,13,cached_foundation_model_quantiles,25,0.8,0.8,0.0
+la_poza,La Poza,TimesFM,14,cached_foundation_model_quantiles,25,0.84,0.8,0.039999999999999925
+la_poza,La Poza,TimesFM,15,cached_foundation_model_quantiles,25,0.84,0.8,0.039999999999999925
+la_poza,La Poza,TimesFM,16,cached_foundation_model_quantiles,25,0.76,0.8,-0.040000000000000036
+la_poza,La Poza,TimesFM,17,cached_foundation_model_quantiles,25,0.76,0.8,-0.040000000000000036
+la_poza,La Poza,TimesFM,18,cached_foundation_model_quantiles,25,0.8,0.8,0.0
+la_poza,La Poza,TimesFM,19,cached_foundation_model_quantiles,25,0.8,0.8,0.0
+la_poza,La Poza,TimesFM,20,cached_foundation_model_quantiles,25,0.76,0.8,-0.040000000000000036
+la_poza,La Poza,TimesFM,21,cached_foundation_model_quantiles,25,0.76,0.8,-0.040000000000000036
+la_poza,La Poza,TimesFM,22,cached_foundation_model_quantiles,25,0.76,0.8,-0.040000000000000036
+la_poza,La Poza,TimesFM,23,cached_foundation_model_quantiles,25,0.76,0.8,-0.040000000000000036
+la_poza,La Poza,TimesFM,24,cached_foundation_model_quantiles,25,0.76,0.8,-0.040000000000000036
+la_poza,La Poza,TimesFM,25,cached_foundation_model_quantiles,25,0.8,0.8,0.0
+la_poza,La Poza,TimesFM,26,cached_foundation_model_quantiles,25,0.76,0.8,-0.040000000000000036
+la_poza,La Poza,TimesFM,27,cached_foundation_model_quantiles,25,0.76,0.8,-0.040000000000000036
+la_poza,La Poza,TimesFM,28,cached_foundation_model_quantiles,25,0.76,0.8,-0.040000000000000036
+la_poza,La Poza,TimesFM,29,cached_foundation_model_quantiles,25,0.76,0.8,-0.040000000000000036
+la_poza,La Poza,TimesFM,30,cached_foundation_model_quantiles,25,0.76,0.8,-0.040000000000000036
+pucon,Pucón,Chronos Large,1,cached_foundation_model_quantiles,25,0.76,0.8,-0.040000000000000036
+pucon,Pucón,Chronos Large,2,cached_foundation_model_quantiles,25,0.6,0.8,-0.20000000000000007
+pucon,Pucón,Chronos Large,3,cached_foundation_model_quantiles,25,0.8,0.8,0.0
+pucon,Pucón,Chronos Large,4,cached_foundation_model_quantiles,25,0.88,0.8,0.07999999999999996
+pucon,Pucón,Chronos Large,5,cached_foundation_model_quantiles,25,0.76,0.8,-0.040000000000000036
+pucon,Pucón,Chronos Large,6,cached_foundation_model_quantiles,25,0.68,0.8,-0.12
+pucon,Pucón,Chronos Large,7,cached_foundation_model_quantiles,25,0.64,0.8,-0.16000000000000003
+pucon,Pucón,Chronos Large,8,cached_foundation_model_quantiles,25,0.76,0.8,-0.040000000000000036
+pucon,Pucón,Chronos Large,9,cached_foundation_model_quantiles,25,0.8,0.8,0.0
+pucon,Pucón,Chronos Large,10,cached_foundation_model_quantiles,25,0.68,0.8,-0.12
+pucon,Pucón,Chronos Large,11,cached_foundation_model_quantiles,25,0.76,0.8,-0.040000000000000036
+pucon,Pucón,Chronos Large,12,cached_foundation_model_quantiles,25,0.76,0.8,-0.040000000000000036
+pucon,Pucón,Chronos Large,13,cached_foundation_model_quantiles,25,0.72,0.8,-0.08000000000000007
+pucon,Pucón,Chronos Large,14,cached_foundation_model_quantiles,25,0.76,0.8,-0.040000000000000036
+pucon,Pucón,Chronos Large,15,cached_foundation_model_quantiles,25,0.72,0.8,-0.08000000000000007
+pucon,Pucón,Chronos Large,16,cached_foundation_model_quantiles,25,0.72,0.8,-0.08000000000000007
+pucon,Pucón,Chronos Large,17,cached_foundation_model_quantiles,25,0.72,0.8,-0.08000000000000007
+pucon,Pucón,Chronos Large,18,cached_foundation_model_quantiles,25,0.72,0.8,-0.08000000000000007
+pucon,Pucón,Chronos Large,19,cached_foundation_model_quantiles,25,0.64,0.8,-0.16000000000000003
+pucon,Pucón,Chronos Large,20,cached_foundation_model_quantiles,25,0.6,0.8,-0.20000000000000007
+pucon,Pucón,Chronos Large,21,cached_foundation_model_quantiles,25,0.64,0.8,-0.16000000000000003
+pucon,Pucón,Chronos Large,22,cached_foundation_model_quantiles,25,0.64,0.8,-0.16000000000000003
+pucon,Pucón,Chronos Large,23,cached_foundation_model_quantiles,25,0.68,0.8,-0.12
+pucon,Pucón,Chronos Large,24,cached_foundation_model_quantiles,25,0.6,0.8,-0.20000000000000007
+pucon,Pucón,Chronos Large,25,cached_foundation_model_quantiles,25,0.72,0.8,-0.08000000000000007
+pucon,Pucón,Chronos Large,26,cached_foundation_model_quantiles,25,0.68,0.8,-0.12
+pucon,Pucón,Chronos Large,27,cached_foundation_model_quantiles,25,0.64,0.8,-0.16000000000000003
+pucon,Pucón,Chronos Large,28,cached_foundation_model_quantiles,25,0.6,0.8,-0.20000000000000007
+pucon,Pucón,Chronos Large,29,cached_foundation_model_quantiles,25,0.56,0.8,-0.24
+pucon,Pucón,Chronos Large,30,cached_foundation_model_quantiles,25,0.6,0.8,-0.20000000000000007
+pucon,Pucón,TimesFM,1,cached_foundation_model_quantiles,25,0.96,0.8,0.15999999999999992
+pucon,Pucón,TimesFM,2,cached_foundation_model_quantiles,25,0.88,0.8,0.07999999999999996
+pucon,Pucón,TimesFM,3,cached_foundation_model_quantiles,25,0.88,0.8,0.07999999999999996
+pucon,Pucón,TimesFM,4,cached_foundation_model_quantiles,25,0.92,0.8,0.12
+pucon,Pucón,TimesFM,5,cached_foundation_model_quantiles,25,0.92,0.8,0.12
+pucon,Pucón,TimesFM,6,cached_foundation_model_quantiles,25,0.88,0.8,0.07999999999999996
+pucon,Pucón,TimesFM,7,cached_foundation_model_quantiles,25,0.92,0.8,0.12
+pucon,Pucón,TimesFM,8,cached_foundation_model_quantiles,25,0.88,0.8,0.07999999999999996
+pucon,Pucón,TimesFM,9,cached_foundation_model_quantiles,25,0.8,0.8,0.0
+pucon,Pucón,TimesFM,10,cached_foundation_model_quantiles,25,0.8,0.8,0.0
+pucon,Pucón,TimesFM,11,cached_foundation_model_quantiles,25,0.8,0.8,0.0
+pucon,Pucón,TimesFM,12,cached_foundation_model_quantiles,25,0.88,0.8,0.07999999999999996
+pucon,Pucón,TimesFM,13,cached_foundation_model_quantiles,25,0.84,0.8,0.039999999999999925
+pucon,Pucón,TimesFM,14,cached_foundation_model_quantiles,25,0.84,0.8,0.039999999999999925
+pucon,Pucón,TimesFM,15,cached_foundation_model_quantiles,25,0.84,0.8,0.039999999999999925
+pucon,Pucón,TimesFM,16,cached_foundation_model_quantiles,25,0.84,0.8,0.039999999999999925
+pucon,Pucón,TimesFM,17,cached_foundation_model_quantiles,25,0.88,0.8,0.07999999999999996
+pucon,Pucón,TimesFM,18,cached_foundation_model_quantiles,25,0.84,0.8,0.039999999999999925
+pucon,Pucón,TimesFM,19,cached_foundation_model_quantiles,25,0.88,0.8,0.07999999999999996
+pucon,Pucón,TimesFM,20,cached_foundation_model_quantiles,25,0.84,0.8,0.039999999999999925
+pucon,Pucón,TimesFM,21,cached_foundation_model_quantiles,25,0.8,0.8,0.0
+pucon,Pucón,TimesFM,22,cached_foundation_model_quantiles,25,0.8,0.8,0.0
+pucon,Pucón,TimesFM,23,cached_foundation_model_quantiles,25,0.76,0.8,-0.040000000000000036
+pucon,Pucón,TimesFM,24,cached_foundation_model_quantiles,25,0.72,0.8,-0.08000000000000007
+pucon,Pucón,TimesFM,25,cached_foundation_model_quantiles,25,0.72,0.8,-0.08000000000000007
+pucon,Pucón,TimesFM,26,cached_foundation_model_quantiles,25,0.76,0.8,-0.040000000000000036
+pucon,Pucón,TimesFM,27,cached_foundation_model_quantiles,25,0.8,0.8,0.0
+pucon,Pucón,TimesFM,28,cached_foundation_model_quantiles,25,0.72,0.8,-0.08000000000000007
+pucon,Pucón,TimesFM,29,cached_foundation_model_quantiles,25,0.72,0.8,-0.08000000000000007
+pucon,Pucón,TimesFM,30,cached_foundation_model_quantiles,25,0.76,0.8,-0.040000000000000036

@@ -9,6 +9,7 @@ import pandas as pd
 
 from villarrica_forecaster.config import path_from_config
 from villarrica_forecaster.figures.common import apply_manuscript_style, save_figure, station_label
+from villarrica_forecaster.forecasting.foundation import load_foundation_daily_target
 from villarrica_forecaster.io import write_csv
 
 METRICS = ["MAPE", "MSE", "RMSE", "Bias", "MedianAbsoluteError", "MAE"]
@@ -88,11 +89,10 @@ def trajectory_figure(
     config: dict[str, Any], station_id: str, figure_number: str
 ) -> dict[str, Path]:
     tables_dir = path_from_config(config, "tables")
-    processed_dir = path_from_config(config, "processed_data")
     predictions = pd.read_csv(
         tables_dir / "forecast_predictions_long.csv", parse_dates=["target_date"]
     )
-    daily = pd.read_csv(processed_dir / "daily_chl_a.csv", parse_dates=["date"])
+    daily = load_foundation_daily_target(config)
     station_predictions = predictions[predictions["station_id"].eq(station_id)].copy()
     models = _required_foundation_figure_models(config)
     missing_models = sorted(

@@ -3,9 +3,9 @@ svg {
 }
 
 .actor {
-  fill: #f8fafc !important;
+  fill: #ffffff !important;
   stroke: #334155 !important;
-  stroke-width: 1.7px !important;
+  stroke-width: 1.45px !important;
   rx: 7px !important;
   ry: 7px !important;
 }
@@ -31,7 +31,7 @@ svg {
 
 .messageText {
   fill: #102033 !important;
-  font-size: 14px !important;
+  font-size: 13.5px !important;
   font-weight: 500 !important;
 }
 
@@ -51,15 +51,15 @@ svg {
 }
 
 .note {
-  fill: #fff7ed !important;
-  stroke: #f97316 !important;
-  stroke-width: 1.45px !important;
+  fill: #f8fafc !important;
+  stroke: #94a3b8 !important;
+  stroke-width: 1.2px !important;
 }
 
 .noteText {
-  fill: #431407 !important;
+  fill: #334155 !important;
   font-size: 13px !important;
-  font-weight: 600 !important;
+  font-weight: 500 !important;
 }
 
 .labelBox {

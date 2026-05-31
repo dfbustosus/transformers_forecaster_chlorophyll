@@ -8,6 +8,7 @@ import pandas as pd
 
 from villarrica_forecaster.config import path_from_config
 from villarrica_forecaster.forecasting.foundation import (
+    build_forecast_origin_plan,
     empty_prediction_frame,
     foundation_cache_path,
     load_foundation_daily_target,
@@ -80,9 +81,11 @@ def build_forecast_outputs(config: dict[str, Any]) -> dict[str, Path]:
         else:
             prediction_source = "cached_foundation_model_predictions"
             predictions = _filter_predictions_to_target_window(predictions, config)
+            predictions = _filter_predictions_to_origin_plan(predictions, daily, config)
     elif allow_baseline_fallback:
         predictions = rolling_origin_baseline_predictions(daily, config)
         predictions = _filter_predictions_to_target_window(predictions, config)
+        predictions = _filter_predictions_to_origin_plan(predictions, daily, config)
         prediction_source = "local_baseline_models_explicitly_enabled"
     else:
         predictions = empty_prediction_frame()
@@ -129,6 +132,7 @@ def build_forecast_outputs(config: dict[str, Any]) -> dict[str, Path]:
             "horizons": config["forecast"]["horizons"],
             "prediction_length_days": config["forecast"].get("prediction_length_days", 30),
             "context_length_days": config["forecast"].get("context_length_days", 1024),
+            "origin_stride_days": config["forecast"].get("origin_stride_days", 1),
             "use_realistic_imputation_reference": bool(
                 config["forecast"].get("use_realistic_imputation_reference", False)
             ),
@@ -158,6 +162,25 @@ def _filter_predictions_to_target_window(
     frame = predictions.copy()
     target_date = pd.to_datetime(frame["target_date"])
     return frame[target_date.between(pd.Timestamp(str(start)), pd.Timestamp(str(end)))].copy()
+
+
+def _filter_predictions_to_origin_plan(
+    predictions: pd.DataFrame, daily: pd.DataFrame, config: dict[str, Any]
+) -> pd.DataFrame:
+    if predictions.empty:
+        return predictions
+    plan = build_forecast_origin_plan(daily, config)
+    if plan.empty:
+        return predictions
+    frame = predictions.copy()
+    frame["origin_date_key"] = pd.to_datetime(frame["origin_date"]).dt.date.astype(str)
+    plan_keys = (
+        plan[["station_id", "origin_date"]]
+        .drop_duplicates()
+        .rename(columns={"origin_date": "origin_date_key"})
+    )
+    filtered = frame.merge(plan_keys, on=["station_id", "origin_date_key"], how="inner")
+    return filtered.drop(columns=["origin_date_key"])
 
 
 def _data_qa_forecast_blockers(config: dict[str, Any]) -> list[dict[str, str]]:

@@ -4,8 +4,8 @@
   "private": true,
   "description": "Node-based Mermaid rendering for reproducible Villarrica manuscript workflow figures.",
   "scripts": {
-    "render:figure02:svg": "mmdc --input figures/figure_02_preprocessing_workflow.mmd --output figures/figure_02_preprocessing_workflow.svg --backgroundColor white --width 1500 --cssFile configs/figure_02_mermaid.css",
-    "render:figure02:png": "mmdc --input figures/figure_02_preprocessing_workflow.mmd --output figures/figure_02_preprocessing_workflow.png --backgroundColor white --width 1500 --scale 2 --cssFile configs/figure_02_mermaid.css",
+    "render:figure02:svg": "mmdc --input figures/figure_02_preprocessing_workflow.mmd --output figures/figure_02_preprocessing_workflow.svg --backgroundColor white --width 1700 --cssFile configs/figure_02_mermaid.css",
+    "render:figure02:png": "mmdc --input figures/figure_02_preprocessing_workflow.mmd --output figures/figure_02_preprocessing_workflow.png --backgroundColor white --width 1700 --scale 2 --cssFile configs/figure_02_mermaid.css",
     "render:figure02": "poetry run python -c \"from villarrica_forecaster.config import load_config; from villarrica_forecaster.figures.workflows import figure_02_preprocessing_workflow; figure_02_preprocessing_workflow(load_config('configs/project.toml'))\""
   },
   "devDependencies": {

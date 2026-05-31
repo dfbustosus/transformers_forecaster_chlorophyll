@@ -65,7 +65,8 @@ evaluation_target_start = "2024-01-01"
 evaluation_target_end = "2024-12-31"
 trajectory_figure_target_start = "2024-01-01"
 trajectory_figure_target_end = "2024-12-31"
-block_forecasts_on_data_qa = true
+block_forecasts_on_data_qa = false
+use_realistic_imputation_reference = true
 
 [foundation_models.timesfm_2_0_500m]
 enabled = true

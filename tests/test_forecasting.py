@@ -15,6 +15,7 @@ from villarrica_forecaster.forecasting.evaluation import (
 )
 from villarrica_forecaster.forecasting.foundation import (
     PREDICTION_COLUMNS,
+    apply_realistic_imputation_reference,
     build_forecast_origin_plan,
     validate_foundation_prediction_table,
 )
@@ -148,6 +149,36 @@ def test_validate_foundation_prediction_cache_requires_full_origin_model_horizon
     errors = validate_foundation_prediction_table(predictions, daily, config)
 
     assert any("station/origin/model/horizon" in error for error in errors)
+
+
+def test_realistic_reference_overrides_2024_foundation_target_values() -> None:
+    daily = _foundation_daily_fixture(periods=5)
+    reference = pd.DataFrame(
+        {
+            "station_id": ["pucon"],
+            "station_name": ["Pucón"],
+            "date": ["2024-01-03"],
+            "chl_a_observed": [None],
+            "is_observed": [False],
+            "source_observation_count": [0],
+            "source_files": [""],
+            "source_rows": [""],
+            "chl_a_imputed": [7.5],
+            "imputation_method": ["historical_seasonal_harmonic_analog_residual"],
+            "is_imputed": [True],
+            "is_short_gap_imputed": [False],
+            "is_long_gap_imputed": [True],
+        }
+    )
+
+    updated = apply_realistic_imputation_reference(daily, reference)
+    row = updated[pd.to_datetime(updated["date"]).eq(pd.Timestamp("2024-01-03"))].iloc[0]
+
+    assert row["chl_a_model"] == 7.5
+    assert bool(row["is_imputed"])
+    assert not bool(row["is_direct_observation"])
+    assert row["imputation_method"] == "historical_seasonal_harmonic_analog_residual"
+    assert row["foundation_target_source"] == "realistic_imputed_chl_a_2024"
 
 
 def test_build_forecast_outputs_blocks_missing_foundation_cache(tmp_path: Path) -> None:

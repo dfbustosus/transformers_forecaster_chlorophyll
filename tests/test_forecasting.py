@@ -151,6 +151,37 @@ def test_validate_foundation_prediction_cache_requires_full_origin_model_horizon
     assert any("station/origin/model/horizon" in error for error in errors)
 
 
+def test_validate_foundation_prediction_cache_rejects_nonfinite_context(
+    tmp_path: Path,
+) -> None:
+    config = _foundation_test_config(tmp_path)
+    daily = _foundation_daily_fixture()
+    daily.loc[2, "chl_a_model"] = None
+    predictions = _complete_foundation_predictions(daily, config)
+
+    errors = validate_foundation_prediction_table(predictions, daily, config)
+
+    assert any("Non-finite chl_a_model values" in error for error in errors)
+
+
+def test_validate_foundation_prediction_cache_rejects_stale_run_metadata(
+    tmp_path: Path,
+) -> None:
+    config = _foundation_test_config(tmp_path)
+    daily = _foundation_daily_fixture()
+    processed_dir = Path(config["resolved_paths"]["processed_data"])
+    processed_dir.mkdir(parents=True)
+    daily.to_csv(processed_dir / "daily_chl_a.csv", index=False)
+    (processed_dir / "test_run_metadata.json").write_text(
+        json.dumps({"run_id": "test_run", "input_data_hash": "stale"}), encoding="utf-8"
+    )
+    predictions = _complete_foundation_predictions(daily, config)
+
+    errors = validate_foundation_prediction_table(predictions, daily, config)
+
+    assert any("Foundation prediction cache is stale" in error for error in errors)
+
+
 def test_realistic_reference_overrides_2024_foundation_target_values() -> None:
     daily = _foundation_daily_fixture(periods=5)
     reference = pd.DataFrame(

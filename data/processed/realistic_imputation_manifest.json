@@ -1,0 +1,11 @@
+{
+  "description": "Observed-preserving daily 2024 Chl-a imputation using bracketed short-gap PCHIP plus prior-year circular day-of-year climatology, harmonic robust regression, deterministic analog residuals, and boundary blending to avoid artificial jumps at observation edges.",
+  "forecast_status": "data_imputation_only_not_a_model_forecast",
+  "observed_values_preserved": true,
+  "outputs": {
+    "realistic_imputation_diagnostics": "/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/outputs/tables/realistic_imputation_diagnostics.csv",
+    "realistic_imputed_chl_a_2024": "/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/data/processed/realistic_imputed_chl_a_2024.csv",
+    "realistic_imputed_chl_a_2024_source": "/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/outputs/tables/realistic_imputed_chl_a_2024_source.csv"
+  },
+  "smoothing": "none"
+}

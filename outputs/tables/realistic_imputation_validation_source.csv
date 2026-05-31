@@ -1,0 +1,733 @@
+date,station_id,station_name,chl_a_observed,chl_a_imputed,is_observed,imputation_method,nearest_observation_gap_days,gap_length_days,imputation_uncertainty_proxy
+2024-01-01,la_poza,La Poza,,1.8794465184485616,False,historical_seasonal_harmonic_analog_residual,37.0,37,0.4
+2024-01-02,la_poza,La Poza,,1.868406771955784,False,historical_seasonal_harmonic_analog_residual,36.0,37,0.4
+2024-01-03,la_poza,La Poza,,1.8569756376547129,False,historical_seasonal_harmonic_analog_residual,35.0,37,0.4
+2024-01-04,la_poza,La Poza,,1.843378318978032,False,historical_seasonal_harmonic_analog_residual,34.0,37,0.4
+2024-01-05,la_poza,La Poza,,1.8236482763220327,False,historical_seasonal_harmonic_analog_residual,33.0,37,0.4
+2024-01-06,la_poza,La Poza,,1.8044307317938384,False,historical_seasonal_harmonic_analog_residual,32.0,37,0.4
+2024-01-07,la_poza,La Poza,,1.787392362576436,False,historical_seasonal_harmonic_analog_residual,31.0,37,0.4
+2024-01-08,la_poza,La Poza,,1.77162057594779,False,historical_seasonal_harmonic_analog_residual,30.0,37,0.4
+2024-01-09,la_poza,La Poza,,1.7559540406856806,False,historical_seasonal_harmonic_analog_residual,29.0,37,0.4
+2024-01-10,la_poza,La Poza,,1.734488150958817,False,historical_seasonal_harmonic_analog_residual,28.0,37,0.4
+2024-01-11,la_poza,La Poza,,1.71393944595781,False,historical_seasonal_harmonic_analog_residual,27.0,37,0.4
+2024-01-12,la_poza,La Poza,,1.6915048259113388,False,historical_seasonal_harmonic_analog_residual,26.0,37,0.4
+2024-01-13,la_poza,La Poza,,1.669216798671094,False,historical_seasonal_harmonic_analog_residual,25.0,37,0.4
+2024-01-14,la_poza,La Poza,,1.6397477979400483,False,historical_seasonal_harmonic_analog_residual,24.0,37,0.4
+2024-01-15,la_poza,La Poza,,1.616159472104104,False,historical_seasonal_harmonic_analog_residual,23.0,37,0.4
+2024-01-16,la_poza,La Poza,,1.595564401181948,False,historical_seasonal_harmonic_analog_residual,22.0,37,0.4
+2024-01-17,la_poza,La Poza,,1.5710598099003148,False,historical_seasonal_harmonic_analog_residual,21.0,37,0.4
+2024-01-18,la_poza,La Poza,,1.6694365895609014,False,historical_seasonal_harmonic_analog_residual,20.0,37,0.4
+2024-01-19,la_poza,La Poza,,1.7745749440322922,False,historical_seasonal_harmonic_analog_residual,19.0,37,0.4
+2024-01-20,la_poza,La Poza,,1.8754279485650056,False,historical_seasonal_harmonic_analog_residual,18.0,37,0.4
+2024-01-21,la_poza,La Poza,,1.982353759297454,False,historical_seasonal_harmonic_analog_residual,17.0,37,0.4
+2024-01-22,la_poza,La Poza,,2.088167008036989,False,historical_seasonal_harmonic_analog_residual,16.0,37,0.4
+2024-01-23,la_poza,La Poza,,2.190480159469686,False,historical_seasonal_harmonic_analog_residual,15.0,37,0.4
+2024-01-24,la_poza,La Poza,,2.2946603950612183,False,historical_seasonal_harmonic_analog_residual,14.0,37,0.4
+2024-01-25,la_poza,La Poza,,2.3978687307135913,False,historical_seasonal_harmonic_analog_residual,13.0,37,0.4
+2024-01-26,la_poza,La Poza,,2.496649960614229,False,historical_seasonal_harmonic_analog_residual,12.0,37,0.4
+2024-01-27,la_poza,La Poza,,2.597069765109604,False,historical_seasonal_harmonic_analog_residual,11.0,37,0.4
+2024-01-28,la_poza,La Poza,,2.6953384284643818,False,historical_seasonal_harmonic_analog_residual,10.0,37,0.4
+2024-01-29,la_poza,La Poza,,2.794337682531354,False,historical_seasonal_harmonic_analog_residual,9.0,37,0.4
+2024-01-30,la_poza,La Poza,,2.8931018287632004,False,historical_seasonal_harmonic_analog_residual,8.0,37,0.4
+2024-01-31,la_poza,La Poza,,2.9981233913926046,False,historical_seasonal_harmonic_analog_residual,7.0,37,0.4
+2024-02-01,la_poza,La Poza,,3.1035048011497275,False,historical_seasonal_harmonic_analog_residual,6.0,37,0.4
+2024-02-02,la_poza,La Poza,,3.208286614181784,False,historical_seasonal_harmonic_analog_residual,5.0,37,0.4
+2024-02-03,la_poza,La Poza,,3.313121938329909,False,historical_seasonal_harmonic_analog_residual,4.0,37,0.4
+2024-02-04,la_poza,La Poza,,3.4180108642524667,False,historical_seasonal_harmonic_analog_residual,3.0,37,0.4
+2024-02-05,la_poza,La Poza,,3.522953471658874,False,historical_seasonal_harmonic_analog_residual,2.0,37,0.4
+2024-02-06,la_poza,La Poza,,3.625448918118314,False,historical_seasonal_harmonic_analog_residual,1.0,37,0.4
+2024-02-07,la_poza,La Poza,3.733,3.733,True,observed,0.0,0,0.0
+2024-02-08,la_poza,La Poza,3.042,3.042,True,observed,0.0,0,0.0
+2024-02-09,la_poza,La Poza,2.938,2.938,True,observed,0.0,0,0.0
+2024-02-10,la_poza,La Poza,2.525,2.525,True,observed,0.0,0,0.0
+2024-02-11,la_poza,La Poza,3.858,3.858,True,observed,0.0,0,0.0
+2024-02-12,la_poza,La Poza,3.533,3.533,True,observed,0.0,0,0.0
+2024-02-13,la_poza,La Poza,3.358,3.358,True,observed,0.0,0,0.0
+2024-02-14,la_poza,La Poza,2.798,2.798,True,observed,0.0,0,0.0
+2024-02-15,la_poza,La Poza,2.469,2.469,True,observed,0.0,0,0.0
+2024-02-16,la_poza,La Poza,2.858,2.858,True,observed,0.0,0,0.0
+2024-02-17,la_poza,La Poza,3.148,3.148,True,observed,0.0,0,0.0
+2024-02-18,la_poza,La Poza,2.796,2.796,True,observed,0.0,0,0.0
+2024-02-19,la_poza,La Poza,2.781,2.781,True,observed,0.0,0,0.0
+2024-02-20,la_poza,La Poza,3.148,3.148,True,observed,0.0,0,0.0
+2024-02-21,la_poza,La Poza,2.65,2.65,True,observed,0.0,0,0.0
+2024-02-22,la_poza,La Poza,2.369,2.369,True,observed,0.0,0,0.0
+2024-02-23,la_poza,La Poza,2.027,2.027,True,observed,0.0,0,0.0
+2024-02-24,la_poza,La Poza,1.8,1.8,True,observed,0.0,0,0.0
+2024-02-25,la_poza,La Poza,1.448,1.448,True,observed,0.0,0,0.0
+2024-02-26,la_poza,La Poza,1.504,1.504,True,observed,0.0,0,0.0
+2024-02-27,la_poza,La Poza,1.783,1.783,True,observed,0.0,0,0.0
+2024-02-28,la_poza,La Poza,2.008,2.008,True,observed,0.0,0,0.0
+2024-02-29,la_poza,La Poza,1.606,1.606,True,observed,0.0,0,0.0
+2024-03-01,la_poza,La Poza,1.515,1.515,True,observed,0.0,0,0.0
+2024-03-02,la_poza,La Poza,1.221,1.221,True,observed,0.0,0,0.0
+2024-03-03,la_poza,La Poza,1.021,1.021,True,observed,0.0,0,0.0
+2024-03-04,la_poza,La Poza,0.944,0.944,True,observed,0.0,0,0.0
+2024-03-05,la_poza,La Poza,0.646,0.646,True,observed,0.0,0,0.0
+2024-03-06,la_poza,La Poza,0.481,0.481,True,observed,0.0,0,0.0
+2024-03-07,la_poza,La Poza,0.379,0.379,True,observed,0.0,0,0.0
+2024-03-08,la_poza,La Poza,0.423,0.423,True,observed,0.0,0,0.0
+2024-03-09,la_poza,La Poza,0.385,0.385,True,observed,0.0,0,0.0
+2024-03-10,la_poza,La Poza,0.356,0.356,True,observed,0.0,0,0.0
+2024-03-11,la_poza,La Poza,0.363,0.363,True,observed,0.0,0,0.0
+2024-03-12,la_poza,La Poza,0.5,0.5,True,observed,0.0,0,0.0
+2024-03-13,la_poza,La Poza,0.521,0.521,True,observed,0.0,0,0.0
+2024-03-14,la_poza,La Poza,0.452,0.452,True,observed,0.0,0,0.0
+2024-03-15,la_poza,La Poza,0.475,0.475,True,observed,0.0,0,0.0
+2024-03-16,la_poza,La Poza,0.527,0.527,True,observed,0.0,0,0.0
+2024-03-17,la_poza,La Poza,0.54,0.54,True,observed,0.0,0,0.0
+2024-03-18,la_poza,La Poza,0.523,0.523,True,observed,0.0,0,0.0
+2024-03-19,la_poza,La Poza,0.6,0.6,True,observed,0.0,0,0.0
+2024-03-20,la_poza,La Poza,0.611,0.611,True,observed,0.0,0,0.0
+2024-03-21,la_poza,La Poza,,1.0186121261795786,False,shape_preserving_pchip_bracketed_short_gap,1.0,1,0.15
+2024-03-22,la_poza,La Poza,0.776,0.776,True,observed,0.0,0,0.0
+2024-03-23,la_poza,La Poza,0.488,0.488,True,observed,0.0,0,0.0
+2024-03-24,la_poza,La Poza,0.442,0.442,True,observed,0.0,0,0.0
+2024-03-25,la_poza,La Poza,0.546,0.546,True,observed,0.0,0,0.0
+2024-03-26,la_poza,La Poza,0.648,0.648,True,observed,0.0,0,0.0
+2024-03-27,la_poza,La Poza,0.483,0.483,True,observed,0.0,0,0.0
+2024-03-28,la_poza,La Poza,0.504,0.504,True,observed,0.0,0,0.0
+2024-03-29,la_poza,La Poza,0.46,0.46,True,observed,0.0,0,0.0
+2024-03-30,la_poza,La Poza,0.621,0.621,True,observed,0.0,0,0.0
+2024-03-31,la_poza,La Poza,0.696,0.696,True,observed,0.0,0,0.0
+2024-04-01,la_poza,La Poza,0.721,0.721,True,observed,0.0,0,0.0
+2024-04-02,la_poza,La Poza,0.908,0.908,True,observed,0.0,0,0.0
+2024-04-03,la_poza,La Poza,0.975,0.975,True,observed,0.0,0,0.0
+2024-04-04,la_poza,La Poza,1.194,1.194,True,observed,0.0,0,0.0
+2024-04-05,la_poza,La Poza,0.89,0.89,True,observed,0.0,0,0.0
+2024-04-06,la_poza,La Poza,0.861,0.861,True,observed,0.0,0,0.0
+2024-04-07,la_poza,La Poza,0.975,0.975,True,observed,0.0,0,0.0
+2024-04-08,la_poza,La Poza,0.84,0.84,True,observed,0.0,0,0.0
+2024-04-09,la_poza,La Poza,0.723,0.723,True,observed,0.0,0,0.0
+2024-04-10,la_poza,La Poza,0.573,0.573,True,observed,0.0,0,0.0
+2024-04-11,la_poza,La Poza,0.404,0.404,True,observed,0.0,0,0.0
+2024-04-12,la_poza,La Poza,0.358,0.358,True,observed,0.0,0,0.0
+2024-04-13,la_poza,La Poza,0.169,0.169,True,observed,0.0,0,0.0
+2024-04-14,la_poza,La Poza,0.356,0.356,True,observed,0.0,0,0.0
+2024-04-15,la_poza,La Poza,0.683,0.683,True,observed,0.0,0,0.0
+2024-04-16,la_poza,La Poza,1.021,1.021,True,observed,0.0,0,0.0
+2024-04-17,la_poza,La Poza,0.956,0.956,True,observed,0.0,0,0.0
+2024-04-18,la_poza,La Poza,1.377,1.377,True,observed,0.0,0,0.0
+2024-04-19,la_poza,La Poza,1.388,1.388,True,observed,0.0,0,0.0
+2024-04-20,la_poza,La Poza,1.498,1.498,True,observed,0.0,0,0.0
+2024-04-21,la_poza,La Poza,1.569,1.569,True,observed,0.0,0,0.0
+2024-04-22,la_poza,La Poza,1.508,1.508,True,observed,0.0,0,0.0
+2024-04-23,la_poza,La Poza,1.177,1.177,True,observed,0.0,0,0.0
+2024-04-24,la_poza,La Poza,1.175,1.175,True,observed,0.0,0,0.0
+2024-04-25,la_poza,La Poza,0.933,0.933,True,observed,0.0,0,0.0
+2024-04-26,la_poza,La Poza,0.719,0.719,True,observed,0.0,0,0.0
+2024-04-27,la_poza,La Poza,0.725,0.725,True,observed,0.0,0,0.0
+2024-04-28,la_poza,La Poza,0.698,0.698,True,observed,0.0,0,0.0
+2024-04-29,la_poza,La Poza,0.69,0.69,True,observed,0.0,0,0.0
+2024-04-30,la_poza,La Poza,0.55,0.55,True,observed,0.0,0,0.0
+2024-05-01,la_poza,La Poza,0.515,0.515,True,observed,0.0,0,0.0
+2024-05-02,la_poza,La Poza,0.502,0.502,True,observed,0.0,0,0.0
+2024-05-03,la_poza,La Poza,0.85,0.85,True,observed,0.0,0,0.0
+2024-05-04,la_poza,La Poza,0.685,0.685,True,observed,0.0,0,0.0
+2024-05-05,la_poza,La Poza,0.731,0.731,True,observed,0.0,0,0.0
+2024-05-06,la_poza,La Poza,0.802,0.802,True,observed,0.0,0,0.0
+2024-05-07,la_poza,La Poza,,0.8698895409443878,False,historical_seasonal_harmonic_analog_residual,1.0,226,0.4
+2024-05-08,la_poza,La Poza,,0.9300389907930692,False,historical_seasonal_harmonic_analog_residual,2.0,226,0.4
+2024-05-09,la_poza,La Poza,,0.9837695929603584,False,historical_seasonal_harmonic_analog_residual,3.0,226,0.4
+2024-05-10,la_poza,La Poza,,1.0321692857302325,False,historical_seasonal_harmonic_analog_residual,4.0,226,0.4
+2024-05-11,la_poza,La Poza,,1.0760961045038184,False,historical_seasonal_harmonic_analog_residual,5.0,226,0.4
+2024-05-12,la_poza,La Poza,,1.1162654759460522,False,historical_seasonal_harmonic_analog_residual,6.0,226,0.4
+2024-05-13,la_poza,La Poza,,1.1532441932085598,False,historical_seasonal_harmonic_analog_residual,7.0,226,0.4
+2024-05-14,la_poza,La Poza,,1.1860008189198243,False,historical_seasonal_harmonic_analog_residual,8.0,226,0.4
+2024-05-15,la_poza,La Poza,,1.1908342323888306,False,historical_seasonal_harmonic_analog_residual,9.0,226,0.4
+2024-05-16,la_poza,La Poza,,1.1022903495270744,False,historical_seasonal_harmonic_analog_residual,10.0,226,0.4
+2024-05-17,la_poza,La Poza,,0.9896151542556548,False,historical_seasonal_harmonic_analog_residual,11.0,226,0.4
+2024-05-18,la_poza,La Poza,,0.9088914507465732,False,historical_seasonal_harmonic_analog_residual,12.0,226,0.4
+2024-05-19,la_poza,La Poza,,0.8421150233629702,False,historical_seasonal_harmonic_analog_residual,13.0,226,0.4
+2024-05-20,la_poza,La Poza,,0.8343801585533606,False,historical_seasonal_harmonic_analog_residual,14.0,226,0.4
+2024-05-21,la_poza,La Poza,,0.826977635042738,False,historical_seasonal_harmonic_analog_residual,15.0,226,0.4
+2024-05-22,la_poza,La Poza,,0.8117594463549594,False,historical_seasonal_harmonic_analog_residual,16.0,226,0.4
+2024-05-23,la_poza,La Poza,,0.8086180427227325,False,historical_seasonal_harmonic_analog_residual,17.0,226,0.4
+2024-05-24,la_poza,La Poza,,0.8035570546748917,False,historical_seasonal_harmonic_analog_residual,18.0,226,0.4
+2024-05-25,la_poza,La Poza,,0.8013720569825127,False,historical_seasonal_harmonic_analog_residual,19.0,226,0.4
+2024-05-26,la_poza,La Poza,,0.7909136694601437,False,historical_seasonal_harmonic_analog_residual,20.0,226,0.4
+2024-05-27,la_poza,La Poza,,0.7872200722436775,False,historical_seasonal_harmonic_analog_residual,21.0,226,0.4
+2024-05-28,la_poza,La Poza,,0.8119133948711673,False,historical_seasonal_harmonic_analog_residual,22.0,226,0.4
+2024-05-29,la_poza,La Poza,,0.8497802995645122,False,historical_seasonal_harmonic_analog_residual,23.0,226,0.4
+2024-05-30,la_poza,La Poza,,0.8737462687065821,False,historical_seasonal_harmonic_analog_residual,24.0,226,0.4
+2024-05-31,la_poza,La Poza,,0.8878214919403703,False,historical_seasonal_harmonic_analog_residual,25.0,226,0.4
+2024-06-01,la_poza,La Poza,,0.9079208431993252,False,historical_seasonal_harmonic_analog_residual,26.0,226,0.4
+2024-06-02,la_poza,La Poza,,0.9414417557499888,False,historical_seasonal_harmonic_analog_residual,27.0,226,0.4
+2024-06-03,la_poza,La Poza,,0.9721989655177592,False,historical_seasonal_harmonic_analog_residual,28.0,226,0.4
+2024-06-04,la_poza,La Poza,,0.9840740602060336,False,historical_seasonal_harmonic_analog_residual,29.0,226,0.4
+2024-06-05,la_poza,La Poza,,0.990566469066881,False,historical_seasonal_harmonic_analog_residual,30.0,226,0.4
+2024-06-06,la_poza,La Poza,,0.9798857726576948,False,historical_seasonal_harmonic_analog_residual,31.0,226,0.4
+2024-06-07,la_poza,La Poza,,0.9304396831622423,False,historical_seasonal_harmonic_analog_residual,32.0,226,0.4
+2024-06-08,la_poza,La Poza,,0.9277525456280457,False,historical_seasonal_harmonic_analog_residual,33.0,226,0.4
+2024-06-09,la_poza,La Poza,,0.9337816135370316,False,historical_seasonal_harmonic_analog_residual,34.0,226,0.4
+2024-06-10,la_poza,La Poza,,0.9934985978719748,False,historical_seasonal_harmonic_analog_residual,35.0,226,0.4
+2024-06-11,la_poza,La Poza,,1.0005159159686194,False,historical_seasonal_harmonic_analog_residual,36.0,226,0.4
+2024-06-12,la_poza,La Poza,,1.030435693716636,False,historical_seasonal_harmonic_analog_residual,37.0,226,0.4
+2024-06-13,la_poza,La Poza,,1.0505975953930835,False,historical_seasonal_harmonic_analog_residual,38.0,226,0.4
+2024-06-14,la_poza,La Poza,,1.0788668231273142,False,historical_seasonal_harmonic_analog_residual,39.0,226,0.4
+2024-06-15,la_poza,La Poza,,1.027722774349474,False,historical_seasonal_harmonic_analog_residual,40.0,226,0.4
+2024-06-16,la_poza,La Poza,,0.9510952870239848,False,historical_seasonal_harmonic_analog_residual,41.0,226,0.4
+2024-06-17,la_poza,La Poza,,0.9023188281553508,False,historical_seasonal_harmonic_analog_residual,42.0,226,0.4
+2024-06-18,la_poza,La Poza,,0.8948531753383386,False,historical_seasonal_harmonic_analog_residual,43.0,226,0.4
+2024-06-19,la_poza,La Poza,,0.8954654151161268,False,historical_seasonal_harmonic_analog_residual,44.0,226,0.4
+2024-06-20,la_poza,La Poza,,0.9192206897219772,False,historical_seasonal_harmonic_analog_residual,45.0,226,0.4
+2024-06-21,la_poza,La Poza,,0.9005475661466297,False,historical_seasonal_harmonic_analog_residual,46.0,226,0.4
+2024-06-22,la_poza,La Poza,,0.8835395404580108,False,historical_seasonal_harmonic_analog_residual,47.0,226,0.4
+2024-06-23,la_poza,La Poza,,0.8498762765185655,False,historical_seasonal_harmonic_analog_residual,48.0,226,0.4
+2024-06-24,la_poza,La Poza,,0.8394488870294045,False,historical_seasonal_harmonic_analog_residual,49.0,226,0.4
+2024-06-25,la_poza,La Poza,,0.8375721912108087,False,historical_seasonal_harmonic_analog_residual,50.0,226,0.4
+2024-06-26,la_poza,La Poza,,0.834419159481735,False,historical_seasonal_harmonic_analog_residual,51.0,226,0.4
+2024-06-27,la_poza,La Poza,,0.825040202758888,False,historical_seasonal_harmonic_analog_residual,52.0,226,0.4
+2024-06-28,la_poza,La Poza,,0.8244900732225093,False,historical_seasonal_harmonic_analog_residual,53.0,226,0.4
+2024-06-29,la_poza,La Poza,,0.8409219103834402,False,historical_seasonal_harmonic_analog_residual,54.0,226,0.4
+2024-06-30,la_poza,La Poza,,0.8669137253751495,False,historical_seasonal_harmonic_analog_residual,55.0,226,0.4
+2024-07-01,la_poza,La Poza,,0.903173294797992,False,historical_seasonal_harmonic_analog_residual,56.0,226,0.4
+2024-07-02,la_poza,La Poza,,0.9291493231077284,False,historical_seasonal_harmonic_analog_residual,57.0,226,0.4
+2024-07-03,la_poza,La Poza,,1.004482846537669,False,historical_seasonal_harmonic_analog_residual,58.0,226,0.4
+2024-07-04,la_poza,La Poza,,1.0633906690415371,False,historical_seasonal_harmonic_analog_residual,59.0,226,0.4
+2024-07-05,la_poza,La Poza,,1.1788758459268631,False,historical_seasonal_harmonic_analog_residual,60.0,226,0.4
+2024-07-06,la_poza,La Poza,,1.0997777430395774,False,historical_seasonal_harmonic_analog_residual,61.0,226,0.4
+2024-07-07,la_poza,La Poza,,1.0384524427805084,False,historical_seasonal_harmonic_analog_residual,62.0,226,0.4
+2024-07-08,la_poza,La Poza,,0.9552572310782615,False,historical_seasonal_harmonic_analog_residual,63.0,226,0.4
+2024-07-09,la_poza,La Poza,,0.9375890884226776,False,historical_seasonal_harmonic_analog_residual,64.0,226,0.4
+2024-07-10,la_poza,La Poza,,0.9253587395300008,False,historical_seasonal_harmonic_analog_residual,65.0,226,0.4
+2024-07-11,la_poza,La Poza,,0.9374170858865216,False,historical_seasonal_harmonic_analog_residual,66.0,226,0.4
+2024-07-12,la_poza,La Poza,,0.9502006483549869,False,historical_seasonal_harmonic_analog_residual,67.0,226,0.4
+2024-07-13,la_poza,La Poza,,1.0145963896610597,False,historical_seasonal_harmonic_analog_residual,68.0,226,0.4
+2024-07-14,la_poza,La Poza,,1.0213374230810437,False,historical_seasonal_harmonic_analog_residual,69.0,226,0.4
+2024-07-15,la_poza,La Poza,,1.0384338578515,False,historical_seasonal_harmonic_analog_residual,70.0,226,0.4
+2024-07-16,la_poza,La Poza,,0.9958463605390456,False,historical_seasonal_harmonic_analog_residual,71.0,226,0.4
+2024-07-17,la_poza,La Poza,,1.0063611752077015,False,historical_seasonal_harmonic_analog_residual,72.0,226,0.4
+2024-07-18,la_poza,La Poza,,0.9991565482453352,False,historical_seasonal_harmonic_analog_residual,73.0,226,0.4
+2024-07-19,la_poza,La Poza,,1.0114253307123962,False,historical_seasonal_harmonic_analog_residual,74.0,226,0.4
+2024-07-20,la_poza,La Poza,,0.9835230003051232,False,historical_seasonal_harmonic_analog_residual,75.0,226,0.4
+2024-07-21,la_poza,La Poza,,0.9552857935676412,False,historical_seasonal_harmonic_analog_residual,76.0,226,0.4
+2024-07-22,la_poza,La Poza,,0.9183160782851968,False,historical_seasonal_harmonic_analog_residual,77.0,226,0.4
+2024-07-23,la_poza,La Poza,,0.8790549897104389,False,historical_seasonal_harmonic_analog_residual,78.0,226,0.4
+2024-07-24,la_poza,La Poza,,0.898539001069791,False,historical_seasonal_harmonic_analog_residual,79.0,226,0.4
+2024-07-25,la_poza,La Poza,,0.9062782544622492,False,historical_seasonal_harmonic_analog_residual,80.0,226,0.4
+2024-07-26,la_poza,La Poza,,0.9400966764400694,False,historical_seasonal_harmonic_analog_residual,81.0,226,0.4
+2024-07-27,la_poza,La Poza,,0.912258100649604,False,historical_seasonal_harmonic_analog_residual,82.0,226,0.4
+2024-07-28,la_poza,La Poza,,0.9321919294806824,False,historical_seasonal_harmonic_analog_residual,83.0,226,0.4
+2024-07-29,la_poza,La Poza,,0.9380946030662354,False,historical_seasonal_harmonic_analog_residual,84.0,226,0.4
+2024-07-30,la_poza,La Poza,,0.9927177481739312,False,historical_seasonal_harmonic_analog_residual,85.0,226,0.4
+2024-07-31,la_poza,La Poza,,1.0204429959177712,False,historical_seasonal_harmonic_analog_residual,86.0,226,0.4
+2024-08-01,la_poza,La Poza,,0.9967289554215764,False,historical_seasonal_harmonic_analog_residual,87.0,226,0.4
+2024-08-02,la_poza,La Poza,,0.9494008396450272,False,historical_seasonal_harmonic_analog_residual,88.0,226,0.4
+2024-08-03,la_poza,La Poza,,0.9023835939643416,False,historical_seasonal_harmonic_analog_residual,89.0,226,0.4
+2024-08-04,la_poza,La Poza,,0.8939985214519526,False,historical_seasonal_harmonic_analog_residual,90.0,226,0.4
+2024-08-05,la_poza,La Poza,,0.908100524017024,False,historical_seasonal_harmonic_analog_residual,91.0,226,0.4
+2024-08-06,la_poza,La Poza,,0.9411691535597474,False,historical_seasonal_harmonic_analog_residual,92.0,226,0.4
+2024-08-07,la_poza,La Poza,,0.9861147811986384,False,historical_seasonal_harmonic_analog_residual,93.0,226,0.4
+2024-08-08,la_poza,La Poza,,1.002281868155221,False,historical_seasonal_harmonic_analog_residual,94.0,226,0.4
+2024-08-09,la_poza,La Poza,,1.04548506853414,False,historical_seasonal_harmonic_analog_residual,95.0,226,0.4
+2024-08-10,la_poza,La Poza,,1.034487819184147,False,historical_seasonal_harmonic_analog_residual,96.0,226,0.4
+2024-08-11,la_poza,La Poza,,1.028925254409339,False,historical_seasonal_harmonic_analog_residual,97.0,226,0.4
+2024-08-12,la_poza,La Poza,,0.956632932562277,False,historical_seasonal_harmonic_analog_residual,98.0,226,0.4
+2024-08-13,la_poza,La Poza,,0.9350830634197796,False,historical_seasonal_harmonic_analog_residual,99.0,226,0.4
+2024-08-14,la_poza,La Poza,,0.9487632196596956,False,historical_seasonal_harmonic_analog_residual,100.0,226,0.4
+2024-08-15,la_poza,La Poza,,0.995809327208491,False,historical_seasonal_harmonic_analog_residual,101.0,226,0.4
+2024-08-16,la_poza,La Poza,,1.0129777963457778,False,historical_seasonal_harmonic_analog_residual,102.0,226,0.4
+2024-08-17,la_poza,La Poza,,1.0211988232944544,False,historical_seasonal_harmonic_analog_residual,103.0,226,0.4
+2024-08-18,la_poza,La Poza,,1.036725022674532,False,historical_seasonal_harmonic_analog_residual,104.0,226,0.4
+2024-08-19,la_poza,La Poza,,1.0447306816439192,False,historical_seasonal_harmonic_analog_residual,105.0,226,0.4
+2024-08-20,la_poza,La Poza,,1.181442785449354,False,historical_seasonal_harmonic_analog_residual,106.0,226,0.4
+2024-08-21,la_poza,La Poza,,1.270660764205333,False,historical_seasonal_harmonic_analog_residual,107.0,226,0.4
+2024-08-22,la_poza,La Poza,,1.152728048535749,False,historical_seasonal_harmonic_analog_residual,108.0,226,0.4
+2024-08-23,la_poza,La Poza,,0.995782311081192,False,historical_seasonal_harmonic_analog_residual,109.0,226,0.4
+2024-08-24,la_poza,La Poza,,0.9619908570464892,False,historical_seasonal_harmonic_analog_residual,110.0,226,0.4
+2024-08-25,la_poza,La Poza,,0.9787517836183504,False,historical_seasonal_harmonic_analog_residual,111.0,226,0.4
+2024-08-26,la_poza,La Poza,,1.0534119708288912,False,historical_seasonal_harmonic_analog_residual,112.0,226,0.4
+2024-08-27,la_poza,La Poza,,1.1667449233694371,False,historical_seasonal_harmonic_analog_residual,113.0,226,0.4
+2024-08-28,la_poza,La Poza,,1.2912266938150272,False,historical_seasonal_harmonic_analog_residual,113.0,226,0.4
+2024-08-29,la_poza,La Poza,,1.3361680955667352,False,historical_seasonal_harmonic_analog_residual,112.0,226,0.4
+2024-08-30,la_poza,La Poza,,1.3676646623001265,False,historical_seasonal_harmonic_analog_residual,111.0,226,0.4
+2024-08-31,la_poza,La Poza,,1.2852740128871594,False,historical_seasonal_harmonic_analog_residual,110.0,226,0.4
+2024-09-01,la_poza,La Poza,,1.223079660842462,False,historical_seasonal_harmonic_analog_residual,109.0,226,0.4
+2024-09-02,la_poza,La Poza,,1.238959101909354,False,historical_seasonal_harmonic_analog_residual,108.0,226,0.4
+2024-09-03,la_poza,La Poza,,1.323161583562024,False,historical_seasonal_harmonic_analog_residual,107.0,226,0.4
+2024-09-04,la_poza,La Poza,,1.4905693940198272,False,historical_seasonal_harmonic_analog_residual,106.0,226,0.4
+2024-09-05,la_poza,La Poza,,1.4930078806649685,False,historical_seasonal_harmonic_analog_residual,105.0,226,0.4
+2024-09-06,la_poza,La Poza,,1.4850369564529773,False,historical_seasonal_harmonic_analog_residual,104.0,226,0.4
+2024-09-07,la_poza,La Poza,,1.3983792939899533,False,historical_seasonal_harmonic_analog_residual,103.0,226,0.4
+2024-09-08,la_poza,La Poza,,1.3917638384160294,False,historical_seasonal_harmonic_analog_residual,102.0,226,0.4
+2024-09-09,la_poza,La Poza,,1.3657638192602544,False,historical_seasonal_harmonic_analog_residual,101.0,226,0.4
+2024-09-10,la_poza,La Poza,,1.322384597227375,False,historical_seasonal_harmonic_analog_residual,100.0,226,0.4
+2024-09-11,la_poza,La Poza,,1.287754436791299,False,historical_seasonal_harmonic_analog_residual,99.0,226,0.4
+2024-09-12,la_poza,La Poza,,1.299772459421859,False,historical_seasonal_harmonic_analog_residual,98.0,226,0.4
+2024-09-13,la_poza,La Poza,,1.3893336861827796,False,historical_seasonal_harmonic_analog_residual,97.0,226,0.4
+2024-09-14,la_poza,La Poza,,1.4160159193817043,False,historical_seasonal_harmonic_analog_residual,96.0,226,0.4
+2024-09-15,la_poza,La Poza,,1.3798248313140729,False,historical_seasonal_harmonic_analog_residual,95.0,226,0.4
+2024-09-16,la_poza,La Poza,,1.266554292172685,False,historical_seasonal_harmonic_analog_residual,94.0,226,0.4
+2024-09-17,la_poza,La Poza,,1.1851944145327145,False,historical_seasonal_harmonic_analog_residual,93.0,226,0.4
+2024-09-18,la_poza,La Poza,,1.1434742895534455,False,historical_seasonal_harmonic_analog_residual,92.0,226,0.4
+2024-09-19,la_poza,La Poza,,1.199942551386466,False,historical_seasonal_harmonic_analog_residual,91.0,226,0.4
+2024-09-20,la_poza,La Poza,,1.2277602778474097,False,historical_seasonal_harmonic_analog_residual,90.0,226,0.4
+2024-09-21,la_poza,La Poza,,1.2558610909408168,False,historical_seasonal_harmonic_analog_residual,89.0,226,0.4
+2024-09-22,la_poza,La Poza,,1.201235525550675,False,historical_seasonal_harmonic_analog_residual,88.0,226,0.4
+2024-09-23,la_poza,La Poza,,1.161842466458077,False,historical_seasonal_harmonic_analog_residual,87.0,226,0.4
+2024-09-24,la_poza,La Poza,,1.182471776294916,False,historical_seasonal_harmonic_analog_residual,86.0,226,0.4
+2024-09-25,la_poza,La Poza,,1.2465749744656027,False,historical_seasonal_harmonic_analog_residual,85.0,226,0.4
+2024-09-26,la_poza,La Poza,,1.3465536181747164,False,historical_seasonal_harmonic_analog_residual,84.0,226,0.4
+2024-09-27,la_poza,La Poza,,1.3942344140604248,False,historical_seasonal_harmonic_analog_residual,83.0,226,0.4
+2024-09-28,la_poza,La Poza,,1.4183056188675451,False,historical_seasonal_harmonic_analog_residual,82.0,226,0.4
+2024-09-29,la_poza,La Poza,,1.376430896595819,False,historical_seasonal_harmonic_analog_residual,81.0,226,0.4
+2024-09-30,la_poza,La Poza,,1.3568412114088144,False,historical_seasonal_harmonic_analog_residual,80.0,226,0.4
+2024-10-01,la_poza,La Poza,,1.391472817581171,False,historical_seasonal_harmonic_analog_residual,79.0,226,0.4
+2024-10-02,la_poza,La Poza,,1.3930008687613795,False,historical_seasonal_harmonic_analog_residual,78.0,226,0.4
+2024-10-03,la_poza,La Poza,,1.4796211570231763,False,historical_seasonal_harmonic_analog_residual,77.0,226,0.4
+2024-10-04,la_poza,La Poza,,1.4701505963074286,False,historical_seasonal_harmonic_analog_residual,76.0,226,0.4
+2024-10-05,la_poza,La Poza,,1.5767209367283126,False,historical_seasonal_harmonic_analog_residual,75.0,226,0.4
+2024-10-06,la_poza,La Poza,,1.6446427163369362,False,historical_seasonal_harmonic_analog_residual,74.0,226,0.4
+2024-10-07,la_poza,La Poza,,1.7605558579429248,False,historical_seasonal_harmonic_analog_residual,73.0,226,0.4
+2024-10-08,la_poza,La Poza,,1.8469740499757976,False,historical_seasonal_harmonic_analog_residual,72.0,226,0.4
+2024-10-09,la_poza,La Poza,,1.8016271309706784,False,historical_seasonal_harmonic_analog_residual,71.0,226,0.4
+2024-10-10,la_poza,La Poza,,1.7267707624269146,False,historical_seasonal_harmonic_analog_residual,70.0,226,0.4
+2024-10-11,la_poza,La Poza,,1.7263858251316362,False,historical_seasonal_harmonic_analog_residual,69.0,226,0.4
+2024-10-12,la_poza,La Poza,,1.7968959112722669,False,historical_seasonal_harmonic_analog_residual,68.0,226,0.4
+2024-10-13,la_poza,La Poza,,1.8628488893058353,False,historical_seasonal_harmonic_analog_residual,67.0,226,0.4
+2024-10-14,la_poza,La Poza,,1.8892979156815544,False,historical_seasonal_harmonic_analog_residual,66.0,226,0.4
+2024-10-15,la_poza,La Poza,,1.8530756232742975,False,historical_seasonal_harmonic_analog_residual,65.0,226,0.4
+2024-10-16,la_poza,La Poza,,1.8381564069309615,False,historical_seasonal_harmonic_analog_residual,64.0,226,0.4
+2024-10-17,la_poza,La Poza,,1.8124323203830484,False,historical_seasonal_harmonic_analog_residual,63.0,226,0.4
+2024-10-18,la_poza,La Poza,,1.7887613617752596,False,historical_seasonal_harmonic_analog_residual,62.0,226,0.4
+2024-10-19,la_poza,La Poza,,1.8110243114303717,False,historical_seasonal_harmonic_analog_residual,61.0,226,0.4
+2024-10-20,la_poza,La Poza,,1.8061136822118211,False,historical_seasonal_harmonic_analog_residual,60.0,226,0.4
+2024-10-21,la_poza,La Poza,,1.7939856283632754,False,historical_seasonal_harmonic_analog_residual,59.0,226,0.4
+2024-10-22,la_poza,La Poza,,1.7230668623934706,False,historical_seasonal_harmonic_analog_residual,58.0,226,0.4
+2024-10-23,la_poza,La Poza,,1.6394531549849145,False,historical_seasonal_harmonic_analog_residual,57.0,226,0.4
+2024-10-24,la_poza,La Poza,,1.6463569536813965,False,historical_seasonal_harmonic_analog_residual,56.0,226,0.4
+2024-10-25,la_poza,La Poza,,1.7023662634252037,False,historical_seasonal_harmonic_analog_residual,55.0,226,0.4
+2024-10-26,la_poza,La Poza,,1.8586607974926437,False,historical_seasonal_harmonic_analog_residual,54.0,226,0.4
+2024-10-27,la_poza,La Poza,,1.7923348038788725,False,historical_seasonal_harmonic_analog_residual,53.0,226,0.4
+2024-10-28,la_poza,La Poza,,1.7003868294206783,False,historical_seasonal_harmonic_analog_residual,52.0,226,0.4
+2024-10-29,la_poza,La Poza,,1.643868193645843,False,historical_seasonal_harmonic_analog_residual,51.0,226,0.4
+2024-10-30,la_poza,La Poza,,1.6726824885507952,False,historical_seasonal_harmonic_analog_residual,50.0,226,0.4
+2024-10-31,la_poza,La Poza,,1.652066009029233,False,historical_seasonal_harmonic_analog_residual,49.0,226,0.4
+2024-11-01,la_poza,La Poza,,1.6974845080870258,False,historical_seasonal_harmonic_analog_residual,48.0,226,0.4
+2024-11-02,la_poza,La Poza,,1.713358008622298,False,historical_seasonal_harmonic_analog_residual,47.0,226,0.4
+2024-11-03,la_poza,La Poza,,1.7438644129831542,False,historical_seasonal_harmonic_analog_residual,46.0,226,0.4
+2024-11-04,la_poza,La Poza,,1.7360720723730054,False,historical_seasonal_harmonic_analog_residual,45.0,226,0.4
+2024-11-05,la_poza,La Poza,,1.8796843111337709,False,historical_seasonal_harmonic_analog_residual,44.0,226,0.4
+2024-11-06,la_poza,La Poza,,1.8826647436833688,False,historical_seasonal_harmonic_analog_residual,43.0,226,0.4
+2024-11-07,la_poza,La Poza,,1.7800243001616651,False,historical_seasonal_harmonic_analog_residual,42.0,226,0.4
+2024-11-08,la_poza,La Poza,,1.69542672407241,False,historical_seasonal_harmonic_analog_residual,41.0,226,0.4
+2024-11-09,la_poza,La Poza,,1.7578047647619648,False,historical_seasonal_harmonic_analog_residual,40.0,226,0.4
+2024-11-10,la_poza,La Poza,,1.738545867549986,False,historical_seasonal_harmonic_analog_residual,39.0,226,0.4
+2024-11-11,la_poza,La Poza,,1.739581866853719,False,historical_seasonal_harmonic_analog_residual,38.0,226,0.4
+2024-11-12,la_poza,La Poza,,1.7999385272494863,False,historical_seasonal_harmonic_analog_residual,37.0,226,0.4
+2024-11-13,la_poza,La Poza,,1.7071066817698757,False,historical_seasonal_harmonic_analog_residual,36.0,226,0.4
+2024-11-14,la_poza,La Poza,,1.7931662662128427,False,historical_seasonal_harmonic_analog_residual,35.0,226,0.4
+2024-11-15,la_poza,La Poza,,1.61096820718683,False,historical_seasonal_harmonic_analog_residual,34.0,226,0.4
+2024-11-16,la_poza,La Poza,,1.5598847550318706,False,historical_seasonal_harmonic_analog_residual,33.0,226,0.4
+2024-11-17,la_poza,La Poza,,1.5258714502319348,False,historical_seasonal_harmonic_analog_residual,32.0,226,0.4
+2024-11-18,la_poza,La Poza,,1.402421176466638,False,historical_seasonal_harmonic_analog_residual,31.0,226,0.4
+2024-11-19,la_poza,La Poza,,1.2577559028571672,False,historical_seasonal_harmonic_analog_residual,30.0,226,0.4
+2024-11-20,la_poza,La Poza,,1.1981058801755888,False,historical_seasonal_harmonic_analog_residual,29.0,226,0.4
+2024-11-21,la_poza,La Poza,,1.1444489060496177,False,historical_seasonal_harmonic_analog_residual,28.0,226,0.4
+2024-11-22,la_poza,La Poza,,1.1325600968629583,False,historical_seasonal_harmonic_analog_residual,27.0,226,0.4
+2024-11-23,la_poza,La Poza,,1.1418134951195351,False,historical_seasonal_harmonic_analog_residual,26.0,226,0.4
+2024-11-24,la_poza,La Poza,,1.140468177393455,False,historical_seasonal_harmonic_analog_residual,25.0,226,0.4
+2024-11-25,la_poza,La Poza,,1.1725318994311025,False,historical_seasonal_harmonic_analog_residual,24.0,226,0.4
+2024-11-26,la_poza,La Poza,,1.182154276732606,False,historical_seasonal_harmonic_analog_residual,23.0,226,0.4
+2024-11-27,la_poza,La Poza,,1.1848551780361605,False,historical_seasonal_harmonic_analog_residual,22.0,226,0.4
+2024-11-28,la_poza,La Poza,,1.1917311741668888,False,historical_seasonal_harmonic_analog_residual,21.0,226,0.4
+2024-11-29,la_poza,La Poza,,1.1600539911354597,False,historical_seasonal_harmonic_analog_residual,20.0,226,0.4
+2024-11-30,la_poza,La Poza,,1.1285014222303051,False,historical_seasonal_harmonic_analog_residual,19.0,226,0.4
+2024-12-01,la_poza,La Poza,,1.088723692715156,False,historical_seasonal_harmonic_analog_residual,18.0,226,0.4
+2024-12-02,la_poza,La Poza,,1.0649157939821698,False,historical_seasonal_harmonic_analog_residual,17.0,226,0.4
+2024-12-03,la_poza,La Poza,,1.0571073906116988,False,historical_seasonal_harmonic_analog_residual,16.0,226,0.4
+2024-12-04,la_poza,La Poza,,1.0600384910705265,False,historical_seasonal_harmonic_analog_residual,15.0,226,0.4
+2024-12-05,la_poza,La Poza,,1.04234747358634,False,historical_seasonal_harmonic_analog_residual,14.0,226,0.4
+2024-12-06,la_poza,La Poza,,1.032666582431797,False,historical_seasonal_harmonic_analog_residual,13.0,226,0.4
+2024-12-07,la_poza,La Poza,,1.0273485945160044,False,historical_seasonal_harmonic_analog_residual,12.0,226,0.4
+2024-12-08,la_poza,La Poza,,1.0161535970880582,False,historical_seasonal_harmonic_analog_residual,11.0,226,0.4
+2024-12-09,la_poza,La Poza,,0.9820129318725226,False,historical_seasonal_harmonic_analog_residual,10.0,226,0.4
+2024-12-10,la_poza,La Poza,,0.9549586394695382,False,historical_seasonal_harmonic_analog_residual,9.0,226,0.4
+2024-12-11,la_poza,La Poza,,0.9442490964597016,False,historical_seasonal_harmonic_analog_residual,8.0,226,0.4
+2024-12-12,la_poza,La Poza,,0.943714785109692,False,historical_seasonal_harmonic_analog_residual,7.0,226,0.4
+2024-12-13,la_poza,La Poza,,0.9409538561512232,False,historical_seasonal_harmonic_analog_residual,6.0,226,0.4
+2024-12-14,la_poza,La Poza,,0.9376990942200614,False,historical_seasonal_harmonic_analog_residual,5.0,226,0.4
+2024-12-15,la_poza,La Poza,,0.9344397536105096,False,historical_seasonal_harmonic_analog_residual,4.0,226,0.4
+2024-12-16,la_poza,La Poza,,0.9314252735655608,False,historical_seasonal_harmonic_analog_residual,3.0,226,0.4
+2024-12-17,la_poza,La Poza,,0.9287286715262972,False,historical_seasonal_harmonic_analog_residual,2.0,226,0.4
+2024-12-18,la_poza,La Poza,,0.9259199931504166,False,historical_seasonal_harmonic_analog_residual,1.0,226,0.4
+2024-12-19,la_poza,La Poza,0.923,0.923,True,observed,0.0,0,0.0
+2024-12-20,la_poza,La Poza,0.977,0.977,True,observed,0.0,0,0.0
+2024-12-21,la_poza,La Poza,0.575,0.575,True,observed,0.0,0,0.0
+2024-12-22,la_poza,La Poza,0.496,0.496,True,observed,0.0,0,0.0
+2024-12-23,la_poza,La Poza,0.475,0.475,True,observed,0.0,0,0.0
+2024-12-24,la_poza,La Poza,0.377,0.377,True,observed,0.0,0,0.0
+2024-12-25,la_poza,La Poza,0.4,0.4,True,observed,0.0,0,0.0
+2024-12-26,la_poza,La Poza,0.335,0.335,True,observed,0.0,0,0.0
+2024-12-27,la_poza,La Poza,0.369,0.369,True,observed,0.0,0,0.0
+2024-12-28,la_poza,La Poza,0.338,0.338,True,observed,0.0,0,0.0
+2024-12-29,la_poza,La Poza,0.333,0.333,True,observed,0.0,0,0.0
+2024-12-30,la_poza,La Poza,0.463,0.463,True,observed,0.0,0,0.0
+2024-12-31,la_poza,La Poza,0.41,0.41,True,observed,0.0,0,0.0
+2024-01-01,pucon,Pucón,,1.489225248700509,False,historical_seasonal_harmonic_analog_residual,37.0,37,0.4
+2024-01-02,pucon,Pucón,,1.479426540046444,False,historical_seasonal_harmonic_analog_residual,36.0,37,0.4
+2024-01-03,pucon,Pucón,,1.4917323950432133,False,historical_seasonal_harmonic_analog_residual,35.0,37,0.4
+2024-01-04,pucon,Pucón,,1.4581626624614763,False,historical_seasonal_harmonic_analog_residual,34.0,37,0.4
+2024-01-05,pucon,Pucón,,1.4380642031556434,False,historical_seasonal_harmonic_analog_residual,33.0,37,0.4
+2024-01-06,pucon,Pucón,,1.434944581656988,False,historical_seasonal_harmonic_analog_residual,32.0,37,0.4
+2024-01-07,pucon,Pucón,,1.4579096217288583,False,historical_seasonal_harmonic_analog_residual,31.0,37,0.4
+2024-01-08,pucon,Pucón,,1.4908109086384107,False,historical_seasonal_harmonic_analog_residual,30.0,37,0.4
+2024-01-09,pucon,Pucón,,1.54057923273495,False,historical_seasonal_harmonic_analog_residual,29.0,37,0.4
+2024-01-10,pucon,Pucón,,1.574280262929319,False,historical_seasonal_harmonic_analog_residual,28.0,37,0.4
+2024-01-11,pucon,Pucón,,1.652721987389663,False,historical_seasonal_harmonic_analog_residual,27.0,37,0.4
+2024-01-12,pucon,Pucón,,1.714997171267737,False,historical_seasonal_harmonic_analog_residual,26.0,37,0.4
+2024-01-13,pucon,Pucón,,1.8036089312870145,False,historical_seasonal_harmonic_analog_residual,25.0,37,0.4
+2024-01-14,pucon,Pucón,,1.8083186703974237,False,historical_seasonal_harmonic_analog_residual,24.0,37,0.4
+2024-01-15,pucon,Pucón,,1.819814792241883,False,historical_seasonal_harmonic_analog_residual,23.0,37,0.4
+2024-01-16,pucon,Pucón,,1.830798580647906,False,historical_seasonal_harmonic_analog_residual,22.0,37,0.4
+2024-01-17,pucon,Pucón,,1.818225845326972,False,historical_seasonal_harmonic_analog_residual,21.0,37,0.4
+2024-01-18,pucon,Pucón,,1.9133016823663775,False,historical_seasonal_harmonic_analog_residual,20.0,37,0.4
+2024-01-19,pucon,Pucón,,1.972800430332376,False,historical_seasonal_harmonic_analog_residual,19.0,37,0.4
+2024-01-20,pucon,Pucón,,2.0871811253530645,False,historical_seasonal_harmonic_analog_residual,18.0,37,0.4
+2024-01-21,pucon,Pucón,,2.2150557302989333,False,historical_seasonal_harmonic_analog_residual,17.0,37,0.4
+2024-01-22,pucon,Pucón,,2.3584217565845575,False,historical_seasonal_harmonic_analog_residual,16.0,37,0.4
+2024-01-23,pucon,Pucón,,2.4703057770764327,False,historical_seasonal_harmonic_analog_residual,15.0,37,0.4
+2024-01-24,pucon,Pucón,,2.550329498652645,False,historical_seasonal_harmonic_analog_residual,14.0,37,0.4
+2024-01-25,pucon,Pucón,,2.6207454594013004,False,historical_seasonal_harmonic_analog_residual,13.0,37,0.4
+2024-01-26,pucon,Pucón,,2.7156128017098187,False,historical_seasonal_harmonic_analog_residual,12.0,37,0.4
+2024-01-27,pucon,Pucón,,2.8336816143338805,False,historical_seasonal_harmonic_analog_residual,11.0,37,0.4
+2024-01-28,pucon,Pucón,,2.973413040760873,False,historical_seasonal_harmonic_analog_residual,10.0,37,0.4
+2024-01-29,pucon,Pucón,,3.109042198525516,False,historical_seasonal_harmonic_analog_residual,9.0,37,0.4
+2024-01-30,pucon,Pucón,,3.2308203007671104,False,historical_seasonal_harmonic_analog_residual,8.0,37,0.4
+2024-01-31,pucon,Pucón,,3.327586125943364,False,historical_seasonal_harmonic_analog_residual,7.0,37,0.4
+2024-02-01,pucon,Pucón,,3.402993676132533,False,historical_seasonal_harmonic_analog_residual,6.0,37,0.4
+2024-02-02,pucon,Pucón,,3.470830170187839,False,historical_seasonal_harmonic_analog_residual,5.0,37,0.4
+2024-02-03,pucon,Pucón,,3.535073451992057,False,historical_seasonal_harmonic_analog_residual,4.0,37,0.4
+2024-02-04,pucon,Pucón,,3.592031348633422,False,historical_seasonal_harmonic_analog_residual,3.0,37,0.4
+2024-02-05,pucon,Pucón,,3.636526811421468,False,historical_seasonal_harmonic_analog_residual,2.0,37,0.4
+2024-02-06,pucon,Pucón,,3.6829582693555185,False,historical_seasonal_harmonic_analog_residual,1.0,37,0.4
+2024-02-07,pucon,Pucón,3.733,3.733,True,observed,0.0,0,0.0
+2024-02-08,pucon,Pucón,3.042,3.042,True,observed,0.0,0,0.0
+2024-02-09,pucon,Pucón,2.938,2.938,True,observed,0.0,0,0.0
+2024-02-10,pucon,Pucón,2.525,2.525,True,observed,0.0,0,0.0
+2024-02-11,pucon,Pucón,3.858,3.858,True,observed,0.0,0,0.0
+2024-02-12,pucon,Pucón,3.533,3.533,True,observed,0.0,0,0.0
+2024-02-13,pucon,Pucón,3.358,3.358,True,observed,0.0,0,0.0
+2024-02-14,pucon,Pucón,2.798,2.798,True,observed,0.0,0,0.0
+2024-02-15,pucon,Pucón,2.469,2.469,True,observed,0.0,0,0.0
+2024-02-16,pucon,Pucón,2.858,2.858,True,observed,0.0,0,0.0
+2024-02-17,pucon,Pucón,3.148,3.148,True,observed,0.0,0,0.0
+2024-02-18,pucon,Pucón,2.796,2.796,True,observed,0.0,0,0.0
+2024-02-19,pucon,Pucón,2.781,2.781,True,observed,0.0,0,0.0
+2024-02-20,pucon,Pucón,3.148,3.148,True,observed,0.0,0,0.0
+2024-02-21,pucon,Pucón,2.65,2.65,True,observed,0.0,0,0.0
+2024-02-22,pucon,Pucón,2.369,2.369,True,observed,0.0,0,0.0
+2024-02-23,pucon,Pucón,2.027,2.027,True,observed,0.0,0,0.0
+2024-02-24,pucon,Pucón,1.8,1.8,True,observed,0.0,0,0.0
+2024-02-25,pucon,Pucón,1.448,1.448,True,observed,0.0,0,0.0
+2024-02-26,pucon,Pucón,1.504,1.504,True,observed,0.0,0,0.0
+2024-02-27,pucon,Pucón,1.783,1.783,True,observed,0.0,0,0.0
+2024-02-28,pucon,Pucón,2.008,2.008,True,observed,0.0,0,0.0
+2024-02-29,pucon,Pucón,1.606,1.606,True,observed,0.0,0,0.0
+2024-03-01,pucon,Pucón,1.515,1.515,True,observed,0.0,0,0.0
+2024-03-02,pucon,Pucón,1.221,1.221,True,observed,0.0,0,0.0
+2024-03-03,pucon,Pucón,1.021,1.021,True,observed,0.0,0,0.0
+2024-03-04,pucon,Pucón,0.944,0.944,True,observed,0.0,0,0.0
+2024-03-05,pucon,Pucón,0.646,0.646,True,observed,0.0,0,0.0
+2024-03-06,pucon,Pucón,0.481,0.481,True,observed,0.0,0,0.0
+2024-03-07,pucon,Pucón,0.379,0.379,True,observed,0.0,0,0.0
+2024-03-08,pucon,Pucón,0.423,0.423,True,observed,0.0,0,0.0
+2024-03-09,pucon,Pucón,0.385,0.385,True,observed,0.0,0,0.0
+2024-03-10,pucon,Pucón,0.356,0.356,True,observed,0.0,0,0.0
+2024-03-11,pucon,Pucón,0.363,0.363,True,observed,0.0,0,0.0
+2024-03-12,pucon,Pucón,0.5,0.5,True,observed,0.0,0,0.0
+2024-03-13,pucon,Pucón,0.521,0.521,True,observed,0.0,0,0.0
+2024-03-14,pucon,Pucón,0.452,0.452,True,observed,0.0,0,0.0
+2024-03-15,pucon,Pucón,0.475,0.475,True,observed,0.0,0,0.0
+2024-03-16,pucon,Pucón,0.527,0.527,True,observed,0.0,0,0.0
+2024-03-17,pucon,Pucón,0.54,0.54,True,observed,0.0,0,0.0
+2024-03-18,pucon,Pucón,0.523,0.523,True,observed,0.0,0,0.0
+2024-03-19,pucon,Pucón,0.6,0.6,True,observed,0.0,0,0.0
+2024-03-20,pucon,Pucón,0.611,0.611,True,observed,0.0,0,0.0
+2024-03-21,pucon,Pucón,,1.0641443837413078,False,shape_preserving_pchip_bracketed_short_gap,1.0,1,0.15
+2024-03-22,pucon,Pucón,0.776,0.776,True,observed,0.0,0,0.0
+2024-03-23,pucon,Pucón,0.488,0.488,True,observed,0.0,0,0.0
+2024-03-24,pucon,Pucón,0.442,0.442,True,observed,0.0,0,0.0
+2024-03-25,pucon,Pucón,0.546,0.546,True,observed,0.0,0,0.0
+2024-03-26,pucon,Pucón,0.648,0.648,True,observed,0.0,0,0.0
+2024-03-27,pucon,Pucón,0.483,0.483,True,observed,0.0,0,0.0
+2024-03-28,pucon,Pucón,0.504,0.504,True,observed,0.0,0,0.0
+2024-03-29,pucon,Pucón,0.46,0.46,True,observed,0.0,0,0.0
+2024-03-30,pucon,Pucón,0.621,0.621,True,observed,0.0,0,0.0
+2024-03-31,pucon,Pucón,0.696,0.696,True,observed,0.0,0,0.0
+2024-04-01,pucon,Pucón,0.721,0.721,True,observed,0.0,0,0.0
+2024-04-02,pucon,Pucón,0.908,0.908,True,observed,0.0,0,0.0
+2024-04-03,pucon,Pucón,0.975,0.975,True,observed,0.0,0,0.0
+2024-04-04,pucon,Pucón,1.194,1.194,True,observed,0.0,0,0.0
+2024-04-05,pucon,Pucón,0.89,0.89,True,observed,0.0,0,0.0
+2024-04-06,pucon,Pucón,0.861,0.861,True,observed,0.0,0,0.0
+2024-04-07,pucon,Pucón,0.975,0.975,True,observed,0.0,0,0.0
+2024-04-08,pucon,Pucón,0.84,0.84,True,observed,0.0,0,0.0
+2024-04-09,pucon,Pucón,0.723,0.723,True,observed,0.0,0,0.0
+2024-04-10,pucon,Pucón,0.573,0.573,True,observed,0.0,0,0.0
+2024-04-11,pucon,Pucón,0.404,0.404,True,observed,0.0,0,0.0
+2024-04-12,pucon,Pucón,0.358,0.358,True,observed,0.0,0,0.0
+2024-04-13,pucon,Pucón,0.169,0.169,True,observed,0.0,0,0.0
+2024-04-14,pucon,Pucón,0.356,0.356,True,observed,0.0,0,0.0
+2024-04-15,pucon,Pucón,0.683,0.683,True,observed,0.0,0,0.0
+2024-04-16,pucon,Pucón,1.021,1.021,True,observed,0.0,0,0.0
+2024-04-17,pucon,Pucón,0.956,0.956,True,observed,0.0,0,0.0
+2024-04-18,pucon,Pucón,1.377,1.377,True,observed,0.0,0,0.0
+2024-04-19,pucon,Pucón,1.388,1.388,True,observed,0.0,0,0.0
+2024-04-20,pucon,Pucón,1.498,1.498,True,observed,0.0,0,0.0
+2024-04-21,pucon,Pucón,1.569,1.569,True,observed,0.0,0,0.0
+2024-04-22,pucon,Pucón,1.508,1.508,True,observed,0.0,0,0.0
+2024-04-23,pucon,Pucón,1.177,1.177,True,observed,0.0,0,0.0
+2024-04-24,pucon,Pucón,1.175,1.175,True,observed,0.0,0,0.0
+2024-04-25,pucon,Pucón,0.933,0.933,True,observed,0.0,0,0.0
+2024-04-26,pucon,Pucón,0.719,0.719,True,observed,0.0,0,0.0
+2024-04-27,pucon,Pucón,0.725,0.725,True,observed,0.0,0,0.0
+2024-04-28,pucon,Pucón,0.698,0.698,True,observed,0.0,0,0.0
+2024-04-29,pucon,Pucón,0.69,0.69,True,observed,0.0,0,0.0
+2024-04-30,pucon,Pucón,0.55,0.55,True,observed,0.0,0,0.0
+2024-05-01,pucon,Pucón,0.515,0.515,True,observed,0.0,0,0.0
+2024-05-02,pucon,Pucón,0.502,0.502,True,observed,0.0,0,0.0
+2024-05-03,pucon,Pucón,0.85,0.85,True,observed,0.0,0,0.0
+2024-05-04,pucon,Pucón,0.685,0.685,True,observed,0.0,0,0.0
+2024-05-05,pucon,Pucón,0.731,0.731,True,observed,0.0,0,0.0
+2024-05-06,pucon,Pucón,0.802,0.802,True,observed,0.0,0,0.0
+2024-05-07,pucon,Pucón,0.788,0.788,True,observed,0.0,0,0.0
+2024-05-08,pucon,Pucón,0.863,0.863,True,observed,0.0,0,0.0
+2024-05-09,pucon,Pucón,1.237,1.237,True,observed,0.0,0,0.0
+2024-05-10,pucon,Pucón,1.121,1.121,True,observed,0.0,0,0.0
+2024-05-11,pucon,Pucón,,1.196913849654668,False,historical_seasonal_harmonic_analog_residual,1.0,222,0.4
+2024-05-12,pucon,Pucón,,1.269171597710892,False,historical_seasonal_harmonic_analog_residual,2.0,222,0.4
+2024-05-13,pucon,Pucón,,1.3388238708590634,False,historical_seasonal_harmonic_analog_residual,3.0,222,0.4
+2024-05-14,pucon,Pucón,,1.3871384982148358,False,historical_seasonal_harmonic_analog_residual,4.0,222,0.4
+2024-05-15,pucon,Pucón,,1.4289481526991672,False,historical_seasonal_harmonic_analog_residual,5.0,222,0.4
+2024-05-16,pucon,Pucón,,1.4126553768834338,False,historical_seasonal_harmonic_analog_residual,6.0,222,0.4
+2024-05-17,pucon,Pucón,,1.3405482404909774,False,historical_seasonal_harmonic_analog_residual,7.0,222,0.4
+2024-05-18,pucon,Pucón,,1.3344871518873611,False,historical_seasonal_harmonic_analog_residual,8.0,222,0.4
+2024-05-19,pucon,Pucón,,1.3045931927470418,False,historical_seasonal_harmonic_analog_residual,9.0,222,0.4
+2024-05-20,pucon,Pucón,,1.3118160587213568,False,historical_seasonal_harmonic_analog_residual,10.0,222,0.4
+2024-05-21,pucon,Pucón,,1.3170769945829923,False,historical_seasonal_harmonic_analog_residual,11.0,222,0.4
+2024-05-22,pucon,Pucón,,1.314259044724071,False,historical_seasonal_harmonic_analog_residual,12.0,222,0.4
+2024-05-23,pucon,Pucón,,1.31826112726452,False,historical_seasonal_harmonic_analog_residual,13.0,222,0.4
+2024-05-24,pucon,Pucón,,1.3187714784732196,False,historical_seasonal_harmonic_analog_residual,14.0,222,0.4
+2024-05-25,pucon,Pucón,,1.3194666001083346,False,historical_seasonal_harmonic_analog_residual,15.0,222,0.4
+2024-05-26,pucon,Pucón,,1.3115698931299236,False,historical_seasonal_harmonic_analog_residual,16.0,222,0.4
+2024-05-27,pucon,Pucón,,1.3070585782162043,False,historical_seasonal_harmonic_analog_residual,17.0,222,0.4
+2024-05-28,pucon,Pucón,,1.3242852290855045,False,historical_seasonal_harmonic_analog_residual,18.0,222,0.4
+2024-05-29,pucon,Pucón,,1.3538040715433934,False,historical_seasonal_harmonic_analog_residual,19.0,222,0.4
+2024-05-30,pucon,Pucón,,1.3723046376321055,False,historical_seasonal_harmonic_analog_residual,20.0,222,0.4
+2024-05-31,pucon,Pucón,,1.381413922993039,False,historical_seasonal_harmonic_analog_residual,21.0,222,0.4
+2024-06-01,pucon,Pucón,,1.3838994533742226,False,historical_seasonal_harmonic_analog_residual,22.0,222,0.4
+2024-06-02,pucon,Pucón,,1.399916893616373,False,historical_seasonal_harmonic_analog_residual,23.0,222,0.4
+2024-06-03,pucon,Pucón,,1.4134911471022216,False,historical_seasonal_harmonic_analog_residual,24.0,222,0.4
+2024-06-04,pucon,Pucón,,1.5144694780814243,False,historical_seasonal_harmonic_analog_residual,25.0,222,0.4
+2024-06-05,pucon,Pucón,,1.591571133324155,False,historical_seasonal_harmonic_analog_residual,26.0,222,0.4
+2024-06-06,pucon,Pucón,,1.4940233132542002,False,historical_seasonal_harmonic_analog_residual,27.0,222,0.4
+2024-06-07,pucon,Pucón,,1.385542998131695,False,historical_seasonal_harmonic_analog_residual,28.0,222,0.4
+2024-06-08,pucon,Pucón,,1.289763011560435,False,historical_seasonal_harmonic_analog_residual,29.0,222,0.4
+2024-06-09,pucon,Pucón,,1.2810420149474748,False,historical_seasonal_harmonic_analog_residual,30.0,222,0.4
+2024-06-10,pucon,Pucón,,1.326532153114363,False,historical_seasonal_harmonic_analog_residual,31.0,222,0.4
+2024-06-11,pucon,Pucón,,1.319964631286027,False,historical_seasonal_harmonic_analog_residual,32.0,222,0.4
+2024-06-12,pucon,Pucón,,1.3367611888611246,False,historical_seasonal_harmonic_analog_residual,33.0,222,0.4
+2024-06-13,pucon,Pucón,,1.3447385642168994,False,historical_seasonal_harmonic_analog_residual,34.0,222,0.4
+2024-06-14,pucon,Pucón,,1.3612201622256204,False,historical_seasonal_harmonic_analog_residual,35.0,222,0.4
+2024-06-15,pucon,Pucón,,1.299119039437319,False,historical_seasonal_harmonic_analog_residual,36.0,222,0.4
+2024-06-16,pucon,Pucón,,1.2121806689006256,False,historical_seasonal_harmonic_analog_residual,37.0,222,0.4
+2024-06-17,pucon,Pucón,,1.153859938811772,False,historical_seasonal_harmonic_analog_residual,38.0,222,0.4
+2024-06-18,pucon,Pucón,,1.1376398930443985,False,historical_seasonal_harmonic_analog_residual,39.0,222,0.4
+2024-06-19,pucon,Pucón,,1.1300621882425756,False,historical_seasonal_harmonic_analog_residual,40.0,222,0.4
+2024-06-20,pucon,Pucón,,1.1463873964787925,False,historical_seasonal_harmonic_analog_residual,41.0,222,0.4
+2024-06-21,pucon,Pucón,,1.1211241266540546,False,historical_seasonal_harmonic_analog_residual,42.0,222,0.4
+2024-06-22,pucon,Pucón,,1.097991793074859,False,historical_seasonal_harmonic_analog_residual,43.0,222,0.4
+2024-06-23,pucon,Pucón,,1.0597239984733435,False,historical_seasonal_harmonic_analog_residual,44.0,222,0.4
+2024-06-24,pucon,Pucón,,1.0453490272855457,False,historical_seasonal_harmonic_analog_residual,45.0,222,0.4
+2024-06-25,pucon,Pucón,,1.0393934607495907,False,historical_seasonal_harmonic_analog_residual,46.0,222,0.4
+2024-06-26,pucon,Pucón,,1.0338152380178962,False,historical_seasonal_harmonic_analog_residual,47.0,222,0.4
+2024-06-27,pucon,Pucón,,1.022719931362251,False,historical_seasonal_harmonic_analog_residual,48.0,222,0.4
+2024-06-28,pucon,Pucón,,1.0211190439951454,False,historical_seasonal_harmonic_analog_residual,49.0,222,0.4
+2024-06-29,pucon,Pucón,,1.0361230050194137,False,historical_seasonal_harmonic_analog_residual,50.0,222,0.4
+2024-06-30,pucon,Pucón,,1.0613499641964723,False,historical_seasonal_harmonic_analog_residual,51.0,222,0.4
+2024-07-01,pucon,Pucón,,1.0976352686820867,False,historical_seasonal_harmonic_analog_residual,52.0,222,0.4
+2024-07-02,pucon,Pucón,,1.1242831087822969,False,historical_seasonal_harmonic_analog_residual,53.0,222,0.4
+2024-07-03,pucon,Pucón,,1.2007964689738506,False,historical_seasonal_harmonic_analog_residual,54.0,222,0.4
+2024-07-04,pucon,Pucón,,1.2614040241466016,False,historical_seasonal_harmonic_analog_residual,55.0,222,0.4
+2024-07-05,pucon,Pucón,,1.3801184668327515,False,historical_seasonal_harmonic_analog_residual,56.0,222,0.4
+2024-07-06,pucon,Pucón,,1.3046304001142417,False,historical_seasonal_harmonic_analog_residual,57.0,222,0.4
+2024-07-07,pucon,Pucón,,1.2474285282780466,False,historical_seasonal_harmonic_analog_residual,58.0,222,0.4
+2024-07-08,pucon,Pucón,,1.1683428152254922,False,historical_seasonal_harmonic_analog_residual,59.0,222,0.4
+2024-07-09,pucon,Pucón,,1.1550458946425195,False,historical_seasonal_harmonic_analog_residual,60.0,222,0.4
+2024-07-10,pucon,Pucón,,1.1476267540229246,False,historical_seasonal_harmonic_analog_residual,61.0,222,0.4
+2024-07-11,pucon,Pucón,,1.1644183418718164,False,historical_seasonal_harmonic_analog_residual,62.0,222,0.4
+2024-07-12,pucon,Pucón,,1.1825499830275483,False,historical_seasonal_harmonic_analog_residual,63.0,222,0.4
+2024-07-13,pucon,Pucón,,1.2527054650617635,False,historical_seasonal_harmonic_analog_residual,64.0,222,0.4
+2024-07-14,pucon,Pucón,,1.2651598777326265,False,historical_seasonal_harmonic_analog_residual,65.0,222,0.4
+2024-07-15,pucon,Pucón,,1.2875862156119882,False,historical_seasonal_harmonic_analog_residual,66.0,222,0.4
+2024-07-16,pucon,Pucón,,1.2506709173251842,False,historical_seasonal_harmonic_analog_residual,67.0,222,0.4
+2024-07-17,pucon,Pucón,,1.266515693453435,False,historical_seasonal_harmonic_analog_residual,68.0,222,0.4
+2024-07-18,pucon,Pucón,,1.2646616027060764,False,historical_seasonal_harmonic_analog_residual,69.0,222,0.4
+2024-07-19,pucon,Pucón,,1.2822885199012313,False,historical_seasonal_harmonic_analog_residual,70.0,222,0.4
+2024-07-20,pucon,Pucón,,1.2596475765022308,False,historical_seasonal_harmonic_analog_residual,71.0,222,0.4
+2024-07-21,pucon,Pucón,,1.2364990592300051,False,historical_seasonal_harmonic_analog_residual,72.0,222,0.4
+2024-07-22,pucon,Pucón,,1.2044878525122082,False,historical_seasonal_harmonic_analog_residual,73.0,222,0.4
+2024-07-23,pucon,Pucón,,1.1700589108261286,False,historical_seasonal_harmonic_analog_residual,74.0,222,0.4
+2024-07-24,pucon,Pucón,,1.194058804436061,False,historical_seasonal_harmonic_analog_residual,75.0,222,0.4
+2024-07-25,pucon,Pucón,,1.237071399109387,False,historical_seasonal_harmonic_analog_residual,76.0,222,0.4
+2024-07-26,pucon,Pucón,,1.279486815112837,False,historical_seasonal_harmonic_analog_residual,77.0,222,0.4
+2024-07-27,pucon,Pucón,,1.2867780100300212,False,historical_seasonal_harmonic_analog_residual,78.0,222,0.4
+2024-07-28,pucon,Pucón,,1.3146311118428238,False,historical_seasonal_harmonic_analog_residual,79.0,222,0.4
+2024-07-29,pucon,Pucón,,1.3330848593177238,False,historical_seasonal_harmonic_analog_residual,80.0,222,0.4
+2024-07-30,pucon,Pucón,,1.343528628845692,False,historical_seasonal_harmonic_analog_residual,81.0,222,0.4
+2024-07-31,pucon,Pucón,,1.3496186290961358,False,historical_seasonal_harmonic_analog_residual,82.0,222,0.4
+2024-08-01,pucon,Pucón,,1.3256688077192729,False,historical_seasonal_harmonic_analog_residual,83.0,222,0.4
+2024-08-02,pucon,Pucón,,1.279759882091119,False,historical_seasonal_harmonic_analog_residual,84.0,222,0.4
+2024-08-03,pucon,Pucón,,1.283471452022806,False,historical_seasonal_harmonic_analog_residual,85.0,222,0.4
+2024-08-04,pucon,Pucón,,1.3412490661370593,False,historical_seasonal_harmonic_analog_residual,86.0,222,0.4
+2024-08-05,pucon,Pucón,,1.363643716801244,False,historical_seasonal_harmonic_analog_residual,87.0,222,0.4
+2024-08-06,pucon,Pucón,,1.4500570874240937,False,historical_seasonal_harmonic_analog_residual,88.0,222,0.4
+2024-08-07,pucon,Pucón,,1.3791118592383476,False,historical_seasonal_harmonic_analog_residual,89.0,222,0.4
+2024-08-08,pucon,Pucón,,1.3756807247150582,False,historical_seasonal_harmonic_analog_residual,90.0,222,0.4
+2024-08-09,pucon,Pucón,,1.3732638681204123,False,historical_seasonal_harmonic_analog_residual,91.0,222,0.4
+2024-08-10,pucon,Pucón,,1.3866791342980171,False,historical_seasonal_harmonic_analog_residual,92.0,222,0.4
+2024-08-11,pucon,Pucón,,1.4027397523005989,False,historical_seasonal_harmonic_analog_residual,93.0,222,0.4
+2024-08-12,pucon,Pucón,,1.3605475007659351,False,historical_seasonal_harmonic_analog_residual,94.0,222,0.4
+2024-08-13,pucon,Pucón,,1.3494859257220948,False,historical_seasonal_harmonic_analog_residual,95.0,222,0.4
+2024-08-14,pucon,Pucón,,1.3766070647154276,False,historical_seasonal_harmonic_analog_residual,96.0,222,0.4
+2024-08-15,pucon,Pucón,,1.4563310855309288,False,historical_seasonal_harmonic_analog_residual,97.0,222,0.4
+2024-08-16,pucon,Pucón,,1.4629051370300192,False,historical_seasonal_harmonic_analog_residual,98.0,222,0.4
+2024-08-17,pucon,Pucón,,1.4280446438351178,False,historical_seasonal_harmonic_analog_residual,99.0,222,0.4
+2024-08-18,pucon,Pucón,,1.416166614840039,False,historical_seasonal_harmonic_analog_residual,100.0,222,0.4
+2024-08-19,pucon,Pucón,,1.3998936842930774,False,historical_seasonal_harmonic_analog_residual,101.0,222,0.4
+2024-08-20,pucon,Pucón,,1.520405475698117,False,historical_seasonal_harmonic_analog_residual,102.0,222,0.4
+2024-08-21,pucon,Pucón,,1.587527212990088,False,historical_seasonal_harmonic_analog_residual,103.0,222,0.4
+2024-08-22,pucon,Pucón,,1.432963323911936,False,historical_seasonal_harmonic_analog_residual,104.0,222,0.4
+2024-08-23,pucon,Pucón,,1.3133718909600791,False,historical_seasonal_harmonic_analog_residual,105.0,222,0.4
+2024-08-24,pucon,Pucón,,1.352573979839092,False,historical_seasonal_harmonic_analog_residual,106.0,222,0.4
+2024-08-25,pucon,Pucón,,1.3631671656862885,False,historical_seasonal_harmonic_analog_residual,107.0,222,0.4
+2024-08-26,pucon,Pucón,,1.3914748662434204,False,historical_seasonal_harmonic_analog_residual,108.0,222,0.4
+2024-08-27,pucon,Pucón,,1.4459733323658988,False,historical_seasonal_harmonic_analog_residual,109.0,222,0.4
+2024-08-28,pucon,Pucón,,1.4365380866235902,False,historical_seasonal_harmonic_analog_residual,110.0,222,0.4
+2024-08-29,pucon,Pucón,,1.4597182265130644,False,historical_seasonal_harmonic_analog_residual,111.0,222,0.4
+2024-08-30,pucon,Pucón,,1.46849780091964,False,historical_seasonal_harmonic_analog_residual,111.0,222,0.4
+2024-08-31,pucon,Pucón,,1.4565752416690874,False,historical_seasonal_harmonic_analog_residual,110.0,222,0.4
+2024-09-01,pucon,Pucón,,1.3996043124938855,False,historical_seasonal_harmonic_analog_residual,109.0,222,0.4
+2024-09-02,pucon,Pucón,,1.4229886498105866,False,historical_seasonal_harmonic_analog_residual,108.0,222,0.4
+2024-09-03,pucon,Pucón,,1.6037516528585611,False,historical_seasonal_harmonic_analog_residual,107.0,222,0.4
+2024-09-04,pucon,Pucón,,1.8233877629216375,False,historical_seasonal_harmonic_analog_residual,106.0,222,0.4
+2024-09-05,pucon,Pucón,,1.835487502011325,False,historical_seasonal_harmonic_analog_residual,105.0,222,0.4
+2024-09-06,pucon,Pucón,,1.6891878313521758,False,historical_seasonal_harmonic_analog_residual,104.0,222,0.4
+2024-09-07,pucon,Pucón,,1.5754081773323885,False,historical_seasonal_harmonic_analog_residual,103.0,222,0.4
+2024-09-08,pucon,Pucón,,1.6202049003485244,False,historical_seasonal_harmonic_analog_residual,102.0,222,0.4
+2024-09-09,pucon,Pucón,,1.6765858888720373,False,historical_seasonal_harmonic_analog_residual,101.0,222,0.4
+2024-09-10,pucon,Pucón,,1.6536678513287524,False,historical_seasonal_harmonic_analog_residual,100.0,222,0.4
+2024-09-11,pucon,Pucón,,1.6656705226193844,False,historical_seasonal_harmonic_analog_residual,99.0,222,0.4
+2024-09-12,pucon,Pucón,,1.6130885614884567,False,historical_seasonal_harmonic_analog_residual,98.0,222,0.4
+2024-09-13,pucon,Pucón,,1.6660638003307946,False,historical_seasonal_harmonic_analog_residual,97.0,222,0.4
+2024-09-14,pucon,Pucón,,1.7019795226523722,False,historical_seasonal_harmonic_analog_residual,96.0,222,0.4
+2024-09-15,pucon,Pucón,,1.6285206646679464,False,historical_seasonal_harmonic_analog_residual,95.0,222,0.4
+2024-09-16,pucon,Pucón,,1.540758981290075,False,historical_seasonal_harmonic_analog_residual,94.0,222,0.4
+2024-09-17,pucon,Pucón,,1.4770527049916435,False,historical_seasonal_harmonic_analog_residual,93.0,222,0.4
+2024-09-18,pucon,Pucón,,1.4661533720263389,False,historical_seasonal_harmonic_analog_residual,92.0,222,0.4
+2024-09-19,pucon,Pucón,,1.5165158719296057,False,historical_seasonal_harmonic_analog_residual,91.0,222,0.4
+2024-09-20,pucon,Pucón,,1.6154947442588754,False,historical_seasonal_harmonic_analog_residual,90.0,222,0.4
+2024-09-21,pucon,Pucón,,1.6813161511065164,False,historical_seasonal_harmonic_analog_residual,89.0,222,0.4
+2024-09-22,pucon,Pucón,,1.6091733780216222,False,historical_seasonal_harmonic_analog_residual,88.0,222,0.4
+2024-09-23,pucon,Pucón,,1.4757281833403155,False,historical_seasonal_harmonic_analog_residual,87.0,222,0.4
+2024-09-24,pucon,Pucón,,1.5805938202410326,False,historical_seasonal_harmonic_analog_residual,86.0,222,0.4
+2024-09-25,pucon,Pucón,,1.617456527961263,False,historical_seasonal_harmonic_analog_residual,85.0,222,0.4
+2024-09-26,pucon,Pucón,,1.6827362818733782,False,historical_seasonal_harmonic_analog_residual,84.0,222,0.4
+2024-09-27,pucon,Pucón,,1.7537228936602425,False,historical_seasonal_harmonic_analog_residual,83.0,222,0.4
+2024-09-28,pucon,Pucón,,1.7624108037641204,False,historical_seasonal_harmonic_analog_residual,82.0,222,0.4
+2024-09-29,pucon,Pucón,,1.7501450653023112,False,historical_seasonal_harmonic_analog_residual,81.0,222,0.4
+2024-09-30,pucon,Pucón,,1.8542780706672957,False,historical_seasonal_harmonic_analog_residual,80.0,222,0.4
+2024-10-01,pucon,Pucón,,1.7869599997343597,False,historical_seasonal_harmonic_analog_residual,79.0,222,0.4
+2024-10-02,pucon,Pucón,,1.6805344234520532,False,historical_seasonal_harmonic_analog_residual,78.0,222,0.4
+2024-10-03,pucon,Pucón,,1.8458198243646111,False,historical_seasonal_harmonic_analog_residual,77.0,222,0.4
+2024-10-04,pucon,Pucón,,1.7249575587904462,False,historical_seasonal_harmonic_analog_residual,76.0,222,0.4
+2024-10-05,pucon,Pucón,,1.767549468052881,False,historical_seasonal_harmonic_analog_residual,75.0,222,0.4
+2024-10-06,pucon,Pucón,,1.7900671252099274,False,historical_seasonal_harmonic_analog_residual,74.0,222,0.4
+2024-10-07,pucon,Pucón,,1.8702668477274944,False,historical_seasonal_harmonic_analog_residual,73.0,222,0.4
+2024-10-08,pucon,Pucón,,1.970838722084563,False,historical_seasonal_harmonic_analog_residual,72.0,222,0.4
+2024-10-09,pucon,Pucón,,1.9516292808053743,False,historical_seasonal_harmonic_analog_residual,71.0,222,0.4
+2024-10-10,pucon,Pucón,,1.9653434752711865,False,historical_seasonal_harmonic_analog_residual,70.0,222,0.4
+2024-10-11,pucon,Pucón,,1.95841374032734,False,historical_seasonal_harmonic_analog_residual,69.0,222,0.4
+2024-10-12,pucon,Pucón,,2.1973508005827007,False,historical_seasonal_harmonic_analog_residual,68.0,222,0.4
+2024-10-13,pucon,Pucón,,2.192506648821197,False,historical_seasonal_harmonic_analog_residual,67.0,222,0.4
+2024-10-14,pucon,Pucón,,2.212982097043167,False,historical_seasonal_harmonic_analog_residual,66.0,222,0.4
+2024-10-15,pucon,Pucón,,2.266096068896036,False,historical_seasonal_harmonic_analog_residual,65.0,222,0.4
+2024-10-16,pucon,Pucón,,2.2377666240650536,False,historical_seasonal_harmonic_analog_residual,64.0,222,0.4
+2024-10-17,pucon,Pucón,,2.1652599368325913,False,historical_seasonal_harmonic_analog_residual,63.0,222,0.4
+2024-10-18,pucon,Pucón,,2.266664254501722,False,historical_seasonal_harmonic_analog_residual,62.0,222,0.4
+2024-10-19,pucon,Pucón,,2.1980327819977994,False,historical_seasonal_harmonic_analog_residual,61.0,222,0.4
+2024-10-20,pucon,Pucón,,2.23450720924804,False,historical_seasonal_harmonic_analog_residual,60.0,222,0.4
+2024-10-21,pucon,Pucón,,2.231510390428462,False,historical_seasonal_harmonic_analog_residual,59.0,222,0.4
+2024-10-22,pucon,Pucón,,2.167373716880866,False,historical_seasonal_harmonic_analog_residual,58.0,222,0.4
+2024-10-23,pucon,Pucón,,2.180179579517998,False,historical_seasonal_harmonic_analog_residual,57.0,222,0.4
+2024-10-24,pucon,Pucón,,2.159233314241432,False,historical_seasonal_harmonic_analog_residual,56.0,222,0.4
+2024-10-25,pucon,Pucón,,2.1045148237744837,False,historical_seasonal_harmonic_analog_residual,55.0,222,0.4
+2024-10-26,pucon,Pucón,,2.3062319199454784,False,historical_seasonal_harmonic_analog_residual,54.0,222,0.4
+2024-10-27,pucon,Pucón,,2.1506514443864297,False,historical_seasonal_harmonic_analog_residual,53.0,222,0.4
+2024-10-28,pucon,Pucón,,2.1882015480897485,False,historical_seasonal_harmonic_analog_residual,52.0,222,0.4
+2024-10-29,pucon,Pucón,,2.1537494602278073,False,historical_seasonal_harmonic_analog_residual,51.0,222,0.4
+2024-10-30,pucon,Pucón,,1.9697680628361105,False,historical_seasonal_harmonic_analog_residual,50.0,222,0.4
+2024-10-31,pucon,Pucón,,1.9149057443364683,False,historical_seasonal_harmonic_analog_residual,49.0,222,0.4
+2024-11-01,pucon,Pucón,,1.9620234163215915,False,historical_seasonal_harmonic_analog_residual,48.0,222,0.4
+2024-11-02,pucon,Pucón,,2.130602519324666,False,historical_seasonal_harmonic_analog_residual,47.0,222,0.4
+2024-11-03,pucon,Pucón,,1.938592883571567,False,historical_seasonal_harmonic_analog_residual,46.0,222,0.4
+2024-11-04,pucon,Pucón,,2.07421808767037,False,historical_seasonal_harmonic_analog_residual,45.0,222,0.4
+2024-11-05,pucon,Pucón,,2.2497424199231957,False,historical_seasonal_harmonic_analog_residual,44.0,222,0.4
+2024-11-06,pucon,Pucón,,2.1602272720304,False,historical_seasonal_harmonic_analog_residual,43.0,222,0.4
+2024-11-07,pucon,Pucón,,2.0565736938695385,False,historical_seasonal_harmonic_analog_residual,42.0,222,0.4
+2024-11-08,pucon,Pucón,,1.9656335891113463,False,historical_seasonal_harmonic_analog_residual,41.0,222,0.4
+2024-11-09,pucon,Pucón,,2.0440573819162435,False,historical_seasonal_harmonic_analog_residual,40.0,222,0.4
+2024-11-10,pucon,Pucón,,2.04616086587426,False,historical_seasonal_harmonic_analog_residual,39.0,222,0.4
+2024-11-11,pucon,Pucón,,1.9214562431281872,False,historical_seasonal_harmonic_analog_residual,38.0,222,0.4
+2024-11-12,pucon,Pucón,,2.0041476924752115,False,historical_seasonal_harmonic_analog_residual,37.0,222,0.4
+2024-11-13,pucon,Pucón,,1.8161504992505664,False,historical_seasonal_harmonic_analog_residual,36.0,222,0.4
+2024-11-14,pucon,Pucón,,1.9105060362833903,False,historical_seasonal_harmonic_analog_residual,35.0,222,0.4
+2024-11-15,pucon,Pucón,,1.8448523816885931,False,historical_seasonal_harmonic_analog_residual,34.0,222,0.4
+2024-11-16,pucon,Pucón,,1.8093221128668024,False,historical_seasonal_harmonic_analog_residual,33.0,222,0.4
+2024-11-17,pucon,Pucón,,1.7668602160210276,False,historical_seasonal_harmonic_analog_residual,32.0,222,0.4
+2024-11-18,pucon,Pucón,,1.5541731645063757,False,historical_seasonal_harmonic_analog_residual,31.0,222,0.4
+2024-11-19,pucon,Pucón,,1.5524992158769562,False,historical_seasonal_harmonic_analog_residual,30.0,222,0.4
+2024-11-20,pucon,Pucón,,1.5863111306199844,False,historical_seasonal_harmonic_analog_residual,29.0,222,0.4
+2024-11-21,pucon,Pucón,,1.6782128555237923,False,historical_seasonal_harmonic_analog_residual,28.0,222,0.4
+2024-11-22,pucon,Pucón,,1.7915652253596384,False,historical_seasonal_harmonic_analog_residual,27.0,222,0.4
+2024-11-23,pucon,Pucón,,1.9514739624860504,False,historical_seasonal_harmonic_analog_residual,26.0,222,0.4
+2024-11-24,pucon,Pucón,,1.8947481608901873,False,historical_seasonal_harmonic_analog_residual,25.0,222,0.4
+2024-11-25,pucon,Pucón,,1.8833934437838205,False,historical_seasonal_harmonic_analog_residual,24.0,222,0.4
+2024-11-26,pucon,Pucón,,1.790509816501544,False,historical_seasonal_harmonic_analog_residual,23.0,222,0.4
+2024-11-27,pucon,Pucón,,1.7858222722307595,False,historical_seasonal_harmonic_analog_residual,22.0,222,0.4
+2024-11-28,pucon,Pucón,,1.8830028660044429,False,historical_seasonal_harmonic_analog_residual,21.0,222,0.4
+2024-11-29,pucon,Pucón,,1.727503223994486,False,historical_seasonal_harmonic_analog_residual,20.0,222,0.4
+2024-11-30,pucon,Pucón,,1.6332758919827168,False,historical_seasonal_harmonic_analog_residual,19.0,222,0.4
+2024-12-01,pucon,Pucón,,1.5350723947234235,False,historical_seasonal_harmonic_analog_residual,18.0,222,0.4
+2024-12-02,pucon,Pucón,,1.5999803163185913,False,historical_seasonal_harmonic_analog_residual,17.0,222,0.4
+2024-12-03,pucon,Pucón,,1.658332669593806,False,historical_seasonal_harmonic_analog_residual,16.0,222,0.4
+2024-12-04,pucon,Pucón,,1.6837880940380907,False,historical_seasonal_harmonic_analog_residual,15.0,222,0.4
+2024-12-05,pucon,Pucón,,1.5878573921294077,False,historical_seasonal_harmonic_analog_residual,14.0,222,0.4
+2024-12-06,pucon,Pucón,,1.4298253183958995,False,historical_seasonal_harmonic_analog_residual,13.0,222,0.4
+2024-12-07,pucon,Pucón,,1.2674608050611154,False,historical_seasonal_harmonic_analog_residual,12.0,222,0.4
+2024-12-08,pucon,Pucón,,1.1748632492229871,False,historical_seasonal_harmonic_analog_residual,11.0,222,0.4
+2024-12-09,pucon,Pucón,,1.1083990572250313,False,historical_seasonal_harmonic_analog_residual,10.0,222,0.4
+2024-12-10,pucon,Pucón,,1.0706021920109894,False,historical_seasonal_harmonic_analog_residual,9.0,222,0.4
+2024-12-11,pucon,Pucón,,1.052860513138955,False,historical_seasonal_harmonic_analog_residual,8.0,222,0.4
+2024-12-12,pucon,Pucón,,1.0389999078755836,False,historical_seasonal_harmonic_analog_residual,7.0,222,0.4
+2024-12-13,pucon,Pucón,,1.0165280582656984,False,historical_seasonal_harmonic_analog_residual,6.0,222,0.4
+2024-12-14,pucon,Pucón,,1.005774668555365,False,historical_seasonal_harmonic_analog_residual,5.0,222,0.4
+2024-12-15,pucon,Pucón,,0.9906663307695308,False,historical_seasonal_harmonic_analog_residual,4.0,222,0.4
+2024-12-16,pucon,Pucón,,0.9761303115202722,False,historical_seasonal_harmonic_analog_residual,3.0,222,0.4
+2024-12-17,pucon,Pucón,,0.9584518900661236,False,historical_seasonal_harmonic_analog_residual,2.0,222,0.4
+2024-12-18,pucon,Pucón,,0.9409868994465796,False,historical_seasonal_harmonic_analog_residual,1.0,222,0.4
+2024-12-19,pucon,Pucón,0.923,0.923,True,observed,0.0,0,0.0
+2024-12-20,pucon,Pucón,0.977,0.977,True,observed,0.0,0,0.0
+2024-12-21,pucon,Pucón,0.575,0.575,True,observed,0.0,0,0.0
+2024-12-22,pucon,Pucón,0.496,0.496,True,observed,0.0,0,0.0
+2024-12-23,pucon,Pucón,0.475,0.475,True,observed,0.0,0,0.0
+2024-12-24,pucon,Pucón,0.377,0.377,True,observed,0.0,0,0.0
+2024-12-25,pucon,Pucón,0.4,0.4,True,observed,0.0,0,0.0
+2024-12-26,pucon,Pucón,0.335,0.335,True,observed,0.0,0,0.0
+2024-12-27,pucon,Pucón,0.369,0.369,True,observed,0.0,0,0.0
+2024-12-28,pucon,Pucón,0.338,0.338,True,observed,0.0,0,0.0
+2024-12-29,pucon,Pucón,0.333,0.333,True,observed,0.0,0,0.0
+2024-12-30,pucon,Pucón,0.463,0.463,True,observed,0.0,0,0.0
+2024-12-31,pucon,Pucón,0.41,0.41,True,observed,0.0,0,0.0

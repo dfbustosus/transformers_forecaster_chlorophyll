@@ -1,0 +1,3 @@
+station_id,station_name,day_count,observed_day_count,imputed_day_count,max_observed,max_imputed_series,mean_imputed_series,observed_daily_diff_std,imputed_daily_diff_std,diff_std_ratio_imputed_to_observed,method_counts
+la_poza,La Poza,366,102,264,3.858,3.858,1.279546954190655,0.24855629161019022,0.14210748502803036,0.571731594913304,historical_seasonal_harmonic_analog_residual:263; observed:102; shape_preserving_pchip_bracketed_short_gap:1
+pucon,Pucón,366,106,260,3.858,3.858,1.4858711838289735,0.24740779094101914,0.1493625719637236,0.6037100585863561,historical_seasonal_harmonic_analog_residual:259; observed:106; shape_preserving_pchip_bracketed_short_gap:1

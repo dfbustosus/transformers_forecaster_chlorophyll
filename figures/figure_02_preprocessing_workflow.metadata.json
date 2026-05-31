@@ -1,6 +1,6 @@
 {
-  "created_utc": "2026-05-31T15:55:56+00:00",
-  "purpose": "Mermaid sequence-diagram recreation of manuscript Figure 2 for reviewer response R3.9, updated with code-backed provenance, QA gates, observed-preserving imputation, and forecast-blocking evidence.",
+  "created_utc": "2026-05-31T18:48:00+00:00",
+  "purpose": "Publication-facing Mermaid sequence diagram for manuscript Figure 2, showing the reproducible Lake Villarrica Chl-a preprocessing, reconstruction, forecast-input, and evidence workflow.",
   "renderer": {
     "command": [
       [
@@ -14,7 +14,7 @@
         "--cssFile",
         "/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/configs/figure_02_mermaid.css",
         "--width",
-        "1500"
+        "1700"
       ],
       [
         "/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/node_modules/.bin/mmdc",
@@ -25,7 +25,7 @@
         "--backgroundColor",
         "white",
         "--width",
-        "1500",
+        "1700",
         "--scale",
         "2",
         "--cssFile",

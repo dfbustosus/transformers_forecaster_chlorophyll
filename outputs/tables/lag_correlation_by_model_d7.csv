@@ -1,1 +1,117 @@
 station_id,station_name,model,horizon,lag_days,pearson_correlation,n_aligned
+la_poza,La Poza,Chronos Large,7,-14,0.7062448073374857,24
+la_poza,La Poza,Chronos Large,7,-13,,0
+la_poza,La Poza,Chronos Large,7,-12,,0
+la_poza,La Poza,Chronos Large,7,-11,,0
+la_poza,La Poza,Chronos Large,7,-10,,0
+la_poza,La Poza,Chronos Large,7,-9,,0
+la_poza,La Poza,Chronos Large,7,-8,,0
+la_poza,La Poza,Chronos Large,7,-7,,0
+la_poza,La Poza,Chronos Large,7,-6,,0
+la_poza,La Poza,Chronos Large,7,-5,,0
+la_poza,La Poza,Chronos Large,7,-4,,0
+la_poza,La Poza,Chronos Large,7,-3,,0
+la_poza,La Poza,Chronos Large,7,-2,,0
+la_poza,La Poza,Chronos Large,7,-1,,0
+la_poza,La Poza,Chronos Large,7,0,0.7837925769017849,25
+la_poza,La Poza,Chronos Large,7,1,,0
+la_poza,La Poza,Chronos Large,7,2,,0
+la_poza,La Poza,Chronos Large,7,3,,0
+la_poza,La Poza,Chronos Large,7,4,,0
+la_poza,La Poza,Chronos Large,7,5,,0
+la_poza,La Poza,Chronos Large,7,6,,0
+la_poza,La Poza,Chronos Large,7,7,,0
+la_poza,La Poza,Chronos Large,7,8,,0
+la_poza,La Poza,Chronos Large,7,9,,0
+la_poza,La Poza,Chronos Large,7,10,,0
+la_poza,La Poza,Chronos Large,7,11,,0
+la_poza,La Poza,Chronos Large,7,12,,0
+la_poza,La Poza,Chronos Large,7,13,,0
+la_poza,La Poza,Chronos Large,7,14,0.32042265806028314,24
+la_poza,La Poza,TimesFM,7,-14,0.7188925653552032,24
+la_poza,La Poza,TimesFM,7,-13,,0
+la_poza,La Poza,TimesFM,7,-12,,0
+la_poza,La Poza,TimesFM,7,-11,,0
+la_poza,La Poza,TimesFM,7,-10,,0
+la_poza,La Poza,TimesFM,7,-9,,0
+la_poza,La Poza,TimesFM,7,-8,,0
+la_poza,La Poza,TimesFM,7,-7,,0
+la_poza,La Poza,TimesFM,7,-6,,0
+la_poza,La Poza,TimesFM,7,-5,,0
+la_poza,La Poza,TimesFM,7,-4,,0
+la_poza,La Poza,TimesFM,7,-3,,0
+la_poza,La Poza,TimesFM,7,-2,,0
+la_poza,La Poza,TimesFM,7,-1,,0
+la_poza,La Poza,TimesFM,7,0,0.7737245559565771,25
+la_poza,La Poza,TimesFM,7,1,,0
+la_poza,La Poza,TimesFM,7,2,,0
+la_poza,La Poza,TimesFM,7,3,,0
+la_poza,La Poza,TimesFM,7,4,,0
+la_poza,La Poza,TimesFM,7,5,,0
+la_poza,La Poza,TimesFM,7,6,,0
+la_poza,La Poza,TimesFM,7,7,,0
+la_poza,La Poza,TimesFM,7,8,,0
+la_poza,La Poza,TimesFM,7,9,,0
+la_poza,La Poza,TimesFM,7,10,,0
+la_poza,La Poza,TimesFM,7,11,,0
+la_poza,La Poza,TimesFM,7,12,,0
+la_poza,La Poza,TimesFM,7,13,,0
+la_poza,La Poza,TimesFM,7,14,0.3327182140037803,24
+pucon,Pucón,Chronos Large,7,-14,0.7900059378699783,24
+pucon,Pucón,Chronos Large,7,-13,,0
+pucon,Pucón,Chronos Large,7,-12,,0
+pucon,Pucón,Chronos Large,7,-11,,0
+pucon,Pucón,Chronos Large,7,-10,,0
+pucon,Pucón,Chronos Large,7,-9,,0
+pucon,Pucón,Chronos Large,7,-8,,0
+pucon,Pucón,Chronos Large,7,-7,,0
+pucon,Pucón,Chronos Large,7,-6,,0
+pucon,Pucón,Chronos Large,7,-5,,0
+pucon,Pucón,Chronos Large,7,-4,,0
+pucon,Pucón,Chronos Large,7,-3,,0
+pucon,Pucón,Chronos Large,7,-2,,0
+pucon,Pucón,Chronos Large,7,-1,,0
+pucon,Pucón,Chronos Large,7,0,0.742921053246176,25
+pucon,Pucón,Chronos Large,7,1,,0
+pucon,Pucón,Chronos Large,7,2,,0
+pucon,Pucón,Chronos Large,7,3,,0
+pucon,Pucón,Chronos Large,7,4,,0
+pucon,Pucón,Chronos Large,7,5,,0
+pucon,Pucón,Chronos Large,7,6,,0
+pucon,Pucón,Chronos Large,7,7,,0
+pucon,Pucón,Chronos Large,7,8,,0
+pucon,Pucón,Chronos Large,7,9,,0
+pucon,Pucón,Chronos Large,7,10,,0
+pucon,Pucón,Chronos Large,7,11,,0
+pucon,Pucón,Chronos Large,7,12,,0
+pucon,Pucón,Chronos Large,7,13,,0
+pucon,Pucón,Chronos Large,7,14,0.3166336890330555,24
+pucon,Pucón,TimesFM,7,-14,0.7693203572640184,24
+pucon,Pucón,TimesFM,7,-13,,0
+pucon,Pucón,TimesFM,7,-12,,0
+pucon,Pucón,TimesFM,7,-11,,0
+pucon,Pucón,TimesFM,7,-10,,0
+pucon,Pucón,TimesFM,7,-9,,0
+pucon,Pucón,TimesFM,7,-8,,0
+pucon,Pucón,TimesFM,7,-7,,0
+pucon,Pucón,TimesFM,7,-6,,0
+pucon,Pucón,TimesFM,7,-5,,0
+pucon,Pucón,TimesFM,7,-4,,0
+pucon,Pucón,TimesFM,7,-3,,0
+pucon,Pucón,TimesFM,7,-2,,0
+pucon,Pucón,TimesFM,7,-1,,0
+pucon,Pucón,TimesFM,7,0,0.8600108510971541,25
+pucon,Pucón,TimesFM,7,1,,0
+pucon,Pucón,TimesFM,7,2,,0
+pucon,Pucón,TimesFM,7,3,,0
+pucon,Pucón,TimesFM,7,4,,0
+pucon,Pucón,TimesFM,7,5,,0
+pucon,Pucón,TimesFM,7,6,,0
+pucon,Pucón,TimesFM,7,7,,0
+pucon,Pucón,TimesFM,7,8,,0
+pucon,Pucón,TimesFM,7,9,,0
+pucon,Pucón,TimesFM,7,10,,0
+pucon,Pucón,TimesFM,7,11,,0
+pucon,Pucón,TimesFM,7,12,,0
+pucon,Pucón,TimesFM,7,13,,0
+pucon,Pucón,TimesFM,7,14,0.4195569536272497,24

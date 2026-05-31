@@ -1,51 +1,65 @@
-%%{init: {"theme": "base", "themeVariables": {"fontFamily": "Arial", "fontSize": "18px", "primaryColor": "#F7FBFF", "primaryBorderColor": "#2F4858", "primaryTextColor": "#1F2933", "lineColor": "#33658A", "actorBorder": "#2F4858", "actorBkg": "#E8F1F2", "actorTextColor": "#1F2933", "activationBkgColor": "#D7EAF3", "activationBorderColor": "#33658A", "noteBkgColor": "#FFF3BF", "noteBorderColor": "#E0A800"}, "sequence": {"diagramMarginX": 18, "diagramMarginY": 18, "actorMargin": 38, "messageMargin": 40, "mirrorActors": true, "bottomMarginAdj": 12, "useMaxWidth": true, "rightAngles": false}}}%%
-sequenceDiagram
-    autonumber
-    box rgba(232, 241, 242, 0.75) Data acquisition and provenance
-    participant RD as Raw Data
-    participant PP as Preprocessor
-    end
-    box rgba(255, 243, 191, 0.65) Gap handling and signal processing
-    participant IM as Imputation Module
-    participant SF as Signal Filter
-    end
-    box rgba(214, 234, 248, 0.70) Feature/model input construction
-    participant FE as Feature Engineer
-    participant TR as Transformer
-    participant MI as Model Input
+%%{init: {"theme": "base", "htmlLabels": true, "securityLevel": "loose", "themeVariables": {"fontFamily": "Inter, Arial, Helvetica, sans-serif", "fontSize": "19px", "primaryTextColor": "#102033", "lineColor": "#47637A", "clusterBkg": "#F8FAFC", "clusterBorder": "#CBD5E1"}, "flowchart": {"diagramPadding": 22, "nodeSpacing": 38, "rankSpacing": 58, "curve": "basis", "useMaxWidth": true}}}%%
+flowchart TB
+    accTitle: Figure 2 preprocessing workflow
+    accDescr: Reproducible Villarrica chlorophyll preprocessing workflow with raw-data provenance, date repair, QA gates, observed-preserving imputation, and forecast blocking.
+
+    classDef raw fill:#FFF7ED,stroke:#F97316,color:#102033,stroke-width:2px;
+    classDef canonical fill:#EFF6FF,stroke:#2563EB,color:#102033,stroke-width:2px;
+    classDef qa fill:#F0FDFA,stroke:#0F766E,color:#102033,stroke-width:2px;
+    classDef gate fill:#FEF3C7,stroke:#D97706,color:#102033,stroke-width:2.5px;
+    classDef blocker fill:#FFF1F2,stroke:#E11D48,color:#102033,stroke-width:2px;
+    classDef impute fill:#F5F3FF,stroke:#7C3AED,color:#102033,stroke-width:2px;
+    classDef output fill:#ECFDF5,stroke:#16A34A,color:#102033,stroke-width:2px;
+    classDef note fill:#F8FAFC,stroke:#64748B,color:#334155,stroke-width:1.5px,stroke-dasharray: 5 4;
+
+    subgraph A["01 · Raw data and provenance"]
+        direction LR
+        A1["<b>Immutable raw station files</b><br/>HTML-XLS/XLSX under <code>raw_data/</code><br/><span class='small'>Pucón and La Poza source workbooks</span>"]:::raw
+        A2["<b>Source inventory</b><br/>SHA-256 hash · sheet · row count<br/>station/date coverage"]:::raw
+        A3["<b>Date provenance repair</b><br/>Pucón Excel serials repaired to Spanish DMY<br/><span class='small'>row-level <code>raw_date_value</code> retained</span>"]:::raw
     end
 
-    rect rgba(232, 241, 242, 0.35)
-    RD->>PP: Tabular time series with station/date/value fields
-    activate PP
-    PP->>PP: Parse dates, normalize units, and validate flags
-    PP->>PP: Resample to daily frequency
-    PP->>PP: Identify missing days and invalid sentinel values
+    subgraph B["02 · Canonical observation layer"]
+        direction LR
+        B1["<b>Canonical long table</b><br/>station · date · variable · statistic · value · unit"]:::canonical
+        B2["<b>Unit and validity checks</b><br/>sentinel −99 · negative values · implausible ranges"]:::canonical
+        B3["<b>Model-eligibility flags</b><br/>hash collisions, unresolved dates, invalid values<br/>excluded from model inputs"]:::canonical
     end
-    rect rgba(255, 243, 191, 0.35)
-    PP->>IM: Request gap filling for missing daily values
-    activate IM
-    IM->>IM: Compute day-of-year or monthly baseline from available history
-    IM-->>PP: Return filled series with imputation_method flags
-    deactivate IM
-    PP->>PP: Preserve observed-value and source-count masks
-    PP->>SF: Send filled series for optional smoothing
-    deactivate PP
-    activate SF
-    SF->>SF: Apply Savitzky-Golay filter when configured
-    SF-->>FE: Return processed series plus smoothing flags
-    deactivate SF
+
+    subgraph C["03 · Daily Chl-a target and QA gate"]
+        direction LR
+        C1["<b>Daily Chl-a aggregation</b><br/>station/day means with source rows/files<br/><code>is_observed</code> and <code>source_count</code>"]:::qa
+        C2{{"<b>Data-QA gate</b><br/>forecast allowed only if blockers are cleared"}}:::gate
+        C3["<b>Blocking evidence</b><br/>mixed-date audit · duplicate station values<br/>imputation dominance · spike review"]:::blocker
     end
-    rect rgba(214, 234, 248, 0.35)
-    activate FE
-    FE->>FE: Add calendar, day-of-year, and cyclical encodings
-    FE->>TR: Request model-ready normalization
-    deactivate FE
-    activate TR
-    TR->>TR: Check variance and optional log transform
-    TR->>MI: Build context window and forecast horizon tensors
-    deactivate TR
-    activate MI
-    MI->>MI: Store model input with provenance and preprocessing masks
-    deactivate MI
+
+    subgraph D["04 · Observed-preserving 2024 imputation"]
+        direction LR
+        D1["<b>Observed values preserved</b><br/>direct measurements are never smoothed<br/>or overwritten"]:::impute
+        D2["<b>Short gaps</b><br/>bracketed PCHIP only when both neighbours exist<br/>and gap length ≤ 10 days"]:::impute
+        D3["<b>Long gaps</b><br/>prior-year circular DOY climatology<br/>+ harmonic Huber fit + analog residuals"]:::impute
+        D4["<b>Controls</b><br/>21-day boundary blending · cap imputed values only<br/>no Savitzky–Golay in final target"]:::impute
     end
+
+    subgraph E["05 · Reviewer-ready outputs and model input"]
+        direction LR
+        E1["<b>Preprocessing evidence tables</b><br/><code>preprocessing_footprint.csv</code><br/><code>mixed_date_encoding_audit.csv</code>"]:::output
+        E2["<b>Imputation validation figure</b><br/><code>realistic_imputation_validation.png/.svg</code><br/>observed vs imputed series"]:::output
+        E3["<b>Model input contract</b><br/>context windows, horizons, quantiles<br/>forecasting remains blocked until QA acceptance"]:::output
+    end
+
+    A1 --> A2 --> A3
+    B1 --> B2 --> B3
+    C1 --> C2
+    D1 --> D2 --> D3 --> D4
+    E1 --> E2 --> E3
+
+    A3 --> B1
+    B3 --> C1
+    C2 -- "pass / author accepted" --> D1
+    D4 --> E1
+    C2 -- "blocker found" --> C3 -. "do not rerun forecasts" .-> E3
+
+    N1["<b>Reviewer risk addressed</b><br/>R1.3/R1.4/R3.5: provenance, observed/imputed proportions,<br/>imputation footprint, and leakage-aware forecast gating"]:::note
+    C3 -.-> N1
+    E2 -.-> N1

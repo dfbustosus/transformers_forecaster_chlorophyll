@@ -3,6 +3,7 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Any
 
+import matplotlib.dates as mdates
 import matplotlib.pyplot as plt
 import pandas as pd
 
@@ -47,6 +48,7 @@ def metric_figure(config: dict[str, Any], station_id: str, figure_number: str) -
             ),
         )
         return {"status": status_path, "source": source_path}
+    _remove_blocked_figure_status(config, figure_number)
     apply_manuscript_style()
     fig, axes = plt.subplots(3, 2, figsize=(11, 8), sharex=True)
     axes = axes.ravel()
@@ -100,6 +102,7 @@ def trajectory_figure(
     source = station_predictions[
         station_predictions["model"].isin(models) & station_predictions["horizon"].isin(horizons)
     ].copy()
+    source = _filter_trajectory_window(source, config)
     source_path = write_csv(
         _date_to_string(source), tables_dir / f"figure_{figure_number}_source.csv"
     )
@@ -118,46 +121,74 @@ def trajectory_figure(
             ),
         )
         return {"status": status_path, "source": source_path}
+    _remove_blocked_figure_status(config, figure_number)
 
     observed = daily[daily["station_id"].eq(station_id)].sort_values("date")
-    if not source.empty:
-        min_date = source["target_date"].min()
-        max_date = source["target_date"].max()
-        observed = observed[observed["date"].between(min_date, max_date)]
+    observed = _filter_observed_window(observed, config)
 
     apply_manuscript_style()
-    fig, axes = plt.subplots(2, 2, figsize=(12, 7), sharex=True, sharey=True)
+    plt.rcParams.update(
+        {
+            "font.size": 9,
+            "axes.titlesize": 10,
+            "axes.titleweight": "bold",
+            "figure.titlesize": 14,
+            "figure.titleweight": "bold",
+            "legend.fontsize": 7,
+            "axes.grid": True,
+            "grid.alpha": 0.25,
+            "grid.linestyle": "-",
+        }
+    )
+    fig, axes = plt.subplots(2, 2, figsize=(13.5, 9.2), sharex=True, sharey=True)
     axes = axes.ravel()
-    model_styles = [("#D62728", "o"), ("#2CA02C", "s"), ("#9467BD", "^")]
+    model_styles = {
+        "TimesFM": {"color": "#D73027", "marker": "o", "label": "TimesFM"},
+        "Chronos Large": {"color": "#1A9850", "marker": "s", "label": "Chronos"},
+    }
+    y_upper = _trajectory_y_upper(observed, source)
     for ax, horizon in zip(axes, horizons, strict=True):
         ax.plot(
             observed["date"],
             observed["chl_a_model"],
-            color="#1F77B4",
-            linewidth=1.2,
-            label="Observed/processed",
+            color="#2B8CBE",
+            linewidth=1.45,
+            label="Observed",
+            zorder=2,
         )
         horizon_df = source[source["horizon"].eq(horizon)]
-        for (model, group), (color, marker) in zip(
-            horizon_df.groupby("model"), model_styles, strict=False
-        ):
+        for model in models:
+            group = horizon_df[horizon_df["model"].eq(model)].sort_values("target_date")
+            if group.empty:
+                continue
+            style = model_styles.get(model, {"color": "#9467BD", "marker": "^", "label": model})
+            horizon_label = _horizon_label(horizon)
             group = group.sort_values("target_date")
             ax.scatter(
                 group["target_date"],
                 group["y_pred"],
-                s=12,
-                color=color,
-                marker=marker,
-                label=model,
-                alpha=0.8,
+                s=18,
+                color=style["color"],
+                marker=style["marker"],
+                edgecolors="black",
+                linewidths=0.35,
+                label=f"{style['label']} D{horizon} ({horizon_label})",
+                alpha=0.9,
+                zorder=3,
             )
-        ax.set_title(f"Chl-a forecast comparison — D{horizon}")
-        ax.set_ylabel("Chl-a (µg/L)")
-        ax.tick_params(axis="x", rotation=35)
-    handles, labels = axes[0].get_legend_handles_labels()
-    fig.legend(handles, labels, loc="lower center", ncol=3, frameon=False)
-    fig.suptitle(f"Forecast trajectories — {station_label(station_id)}")
-    fig.tight_layout(rect=[0, 0.07, 1, 0.94])
+        ax.set_title(f"Chlorophyll-a Forecast Comparison - D{horizon} ({horizon_label})")
+        ax.set_ylabel("Chlorophyll-a (µg/L)")
+        ax.set_xlabel("Date")
+        ax.set_ylim(bottom=0, top=y_upper)
+        ax.legend(loc="upper right", frameon=True)
+        ax.xaxis.set_major_locator(mdates.MonthLocator(interval=3))
+        ax.xaxis.set_major_formatter(mdates.DateFormatter("%Y-%m-%d"))
+        ax.tick_params(axis="x", rotation=45)
+    fig.suptitle(
+        "Time Series Forecast Comparison: TimesFM vs Chronos Large\n"
+        f"{_trajectory_station_title(station_id)} - Chlorophyll-a Predictions"
+    )
+    fig.tight_layout(rect=[0, 0.02, 1, 0.92], h_pad=2.2, w_pad=2.0)
     return save_figure(
         fig,
         config,
@@ -167,9 +198,56 @@ def trajectory_figure(
             "source_data": str(source_path),
             "station_id": station_id,
             "models_plotted": models,
-            "scientific_note": "Generated from validated rolling-origin foundation-model predictions only.",
+            "target_window": _trajectory_target_window(config),
+            "scientific_note": "Generated from validated rolling-origin foundation-model predictions only; styled to match the original manuscript trajectory panels.",
         },
     )
+
+
+def _filter_trajectory_window(source: pd.DataFrame, config: dict[str, Any]) -> pd.DataFrame:
+    start, end = _trajectory_target_window(config)
+    if source.empty or not start or not end:
+        return source
+    target = pd.to_datetime(source["target_date"])
+    return source[target.between(pd.Timestamp(start), pd.Timestamp(end))].copy()
+
+
+def _filter_observed_window(observed: pd.DataFrame, config: dict[str, Any]) -> pd.DataFrame:
+    start, end = _trajectory_target_window(config)
+    if observed.empty or not start or not end:
+        return observed
+    return observed[observed["date"].between(pd.Timestamp(start), pd.Timestamp(end))].copy()
+
+
+def _trajectory_target_window(config: dict[str, Any]) -> tuple[str | None, str | None]:
+    forecast = config.get("forecast", {})
+    return (
+        forecast.get("trajectory_figure_target_start") or forecast.get("evaluation_target_start"),
+        forecast.get("trajectory_figure_target_end") or forecast.get("evaluation_target_end"),
+    )
+
+
+def _horizon_label(horizon: int) -> str:
+    return "1-day" if int(horizon) == 1 else f"{int(horizon)}-day"
+
+
+def _trajectory_station_title(station_id: str) -> str:
+    return {"la_poza": "Poza Dataset", "pucon": "Pucon"}.get(station_id, station_label(station_id))
+
+
+def _trajectory_y_upper(observed: pd.DataFrame, source: pd.DataFrame) -> float:
+    maxima = []
+    if not observed.empty:
+        maxima.append(float(pd.to_numeric(observed["chl_a_model"], errors="coerce").max()))
+    if not source.empty:
+        maxima.append(float(pd.to_numeric(source["y_pred"], errors="coerce").max()))
+        maxima.append(float(pd.to_numeric(source["y_true"], errors="coerce").max()))
+    max_value = max([value for value in maxima if pd.notna(value)] or [3.0])
+    if max_value <= 3.5:
+        return 3.6
+    if max_value <= 4.0:
+        return 4.1
+    return min(max_value * 1.12, 6.0)
 
 
 def _required_foundation_figure_models(config: dict[str, Any]) -> list[str]:
@@ -208,6 +286,12 @@ def _write_blocked_figure_status(
         ]
     )
     return write_csv(status, tables_dir / f"figure_{figure_number}_status.csv")
+
+
+def _remove_blocked_figure_status(config: dict[str, Any], figure_number: str) -> None:
+    status_path = path_from_config(config, "tables") / f"figure_{figure_number}_status.csv"
+    if status_path.exists():
+        status_path.unlink()
 
 
 def _date_to_string(frame: pd.DataFrame) -> pd.DataFrame:

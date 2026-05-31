@@ -90,7 +90,9 @@ def load_foundation_daily_target(config: dict[str, Any]) -> pd.DataFrame:
     return apply_realistic_imputation_reference(daily, reference)
 
 
-def apply_realistic_imputation_reference(daily: pd.DataFrame, reference: pd.DataFrame) -> pd.DataFrame:
+def apply_realistic_imputation_reference(
+    daily: pd.DataFrame, reference: pd.DataFrame
+) -> pd.DataFrame:
     """Overlay the accepted 2024 realistic-imputation table onto daily_chl_a."""
 
     if daily.empty or reference.empty:
@@ -120,7 +122,11 @@ def apply_realistic_imputation_reference(daily: pd.DataFrame, reference: pd.Data
         how="left",
         suffixes=("", "_realistic"),
     )
-    mask = merged["chl_a_imputed"].notna() if "chl_a_imputed" in merged.columns else pd.Series(False, index=merged.index)
+    mask = (
+        merged["chl_a_imputed"].notna()
+        if "chl_a_imputed" in merged.columns
+        else pd.Series(False, index=merged.index)
+    )
     if not bool(mask.any()):
         return frame
 
@@ -147,9 +153,7 @@ def apply_realistic_imputation_reference(daily: pd.DataFrame, reference: pd.Data
         else pd.Series(False, index=merged.index)
     )
     imputed = (
-        _as_bool_series(merged[imputed_flag_column])
-        if imputed_flag_column in merged
-        else ~observed
+        _as_bool_series(merged[imputed_flag_column]) if imputed_flag_column in merged else ~observed
     )
     short_gap = (
         _as_bool_series(merged[short_gap_column])
@@ -248,6 +252,7 @@ def iter_forecast_origins(daily: pd.DataFrame, config: dict[str, Any]) -> list[F
                 target_end=str(target_end),
                 prediction_length=prediction_length,
                 min_train=min_train,
+                origin_stride_days=int(config["forecast"].get("origin_stride_days", 1)),
             )
         else:
             test_start_pos = max(min_train, int(np.floor(len(station) * (1.0 - test_fraction))))
@@ -278,6 +283,7 @@ def _explicit_target_window_origin_positions(
     target_end: str,
     prediction_length: int,
     min_train: int,
+    origin_stride_days: int = 1,
 ) -> range:
     dates = pd.to_datetime(station["date"])
     target_start_ts = pd.Timestamp(target_start)
@@ -292,7 +298,7 @@ def _explicit_target_window_origin_positions(
     end_pos = min(int(end_candidates.max()), len(station) - prediction_length - 1)
     if end_pos < start_pos:
         return range(0, 0)
-    return range(start_pos, end_pos + 1)
+    return range(start_pos, end_pos + 1, max(int(origin_stride_days), 1))
 
 
 def write_forecast_origin_plan(config: dict[str, Any]) -> dict[str, Path]:
@@ -373,6 +379,7 @@ def validate_foundation_prediction_table(
     ]
     if not blocked_sources.empty:
         errors.append("Prediction cache contains local-baseline prediction_source values.")
+    errors.extend(_validate_prediction_run_metadata(frame, config))
 
     duplicate_key = ["station_id", "model", "origin_date", "horizon"]
     duplicate_count = int(frame.duplicated(duplicate_key).sum())
@@ -383,6 +390,7 @@ def validate_foundation_prediction_table(
 
     expected_origins = build_forecast_origin_plan(daily, config)
     if not expected_origins.empty:
+        errors.extend(_validate_origin_context_values(expected_origins, daily))
         expected_origin_keys = expected_origins[["station_id", "origin_date"]].drop_duplicates()
         actual_origin_keys = frame[["station_id", "origin_date"]].drop_duplicates()
         missing_origins = _missing_key_count(
@@ -409,20 +417,23 @@ def validate_foundation_prediction_table(
         with_expected_context = frame.merge(
             expected_context,
             on=["station_id", "origin_date"],
-            how="left",
+            how="inner",
             suffixes=("", "_expected"),
         )
-        context_mismatches = (
-            with_expected_context["context_start"].ne(
-                with_expected_context["context_start_expected"]
+        if not with_expected_context.empty:
+            context_mismatches = (
+                with_expected_context["context_start"].ne(
+                    with_expected_context["context_start_expected"]
+                )
+                | with_expected_context["context_end"].ne(
+                    with_expected_context["context_end_expected"]
+                )
+                | with_expected_context["context_length_used"]
+                .astype("Int64")
+                .ne(with_expected_context["context_length_used_expected"].astype("Int64"))
             )
-            | with_expected_context["context_end"].ne(with_expected_context["context_end_expected"])
-            | with_expected_context["context_length_used"]
-            .astype("Int64")
-            .ne(with_expected_context["context_length_used_expected"].astype("Int64"))
-        )
-        if bool(context_mismatches.fillna(True).any()):
-            errors.append("Context metadata do not match the expected origin plan.")
+            if bool(context_mismatches.fillna(True).any()):
+                errors.append("Context metadata do not match the expected origin plan.")
 
     expected_target_date = pd.to_datetime(frame["origin_date"]) + pd.to_timedelta(
         frame["horizon"].astype(int), unit="D"
@@ -481,6 +492,7 @@ def run_foundation_forecasts(
         raise RuntimeError("Invalid foundation prediction output: " + " | ".join(errors))
     if model_labels is not None and cache_path.exists():
         predictions = _merge_with_existing_cache(predictions, cache_path)
+    predictions = _filter_predictions_to_origin_plan(predictions, daily, config)
     paths = {"foundation_model_predictions": write_csv(predictions, cache_path)}
     prediction_output_hash = _file_sha256(cache_path)
     paths["foundation_model_run_metadata"] = write_json(
@@ -551,6 +563,17 @@ def _predict_model_for_all_origins(
                 values.loc[: origin.origin_date].tail(context_length).to_numpy(dtype=float)
                 for origin in origin_batch
             ]
+            invalid_contexts = [
+                origin.origin_date.date().isoformat()
+                for origin, context in zip(origin_batch, contexts, strict=True)
+                if context.size == 0 or not np.isfinite(context).all()
+            ]
+            if invalid_contexts:
+                raise RuntimeError(
+                    f"Non-finite foundation-model context for {station_name} "
+                    f"({station_id}) origin(s): {', '.join(invalid_contexts[:5])}. "
+                    "Regenerate daily_chl_a.csv or block this station before model inference."
+                )
             batch_forecast = forecaster.predict_batch(
                 contexts=contexts, prediction_length=prediction_length
             )
@@ -639,6 +662,25 @@ def _merge_with_existing_cache(new_predictions: pd.DataFrame, cache_path: Path) 
     selected_models = set(new_predictions["model"].dropna().astype(str).unique())
     existing = existing[~existing["model"].astype(str).isin(selected_models)].copy()
     return pd.concat([existing, new_predictions], ignore_index=True)[PREDICTION_COLUMNS]
+
+
+def _filter_predictions_to_origin_plan(
+    predictions: pd.DataFrame, daily: pd.DataFrame, config: dict[str, Any]
+) -> pd.DataFrame:
+    if predictions.empty:
+        return predictions
+    plan = build_forecast_origin_plan(daily, config)
+    if plan.empty:
+        return predictions
+    frame = predictions.copy()
+    frame["origin_date_key"] = pd.to_datetime(frame["origin_date"]).dt.date.astype(str)
+    plan_keys = (
+        plan[["station_id", "origin_date"]]
+        .drop_duplicates()
+        .rename(columns={"origin_date": "origin_date_key"})
+    )
+    filtered = frame.merge(plan_keys, on=["station_id", "origin_date_key"], how="inner")
+    return filtered.drop(columns=["origin_date_key"])[PREDICTION_COLUMNS]
 
 
 def _partial_prediction_path(config: dict[str, Any], model: dict[str, Any]) -> Path:
@@ -733,6 +775,7 @@ class _ChronosForecaster:
             "chronos-forecasting", "unknown"
         )
         self._num_samples = int(model.get("num_samples", 64))
+        self._quantiles = [float(value) for value in model.get("quantiles", [0.1, 0.5, 0.9])]
         dtype_name = str(model.get("precision", "float32"))
         dtype = getattr(torch, dtype_name)
         self._pipeline = BaseChronosPipeline.from_pretrained(
@@ -746,6 +789,26 @@ class _ChronosForecaster:
         self, contexts: list[np.ndarray], prediction_length: int
     ) -> dict[str, np.ndarray | str]:
         tensors = [self._torch.tensor(context, dtype=self._torch.float32) for context in contexts]
+        if hasattr(self._pipeline, "predict_quantiles"):
+            quantiles, mean = self._pipeline.predict_quantiles(
+                tensors,
+                prediction_length=prediction_length,
+                quantile_levels=self._quantiles,
+            )
+            quantile_values = _as_numpy_forecast(quantiles)
+            mean_values = _as_numpy_forecast(mean)
+            output: dict[str, np.ndarray | str] = {
+                "point": mean_values[:, :prediction_length],
+                "model_version": self.version,
+            }
+            for index, quantile in enumerate(self._quantiles):
+                if np.isclose(quantile, 0.10):
+                    output["q10"] = quantile_values[:, :prediction_length, index]
+                elif np.isclose(quantile, 0.50):
+                    output["q50"] = quantile_values[:, :prediction_length, index]
+                elif np.isclose(quantile, 0.90):
+                    output["q90"] = quantile_values[:, :prediction_length, index]
+            return output
         try:
             forecast = self._pipeline.predict(
                 tensors, prediction_length=prediction_length, num_samples=self._num_samples
@@ -901,6 +964,76 @@ def _validate_targets_against_daily(predictions: pd.DataFrame, daily: pd.DataFra
     return errors
 
 
+def _validate_prediction_run_metadata(
+    predictions: pd.DataFrame, config: dict[str, Any]
+) -> list[str]:
+    """Ensure cached predictions were generated from the current target inputs.
+
+    The prediction table stores only scalar outputs, so stale caches can otherwise pass
+    target-date validation even after the underlying context series changes. Each runtime
+    run writes `data/processed/<run_id>_metadata.json` with the input-data hash used for
+    inference; strict validation blocks caches whose run metadata are missing or stale.
+    """
+
+    if "run_id" not in predictions.columns or predictions.empty:
+        return []
+    processed_dir = path_from_config(config, "processed_data")
+    if not (processed_dir / "daily_chl_a.csv").exists():
+        return []
+    current_input_hash = _foundation_input_hash(config)
+    errors: list[str] = []
+    for run_id in sorted(set(predictions["run_id"].dropna().astype(str))):
+        metadata_path = processed_dir / f"{run_id}_metadata.json"
+        if not metadata_path.exists():
+            errors.append(
+                f"Missing foundation run metadata for run_id={run_id} at {metadata_path}."
+            )
+            continue
+        try:
+            metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            errors.append(f"Invalid JSON in foundation run metadata {metadata_path}.")
+            continue
+        run_input_hash = str(metadata.get("input_data_hash", ""))
+        if run_input_hash != current_input_hash:
+            errors.append(
+                "Foundation prediction cache is stale for run_id="
+                f"{run_id}: metadata input_data_hash={run_input_hash or 'missing'} "
+                f"but current input_data_hash={current_input_hash}."
+            )
+    return errors
+
+
+def _validate_origin_context_values(origins: pd.DataFrame, daily: pd.DataFrame) -> list[str]:
+    """Block forecast plans whose disclosed context windows contain non-finite targets."""
+
+    if origins.empty or daily.empty:
+        return []
+    errors: list[str] = []
+    frame = daily.copy()
+    frame["date"] = pd.to_datetime(frame["date"])
+    for station_id, station_origins in origins.groupby("station_id", dropna=False):
+        station = frame[frame["station_id"].astype(str).eq(str(station_id))].copy()
+        if station.empty:
+            errors.append(f"No daily target rows for expected station_id={station_id}.")
+            continue
+        station = station.sort_values("date").set_index("date")
+        for _, origin in station_origins.iterrows():
+            start = pd.Timestamp(str(origin["context_start"]))
+            end = pd.Timestamp(str(origin["context_end"]))
+            context = pd.to_numeric(station.loc[start:end, "chl_a_model"], errors="coerce")
+            if context.empty or not np.isfinite(context.to_numpy(dtype=float)).all():
+                errors.append(
+                    "Non-finite chl_a_model values in expected context window for "
+                    f"station_id={station_id}, origin_date={origin['origin_date']} "
+                    f"({start.date()}–{end.date()})."
+                )
+                if len(errors) >= 5:
+                    errors.append("Additional non-finite context-window errors omitted.")
+                    return errors
+    return errors
+
+
 def _apply_random_seed(seed: int) -> None:
     random.seed(seed)
     np.random.seed(seed)
@@ -916,9 +1049,7 @@ def _as_bool_series(values: pd.Series) -> pd.Series:
     if values.dtype == bool:
         return values.fillna(False).astype(bool)
     clean = values.where(values.notna(), False)
-    return clean.map(
-        lambda value: str(value).strip().lower() in {"1", "true", "t", "yes", "y"}
-    )
+    return clean.map(lambda value: str(value).strip().lower() in {"1", "true", "t", "yes", "y"})
 
 
 def _git_commit(repo_root: Path) -> str:

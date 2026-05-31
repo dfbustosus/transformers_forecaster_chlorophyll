@@ -3,7 +3,9 @@
     "canonical_observations": "data/processed/canonical_observations.csv",
     "data_dictionary": "outputs/tables/data_dictionary.csv",
     "data_inventory": "outputs/tables/data_inventory.csv",
+    "mixed_date_encoding_audit": "outputs/tables/mixed_date_encoding_audit.csv",
     "quality_flag_summary": "outputs/tables/quality_flag_summary.csv",
+    "raw_file_hash_collisions": "outputs/tables/raw_file_hash_collisions.csv",
     "station_date_coverage": "outputs/tables/station_date_coverage.csv"
   },
   "raw_file_count": 13,

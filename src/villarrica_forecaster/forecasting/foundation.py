@@ -313,7 +313,11 @@ def write_forecast_origin_plan(config: dict[str, Any]) -> dict[str, Path]:
 
 
 def validate_foundation_prediction_table(
-    predictions: pd.DataFrame, daily: pd.DataFrame, config: dict[str, Any]
+    predictions: pd.DataFrame,
+    daily: pd.DataFrame,
+    config: dict[str, Any],
+    *,
+    require_run_metadata: bool = True,
 ) -> list[str]:
     errors: list[str] = []
     missing = [column for column in PREDICTION_COLUMNS if column not in predictions.columns]
@@ -379,7 +383,8 @@ def validate_foundation_prediction_table(
     ]
     if not blocked_sources.empty:
         errors.append("Prediction cache contains local-baseline prediction_source values.")
-    errors.extend(_validate_prediction_run_metadata(frame, config))
+    if require_run_metadata:
+        errors.extend(_validate_prediction_run_metadata(frame, config))
 
     duplicate_key = ["station_id", "model", "origin_date", "horizon"]
     duplicate_count = int(frame.duplicated(duplicate_key).sum())
@@ -487,7 +492,9 @@ def run_foundation_forecasts(
 
     predictions = pd.DataFrame.from_records(records, columns=PREDICTION_COLUMNS)
     cache_path = foundation_cache_path(config)
-    errors = validate_foundation_prediction_table(predictions, daily, run_config)
+    errors = validate_foundation_prediction_table(
+        predictions, daily, run_config, require_run_metadata=False
+    )
     if errors:
         raise RuntimeError("Invalid foundation prediction output: " + " | ".join(errors))
     if model_labels is not None and cache_path.exists():

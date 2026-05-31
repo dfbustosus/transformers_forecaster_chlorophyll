@@ -1,0 +1,19 @@
+{
+  "coverage_table": "/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/outputs/tables/uncertainty_coverage.csv",
+  "created_utc": "2026-05-31T20:20:07+00:00",
+  "horizon": 7,
+  "models_plotted": [
+    "TimesFM",
+    "Chronos Large"
+  ],
+  "reviewer_comments_addressed": [
+    "R3.7"
+  ],
+  "scientific_note": "Visualizes cached foundation-model q10/q50/q90 intervals; negative display bounds are clipped to 0 µg/L while raw quantiles remain in the source table and coverage metrics.",
+  "script": "src/villarrica_forecaster/figures/forecast_figures.py",
+  "source_data": "/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/outputs/tables/figure_08_source.csv",
+  "target_window": [
+    "2024-01-01",
+    "2024-12-31"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "created_utc": "2026-05-31T22:06:06+00:00",
+  "purpose": "End-to-end methodology roadmap requested by Reviewer 3 comment 10, rendered with Node/Mermaid from version-controlled source.",
+  "renderer": {
+    "command": [
+      [
+        "/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/node_modules/.bin/mmdc",
+        "--input",
+        "/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/figures/figure_methodology_end_to_end.mmd",
+        "--output",
+        "/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/figures/figure_methodology_end_to_end.svg",
+        "--backgroundColor",
+        "white",
+        "--cssFile",
+        "/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/configs/methodology_flowchart_mermaid.css",
+        "--width",
+        "1900"
+      ],
+      [
+        "/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/node_modules/.bin/mmdc",
+        "--input",
+        "/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/figures/figure_methodology_end_to_end.mmd",
+        "--output",
+        "/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/figures/figure_methodology_end_to_end.png",
+        "--backgroundColor",
+        "white",
+        "--width",
+        "1900",
+        "--scale",
+        "2",
+        "--cssFile",
+        "/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/configs/methodology_flowchart_mermaid.css"
+      ]
+    ],
+    "css": "/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/configs/methodology_flowchart_mermaid.css",
+    "source": "/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/figures/figure_methodology_end_to_end.mmd"
+  },
+  "reviewer_comments_addressed": [
+    "R3.10"
+  ],
+  "scientific_note": "The forecast-model box states the actual reproducible input contract: TimesFM and Chronos use univariate Chl-a context windows; satellite products require separate matchup/inversion validation before direct feature-ingestion claims.",
+  "script": "src/villarrica_forecaster/figures/workflows.py",
+  "source_data": "/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/figures/figure_methodology_end_to_end.mmd",
+  "style_css": "/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/configs/methodology_flowchart_mermaid.css"
+}

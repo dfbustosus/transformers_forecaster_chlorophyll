@@ -1,43 +1,94 @@
+svg {
+  background: #ffffff !important;
+}
+
 .actor {
-  fill: #e8f1f2 !important;
-  stroke: #2f4858 !important;
-  stroke-width: 2px !important;
+  fill: #f8fafc !important;
+  stroke: #334155 !important;
+  stroke-width: 1.7px !important;
+  rx: 7px !important;
+  ry: 7px !important;
 }
 
 .actor-line {
-  stroke: #6b7280 !important;
-  stroke-width: 1.4px !important;
+  stroke: #64748b !important;
+  stroke-width: 1.15px !important;
+}
+
+.actor-box,
+.messageText,
+.labelText,
+.loopText,
+.noteText,
+.sequenceNumber {
+  font-family: Inter, Arial, Helvetica, sans-serif !important;
+}
+
+.actor-box {
+  fill: #0f172a !important;
+  font-weight: 700 !important;
+}
+
+.messageText {
+  fill: #102033 !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
 }
 
 .messageLine0,
 .messageLine1 {
-  stroke: #33658a !important;
-  stroke-width: 2px !important;
-}
-
-.messageText,
-.loopText,
-.labelText,
-.actor-box {
-  fill: #1f2933 !important;
-  font-family: Arial, Helvetica, sans-serif !important;
+  stroke: #334155 !important;
+  stroke-width: 1.75px !important;
 }
 
 .activation0,
 .activation1,
-.activation2 {
-  fill: #d7eaf3 !important;
-  stroke: #33658a !important;
-  stroke-width: 1.6px !important;
+.activation2,
+.activation3 {
+  fill: #e0f2fe !important;
+  stroke: #0284c7 !important;
+  stroke-width: 1.3px !important;
 }
 
 .note {
-  fill: #fff3bf !important;
-  stroke: #e0a800 !important;
-  stroke-width: 1.5px !important;
+  fill: #fff7ed !important;
+  stroke: #f97316 !important;
+  stroke-width: 1.45px !important;
 }
 
 .noteText {
-  fill: #4b3b00 !important;
-  font-family: Arial, Helvetica, sans-serif !important;
+  fill: #431407 !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+}
+
+.labelBox {
+  fill: #ffffff !important;
+  stroke: #cbd5e1 !important;
+  stroke-width: 1px !important;
+  opacity: 0.96 !important;
+}
+
+.labelText,
+.loopText {
+  fill: #1e293b !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+}
+
+.sequenceNumber {
+  fill: #ffffff !important;
+  font-weight: 700 !important;
+}
+
+.sequenceNumber rect,
+rect.sequenceNumber {
+  fill: #334155 !important;
+}
+
+.titleText,
+.title {
+  font-family: Inter, Arial, Helvetica, sans-serif !important;
+  fill: #0f172a !important;
+  font-weight: 800 !important;
 }

@@ -1,0 +1,23 @@
+%%{init: {"theme": "base", "htmlLabels": true, "securityLevel": "loose", "themeVariables": {"fontFamily": "Inter, Arial, Helvetica, sans-serif", "fontSize": "18px", "primaryTextColor": "#0F172A", "lineColor": "#334155", "mainBkg": "#FFFFFF", "clusterBkg": "#F8FAFC", "clusterBorder": "#CBD5E1", "edgeLabelBackground": "#FFFFFF"}, "flowchart": {"curve": "basis", "htmlLabels": true, "nodeSpacing": 34, "rankSpacing": 58, "padding": 16, "useMaxWidth": true}}}%%
+flowchart LR
+    A["<b>1. Data sources</b><br/>Station workbooks<br/>Pucón and La Poza<br/><br/>Satellite products<br/><span>validated separately</span>"]:::input
+    B["<b>2. Provenance and QA</b><br/>File hashes and station IDs<br/>date repair and units<br/>duplicate / spike flags"]:::qc
+    C["<b>3. Daily Chl-a target</b><br/>One daily series per station<br/>observed / interpolated / imputed flags<br/>no hidden preprocessing"]:::target
+    D["<b>4. Forecast setup</b><br/>Calendar features<br/>1024-day Chl-a context<br/>horizons 1-30 days"]:::model
+    E["<b>5. Foundation forecasts</b><br/>TimesFM and Chronos<br/>point forecasts<br/>q10 / q50 / q90 intervals<br/><span>current run: univariate Chl-a input</span>"]:::model
+    F["<b>6. Evaluation</b><br/>Horizon errors<br/>observed-only checks<br/>lag diagnostics<br/>threshold and uncertainty metrics"]:::eval
+    G["<b>7. Reproducible outputs</b><br/>Figures and source tables<br/>reviewer response matrix<br/>manuscript text with supported claims"]:::output
+
+    H["<b>Satellite-inversion validation</b><br/>index formulas<br/>matchup table<br/>train/test split<br/>retrieval uncertainty"]:::satellite
+
+    A --> B --> C --> D --> E --> F --> G
+    A -.-> H
+    H -. "required before direct satellite-feature claims" .-> C
+
+    classDef satellite fill:#FFF7ED,stroke:#EA580C,color:#7C2D12,stroke-width:1.8px,font-weight:650;
+    classDef input fill:#EFF6FF,stroke:#2563EB,color:#0F172A,stroke-width:1.8px;
+    classDef qc fill:#F0FDFA,stroke:#0F766E,color:#0F172A,stroke-width:1.8px;
+    classDef target fill:#F5F3FF,stroke:#7C3AED,color:#0F172A,stroke-width:1.8px;
+    classDef model fill:#ECFDF5,stroke:#16A34A,color:#0F172A,stroke-width:1.8px;
+    classDef eval fill:#FEFCE8,stroke:#CA8A04,color:#0F172A,stroke-width:1.8px;
+    classDef output fill:#FDF2F8,stroke:#DB2777,color:#0F172A,stroke-width:1.8px;

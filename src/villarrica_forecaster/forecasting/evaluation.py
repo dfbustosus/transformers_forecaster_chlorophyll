@@ -58,7 +58,12 @@ def build_forecast_outputs(config: dict[str, Any]) -> dict[str, Path]:
     cached_path = foundation_cache_path(config)
     allow_baseline_fallback = bool(config["forecast"].get("allow_local_baseline_fallback", False))
     blockers: list[dict[str, str]] = []
-    if cached_path.exists():
+    data_qa_errors = _data_qa_forecast_blockers(config)
+    if data_qa_errors:
+        predictions = empty_prediction_frame()
+        prediction_source = "blocked_by_data_qa"
+        blockers.extend(data_qa_errors)
+    elif cached_path.exists():
         predictions = pd.read_csv(cached_path, parse_dates=["origin_date", "target_date"])
         validation_errors = validate_foundation_prediction_table(predictions, daily, config)
         if validation_errors:
@@ -73,8 +78,10 @@ def build_forecast_outputs(config: dict[str, Any]) -> dict[str, Path]:
             prediction_source = "invalid_foundation_model_cache_blocked"
         else:
             prediction_source = "cached_foundation_model_predictions"
+            predictions = _filter_predictions_to_target_window(predictions, config)
     elif allow_baseline_fallback:
         predictions = rolling_origin_baseline_predictions(daily, config)
+        predictions = _filter_predictions_to_target_window(predictions, config)
         prediction_source = "local_baseline_models_explicitly_enabled"
     else:
         predictions = empty_prediction_frame()
@@ -135,6 +142,44 @@ def build_forecast_outputs(config: dict[str, Any]) -> dict[str, Path]:
         processed_dir / "forecast_evaluation_manifest.json",
     )
     return paths
+
+
+def _filter_predictions_to_target_window(
+    predictions: pd.DataFrame, config: dict[str, Any]
+) -> pd.DataFrame:
+    start = config["forecast"].get("evaluation_target_start")
+    end = config["forecast"].get("evaluation_target_end")
+    if predictions.empty or not start or not end or "target_date" not in predictions.columns:
+        return predictions
+    frame = predictions.copy()
+    target_date = pd.to_datetime(frame["target_date"])
+    return frame[target_date.between(pd.Timestamp(str(start)), pd.Timestamp(str(end)))].copy()
+
+
+def _data_qa_forecast_blockers(config: dict[str, Any]) -> list[dict[str, str]]:
+    if not bool(config["forecast"].get("block_forecasts_on_data_qa", False)):
+        return []
+    path = path_from_config(config, "reports") / "data_qa_blockers.csv"
+    if not path.exists():
+        return [
+            {
+                "blocker": "missing_data_qa_report",
+                "detail": f"No data QA blocker report found at {path}.",
+                "required_action": "Run ingestion/preprocessing and resolve data QA before forecast generation.",
+            }
+        ]
+    report = pd.read_csv(path)
+    if report.empty or "forecast_allowed" not in report.columns:
+        return []
+    blocked = report[~report["forecast_allowed"].astype(bool)].copy()
+    return [
+        {
+            "blocker": str(row["blocker_id"]),
+            "detail": f"{row['severity']} {row['scope']}: {row['affected_rows']} affected rows; evidence={row['evidence']}",
+            "required_action": str(row["action"]),
+        }
+        for _, row in blocked.iterrows()
+    ]
 
 
 def rolling_origin_baseline_predictions(

@@ -1,0 +1,9 @@
+{
+  "created_utc": "2026-05-31T15:03:44+00:00",
+  "script": "scripts/plot_realistic_imputation_validation.py",
+  "source_data": "/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/data/processed/realistic_imputed_chl_a_2024.csv",
+  "output_source_table": "/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/outputs/tables/realistic_imputation_validation_source.csv",
+  "purpose": "Single data-validation figure for 2024 realistic Chl-a imputation before any forecast rerun.",
+  "smoothing": "none",
+  "observed_values_preserved": true
+}

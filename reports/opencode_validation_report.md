@@ -134,9 +134,9 @@ Observed local environment:
 Correct implication:
 
 - The OpenCode setup now routes scientific Python/package maintenance to the configured tooling agents, while the repository itself has an executable Poetry package for reviewer-resolution outputs.
-- Foundation-model forecast figures remain blocked unless validated TimesFM/Chronos cache inputs are supplied; this is a scientific evidence gate, not a packaging failure.
+- Foundation-model forecast figures are now regenerated from `data/processed/foundation_model_predictions.csv`, which contains TimesFM and Chronos Large rolling-origin predictions for horizons 1–30.
 
 ## Residual Notes
 
 - This report validates the OpenCode setup and routing. Scientific evidence status is tracked separately in `reports/reviewer_response_matrix.csv`, `reports/forecast_model_blockers.csv`, and `reports/needs_author_input.md`.
-- Remaining blockers are missing satellite matchup inputs, missing full historical records, and missing TimesFM/Chronos prediction cache/runtime.
+- Remaining blockers are missing satellite matchup inputs, missing full historical records, and foundation-model cross-site transfer validation.

@@ -1,3 +1,3 @@
 train_site,test_site,model,horizon,n,MAPE,MSE,RMSE,Bias,MedianAbsoluteError,MAE,validation_scope
-la_poza,pucon,Transferred DOY climatology,1,307.0,45.4981130039322,0.7228428047638437,0.8502016259475418,0.10296552660152011,0.6220000000000003,0.6990377307274702,local_baseline_transfer_not_foundation_model
-pucon,la_poza,Transferred DOY climatology,1,180.0,92.2668129355669,1.4864103972582947,1.2191843163600387,0.5604226388888888,0.5553250000000001,0.8852265277777777,local_baseline_transfer_not_foundation_model
+la_poza,pucon,Transferred DOY climatology,1,267.0,25.556095139580425,3.59641328628161,1.89642117850482,-0.8691613648426385,0.316866448784755,0.9268963915272448,local_baseline_transfer_not_foundation_model
+pucon,la_poza,Transferred DOY climatology,1,74.0,75.92597886959543,0.8454650028852602,0.9194917089812502,0.6762536610414944,0.5584921724989121,0.6962223088224405,local_baseline_transfer_not_foundation_model

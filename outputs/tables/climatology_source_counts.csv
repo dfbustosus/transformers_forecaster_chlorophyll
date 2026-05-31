@@ -1,0 +1,1549 @@
+station_id,station_name,date,imputation_method,imputation_source_count,climatology_source_count,climatology_window_days,imputation_confidence,is_low_support_imputation,chl_a_filled
+la_poza,La Poza,2022-08-22,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2022-08-23,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-08-24,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-08-25,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-08-26,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-08-27,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-08-28,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-08-29,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-08-30,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-08-31,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-09-01,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-09-02,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-09-03,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-09-04,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-09-05,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-09-06,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-09-07,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-09-08,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-09-09,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-09-10,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-09-11,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-09-12,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-09-13,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-09-14,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-09-15,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-09-16,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-09-17,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-09-18,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-09-19,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-09-20,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-09-21,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-09-22,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-09-23,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-09-24,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-09-25,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-09-26,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-09-27,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-09-28,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-09-29,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-09-30,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-10-01,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-10-02,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-10-03,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-10-04,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2022-10-05,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-10-06,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-10-07,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-10-08,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-10-09,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-10-10,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-10-11,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-10-12,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-10-13,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2022-10-14,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2022-10-15,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2022-10-16,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2022-10-17,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2022-10-18,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2022-10-19,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2022-10-20,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2022-10-21,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2022-10-22,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2022-10-23,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2022-10-24,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2022-10-25,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2022-10-26,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2022-10-27,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2022-10-28,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2022-10-29,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2022-10-30,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2022-10-31,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2022-11-01,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2022-11-02,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2022-11-03,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2022-11-04,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2022-11-05,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2022-11-06,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2022-11-07,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2022-11-08,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2022-11-09,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2022-11-10,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2022-11-11,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2022-11-12,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2022-11-13,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2022-11-14,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2022-11-15,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2022-11-16,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2022-11-17,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2022-11-18,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2022-11-19,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-11-20,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-11-21,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-11-22,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-11-23,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-11-24,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-11-25,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-11-26,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-11-27,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-11-28,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-11-29,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-11-30,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-12-01,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-12-02,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-12-03,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-12-04,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-12-05,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-12-06,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-12-07,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-12-08,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-12-09,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-12-10,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-12-11,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-12-12,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-12-13,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-12-14,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-12-15,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-12-16,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-12-17,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-12-18,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-12-19,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-12-20,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-12-21,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-12-22,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-12-23,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-12-24,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-12-25,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-12-26,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-12-27,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-12-28,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-12-29,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-12-30,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2022-12-31,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-01-01,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-01-02,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-01-03,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-01-04,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-01-05,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-01-06,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-01-07,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-01-08,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-01-09,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-01-10,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-01-11,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-01-12,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-01-13,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-01-14,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-01-15,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-01-16,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-01-17,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-01-18,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-01-19,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-01-20,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-01-21,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-01-22,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-01-23,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-01-24,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-01-25,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-01-26,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-01-27,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-01-28,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-01-29,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-01-30,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-01-31,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-02-01,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-02-02,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-02-03,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-02-04,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-02-05,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-02-06,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-02-07,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-02-08,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-02-09,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-02-10,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-02-11,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-02-12,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-02-13,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-02-14,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-02-15,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-02-16,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-02-17,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-02-18,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-02-19,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-02-20,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-02-21,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-02-22,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-02-23,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-02-24,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-02-25,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-02-26,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-02-27,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-02-28,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-03-01,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-03-02,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-03-03,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-03-04,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-03-05,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-03-06,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-03-07,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-03-08,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-03-09,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-03-10,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-03-11,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-03-12,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-03-13,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-03-14,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-03-15,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-03-16,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-03-17,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-03-18,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-03-19,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-03-20,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-03-21,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-03-22,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-03-23,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-03-24,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-03-25,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-03-26,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-03-27,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-03-28,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-03-29,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-03-30,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-03-31,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-04-01,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-04-02,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-04-03,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-04-04,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-04-05,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-04-06,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-04-07,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-04-08,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-04-09,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-04-10,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-04-11,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-04-12,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-04-13,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-04-14,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-04-15,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-04-16,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-04-17,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-04-18,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-04-19,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-04-20,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-04-21,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-04-22,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-04-23,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-04-24,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-04-25,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-04-26,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-04-27,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-04-28,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-04-29,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-04-30,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-05-01,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-05-02,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-05-03,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-05-04,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-05-05,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-05-06,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-05-07,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-05-08,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-05-09,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-05-10,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-05-11,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-05-12,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-05-13,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-05-14,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-05-15,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-05-16,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-05-17,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-05-18,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-05-19,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-05-20,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-05-21,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-05-22,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-05-23,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-05-24,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-05-25,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-05-26,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-05-27,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-05-28,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-05-29,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-05-30,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-05-31,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-06-01,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-06-02,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-06-03,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-06-04,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-06-05,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-06-06,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-06-07,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-06-08,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-06-09,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-06-10,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-06-11,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-06-12,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-06-13,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-06-14,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-06-15,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-06-16,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-06-17,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-06-18,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-06-19,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-06-20,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-06-21,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-06-22,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-06-23,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-06-24,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-06-25,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-06-26,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-06-27,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-06-28,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-06-29,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-06-30,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-07-01,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-07-02,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-07-03,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-07-04,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-07-05,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-07-06,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-07-07,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-07-08,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-07-09,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-07-10,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-07-11,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-07-12,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-07-13,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-07-14,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-07-15,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-07-16,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-07-17,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-07-18,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-07-19,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-07-20,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-07-21,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-07-22,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-07-23,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-07-24,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-07-25,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-07-26,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-07-27,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-07-28,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-07-29,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-07-30,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-07-31,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-08-01,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-08-02,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-08-03,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-08-04,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-08-05,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-08-06,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-08-07,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-08-08,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-08-09,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-08-10,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-08-11,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-08-12,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-08-13,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-08-14,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-08-15,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-08-16,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-08-17,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-08-18,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-08-19,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-08-20,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-08-21,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-08-22,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-08-23,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-08-24,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-08-25,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-08-26,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-08-27,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-08-28,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-08-29,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-08-30,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-08-31,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-09-01,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-09-02,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-09-03,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-09-04,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-09-05,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-09-06,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-09-07,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-09-08,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-09-09,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-09-10,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-09-11,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-09-12,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-09-13,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-09-14,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-09-15,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-09-16,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-09-17,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-09-18,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-09-19,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-09-20,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-09-21,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-09-22,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-09-23,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-09-24,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-09-25,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-09-26,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-09-27,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-09-28,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-09-29,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-09-30,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-10-01,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-10-02,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-10-03,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-10-04,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-10-05,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-10-06,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-10-07,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-10-08,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-10-09,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-10-10,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-10-11,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-10-12,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-10-13,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-10-14,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-10-15,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-10-16,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-10-17,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-10-18,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-10-19,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-10-20,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-10-21,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-10-22,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-10-23,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-10-24,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-10-25,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-10-26,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-10-27,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-10-28,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-10-29,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-10-30,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-10-31,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-11-01,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-11-02,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-11-03,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-11-04,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-11-05,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-11-06,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-11-07,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-11-08,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-11-09,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-11-10,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-11-11,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-11-12,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-11-13,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-11-14,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-11-15,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-11-16,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-11-17,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-11-18,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-11-19,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-11-20,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-11-21,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-11-22,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-11-23,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-11-24,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-11-25,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-11-26,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-11-27,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-11-28,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-11-29,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-11-30,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-12-01,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-12-02,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-12-03,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-12-04,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-12-05,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-12-06,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-12-07,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-12-08,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-12-09,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-12-10,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-12-11,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-12-12,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2023-12-13,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-12-14,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-12-15,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-12-16,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-12-17,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-12-18,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-12-19,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-12-20,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-12-21,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-12-22,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-12-23,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-12-24,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-12-25,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-12-26,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-12-27,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-12-28,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-12-29,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-12-30,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2023-12-31,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-01-01,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-01-02,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-01-03,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-01-04,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-01-05,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-01-06,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-01-07,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-01-08,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-01-09,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-01-10,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-01-11,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-01-12,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-01-13,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-01-14,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-01-15,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-01-16,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-01-17,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-01-18,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-01-19,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-01-20,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-01-21,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-01-22,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-01-23,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-01-24,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-01-25,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-01-26,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-01-27,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-01-28,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-01-29,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-01-30,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-01-31,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-02-01,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-02-02,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-02-03,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-02-04,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-02-05,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-02-06,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-02-07,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-02-08,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-02-09,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-02-10,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-02-11,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-02-12,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-02-13,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-02-14,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-02-15,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-02-16,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-02-17,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-02-18,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-02-19,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-02-20,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-02-21,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-02-22,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-02-23,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-02-24,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-02-25,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-02-26,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-02-27,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-02-28,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-02-29,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-03-01,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-03-02,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-03-03,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-03-04,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-03-05,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-03-06,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-03-07,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-03-08,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-03-09,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-03-10,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-03-11,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-03-12,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-03-13,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-03-14,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-03-15,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-03-16,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-03-17,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-03-18,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-03-19,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-03-20,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-03-21,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-03-22,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-03-23,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-03-24,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-03-25,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-03-26,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-03-27,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-03-28,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-03-29,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-03-30,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-03-31,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-04-01,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-04-02,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-04-03,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-04-04,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-04-05,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-04-06,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-04-07,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-04-08,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-04-09,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-04-10,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-04-11,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-04-12,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-04-13,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-04-14,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-04-15,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-04-16,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-04-17,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-04-18,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-04-19,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-04-20,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-04-21,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-04-22,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-04-23,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-04-24,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-04-25,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-04-26,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-04-27,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-04-28,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-04-29,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-04-30,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-05-01,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-05-02,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-05-03,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-05-04,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-05-05,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-05-06,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-05-07,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-05-08,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-05-09,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-05-10,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-05-11,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-05-12,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-05-13,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-05-14,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-05-15,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-05-16,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-05-17,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-05-18,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-05-19,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-05-20,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-05-21,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-05-22,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-05-23,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-05-24,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-05-25,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-05-26,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-05-27,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-05-28,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-05-29,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-05-30,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-05-31,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-06-01,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-06-02,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-06-03,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-06-04,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-06-05,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-06-06,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-06-07,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-06-08,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-06-09,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-06-10,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-06-11,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-06-12,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-06-13,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-06-14,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-06-15,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-06-16,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-06-17,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-06-18,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-06-19,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-06-20,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-06-21,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-06-22,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-06-23,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-06-24,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-06-25,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-06-26,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-06-27,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-06-28,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-06-29,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-06-30,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-07-01,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-07-02,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-07-03,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-07-04,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-07-05,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-07-06,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-07-07,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-07-08,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-07-09,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-07-10,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-07-11,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-07-12,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-07-13,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-07-14,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-07-15,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-07-16,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-07-17,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-07-18,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-07-19,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-07-20,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-07-21,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-07-22,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-07-23,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-07-24,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-07-25,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-07-26,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-07-27,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-07-28,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-07-29,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-07-30,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-07-31,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-08-01,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-08-02,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-08-03,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-08-04,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-08-05,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-08-06,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-08-07,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-08-08,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-08-09,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-08-10,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-08-11,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-08-12,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-08-13,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-08-14,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-08-15,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-08-16,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-08-17,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-08-18,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-08-19,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-08-20,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-08-21,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-08-22,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-08-23,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-08-24,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-08-25,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-08-26,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-08-27,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-08-28,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-08-29,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-08-30,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-08-31,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-09-01,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-09-02,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-09-03,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-09-04,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-09-05,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-09-06,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-09-07,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-09-08,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-09-09,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-09-10,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-09-11,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-09-12,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-09-13,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-09-14,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-09-15,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-09-16,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-09-17,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-09-18,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-09-19,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-09-20,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-09-21,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-09-22,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-09-23,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-09-24,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-09-25,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-09-26,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-09-27,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-09-28,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-09-29,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-09-30,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-10-01,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-10-02,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-10-03,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-10-04,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-10-05,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-10-06,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-10-07,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-10-08,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-10-09,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-10-10,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-10-11,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-10-12,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-10-13,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-10-14,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-10-15,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-10-16,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-10-17,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-10-18,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-10-19,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-10-20,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-10-21,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-10-22,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-10-23,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-10-24,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-10-25,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-10-26,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-10-27,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-10-28,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-10-29,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-10-30,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-10-31,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-11-01,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-11-02,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-11-03,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-11-04,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-11-05,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-11-06,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-11-07,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-11-08,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-11-09,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-11-10,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-11-11,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-11-12,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-11-13,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-11-14,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-11-15,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-11-16,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-11-17,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-11-18,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-11-19,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-11-20,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-11-21,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-11-22,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-11-23,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-11-24,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-11-25,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-11-26,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-11-27,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-11-28,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-11-29,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-11-30,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-12-01,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-12-02,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-12-03,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-12-04,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-12-05,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-12-06,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-12-07,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-12-08,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-12-09,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-12-10,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-12-11,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-12-12,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-12-13,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-12-14,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-12-15,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-12-16,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-12-17,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-12-18,unfilled_no_prior_observation,0,0,0,missing,True,
+la_poza,La Poza,2024-12-19,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-12-20,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-12-21,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-12-22,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-12-23,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-12-24,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-12-25,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-12-26,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-12-27,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-12-28,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-12-29,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-12-30,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2024-12-31,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-01-01,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-01-02,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-01-03,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-01-04,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-01-05,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-01-06,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-01-07,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-01-08,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-01-09,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-01-10,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-01-11,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-01-12,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-01-13,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-01-14,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-01-15,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-01-16,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-01-17,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-01-18,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-01-19,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-01-20,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-01-21,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-01-22,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-01-23,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-01-24,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-01-25,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-01-26,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-01-27,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-01-28,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-01-29,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-01-30,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-01-31,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-02-01,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-02-02,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-02-03,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-02-04,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-02-05,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-02-06,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-02-07,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-02-08,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-02-09,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-02-10,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-02-11,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-02-12,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-02-13,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-02-14,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-02-15,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-02-16,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-02-17,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-02-18,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-02-19,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-02-20,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-02-21,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-02-22,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-02-23,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-02-24,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-02-25,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-02-26,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-02-27,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-02-28,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-03-01,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-03-02,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-03-03,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-03-04,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-03-05,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-03-06,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-03-07,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-03-08,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-03-09,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-03-10,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-03-11,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-03-12,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-03-13,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-03-14,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-03-15,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-03-16,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-03-17,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-03-18,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+la_poza,La Poza,2025-03-19,iqr_outlier_removed_then_imputed,0,0,0,missing,True,
+pucon,Pucón,2021-11-28,iqr_outlier_removed_then_imputed,2,0,3,high_short_gap,True,8.354750000000001
+pucon,Pucón,2021-11-29,iqr_outlier_removed_then_imputed,2,0,3,high_short_gap,True,6.9475
+pucon,Pucón,2021-11-30,iqr_outlier_removed_then_imputed,2,0,3,high_short_gap,True,5.5402499999999995
+pucon,Pucón,2022-02-14,iqr_outlier_removed_then_imputed,2,0,1,high_short_gap,True,9.133000000000001
+pucon,Pucón,2022-03-08,historical_doy_window_median,5,5,15,medium_historical_doy,False,3.245
+pucon,Pucón,2022-03-09,historical_doy_window_median,5,5,15,medium_historical_doy,False,3.245
+pucon,Pucón,2022-03-10,historical_doy_window_median,5,5,15,medium_historical_doy,False,3.245
+pucon,Pucón,2022-03-11,historical_doy_window_median,5,5,15,medium_historical_doy,False,3.245
+pucon,Pucón,2022-03-12,historical_doy_window_median,5,5,15,medium_historical_doy,False,3.245
+pucon,Pucón,2022-03-13,historical_doy_window_median,5,5,15,medium_historical_doy,False,3.245
+pucon,Pucón,2022-03-14,historical_doy_window_median,5,5,15,medium_historical_doy,False,3.245
+pucon,Pucón,2022-03-15,historical_doy_window_median,5,5,15,medium_historical_doy,False,3.245
+pucon,Pucón,2022-03-16,historical_doy_window_median,5,5,15,medium_historical_doy,False,3.245
+pucon,Pucón,2022-03-17,historical_doy_window_median,5,5,15,medium_historical_doy,False,3.245
+pucon,Pucón,2022-03-18,historical_doy_window_median,5,5,15,medium_historical_doy,False,3.245
+pucon,Pucón,2022-03-19,historical_doy_window_median,4,4,15,medium_historical_doy,False,3.5645
+pucon,Pucón,2022-03-20,historical_doy_window_median,3,3,15,medium_historical_doy,False,3.884
+pucon,Pucón,2022-03-21,historical_month_median,5,5,31,medium_historical_month,False,3.245
+pucon,Pucón,2022-03-22,historical_month_median,5,5,31,medium_historical_month,False,3.245
+pucon,Pucón,2022-03-23,historical_month_median,5,5,31,medium_historical_month,False,3.245
+pucon,Pucón,2022-03-24,historical_month_median,5,5,31,medium_historical_month,False,3.245
+pucon,Pucón,2022-03-25,historical_month_median,5,5,31,medium_historical_month,False,3.245
+pucon,Pucón,2022-03-26,historical_month_median,5,5,31,medium_historical_month,False,3.245
+pucon,Pucón,2022-03-27,historical_month_median,5,5,31,medium_historical_month,False,3.245
+pucon,Pucón,2022-03-28,historical_month_median,5,5,31,medium_historical_month,False,3.245
+pucon,Pucón,2022-03-29,historical_month_median,5,5,31,medium_historical_month,False,3.245
+pucon,Pucón,2022-03-30,historical_month_median,5,5,31,medium_historical_month,False,3.245
+pucon,Pucón,2022-03-31,historical_month_median,5,5,31,medium_historical_month,False,3.245
+pucon,Pucón,2022-04-01,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-04-02,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-04-03,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-04-04,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-04-05,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-04-06,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-04-07,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-04-08,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-04-09,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-04-10,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-04-11,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-04-12,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-04-13,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-04-14,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-04-15,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-04-16,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-04-17,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-04-18,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-04-19,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-04-20,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-04-21,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-04-22,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-04-23,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-04-24,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-04-25,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-04-26,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-04-27,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-04-28,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-04-29,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-04-30,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-05-01,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-05-02,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-05-03,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-05-04,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-05-05,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-05-06,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-05-07,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-05-08,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-05-09,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-05-10,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-05-11,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-05-12,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-05-13,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-05-14,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-05-15,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-05-16,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-05-17,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-05-18,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-05-19,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-05-20,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-05-21,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-05-22,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-05-23,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-05-24,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-05-25,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-05-26,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-05-27,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-05-28,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-05-29,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-05-30,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-05-31,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-06-01,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-06-02,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-06-03,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-06-04,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-06-05,historical_station_median_low_support,205,205,0,low_historical_station,False,1.904
+pucon,Pucón,2022-06-07,historical_station_median_low_support,206,206,0,low_historical_station,False,1.907
+pucon,Pucón,2022-06-08,historical_station_median_low_support,206,206,0,low_historical_station,False,1.907
+pucon,Pucón,2022-06-09,historical_station_median_low_support,206,206,0,low_historical_station,False,1.907
+pucon,Pucón,2022-06-10,historical_station_median_low_support,206,206,0,low_historical_station,False,1.907
+pucon,Pucón,2022-06-11,historical_station_median_low_support,206,206,0,low_historical_station,False,1.907
+pucon,Pucón,2022-06-12,historical_station_median_low_support,206,206,0,low_historical_station,False,1.907
+pucon,Pucón,2022-06-13,historical_station_median_low_support,206,206,0,low_historical_station,False,1.907
+pucon,Pucón,2022-06-14,historical_station_median_low_support,206,206,0,low_historical_station,False,1.907
+pucon,Pucón,2022-06-15,historical_station_median_low_support,206,206,0,low_historical_station,False,1.907
+pucon,Pucón,2022-06-16,historical_station_median_low_support,206,206,0,low_historical_station,False,1.907
+pucon,Pucón,2022-06-17,historical_station_median_low_support,206,206,0,low_historical_station,False,1.907
+pucon,Pucón,2022-06-18,historical_station_median_low_support,206,206,0,low_historical_station,False,1.907
+pucon,Pucón,2022-06-19,historical_station_median_low_support,206,206,0,low_historical_station,False,1.907
+pucon,Pucón,2022-06-20,historical_station_median_low_support,206,206,0,low_historical_station,False,1.907
+pucon,Pucón,2022-06-21,historical_station_median_low_support,206,206,0,low_historical_station,False,1.907
+pucon,Pucón,2022-06-22,historical_station_median_low_support,206,206,0,low_historical_station,False,1.907
+pucon,Pucón,2022-06-23,historical_station_median_low_support,206,206,0,low_historical_station,False,1.907
+pucon,Pucón,2022-06-24,historical_station_median_low_support,206,206,0,low_historical_station,False,1.907
+pucon,Pucón,2022-06-25,historical_station_median_low_support,206,206,0,low_historical_station,False,1.907
+pucon,Pucón,2022-06-26,historical_station_median_low_support,206,206,0,low_historical_station,False,1.907
+pucon,Pucón,2022-06-27,historical_station_median_low_support,206,206,0,low_historical_station,False,1.907
+pucon,Pucón,2022-06-28,historical_station_median_low_support,206,206,0,low_historical_station,False,1.907
+pucon,Pucón,2022-06-29,historical_station_median_low_support,206,206,0,low_historical_station,False,1.907
+pucon,Pucón,2022-06-30,historical_station_median_low_support,206,206,0,low_historical_station,False,1.907
+pucon,Pucón,2022-07-01,historical_month_median,4,4,31,medium_historical_month,False,1.8405
+pucon,Pucón,2022-07-02,historical_month_median,4,4,31,medium_historical_month,False,1.8405
+pucon,Pucón,2022-07-03,historical_month_median,4,4,31,medium_historical_month,False,1.8405
+pucon,Pucón,2022-07-04,historical_month_median,4,4,31,medium_historical_month,False,1.8405
+pucon,Pucón,2022-07-05,historical_month_median,4,4,31,medium_historical_month,False,1.8405
+pucon,Pucón,2022-07-06,historical_month_median,4,4,31,medium_historical_month,False,1.8405
+pucon,Pucón,2022-07-07,historical_month_median,4,4,31,medium_historical_month,False,1.8405
+pucon,Pucón,2022-07-08,historical_month_median,4,4,31,medium_historical_month,False,1.8405
+pucon,Pucón,2022-07-09,historical_month_median,4,4,31,medium_historical_month,False,1.8405
+pucon,Pucón,2022-07-10,historical_month_median,4,4,31,medium_historical_month,False,1.8405
+pucon,Pucón,2022-07-11,historical_month_median,4,4,31,medium_historical_month,False,1.8405
+pucon,Pucón,2022-07-12,historical_month_median,4,4,31,medium_historical_month,False,1.8405
+pucon,Pucón,2022-07-13,historical_month_median,4,4,31,medium_historical_month,False,1.8405
+pucon,Pucón,2022-07-14,historical_month_median,4,4,31,medium_historical_month,False,1.8405
+pucon,Pucón,2022-07-15,historical_doy_window_median,3,3,15,medium_historical_doy,False,1.886
+pucon,Pucón,2022-07-16,historical_doy_window_median,4,4,15,medium_historical_doy,False,1.8405
+pucon,Pucón,2022-07-17,historical_doy_window_median,5,5,15,medium_historical_doy,False,1.795
+pucon,Pucón,2022-07-18,historical_doy_window_median,6,6,15,medium_historical_doy,False,1.6055
+pucon,Pucón,2022-07-19,historical_doy_window_median,7,7,15,medium_historical_doy,False,1.525
+pucon,Pucón,2022-07-20,historical_doy_window_median,8,8,15,medium_historical_doy,False,1.4705
+pucon,Pucón,2022-07-21,historical_doy_window_median,9,9,15,medium_historical_doy,False,1.525
+pucon,Pucón,2022-07-22,historical_doy_window_median,10,10,15,medium_historical_doy,False,1.6415
+pucon,Pucón,2022-07-23,historical_doy_window_median,11,11,15,medium_historical_doy,False,1.758
+pucon,Pucón,2022-07-24,historical_doy_window_median,12,12,15,medium_historical_doy,False,1.7765
+pucon,Pucón,2022-07-25,historical_doy_window_median,13,13,15,medium_historical_doy,False,1.758
+pucon,Pucón,2022-07-26,historical_doy_window_median,14,14,15,medium_historical_doy,False,1.71
+pucon,Pucón,2022-07-27,historical_doy_window_median,15,15,15,medium_historical_doy,False,1.758
+pucon,Pucón,2022-07-28,historical_doy_window_median,16,16,15,medium_historical_doy,False,1.71
+pucon,Pucón,2022-07-29,historical_doy_window_median,17,17,15,medium_historical_doy,False,1.758
+pucon,Pucón,2022-07-30,historical_doy_window_median,18,18,15,medium_historical_doy,False,1.71
+pucon,Pucón,2022-07-31,historical_doy_window_median,19,19,15,medium_historical_doy,False,1.758
+pucon,Pucón,2022-08-01,historical_doy_window_median,20,20,15,medium_historical_doy,False,1.7734999999999999
+pucon,Pucón,2022-08-02,historical_doy_window_median,21,21,15,medium_historical_doy,False,1.789
+pucon,Pucón,2022-08-03,historical_doy_window_median,22,22,15,medium_historical_doy,False,1.7919999999999998
+pucon,Pucón,2022-08-04,historical_doy_window_median,23,23,15,medium_historical_doy,False,1.795
+pucon,Pucón,2022-08-05,historical_doy_window_median,24,24,15,medium_historical_doy,False,1.809
+pucon,Pucón,2022-08-06,historical_doy_window_median,25,25,15,medium_historical_doy,False,1.823
+pucon,Pucón,2022-08-07,historical_doy_window_median,26,26,15,medium_historical_doy,False,1.8295
+pucon,Pucón,2022-08-08,historical_doy_window_median,27,27,15,medium_historical_doy,False,1.823
+pucon,Pucón,2022-08-09,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.809
+pucon,Pucón,2022-08-10,historical_doy_window_median,29,29,15,medium_historical_doy,False,1.795
+pucon,Pucón,2022-08-11,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.809
+pucon,Pucón,2022-08-12,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.823
+pucon,Pucón,2022-08-13,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.823
+pucon,Pucón,2022-08-14,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.823
+pucon,Pucón,2022-08-15,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.795
+pucon,Pucón,2022-08-16,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.789
+pucon,Pucón,2022-08-17,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.789
+pucon,Pucón,2022-08-18,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.789
+pucon,Pucón,2022-08-19,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.789
+pucon,Pucón,2022-08-20,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.823
+pucon,Pucón,2022-08-21,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.836
+pucon,Pucón,2022-08-23,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.836
+pucon,Pucón,2022-08-24,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.823
+pucon,Pucón,2022-08-25,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.836
+pucon,Pucón,2022-08-26,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.839
+pucon,Pucón,2022-08-27,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.859
+pucon,Pucón,2022-08-28,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.88
+pucon,Pucón,2022-08-29,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.88
+pucon,Pucón,2022-08-30,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.91
+pucon,Pucón,2022-08-31,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.91
+pucon,Pucón,2022-09-01,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.91
+pucon,Pucón,2022-09-02,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.88
+pucon,Pucón,2022-09-03,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.866
+pucon,Pucón,2022-09-04,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.866
+pucon,Pucón,2022-09-05,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.88
+pucon,Pucón,2022-09-06,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.88
+pucon,Pucón,2022-09-07,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.904
+pucon,Pucón,2022-09-08,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.904
+pucon,Pucón,2022-09-09,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.904
+pucon,Pucón,2022-09-10,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.91
+pucon,Pucón,2022-09-11,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.929
+pucon,Pucón,2022-09-12,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.939
+pucon,Pucón,2022-09-13,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.006
+pucon,Pucón,2022-09-14,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.007
+pucon,Pucón,2022-09-15,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.029
+pucon,Pucón,2022-09-16,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.045
+pucon,Pucón,2022-09-17,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.048
+pucon,Pucón,2022-09-18,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.066
+pucon,Pucón,2022-09-19,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.066
+pucon,Pucón,2022-09-20,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.048
+pucon,Pucón,2022-09-21,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.045
+pucon,Pucón,2022-09-22,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.029
+pucon,Pucón,2022-09-23,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.029
+pucon,Pucón,2022-09-24,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.029
+pucon,Pucón,2022-09-25,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.006
+pucon,Pucón,2022-09-26,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.939
+pucon,Pucón,2022-09-27,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.939
+pucon,Pucón,2022-09-28,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.939
+pucon,Pucón,2022-09-29,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.939
+pucon,Pucón,2022-09-30,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.939
+pucon,Pucón,2022-10-01,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.939
+pucon,Pucón,2022-10-02,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.006
+pucon,Pucón,2022-10-03,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.029
+pucon,Pucón,2022-10-05,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.048
+pucon,Pucón,2022-10-06,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.066
+pucon,Pucón,2022-10-07,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.118
+pucon,Pucón,2022-10-08,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.118
+pucon,Pucón,2022-10-09,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.242
+pucon,Pucón,2022-10-10,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.425
+pucon,Pucón,2022-10-11,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.425
+pucon,Pucón,2022-10-12,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.425
+pucon,Pucón,2022-11-19,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.831
+pucon,Pucón,2022-11-20,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.831
+pucon,Pucón,2022-11-21,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.916
+pucon,Pucón,2022-11-22,historical_doy_window_median,28,28,15,medium_historical_doy,False,2.028
+pucon,Pucón,2022-11-23,historical_doy_window_median,28,28,15,medium_historical_doy,False,2.1155
+pucon,Pucón,2022-11-24,historical_doy_window_median,28,28,15,medium_historical_doy,False,2.1155
+pucon,Pucón,2022-11-25,historical_doy_window_median,28,28,15,medium_historical_doy,False,2.1155
+pucon,Pucón,2022-11-26,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.8675
+pucon,Pucón,2022-11-27,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.843
+pucon,Pucón,2022-11-28,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.843
+pucon,Pucón,2022-11-29,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.843
+pucon,Pucón,2022-11-30,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.843
+pucon,Pucón,2022-12-01,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.843
+pucon,Pucón,2022-12-02,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.843
+pucon,Pucón,2022-12-03,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.843
+pucon,Pucón,2022-12-04,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.843
+pucon,Pucón,2022-12-05,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.843
+pucon,Pucón,2022-12-06,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.952
+pucon,Pucón,2022-12-07,historical_doy_window_median,28,28,15,medium_historical_doy,False,2.085
+pucon,Pucón,2022-12-08,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.859
+pucon,Pucón,2022-12-09,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.646
+pucon,Pucón,2022-12-10,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.562
+pucon,Pucón,2022-12-11,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.562
+pucon,Pucón,2022-12-12,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.562
+pucon,Pucón,2022-12-13,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.4985
+pucon,Pucón,2022-12-14,historical_doy_window_median,29,29,15,medium_historical_doy,False,1.558
+pucon,Pucón,2022-12-15,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.4985
+pucon,Pucón,2022-12-16,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.439
+pucon,Pucón,2022-12-17,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.4300000000000002
+pucon,Pucón,2022-12-18,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.4300000000000002
+pucon,Pucón,2022-12-19,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.4300000000000002
+pucon,Pucón,2022-12-20,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.4300000000000002
+pucon,Pucón,2022-12-21,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.4300000000000002
+pucon,Pucón,2022-12-22,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.415
+pucon,Pucón,2022-12-23,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.409
+pucon,Pucón,2022-12-24,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.4064999999999999
+pucon,Pucón,2022-12-25,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.4064999999999999
+pucon,Pucón,2022-12-26,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.409
+pucon,Pucón,2022-12-27,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.415
+pucon,Pucón,2022-12-28,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.4300000000000002
+pucon,Pucón,2022-12-29,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.444
+pucon,Pucón,2022-12-30,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.4540000000000002
+pucon,Pucón,2022-12-31,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.5085000000000002
+pucon,Pucón,2023-01-01,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.5785
+pucon,Pucón,2023-01-02,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.596
+pucon,Pucón,2023-01-03,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.6025
+pucon,Pucón,2023-01-04,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.6025
+pucon,Pucón,2023-01-05,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.596
+pucon,Pucón,2023-01-06,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.5785
+pucon,Pucón,2023-01-07,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.596
+pucon,Pucón,2023-01-08,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.6025
+pucon,Pucón,2023-01-09,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.619
+pucon,Pucón,2023-01-10,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.6025
+pucon,Pucón,2023-01-11,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.596
+pucon,Pucón,2023-01-12,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.596
+pucon,Pucón,2023-01-13,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.596
+pucon,Pucón,2023-01-14,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.6025
+pucon,Pucón,2023-01-15,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.677
+pucon,Pucón,2023-01-16,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.75
+pucon,Pucón,2023-01-17,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.75
+pucon,Pucón,2023-01-18,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.774
+pucon,Pucón,2023-01-19,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.774
+pucon,Pucón,2023-01-20,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.799
+pucon,Pucón,2023-01-21,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.869
+pucon,Pucón,2023-01-22,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.894
+pucon,Pucón,2023-01-23,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.913
+pucon,Pucón,2023-01-24,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.935
+pucon,Pucón,2023-01-25,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.961
+pucon,Pucón,2023-01-26,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.074
+pucon,Pucón,2023-01-27,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.142
+pucon,Pucón,2023-01-28,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.352
+pucon,Pucón,2023-01-29,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.352
+pucon,Pucón,2023-01-30,historical_doy_window_median,30,30,15,medium_historical_doy,False,2.6085000000000003
+pucon,Pucón,2023-01-31,historical_doy_window_median,30,30,15,medium_historical_doy,False,2.997
+pucon,Pucón,2023-02-01,historical_doy_window_median,30,30,15,medium_historical_doy,False,3.159
+pucon,Pucón,2023-02-02,historical_doy_window_median,29,29,15,medium_historical_doy,False,3.189
+pucon,Pucón,2023-02-03,historical_doy_window_median,28,28,15,medium_historical_doy,False,3.1935000000000002
+pucon,Pucón,2023-02-04,historical_doy_window_median,27,27,15,medium_historical_doy,False,3.198
+pucon,Pucón,2023-02-05,historical_doy_window_median,26,26,15,medium_historical_doy,False,3.207
+pucon,Pucón,2023-02-08,linear_interpolation,2,0,1,high_short_gap,True,1.7794999999999999
+pucon,Pucón,2023-02-10,linear_interpolation,2,0,1,high_short_gap,True,1.7394999999999998
+pucon,Pucón,2023-02-17,iqr_outlier_removed_then_imputed,2,0,3,high_short_gap,True,9.68825
+pucon,Pucón,2023-02-18,iqr_outlier_removed_then_imputed,2,0,3,high_short_gap,True,9.6325
+pucon,Pucón,2023-02-19,iqr_outlier_removed_then_imputed,2,0,3,high_short_gap,True,9.57675
+pucon,Pucón,2023-02-21,iqr_outlier_removed_then_imputed,2,0,3,high_short_gap,True,9.40975
+pucon,Pucón,2023-02-22,iqr_outlier_removed_then_imputed,2,0,3,high_short_gap,True,9.2985
+pucon,Pucón,2023-02-23,iqr_outlier_removed_then_imputed,2,0,3,high_short_gap,True,9.18725
+pucon,Pucón,2023-03-05,iqr_outlier_removed_then_imputed,2,0,3,high_short_gap,True,8.893749999999999
+pucon,Pucón,2023-03-06,iqr_outlier_removed_then_imputed,2,0,3,high_short_gap,True,8.4625
+pucon,Pucón,2023-03-07,iqr_outlier_removed_then_imputed,2,0,3,high_short_gap,True,8.03125
+pucon,Pucón,2023-03-09,iqr_outlier_removed_then_imputed,2,0,2,high_short_gap,True,8.264666666666667
+pucon,Pucón,2023-03-10,iqr_outlier_removed_then_imputed,2,0,2,high_short_gap,True,8.929333333333332
+pucon,Pucón,2023-03-12,iqr_outlier_removed_then_imputed,2,0,1,high_short_gap,True,8.3435
+pucon,Pucón,2023-03-17,historical_doy_window_median,11,11,15,medium_historical_doy,False,7.02
+pucon,Pucón,2023-04-05,historical_station_median_low_support,228,228,0,low_historical_station,False,1.955
+pucon,Pucón,2023-04-24,historical_station_median_low_support,228,228,0,low_historical_station,False,1.955
+pucon,Pucón,2023-04-25,historical_station_median_low_support,228,228,0,low_historical_station,False,1.955
+pucon,Pucón,2023-04-27,historical_station_median_low_support,228,228,0,low_historical_station,False,1.955
+pucon,Pucón,2023-04-28,historical_station_median_low_support,228,228,0,low_historical_station,False,1.955
+pucon,Pucón,2023-04-29,historical_station_median_low_support,228,228,0,low_historical_station,False,1.955
+pucon,Pucón,2023-05-12,historical_station_median_low_support,228,228,0,low_historical_station,False,1.955
+pucon,Pucón,2023-05-16,historical_station_median_low_support,228,228,0,low_historical_station,False,1.955
+pucon,Pucón,2023-11-24,historical_doy_window_median,28,28,15,medium_historical_doy,False,2.1155
+pucon,Pucón,2023-12-04,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.843
+pucon,Pucón,2023-12-05,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.843
+pucon,Pucón,2023-12-06,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.952
+pucon,Pucón,2023-12-07,historical_doy_window_median,28,28,15,medium_historical_doy,False,2.085
+pucon,Pucón,2023-12-10,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.562
+pucon,Pucón,2023-12-13,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.4985
+pucon,Pucón,2023-12-14,historical_doy_window_median,29,29,15,medium_historical_doy,False,1.558
+pucon,Pucón,2023-12-15,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.4985
+pucon,Pucón,2023-12-16,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.439
+pucon,Pucón,2023-12-17,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.4300000000000002
+pucon,Pucón,2023-12-18,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.4300000000000002
+pucon,Pucón,2023-12-19,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.4300000000000002
+pucon,Pucón,2023-12-20,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.4300000000000002
+pucon,Pucón,2023-12-21,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.4300000000000002
+pucon,Pucón,2023-12-22,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.415
+pucon,Pucón,2023-12-23,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.409
+pucon,Pucón,2023-12-24,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.4064999999999999
+pucon,Pucón,2023-12-25,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.4064999999999999
+pucon,Pucón,2023-12-26,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.409
+pucon,Pucón,2023-12-27,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.415
+pucon,Pucón,2023-12-28,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.4300000000000002
+pucon,Pucón,2023-12-29,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.444
+pucon,Pucón,2023-12-30,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.4540000000000002
+pucon,Pucón,2023-12-31,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.5085000000000002
+pucon,Pucón,2024-01-01,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.5785
+pucon,Pucón,2024-01-02,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.596
+pucon,Pucón,2024-01-03,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.6025
+pucon,Pucón,2024-01-04,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.6025
+pucon,Pucón,2024-01-05,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.596
+pucon,Pucón,2024-01-06,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.5785
+pucon,Pucón,2024-01-07,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.596
+pucon,Pucón,2024-01-08,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.6025
+pucon,Pucón,2024-01-09,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.619
+pucon,Pucón,2024-01-10,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.6025
+pucon,Pucón,2024-01-11,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.596
+pucon,Pucón,2024-01-12,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.596
+pucon,Pucón,2024-01-13,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.596
+pucon,Pucón,2024-01-14,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.6025
+pucon,Pucón,2024-01-15,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.677
+pucon,Pucón,2024-01-16,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.75
+pucon,Pucón,2024-01-17,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.75
+pucon,Pucón,2024-01-18,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.774
+pucon,Pucón,2024-01-19,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.774
+pucon,Pucón,2024-01-20,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.799
+pucon,Pucón,2024-01-21,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.869
+pucon,Pucón,2024-01-22,historical_doy_window_median,32,32,15,medium_historical_doy,False,1.9035
+pucon,Pucón,2024-01-23,historical_doy_window_median,33,33,15,medium_historical_doy,False,1.913
+pucon,Pucón,2024-01-24,historical_doy_window_median,33,33,15,medium_historical_doy,False,1.935
+pucon,Pucón,2024-01-25,historical_doy_window_median,34,34,15,medium_historical_doy,False,1.948
+pucon,Pucón,2024-01-26,historical_doy_window_median,34,34,15,medium_historical_doy,False,2.0175
+pucon,Pucón,2024-01-27,historical_doy_window_median,35,35,15,medium_historical_doy,False,2.074
+pucon,Pucón,2024-01-28,historical_doy_window_median,36,36,15,medium_historical_doy,False,2.122
+pucon,Pucón,2024-01-29,historical_doy_window_median,37,37,15,medium_historical_doy,False,2.142
+pucon,Pucón,2024-01-30,historical_doy_window_median,37,37,15,medium_historical_doy,False,2.352
+pucon,Pucón,2024-01-31,historical_doy_window_median,38,38,15,medium_historical_doy,False,2.997
+pucon,Pucón,2024-02-01,historical_doy_window_median,39,39,15,medium_historical_doy,False,3.189
+pucon,Pucón,2024-02-02,historical_doy_window_median,38,38,15,medium_historical_doy,False,3.1935000000000002
+pucon,Pucón,2024-02-03,historical_doy_window_median,37,37,15,medium_historical_doy,False,3.198
+pucon,Pucón,2024-02-04,historical_doy_window_median,36,36,15,medium_historical_doy,False,3.207
+pucon,Pucón,2024-02-05,historical_doy_window_median,36,36,15,medium_historical_doy,False,3.2855
+pucon,Pucón,2024-02-06,historical_doy_window_median,35,35,15,medium_historical_doy,False,3.355
+pucon,Pucón,2024-03-21,historical_doy_window_median,4,4,15,medium_historical_doy,False,7.3465
+pucon,Pucón,2024-05-11,historical_doy_window_median,4,4,15,medium_historical_doy,False,0.992
+pucon,Pucón,2024-05-12,historical_doy_window_median,4,4,15,medium_historical_doy,False,0.992
+pucon,Pucón,2024-05-13,historical_doy_window_median,4,4,15,medium_historical_doy,False,0.992
+pucon,Pucón,2024-05-14,historical_doy_window_median,4,4,15,medium_historical_doy,False,0.992
+pucon,Pucón,2024-05-15,historical_doy_window_median,4,4,15,medium_historical_doy,False,0.992
+pucon,Pucón,2024-05-16,historical_doy_window_median,4,4,15,medium_historical_doy,False,0.992
+pucon,Pucón,2024-05-17,historical_doy_window_median,4,4,15,medium_historical_doy,False,0.992
+pucon,Pucón,2024-05-18,historical_doy_window_median,4,4,15,medium_historical_doy,False,0.992
+pucon,Pucón,2024-05-19,historical_doy_window_median,4,4,15,medium_historical_doy,False,0.992
+pucon,Pucón,2024-05-20,historical_doy_window_median,4,4,15,medium_historical_doy,False,0.992
+pucon,Pucón,2024-05-21,historical_doy_window_median,5,5,15,medium_historical_doy,False,1.121
+pucon,Pucón,2024-05-22,historical_doy_window_median,5,5,15,medium_historical_doy,False,1.121
+pucon,Pucón,2024-05-23,historical_doy_window_median,4,4,15,medium_historical_doy,False,1.179
+pucon,Pucón,2024-05-24,historical_doy_window_median,3,3,15,medium_historical_doy,False,1.237
+pucon,Pucón,2024-05-25,historical_month_median,4,4,31,medium_historical_month,False,0.992
+pucon,Pucón,2024-05-26,historical_month_median,4,4,31,medium_historical_month,False,0.992
+pucon,Pucón,2024-05-27,historical_month_median,4,4,31,medium_historical_month,False,0.992
+pucon,Pucón,2024-05-28,historical_month_median,4,4,31,medium_historical_month,False,0.992
+pucon,Pucón,2024-05-29,historical_month_median,4,4,31,medium_historical_month,False,0.992
+pucon,Pucón,2024-05-30,historical_month_median,4,4,31,medium_historical_month,False,0.992
+pucon,Pucón,2024-05-31,historical_month_median,4,4,31,medium_historical_month,False,0.992
+pucon,Pucón,2024-06-01,historical_station_median_low_support,232,232,0,low_historical_station,False,1.937
+pucon,Pucón,2024-06-02,historical_station_median_low_support,232,232,0,low_historical_station,False,1.937
+pucon,Pucón,2024-06-03,historical_station_median_low_support,232,232,0,low_historical_station,False,1.937
+pucon,Pucón,2024-06-04,historical_station_median_low_support,232,232,0,low_historical_station,False,1.937
+pucon,Pucón,2024-06-05,historical_station_median_low_support,232,232,0,low_historical_station,False,1.937
+pucon,Pucón,2024-06-06,historical_station_median_low_support,232,232,0,low_historical_station,False,1.937
+pucon,Pucón,2024-06-07,historical_station_median_low_support,232,232,0,low_historical_station,False,1.937
+pucon,Pucón,2024-06-08,historical_station_median_low_support,232,232,0,low_historical_station,False,1.937
+pucon,Pucón,2024-06-09,historical_station_median_low_support,232,232,0,low_historical_station,False,1.937
+pucon,Pucón,2024-06-10,historical_station_median_low_support,232,232,0,low_historical_station,False,1.937
+pucon,Pucón,2024-06-11,historical_station_median_low_support,232,232,0,low_historical_station,False,1.937
+pucon,Pucón,2024-06-12,historical_station_median_low_support,232,232,0,low_historical_station,False,1.937
+pucon,Pucón,2024-06-13,historical_station_median_low_support,232,232,0,low_historical_station,False,1.937
+pucon,Pucón,2024-06-14,historical_station_median_low_support,232,232,0,low_historical_station,False,1.937
+pucon,Pucón,2024-06-15,historical_station_median_low_support,232,232,0,low_historical_station,False,1.937
+pucon,Pucón,2024-06-16,historical_station_median_low_support,232,232,0,low_historical_station,False,1.937
+pucon,Pucón,2024-06-17,historical_station_median_low_support,232,232,0,low_historical_station,False,1.937
+pucon,Pucón,2024-06-18,historical_station_median_low_support,232,232,0,low_historical_station,False,1.937
+pucon,Pucón,2024-06-19,historical_station_median_low_support,232,232,0,low_historical_station,False,1.937
+pucon,Pucón,2024-06-20,historical_station_median_low_support,232,232,0,low_historical_station,False,1.937
+pucon,Pucón,2024-06-21,historical_station_median_low_support,232,232,0,low_historical_station,False,1.937
+pucon,Pucón,2024-06-22,historical_station_median_low_support,232,232,0,low_historical_station,False,1.937
+pucon,Pucón,2024-06-23,historical_station_median_low_support,232,232,0,low_historical_station,False,1.937
+pucon,Pucón,2024-06-24,historical_station_median_low_support,232,232,0,low_historical_station,False,1.937
+pucon,Pucón,2024-06-25,historical_station_median_low_support,232,232,0,low_historical_station,False,1.937
+pucon,Pucón,2024-06-26,historical_station_median_low_support,232,232,0,low_historical_station,False,1.937
+pucon,Pucón,2024-06-27,historical_station_median_low_support,232,232,0,low_historical_station,False,1.937
+pucon,Pucón,2024-06-28,historical_station_median_low_support,232,232,0,low_historical_station,False,1.937
+pucon,Pucón,2024-06-29,historical_station_median_low_support,232,232,0,low_historical_station,False,1.937
+pucon,Pucón,2024-06-30,historical_station_median_low_support,232,232,0,low_historical_station,False,1.937
+pucon,Pucón,2024-07-01,historical_month_median,4,4,31,medium_historical_month,False,1.8405
+pucon,Pucón,2024-07-02,historical_month_median,4,4,31,medium_historical_month,False,1.8405
+pucon,Pucón,2024-07-03,historical_month_median,4,4,31,medium_historical_month,False,1.8405
+pucon,Pucón,2024-07-04,historical_month_median,4,4,31,medium_historical_month,False,1.8405
+pucon,Pucón,2024-07-05,historical_month_median,4,4,31,medium_historical_month,False,1.8405
+pucon,Pucón,2024-07-06,historical_month_median,4,4,31,medium_historical_month,False,1.8405
+pucon,Pucón,2024-07-07,historical_month_median,4,4,31,medium_historical_month,False,1.8405
+pucon,Pucón,2024-07-08,historical_month_median,4,4,31,medium_historical_month,False,1.8405
+pucon,Pucón,2024-07-09,historical_month_median,4,4,31,medium_historical_month,False,1.8405
+pucon,Pucón,2024-07-10,historical_month_median,4,4,31,medium_historical_month,False,1.8405
+pucon,Pucón,2024-07-11,historical_month_median,4,4,31,medium_historical_month,False,1.8405
+pucon,Pucón,2024-07-12,historical_month_median,4,4,31,medium_historical_month,False,1.8405
+pucon,Pucón,2024-07-13,historical_month_median,4,4,31,medium_historical_month,False,1.8405
+pucon,Pucón,2024-07-14,historical_doy_window_median,3,3,15,medium_historical_doy,False,1.886
+pucon,Pucón,2024-07-15,historical_doy_window_median,4,4,15,medium_historical_doy,False,1.8405
+pucon,Pucón,2024-07-16,historical_doy_window_median,5,5,15,medium_historical_doy,False,1.795
+pucon,Pucón,2024-07-17,historical_doy_window_median,6,6,15,medium_historical_doy,False,1.6055
+pucon,Pucón,2024-07-18,historical_doy_window_median,7,7,15,medium_historical_doy,False,1.525
+pucon,Pucón,2024-07-19,historical_doy_window_median,8,8,15,medium_historical_doy,False,1.4705
+pucon,Pucón,2024-07-20,historical_doy_window_median,9,9,15,medium_historical_doy,False,1.525
+pucon,Pucón,2024-07-21,historical_doy_window_median,10,10,15,medium_historical_doy,False,1.6415
+pucon,Pucón,2024-07-22,historical_doy_window_median,11,11,15,medium_historical_doy,False,1.758
+pucon,Pucón,2024-07-23,historical_doy_window_median,12,12,15,medium_historical_doy,False,1.7765
+pucon,Pucón,2024-07-24,historical_doy_window_median,13,13,15,medium_historical_doy,False,1.758
+pucon,Pucón,2024-07-25,historical_doy_window_median,14,14,15,medium_historical_doy,False,1.71
+pucon,Pucón,2024-07-26,historical_doy_window_median,15,15,15,medium_historical_doy,False,1.758
+pucon,Pucón,2024-07-27,historical_doy_window_median,16,16,15,medium_historical_doy,False,1.71
+pucon,Pucón,2024-07-28,historical_doy_window_median,17,17,15,medium_historical_doy,False,1.758
+pucon,Pucón,2024-07-29,historical_doy_window_median,18,18,15,medium_historical_doy,False,1.71
+pucon,Pucón,2024-07-30,historical_doy_window_median,19,19,15,medium_historical_doy,False,1.758
+pucon,Pucón,2024-07-31,historical_doy_window_median,20,20,15,medium_historical_doy,False,1.7734999999999999
+pucon,Pucón,2024-08-01,historical_doy_window_median,21,21,15,medium_historical_doy,False,1.789
+pucon,Pucón,2024-08-02,historical_doy_window_median,22,22,15,medium_historical_doy,False,1.7919999999999998
+pucon,Pucón,2024-08-03,historical_doy_window_median,23,23,15,medium_historical_doy,False,1.795
+pucon,Pucón,2024-08-04,historical_doy_window_median,24,24,15,medium_historical_doy,False,1.809
+pucon,Pucón,2024-08-05,historical_doy_window_median,25,25,15,medium_historical_doy,False,1.823
+pucon,Pucón,2024-08-06,historical_doy_window_median,26,26,15,medium_historical_doy,False,1.8295
+pucon,Pucón,2024-08-07,historical_doy_window_median,27,27,15,medium_historical_doy,False,1.823
+pucon,Pucón,2024-08-08,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.809
+pucon,Pucón,2024-08-09,historical_doy_window_median,29,29,15,medium_historical_doy,False,1.795
+pucon,Pucón,2024-08-10,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.809
+pucon,Pucón,2024-08-11,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.823
+pucon,Pucón,2024-08-12,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.823
+pucon,Pucón,2024-08-13,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.823
+pucon,Pucón,2024-08-14,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.795
+pucon,Pucón,2024-08-15,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.789
+pucon,Pucón,2024-08-16,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.789
+pucon,Pucón,2024-08-17,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.789
+pucon,Pucón,2024-08-18,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.789
+pucon,Pucón,2024-08-19,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.823
+pucon,Pucón,2024-08-20,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.836
+pucon,Pucón,2024-08-21,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.836
+pucon,Pucón,2024-08-22,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.836
+pucon,Pucón,2024-08-23,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.823
+pucon,Pucón,2024-08-24,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.836
+pucon,Pucón,2024-08-25,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.839
+pucon,Pucón,2024-08-26,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.859
+pucon,Pucón,2024-08-27,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.88
+pucon,Pucón,2024-08-28,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.88
+pucon,Pucón,2024-08-29,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.91
+pucon,Pucón,2024-08-30,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.91
+pucon,Pucón,2024-08-31,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.91
+pucon,Pucón,2024-09-01,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.88
+pucon,Pucón,2024-09-02,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.866
+pucon,Pucón,2024-09-03,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.866
+pucon,Pucón,2024-09-04,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.88
+pucon,Pucón,2024-09-05,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.88
+pucon,Pucón,2024-09-06,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.904
+pucon,Pucón,2024-09-07,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.904
+pucon,Pucón,2024-09-08,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.904
+pucon,Pucón,2024-09-09,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.91
+pucon,Pucón,2024-09-10,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.929
+pucon,Pucón,2024-09-11,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.939
+pucon,Pucón,2024-09-12,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.006
+pucon,Pucón,2024-09-13,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.007
+pucon,Pucón,2024-09-14,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.029
+pucon,Pucón,2024-09-15,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.045
+pucon,Pucón,2024-09-16,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.048
+pucon,Pucón,2024-09-17,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.066
+pucon,Pucón,2024-09-18,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.066
+pucon,Pucón,2024-09-19,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.048
+pucon,Pucón,2024-09-20,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.045
+pucon,Pucón,2024-09-21,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.029
+pucon,Pucón,2024-09-22,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.029
+pucon,Pucón,2024-09-23,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.029
+pucon,Pucón,2024-09-24,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.006
+pucon,Pucón,2024-09-25,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.939
+pucon,Pucón,2024-09-26,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.939
+pucon,Pucón,2024-09-27,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.939
+pucon,Pucón,2024-09-28,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.939
+pucon,Pucón,2024-09-29,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.939
+pucon,Pucón,2024-09-30,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.939
+pucon,Pucón,2024-10-01,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.006
+pucon,Pucón,2024-10-02,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.029
+pucon,Pucón,2024-10-03,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.045
+pucon,Pucón,2024-10-04,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.048
+pucon,Pucón,2024-10-05,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.066
+pucon,Pucón,2024-10-06,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.118
+pucon,Pucón,2024-10-07,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.118
+pucon,Pucón,2024-10-08,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.242
+pucon,Pucón,2024-10-09,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.425
+pucon,Pucón,2024-10-10,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.425
+pucon,Pucón,2024-10-11,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.425
+pucon,Pucón,2024-10-12,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.498
+pucon,Pucón,2024-10-13,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.545
+pucon,Pucón,2024-10-14,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.565
+pucon,Pucón,2024-10-15,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.565
+pucon,Pucón,2024-10-16,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.545
+pucon,Pucón,2024-10-17,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.545
+pucon,Pucón,2024-10-18,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.545
+pucon,Pucón,2024-10-19,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.545
+pucon,Pucón,2024-10-20,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.545
+pucon,Pucón,2024-10-21,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.545
+pucon,Pucón,2024-10-22,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.545
+pucon,Pucón,2024-10-23,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.545
+pucon,Pucón,2024-10-24,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.545
+pucon,Pucón,2024-10-25,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.545
+pucon,Pucón,2024-10-26,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.545
+pucon,Pucón,2024-10-27,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.545
+pucon,Pucón,2024-10-28,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.111
+pucon,Pucón,2024-10-29,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.053
+pucon,Pucón,2024-10-30,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.006
+pucon,Pucón,2024-10-31,historical_doy_window_median,31,31,15,medium_historical_doy,False,2.003
+pucon,Pucón,2024-11-01,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.949
+pucon,Pucón,2024-11-02,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.849
+pucon,Pucón,2024-11-03,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.833
+pucon,Pucón,2024-11-04,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.829
+pucon,Pucón,2024-11-05,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.765
+pucon,Pucón,2024-11-06,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.765
+pucon,Pucón,2024-11-07,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.765
+pucon,Pucón,2024-11-08,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.765
+pucon,Pucón,2024-11-09,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.765
+pucon,Pucón,2024-11-10,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.765
+pucon,Pucón,2024-11-11,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.765
+pucon,Pucón,2024-11-12,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.7374999999999998
+pucon,Pucón,2024-11-13,historical_doy_window_median,29,29,15,medium_historical_doy,False,1.71
+pucon,Pucón,2024-11-14,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.704
+pucon,Pucón,2024-11-15,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.7315
+pucon,Pucón,2024-11-16,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.797
+pucon,Pucón,2024-11-17,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.831
+pucon,Pucón,2024-11-18,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.831
+pucon,Pucón,2024-11-19,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.831
+pucon,Pucón,2024-11-20,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.916
+pucon,Pucón,2024-11-21,historical_doy_window_median,28,28,15,medium_historical_doy,False,2.028
+pucon,Pucón,2024-11-22,historical_doy_window_median,28,28,15,medium_historical_doy,False,2.1155
+pucon,Pucón,2024-11-23,historical_doy_window_median,28,28,15,medium_historical_doy,False,2.1155
+pucon,Pucón,2024-11-24,historical_doy_window_median,28,28,15,medium_historical_doy,False,2.1155
+pucon,Pucón,2024-11-25,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.8675
+pucon,Pucón,2024-11-26,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.843
+pucon,Pucón,2024-11-27,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.843
+pucon,Pucón,2024-11-28,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.843
+pucon,Pucón,2024-11-29,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.843
+pucon,Pucón,2024-11-30,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.843
+pucon,Pucón,2024-12-01,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.843
+pucon,Pucón,2024-12-02,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.843
+pucon,Pucón,2024-12-03,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.843
+pucon,Pucón,2024-12-04,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.843
+pucon,Pucón,2024-12-05,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.952
+pucon,Pucón,2024-12-06,historical_doy_window_median,28,28,15,medium_historical_doy,False,2.085
+pucon,Pucón,2024-12-07,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.859
+pucon,Pucón,2024-12-08,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.646
+pucon,Pucón,2024-12-09,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.562
+pucon,Pucón,2024-12-10,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.562
+pucon,Pucón,2024-12-11,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.562
+pucon,Pucón,2024-12-12,historical_doy_window_median,28,28,15,medium_historical_doy,False,1.4985
+pucon,Pucón,2024-12-13,historical_doy_window_median,29,29,15,medium_historical_doy,False,1.558
+pucon,Pucón,2024-12-14,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.4985
+pucon,Pucón,2024-12-15,historical_doy_window_median,31,31,15,medium_historical_doy,False,1.439
+pucon,Pucón,2024-12-16,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.4300000000000002
+pucon,Pucón,2024-12-17,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.4300000000000002
+pucon,Pucón,2024-12-18,historical_doy_window_median,30,30,15,medium_historical_doy,False,1.4300000000000002

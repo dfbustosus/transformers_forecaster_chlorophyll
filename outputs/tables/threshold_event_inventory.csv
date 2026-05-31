@@ -3,9 +3,6 @@ la_poza,La Poza,observed_direct,la_poza_observed_direct_001,10.0,2022-11-07,2022
 la_poza,La Poza,observed_direct,la_poza_observed_direct_002,10.0,2023-05-06,2023-05-11,6,6,2023-05-10,53.971
 la_poza,La Poza,observed_direct,la_poza_observed_direct_003,10.0,2023-05-13,2023-05-15,3,3,2023-05-15,54.163
 la_poza,La Poza,observed_direct,la_poza_observed_direct_004,10.0,2023-05-17,2023-05-17,1,1,2023-05-17,60.95
-la_poza,La Poza,processed_model_series,la_poza_processed_model_series_001,10.0,2022-11-07,2022-11-13,7,7,2022-11-07,17.786
-la_poza,La Poza,processed_model_series,la_poza_processed_model_series_002,10.0,2023-05-06,2023-05-17,12,12,2023-05-17,60.95
-la_poza,La Poza,processed_model_series,la_poza_processed_model_series_003,10.0,2024-11-06,2024-11-06,1,1,2024-11-06,10.263000000000002
 pucon,Pucón,observed_direct,pucon_observed_direct_001,10.0,2021-11-28,2021-11-30,3,3,2021-11-29,12.254
 pucon,Pucón,observed_direct,pucon_observed_direct_002,10.0,2022-01-03,2022-01-03,1,1,2022-01-03,41.2
 pucon,Pucón,observed_direct,pucon_observed_direct_003,10.0,2022-02-14,2022-02-14,1,1,2022-02-14,10.071
@@ -39,41 +36,3 @@ pucon,Pucón,observed_direct,pucon_observed_direct_030,10.0,2023-09-03,2023-09-0
 pucon,Pucón,observed_direct,pucon_observed_direct_031,10.0,2023-10-03,2023-10-05,3,3,2023-10-05,53.971
 pucon,Pucón,observed_direct,pucon_observed_direct_032,10.0,2023-11-04,2023-11-05,2,2,2023-11-04,55.47
 pucon,Pucón,observed_direct,pucon_observed_direct_033,10.0,2023-12-03,2023-12-04,2,2,2023-12-04,52.6
-pucon,Pucón,processed_model_series,pucon_processed_model_series_001,10.0,2021-02-04,2021-02-05,2,2,2021-02-04,13.226333333333336
-pucon,Pucón,processed_model_series,pucon_processed_model_series_002,10.0,2021-02-27,2021-02-28,2,2,2021-02-28,11.684
-pucon,Pucón,processed_model_series,pucon_processed_model_series_003,10.0,2021-03-04,2021-03-05,2,2,2021-03-04,14.311
-pucon,Pucón,processed_model_series,pucon_processed_model_series_004,10.0,2021-03-27,2021-03-31,5,5,2021-03-29,13.834
-pucon,Pucón,processed_model_series,pucon_processed_model_series_005,10.0,2021-04-04,2021-04-05,2,2,2021-04-04,14.979333333333336
-pucon,Pucón,processed_model_series,pucon_processed_model_series_006,10.0,2021-04-30,2021-04-30,1,1,2021-04-30,10.562333333333331
-pucon,Pucón,processed_model_series,pucon_processed_model_series_007,10.0,2021-05-05,2021-05-05,1,1,2021-05-05,12.785333333333334
-pucon,Pucón,processed_model_series,pucon_processed_model_series_008,10.0,2021-06-04,2021-06-05,2,2,2021-06-04,23.9115
-pucon,Pucón,processed_model_series,pucon_processed_model_series_009,10.0,2021-07-04,2021-07-05,2,2,2021-07-05,24.2225
-pucon,Pucón,processed_model_series,pucon_processed_model_series_010,10.0,2021-11-28,2021-12-01,4,4,2021-11-29,12.254
-pucon,Pucón,processed_model_series,pucon_processed_model_series_011,10.0,2022-01-03,2022-01-09,7,7,2022-01-03,41.2
-pucon,Pucón,processed_model_series,pucon_processed_model_series_012,10.0,2022-02-14,2022-02-14,1,1,2022-02-14,10.071
-pucon,Pucón,processed_model_series,pucon_processed_model_series_013,10.0,2022-02-17,2022-02-28,12,12,2022-02-26,33.537
-pucon,Pucón,processed_model_series,pucon_processed_model_series_014,10.0,2022-03-27,2022-03-31,5,5,2022-03-29,13.834
-pucon,Pucón,processed_model_series,pucon_processed_model_series_015,10.0,2022-04-26,2022-04-26,1,1,2022-04-26,15.361
-pucon,Pucón,processed_model_series,pucon_processed_model_series_016,10.0,2022-04-30,2022-04-30,1,1,2022-04-30,10.562333333333331
-pucon,Pucón,processed_model_series,pucon_processed_model_series_017,10.0,2022-07-07,2022-07-20,14,14,2022-07-11,17.786
-pucon,Pucón,processed_model_series,pucon_processed_model_series_018,10.0,2022-08-06,2022-08-15,10,10,2022-08-11,13.526
-pucon,Pucón,processed_model_series,pucon_processed_model_series_019,10.0,2022-09-05,2022-09-16,12,12,2022-09-11,13.489
-pucon,Pucón,processed_model_series,pucon_processed_model_series_020,10.0,2022-10-04,2022-10-12,9,9,2022-10-11,16.357
-pucon,Pucón,processed_model_series,pucon_processed_model_series_021,10.0,2022-11-05,2022-11-13,9,9,2022-11-11,14.898
-pucon,Pucón,processed_model_series,pucon_processed_model_series_022,10.0,2022-12-07,2022-12-18,12,12,2022-12-11,11.752
-pucon,Pucón,processed_model_series,pucon_processed_model_series_023,10.0,2023-01-04,2023-01-05,2,2,2023-01-04,44.033
-pucon,Pucón,processed_model_series,pucon_processed_model_series_024,10.0,2023-02-04,2023-02-05,2,2,2023-02-04,38.046
-pucon,Pucón,processed_model_series,pucon_processed_model_series_025,10.0,2023-02-17,2023-02-19,3,3,2023-02-19,19.763
-pucon,Pucón,processed_model_series,pucon_processed_model_series_026,10.0,2023-02-21,2023-02-23,3,3,2023-02-21,14.811
-pucon,Pucón,processed_model_series,pucon_processed_model_series_027,10.0,2023-03-04,2023-03-05,2,2,2023-03-04,39.4
-pucon,Pucón,processed_model_series,pucon_processed_model_series_028,10.0,2023-03-14,2023-04-02,20,20,2023-03-31,39.006
-pucon,Pucón,processed_model_series,pucon_processed_model_series_029,10.0,2023-04-04,2023-04-05,2,2,2023-04-04,43.625
-pucon,Pucón,processed_model_series,pucon_processed_model_series_030,10.0,2023-04-12,2023-05-05,24,24,2023-04-17,59.9
-pucon,Pucón,processed_model_series,pucon_processed_model_series_031,10.0,2023-05-12,2023-05-17,6,6,2023-05-17,60.95
-pucon,Pucón,processed_model_series,pucon_processed_model_series_032,10.0,2023-06-03,2023-06-05,3,3,2023-06-04,47.342
-pucon,Pucón,processed_model_series,pucon_processed_model_series_033,10.0,2023-07-03,2023-07-05,3,3,2023-07-05,47.47
-pucon,Pucón,processed_model_series,pucon_processed_model_series_034,10.0,2023-08-04,2023-08-05,2,2,2023-08-05,48.523
-pucon,Pucón,processed_model_series,pucon_processed_model_series_035,10.0,2023-09-03,2023-09-05,3,3,2023-09-05,52.562
-pucon,Pucón,processed_model_series,pucon_processed_model_series_036,10.0,2023-10-03,2023-10-05,3,3,2023-10-05,53.971
-pucon,Pucón,processed_model_series,pucon_processed_model_series_037,10.0,2023-11-04,2023-11-05,2,2,2023-11-04,55.47
-pucon,Pucón,processed_model_series,pucon_processed_model_series_038,10.0,2023-12-03,2023-12-05,3,3,2023-12-04,52.6

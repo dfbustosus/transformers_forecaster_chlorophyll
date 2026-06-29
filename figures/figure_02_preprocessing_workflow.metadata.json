@@ -1,6 +1,6 @@
 {
-  "created_utc": "2026-05-31T20:16:38+00:00",
-  "purpose": "Publication-facing Mermaid sequence diagram for manuscript Figure 2, showing the reproducible Lake Villarrica Chl-a preprocessing, reconstruction, forecast-input, and evidence workflow.",
+  "created_utc": "2026-06-08T13:42:00+00:00",
+  "purpose": "Publication-facing high-resolution Mermaid sequence diagram for manuscript Figure 2, showing the reproducible Lake Villarrica Chl-a preprocessing, reconstruction, forecast-input, and evidence workflow.",
   "renderer": {
     "command": [
       [
@@ -14,7 +14,7 @@
         "--cssFile",
         "/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/configs/figure_02_mermaid.css",
         "--width",
-        "1700"
+        "2600"
       ],
       [
         "/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/node_modules/.bin/mmdc",
@@ -25,15 +25,17 @@
         "--backgroundColor",
         "white",
         "--width",
-        "1700",
+        "2600",
         "--scale",
-        "2",
+        "3",
         "--cssFile",
         "/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/configs/figure_02_mermaid.css"
       ]
     ],
     "css": "/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/configs/figure_02_mermaid.css",
-    "source": "/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/figures/figure_02_preprocessing_workflow.mmd"
+    "png_scale": "3",
+    "source": "/Users/davidbustosusta/Desktop/transformers_forecaster_chlorophyll/figures/figure_02_preprocessing_workflow.mmd",
+    "width": "2600"
   },
   "reviewer_comments_addressed": [
     "R1.3",

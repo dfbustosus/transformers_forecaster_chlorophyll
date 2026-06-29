@@ -9,8 +9,9 @@ Use this file as a practical editing guide for `Transformer Villarrica 200326.do
 3. **Remove unsupported threshold-warning skill values.** The current manuscript table reporting high POD/F1 at 10 µg/L is not supported by the processed 2024 forecast target. Replace it with the generated threshold-warning tables and the limitation that no processed 2024 target exceedances occur.
 4. **Replace old Figure 2.** Use `figures/figure_02_preprocessing_workflow.png` or `.svg` for the detailed preprocessing/forecast-input sequence diagram.
 5. **Add a standalone methodology roadmap.** Use `figures/figure_methodology_end_to_end.png` or `.svg` to answer Reviewer 3.10 in simple terms.
-6. **Insert uncertainty interval figure.** Use `figures/figure_08_uncertainty_intervals.png` or `.svg`. Because the current manuscript already has Figures 8–9 for threshold/cyanobacteria graphics, either renumber the current threshold figures or make the uncertainty figure Supplementary Figure S1.
+6. **Insert uncertainty interval figure.** Use `figures/figure_08_uncertainty_intervals.png` or `.svg`. Because Supplementary Figures S1–S2 are now reserved for the predicted-versus-target scatter diagnostics, either renumber the current threshold figures and use this as main Figure 8 or make the uncertainty figure Supplementary Figure S3.
 7. **Condense Section 2.5.** Remove textbook derivations of Chronos, TSMixer, Naive Seasonal, TimesFM, exponential smoothing, and GRU. Keep citations, model role, input/output contract, and runtime configuration.
+8. **Add supplementary 1:1 forecast diagnostics.** Use `figures/figure_s1_predicted_vs_target_la_poza.png`/`.svg` and `figures/figure_s2_predicted_vs_target_pucon.png`/`.svg` to support Figures 6–7 without making the main trajectory panels more crowded.
 
 ---
 
@@ -157,9 +158,13 @@ The current local repository does **not** contain satellite reflectance/index ma
 
 ### Updated captions
 
-**Figure 6.** TimesFM and Chronos Large Chl-a forecasts at La Poza for 1-, 7-, 14-, and 28-day horizons. The blue line is the accepted daily Chl-a target; red and green markers/lines are model predictions at rolling forecast origins. Source data: `outputs/tables/figure_06_source.csv`.
+**Figure 6.** TimesFM and Chronos Large Chl-a forecasts at La Poza for 1-, 7-, 14-, and 28-day horizons. The blue line is the accepted daily Chl-a target; red and green markers/lines are model predictions at rolling forecast origins. Horizon metrics: TimesFM (D1: MAE=0.099, RMSE=0.173 µg/L; D7: MAE=0.300, RMSE=0.406 µg/L; D14: MAE=0.428, RMSE=0.661 µg/L; D28: MAE=0.702, RMSE=1.059 µg/L); Chronos Large (D1: MAE=0.106, RMSE=0.216 µg/L; D7: MAE=0.275, RMSE=0.399 µg/L; D14: MAE=0.471, RMSE=0.742 µg/L; D28: MAE=0.757, RMSE=1.183 µg/L). Supplementary Figure S1 provides the corresponding 1:1 predicted-versus-target scatter diagnostics. Source data: `outputs/tables/figure_06_source.csv`.
 
-**Figure 7.** TimesFM and Chronos Large Chl-a forecasts at Pucón for 1-, 7-, 14-, and 28-day horizons. The blue line is the accepted daily Chl-a target; red and green markers/lines are model predictions at rolling forecast origins. Source data: `outputs/tables/figure_07_source.csv`.
+**Figure 7.** TimesFM and Chronos Large Chl-a forecasts at Pucón for 1-, 7-, 14-, and 28-day horizons. The blue line is the accepted daily Chl-a target; red and green markers/lines are model predictions at rolling forecast origins. Horizon metrics: TimesFM (D1: MAE=0.063, RMSE=0.088 µg/L; D7: MAE=0.241, RMSE=0.335 µg/L; D14: MAE=0.396, RMSE=0.576 µg/L; D28: MAE=0.606, RMSE=0.886 µg/L); Chronos Large (D1: MAE=0.071, RMSE=0.115 µg/L; D7: MAE=0.275, RMSE=0.398 µg/L; D14: MAE=0.456, RMSE=0.722 µg/L; D28: MAE=0.679, RMSE=1.073 µg/L). Supplementary Figure S2 provides the corresponding 1:1 predicted-versus-target scatter diagnostics. Source data: `outputs/tables/figure_07_source.csv`.
+
+**Supplementary Figure S1.** Predicted-versus-target Chl-a scatter diagnostics for La Poza. Panels compare TimesFM and Chronos Large predictions against the accepted target at D1, D7, D14, and D28. The dashed line is the 1:1 line; panel annotations report n, MAE, RMSE, and bias. Blue points are direct observed targets and gray points are reconstructed targets. Source data: `outputs/tables/figure_s1_source.csv`.
+
+**Supplementary Figure S2.** Predicted-versus-target Chl-a scatter diagnostics for Pucón. Panels compare TimesFM and Chronos Large predictions against the accepted target at D1, D7, D14, and D28. The dashed line is the 1:1 line; panel annotations report n, MAE, RMSE, and bias. Blue points are direct observed targets and gray points are reconstructed targets. Source data: `outputs/tables/figure_s2_source.csv`.
 
 ---
 
@@ -189,7 +194,7 @@ Delete the current manuscript table claiming D1 POD of 96.2% and D7 POD of 84.6%
 
 **Methodology roadmap figure.** End-to-end workflow for Lake Villarrica Chl-a forecasting. The flowchart shows data sources, provenance and QA, daily Chl-a target construction, forecast setup, TimesFM/Chronos execution, evaluation diagnostics, and reproducible manuscript outputs. The dashed satellite-inversion branch indicates that direct satellite-feature claims require validated matchup and inversion evidence. Source: `figures/figure_methodology_end_to_end.mmd`.
 
-**Figure 8 or Supplementary Figure S1.** Predictive uncertainty intervals for D7 Chl-a forecasts. The blue line is the accepted daily Chl-a target, colored lines show q50 forecasts, and shaded envelopes show q10–q90 intervals for TimesFM and Chronos Large at Pucón and La Poza. Panel titles report empirical interval coverage and sample size. Source data: `outputs/tables/figure_08_source.csv`.
+**Figure 8 or Supplementary Figure S3.** Predictive uncertainty intervals for D7 Chl-a forecasts. The blue line is the accepted daily Chl-a target, colored lines show q50 forecasts, and shaded envelopes show q10–q90 intervals for TimesFM and Chronos Large at Pucón and La Poza. Panel titles report empirical interval coverage and sample size. Source data: `outputs/tables/figure_08_source.csv`.
 
 ---
 

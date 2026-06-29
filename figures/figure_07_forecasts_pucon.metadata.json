@@ -1,5 +1,51 @@
 {
-  "created_utc": "2026-05-31T18:43:04+00:00",
+  "caption_metrics": {
+    "Chronos Large": {
+      "D1": {
+        "MAE_ug_l": 0.071,
+        "RMSE_ug_l": 0.115,
+        "n": 25
+      },
+      "D14": {
+        "MAE_ug_l": 0.456,
+        "RMSE_ug_l": 0.722,
+        "n": 25
+      },
+      "D28": {
+        "MAE_ug_l": 0.679,
+        "RMSE_ug_l": 1.073,
+        "n": 25
+      },
+      "D7": {
+        "MAE_ug_l": 0.275,
+        "RMSE_ug_l": 0.398,
+        "n": 25
+      }
+    },
+    "TimesFM": {
+      "D1": {
+        "MAE_ug_l": 0.063,
+        "RMSE_ug_l": 0.088,
+        "n": 25
+      },
+      "D14": {
+        "MAE_ug_l": 0.396,
+        "RMSE_ug_l": 0.576,
+        "n": 25
+      },
+      "D28": {
+        "MAE_ug_l": 0.606,
+        "RMSE_ug_l": 0.886,
+        "n": 25
+      },
+      "D7": {
+        "MAE_ug_l": 0.241,
+        "RMSE_ug_l": 0.335,
+        "n": 25
+      }
+    }
+  },
+  "created_utc": "2026-06-29T14:06:06+00:00",
   "models_plotted": [
     "TimesFM",
     "Chronos Large"

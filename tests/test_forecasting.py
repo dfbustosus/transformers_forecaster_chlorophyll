@@ -5,7 +5,11 @@ from pathlib import Path
 
 import pandas as pd
 
-from villarrica_forecaster.figures.forecast_figures import metric_figure, trajectory_figure
+from villarrica_forecaster.figures.forecast_figures import (
+    metric_figure,
+    prediction_scatter_figure,
+    trajectory_figure,
+)
 from villarrica_forecaster.forecasting.cross_site import cross_site_dayofyear_transfer
 from villarrica_forecaster.forecasting.evaluation import (
     build_forecast_outputs,
@@ -305,6 +309,34 @@ def test_trajectory_figure_blocks_and_removes_stale_exports_for_baseline_predict
     assert status.loc[0, "status"] == "blocked_missing_foundation_predictions"
     assert source.empty
     assert not any((figures_dir / f"{stem}{suffix}").exists() for suffix in (".png", ".svg"))
+
+
+def test_prediction_scatter_source_matches_validated_prediction_cache(tmp_path: Path) -> None:
+    config = _foundation_test_config(tmp_path, prediction_length=30, periods=80)
+    tables_dir = Path(config["resolved_paths"]["tables"])
+    tables_dir.mkdir(parents=True)
+    predictions = _complete_foundation_predictions(_foundation_daily_fixture(periods=80), config)
+    predictions.to_csv(tables_dir / "forecast_predictions_long.csv", index=False)
+
+    outputs = prediction_scatter_figure(config, station_id="pucon", figure_number="s2")
+    source = pd.read_csv(tables_dir / "figure_s2_source.csv")
+    expected = predictions[
+        predictions["horizon"].isin([1, 7, 14, 28])
+        & predictions["model"].isin(["TimesFM", "Chronos Large"])
+    ].copy()
+
+    assert outputs["png"].name == "figure_s2_predicted_vs_target_pucon.png"
+    assert len(source) == len(expected)
+    merged = source.merge(
+        expected,
+        on=["run_id", "station_id", "model", "origin_date", "target_date", "horizon"],
+        suffixes=("_source", "_expected"),
+        how="inner",
+    )
+    assert len(merged) == len(expected)
+    for column in ["y_true", "y_true_observed", "y_pred", "q10", "q50", "q90"]:
+        assert (merged[f"{column}_source"] - merged[f"{column}_expected"]).abs().max() <= 1e-12
+    assert set(source["target_data_class"]) == {"direct_observation"}
 
 
 def _foundation_test_config(

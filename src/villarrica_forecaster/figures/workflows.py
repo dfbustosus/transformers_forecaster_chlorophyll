@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import re
 import shutil
 import subprocess
 from pathlib import Path
@@ -7,6 +8,9 @@ from typing import Any
 
 from villarrica_forecaster.config import path_from_config
 from villarrica_forecaster.io import utc_now_iso, write_json
+
+FIGURE_02_RENDER_WIDTH = "2600"
+FIGURE_02_PNG_SCALE = "3"
 
 
 def build_workflow_figures(config: dict[str, Any]) -> dict[str, Path]:
@@ -31,7 +35,15 @@ def figure_02_preprocessing_workflow(config: dict[str, Any]) -> dict[str, Path]:
     css_path = Path(config["_repo_root"]) / "configs" / "figure_02_mermaid.css"
 
     mermaid_path.write_text(figure_02_mermaid_source(), encoding="utf-8")
-    render_results = _render_mermaid(mermaid_path, svg_path, png_path, css_path, config)
+    render_results = _render_mermaid(
+        mermaid_path,
+        svg_path,
+        png_path,
+        css_path,
+        config,
+        width=FIGURE_02_RENDER_WIDTH,
+        png_scale=FIGURE_02_PNG_SCALE,
+    )
     write_json(
         {
             "created_utc": utc_now_iso(),
@@ -39,7 +51,7 @@ def figure_02_preprocessing_workflow(config: dict[str, Any]) -> dict[str, Path]:
             "source_data": str(mermaid_path),
             "style_css": str(css_path),
             "renderer": render_results,
-            "purpose": "Publication-facing Mermaid sequence diagram for manuscript Figure 2, showing the reproducible Lake Villarrica Chl-a preprocessing, reconstruction, forecast-input, and evidence workflow.",
+            "purpose": "Publication-facing high-resolution Mermaid sequence diagram for manuscript Figure 2, showing the reproducible Lake Villarrica Chl-a preprocessing, reconstruction, forecast-input, and evidence workflow.",
             "reviewer_comments_addressed": ["R1.3", "R1.4", "R3.5", "R3.9"],
         },
         metadata_path,
@@ -188,6 +200,7 @@ def _render_mermaid(
     config: dict[str, Any],
     *,
     width: str = "1700",
+    png_scale: str = "2",
 ) -> dict[str, Any]:
     repo_root = Path(config["_repo_root"])
     cli = _mermaid_cli_command(repo_root)
@@ -216,7 +229,7 @@ def _render_mermaid(
             "--width",
             width,
             "--scale",
-            "2",
+            png_scale,
             "--cssFile",
             str(css_path),
         ],
@@ -233,7 +246,52 @@ def _render_mermaid(
         executed.append(command)
         if completed.stderr.strip():
             print(completed.stderr.strip())
-    return {"command": executed, "source": str(mermaid_path), "css": str(css_path)}
+    _set_svg_intrinsic_dimensions(svg_path)
+    return {
+        "command": executed,
+        "source": str(mermaid_path),
+        "css": str(css_path),
+        "width": width,
+        "png_scale": png_scale,
+    }
+
+
+def _set_svg_intrinsic_dimensions(svg_path: Path) -> None:
+    """Replace Mermaid's width=100% SVG header with explicit vector dimensions.
+
+    Some manuscript editors rasterize Mermaid's default `width="100%"` SVGs at a
+    low preview resolution. Keeping the `viewBox` while adding explicit intrinsic
+    dimensions preserves vector scalability and makes imports into Word/PDF tools
+    deterministic.
+    """
+
+    text = svg_path.read_text(encoding="utf-8")
+    viewbox_match = re.search(r'viewBox="([^"]+)"', text)
+    if not viewbox_match:
+        return
+    parts = viewbox_match.group(1).split()
+    if len(parts) != 4:
+        return
+    try:
+        width = float(parts[2])
+        height = float(parts[3])
+    except ValueError:
+        return
+    width_text = f"{width:g}px"
+    height_text = f"{height:g}px"
+    text = re.sub(r'(<svg\b[^>]*?)\swidth="[^"]+"', rf'\1 width="{width_text}"', text, count=1)
+    if re.search(r'<svg\b[^>]*\sheight="[^"]+"', text):
+        text = re.sub(
+            r'(<svg\b[^>]*?)\sheight="[^"]+"',
+            rf'\1 height="{height_text}"',
+            text,
+            count=1,
+        )
+    else:
+        text = re.sub(
+            r'(<svg\b[^>]*?\swidth="[^"]+")', rf'\1 height="{height_text}"', text, count=1
+        )
+    svg_path.write_text(text, encoding="utf-8")
 
 
 def _mermaid_cli_command(repo_root: Path) -> list[str]:

@@ -193,6 +193,34 @@ This draft is written only from reproducible repository outputs and the current 
 
 ---
 
+### Additional figure-presentation request — Figures 6 and 7
+
+**Reviewer comment.** Figures 6 and 7 are visually congested, and the forecast trajectories should be supported either by key accuracy annotations or by 1:1 predicted-versus-observed scatter plots to clarify bias and behavior at higher concentrations.
+
+**Action taken.** We kept the main trajectory figures readable by using smaller connected forecast markers and moved the dense point-by-point diagnostic comparison to supplementary 1:1 scatter plots. Figure 6 and Figure 7 captions now report exact MAE and RMSE values for TimesFM and Chronos Large at D1, D7, D14, and D28. Supplementary Figures S1 and S2 show predicted-versus-target scatter panels by model and horizon, with n, MAE, RMSE, and bias annotated in each panel and point styling that distinguishes direct observed targets from reconstructed targets.
+
+**Evidence generated.**
+
+- `figures/figure_06_forecasts_la_poza.png`
+- `figures/figure_07_forecasts_pucon.png`
+- `figures/figure_s1_predicted_vs_target_la_poza.png`
+- `figures/figure_s1_predicted_vs_target_la_poza.svg`
+- `figures/figure_s2_predicted_vs_target_pucon.png`
+- `figures/figure_s2_predicted_vs_target_pucon.svg`
+- `outputs/tables/figure_s1_source.csv`
+- `outputs/tables/figure_s2_source.csv`
+- `reports/forecast_trajectory_scatter_response.md`
+
+**Key reproducible numbers.** At La Poza, the Figure 6 caption reports TimesFM D1/D7/D14/D28 MAE = 0.099/0.300/0.428/0.702 µg/L and Chronos Large D1/D7/D14/D28 MAE = 0.106/0.275/0.471/0.757 µg/L. At Pucón, the Figure 7 caption reports TimesFM D1/D7/D14/D28 MAE = 0.063/0.241/0.396/0.606 µg/L and Chronos Large D1/D7/D14/D28 MAE = 0.071/0.275/0.456/0.679 µg/L (`outputs/tables/forecast_metrics_by_horizon.csv`). The supplementary scatter source tables each contain 200 prediction rows, with exact 200/200 row matches to the corresponding subset of `outputs/tables/forecast_predictions_long.csv`.
+
+**Manuscript change.** Update Figure 6 and Figure 7 captions and add Supplementary Figures S1 and S2 after the trajectory section or in the supplement.
+
+**Response text.** We thank the reviewer for this suggestion. We revised the trajectory figures and captions to improve interpretability without overloading the main panels. The captions now report MAE and RMSE for each plotted model and horizon. We also added Supplementary Figures S1 and S2, which provide 1:1 predicted-versus-target scatter plots for La Poza and Pucón, respectively. These panels include a 1:1 reference line, n, MAE, RMSE, and bias annotations, and they distinguish direct observations from reconstructed targets. This makes bias and amplitude behavior easier to assess while preserving the readability of Figures 6 and 7.
+
+**Residual limitation.** The scatter plots compare predictions with the accepted daily target. Because many 2024 target dates are reconstructed, direct-observation points are explicitly marked and the figure should not be interpreted as a fully observed daily validation dataset.
+
+---
+
 ### Comment 7
 
 **Reviewer comment.** The Discussion section overall lacks sufficient depth and would benefit from a more explicit and structured analysis of the sources of uncertainty within the proposed forecasting framework. Currently, the manuscript attributes medium- to long-term forecast degradation almost exclusively to “intrinsic ecological unpredictability”. It fails to clearly distinguish between uncertainties arising from: (1) satellite retrieval limitations, (2) spatiotemporal mismatches between point-based in-situ samples and satellite pixels, or (3) structural artifacts introduced by the daily data imputation process. Furthermore, while Section 2.4.4 explicitly mentions generating probabilistic forecasts (mapping to the 10th, 50th, and 90th percentiles), any discussion or visualization of these predictive uncertainty bounds is entirely absent from the results and discussion. The authors must expand this section to critically examine these distinct error sources and their relative impacts on model reliability.

@@ -162,6 +162,10 @@ This table records whether local satellite matchup/inversion inputs are availabl
 - `figures/figure_07_forecasts_pucon.svg`
 - `figures/figure_08_uncertainty_intervals.png`
 - `figures/figure_08_uncertainty_intervals.svg`
+- `figures/figure_s1_predicted_vs_target_la_poza.png`
+- `figures/figure_s1_predicted_vs_target_la_poza.svg`
+- `figures/figure_s2_predicted_vs_target_pucon.png`
+- `figures/figure_s2_predicted_vs_target_pucon.svg`
 
 Figure source tables are written under `outputs/tables/figure_*_source.csv`.
 

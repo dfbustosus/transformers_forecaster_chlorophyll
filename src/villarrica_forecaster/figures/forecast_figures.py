@@ -33,6 +33,9 @@ def build_forecast_figures(config: dict[str, Any]) -> dict[str, Path]:
             outputs[f"figure_{figure_number}_{key}"] = value
     for key, value in uncertainty_interval_figure(config, "08").items():
         outputs[f"figure_08_{key}"] = value
+    for station_id, figure_number in [("la_poza", "s1"), ("pucon", "s2")]:
+        for key, value in prediction_scatter_figure(config, station_id, figure_number).items():
+            outputs[f"figure_{figure_number}_{key}"] = value
     return outputs
 
 
@@ -134,6 +137,7 @@ def trajectory_figure(
         )
         return {"status": status_path, "source": source_path}
     _remove_blocked_figure_status(config, figure_number)
+    caption_metrics = _caption_metrics(config, station_id, horizons)
 
     observed = daily[daily["station_id"].eq(station_id)].sort_values("date")
     observed = _filter_observed_window(observed, config)
@@ -211,7 +215,150 @@ def trajectory_figure(
             "models_plotted": models,
             "target_window": _trajectory_target_window(config),
             "origin_stride_days": config["forecast"].get("origin_stride_days", 1),
+            "caption_metrics": caption_metrics,
             "scientific_note": "Generated from validated rolling-origin foundation-model predictions only; styled to match the original manuscript trajectory panels.",
+        },
+    )
+
+
+def prediction_scatter_figure(
+    config: dict[str, Any], station_id: str, figure_number: str
+) -> dict[str, Path]:
+    """Create supplementary 1:1 predicted-versus-target scatter diagnostics."""
+
+    tables_dir = path_from_config(config, "tables")
+    predictions = pd.read_csv(
+        tables_dir / "forecast_predictions_long.csv", parse_dates=["target_date"]
+    )
+    models = _required_foundation_figure_models(config)
+    horizons = [1, 7, 14, 28]
+    source = predictions[
+        predictions["station_id"].eq(station_id)
+        & predictions["model"].isin(models)
+        & predictions["horizon"].isin(horizons)
+    ].copy()
+    source = _filter_trajectory_window(source, config)
+    for column in ("y_true", "y_pred"):
+        source[column] = pd.to_numeric(source[column], errors="coerce")
+    source = source.dropna(subset=["y_true", "y_pred"]).copy()
+    if not source.empty:
+        source["absolute_error"] = (source["y_pred"] - source["y_true"]).abs()
+        source["signed_error"] = source["y_pred"] - source["y_true"]
+        source["target_data_class"] = source["target_is_direct_observation"].map(
+            {True: "direct_observation", False: "reconstructed_or_imputed"}
+        )
+    source_path = write_csv(
+        _date_to_string(source), tables_dir / f"figure_{figure_number}_source.csv"
+    )
+    stem = f"figure_{figure_number}_predicted_vs_target_{station_id}"
+    missing_models = sorted(set(models) - set(source.get("model", pd.Series(dtype=str))))
+    if source.empty or missing_models:
+        _remove_existing_figure_exports(config, stem)
+        status_path = write_csv(
+            pd.DataFrame(
+                [
+                    {
+                        "figure": f"Figure {figure_number.upper()}",
+                        "station_id": station_id,
+                        "status": "blocked_missing_foundation_predictions",
+                        "reason": (
+                            "No complete validated TimesFM/Chronos predictions were available "
+                            "for 1:1 scatter diagnostics. Missing required model(s): "
+                            f"{', '.join(missing_models) or 'all'}."
+                        ),
+                        "source_table": str(source_path),
+                    }
+                ]
+            ),
+            tables_dir / f"figure_{figure_number}_status.csv",
+        )
+        return {"status": status_path, "source": source_path}
+    status_path = tables_dir / f"figure_{figure_number}_status.csv"
+    if status_path.exists():
+        status_path.unlink()
+
+    apply_manuscript_style()
+    plt.rcParams.update(
+        {
+            "font.size": 8.5,
+            "axes.titlesize": 9.5,
+            "axes.titleweight": "bold",
+            "figure.titlesize": 12,
+            "figure.titleweight": "bold",
+            "legend.fontsize": 7.5,
+            "axes.grid": True,
+            "grid.alpha": 0.24,
+        }
+    )
+    fig, axes = plt.subplots(
+        len(horizons), len(models), figsize=(8.2, 11.0), sharex=True, sharey=True
+    )
+    axes_grid = [[ax] for ax in axes] if len(models) == 1 else axes
+    max_value = _scatter_axis_limit(source)
+    class_styles = {
+        "direct_observation": {"color": "#2B8CBE", "label": "Direct observation", "alpha": 0.90},
+        "reconstructed_or_imputed": {
+            "color": "#94A3B8",
+            "label": "Reconstructed target",
+            "alpha": 0.58,
+        },
+    }
+    for row_idx, horizon in enumerate(horizons):
+        for col_idx, model in enumerate(models):
+            ax = axes_grid[row_idx][col_idx]
+            panel = source[source["horizon"].eq(horizon) & source["model"].eq(model)].copy()
+            for data_class, style in class_styles.items():
+                points = panel[panel["target_data_class"].eq(data_class)]
+                if points.empty:
+                    continue
+                ax.scatter(
+                    points["y_true"],
+                    points["y_pred"],
+                    s=28,
+                    color=style["color"],
+                    edgecolor="white",
+                    linewidth=0.35,
+                    alpha=style["alpha"],
+                    label=style["label"],
+                    zorder=3,
+                )
+            ax.plot([0, max_value], [0, max_value], color="#0F172A", linewidth=1.0, linestyle="--")
+            ax.set_xlim(0, max_value)
+            ax.set_ylim(0, max_value)
+            ax.set_aspect("equal", adjustable="box")
+            metrics_label = _scatter_panel_metrics(panel)
+            ax.text(
+                0.04,
+                0.96,
+                metrics_label,
+                transform=ax.transAxes,
+                ha="left",
+                va="top",
+                fontsize=7.2,
+                bbox={"boxstyle": "round,pad=0.25", "facecolor": "white", "alpha": 0.86, "lw": 0.4},
+            )
+            ax.set_title(f"{model} — D{horizon}")
+            if row_idx == len(horizons) - 1:
+                ax.set_xlabel("Target Chl-a (µg/L)")
+            if col_idx == 0:
+                ax.set_ylabel("Predicted Chl-a (µg/L)")
+    handles, labels = axes_grid[0][0].get_legend_handles_labels()
+    fig.legend(handles, labels, loc="lower center", ncol=2, frameon=False)
+    fig.suptitle(f"Predicted versus target Chl-a — {station_label(station_id)}")
+    fig.tight_layout(rect=[0, 0.04, 1, 0.965], h_pad=1.0, w_pad=1.0)
+    return save_figure(
+        fig,
+        config,
+        stem,
+        {
+            "script": "src/villarrica_forecaster/figures/forecast_figures.py",
+            "source_data": str(source_path),
+            "station_id": station_id,
+            "models_plotted": models,
+            "horizons_plotted": horizons,
+            "target_window": _trajectory_target_window(config),
+            "reviewer_comments_addressed": ["forecast_scatter_diagnostics"],
+            "scientific_note": "Supplementary 1:1 predicted-versus-target scatter plot for assessing bias, amplitude damping, and high-concentration behavior in Figures 6 and 7.",
         },
     )
 
@@ -410,7 +557,7 @@ def _horizon_label(horizon: int) -> str:
 
 
 def _trajectory_station_title(station_id: str) -> str:
-    return {"la_poza": "Poza Dataset", "pucon": "Pucon"}.get(station_id, station_label(station_id))
+    return station_label(station_id)
 
 
 def _trajectory_y_upper(observed: pd.DataFrame, source: pd.DataFrame) -> float:
@@ -426,6 +573,81 @@ def _trajectory_y_upper(observed: pd.DataFrame, source: pd.DataFrame) -> float:
     if max_value <= 4.0:
         return 4.1
     return min(max_value * 1.12, 6.0)
+
+
+def _scatter_axis_limit(source: pd.DataFrame) -> float:
+    values = pd.concat(
+        [
+            pd.to_numeric(source["y_true"], errors="coerce"),
+            pd.to_numeric(source["y_pred"], errors="coerce"),
+        ]
+    ).dropna()
+    max_value = float(values.max()) if not values.empty else 3.0
+    if max_value <= 4.0:
+        return 4.1
+    return min(max_value * 1.08, 6.0)
+
+
+def _scatter_panel_metrics(panel: pd.DataFrame) -> str:
+    if panel.empty:
+        return "n=0"
+    error = pd.to_numeric(panel["y_pred"], errors="coerce") - pd.to_numeric(
+        panel["y_true"], errors="coerce"
+    )
+    n = int(error.notna().sum())
+    if n == 0:
+        return "n=0"
+    mae = float(error.abs().mean())
+    rmse = float((error.pow(2).mean()) ** 0.5)
+    bias = float(error.mean())
+    return f"n={n}\nMAE={mae:.2f}\nRMSE={rmse:.2f}\nBias={bias:+.2f}"
+
+
+def _caption_metrics(
+    config: dict[str, Any], station_id: str, horizons: list[int]
+) -> dict[str, dict[str, dict[str, float | int]]]:
+    metrics_path = path_from_config(config, "tables") / "forecast_metrics_by_horizon.csv"
+    if not metrics_path.exists():
+        return {}
+    metrics = pd.read_csv(metrics_path)
+    models = _required_foundation_figure_models(config)
+    subset = metrics[
+        metrics["station_id"].eq(station_id)
+        & metrics["model"].isin(models)
+        & metrics["horizon"].isin(horizons)
+    ].copy()
+    output: dict[str, dict[str, dict[str, float | int]]] = {}
+    for model, model_frame in subset.groupby("model"):
+        output[str(model)] = {}
+        for _, row in model_frame.sort_values("horizon").iterrows():
+            horizon = f"D{int(row['horizon'])}"
+            output[str(model)][horizon] = {
+                "n": int(row["n"]),
+                "MAE_ug_l": round(float(row["MAE"]), 3),
+                "RMSE_ug_l": round(float(row["RMSE"]), 3),
+            }
+    return output
+
+
+def caption_metric_sentence(config: dict[str, Any], station_id: str) -> str:
+    """Return manuscript-ready MAE/RMSE caption text for trajectory figures."""
+
+    horizons = [1, 7, 14, 28]
+    metrics = _caption_metrics(config, station_id, horizons)
+    pieces: list[str] = []
+    for model in _required_foundation_figure_models(config):
+        model_metrics = metrics.get(model, {})
+        horizon_text = []
+        for horizon in horizons:
+            values = model_metrics.get(f"D{horizon}")
+            if not values:
+                continue
+            horizon_text.append(
+                f"D{horizon}: MAE={values['MAE_ug_l']:.3f}, RMSE={values['RMSE_ug_l']:.3f} µg/L"
+            )
+        if horizon_text:
+            pieces.append(f"{model} ({'; '.join(horizon_text)})")
+    return "; ".join(pieces)
 
 
 def _load_uncertainty_coverage(tables_dir: Path, horizon: int) -> pd.DataFrame:
